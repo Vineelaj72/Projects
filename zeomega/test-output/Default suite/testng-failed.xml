@@ -5,7 +5,7 @@
     <classes>
       <class name="com.jiva.testcases.SanityTC_01">
         <methods>
-          <include name="verify_loginSucessFull_Storyid_TCID"/>
+          <include name="verify_AddCMEpisodetoMember"/>
         </methods>
       </class> <!-- com.jiva.testcases.SanityTC_01 -->
     </classes>

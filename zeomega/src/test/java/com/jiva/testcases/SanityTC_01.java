@@ -64,7 +64,7 @@ public class SanityTC_01 extends TestBase {
 		// MemberSearch Page details
 		MemberSearchPage memberSearchPage = new MemberSearchPage(driver);
 		memberSearchPage.clickAdvSearch();
-		memberSearchPage.enterJivaId();
+		memberSearchPage.enterJivaId(JIVAID);
 		memberSearchPage.clicksearch();
 		
 		// Confirmation for Adding episode
@@ -78,10 +78,7 @@ public class SanityTC_01 extends TestBase {
 		createCMepisodePage.clicksave();
 		Assert.assertEquals(true, createCMepisodePage.verifyepidodeadded(),"Episode added Sucessfully");
 		
-			
-		
-		
-		
+	
 		//Closing the browser
 		closeBrowser(driver);
 			

@@ -30,6 +30,7 @@ public class TestBase implements Setup {
 		caps.setCapability("ignoreProtectedModeSettings", true);
 		caps.setCapability("enablePersistentHover", true);
 		caps.setCapability("nativeEvents", false);
+		caps.setCapability("javascriptEnabled", true);
 		try {
 			Runtime.getRuntime().exec("RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 255");
 		} catch (IOException e) {

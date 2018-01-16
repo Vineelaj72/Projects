@@ -33,11 +33,11 @@ public class MemberSearchPage extends WebElements{
 		clickEnter(groupnamelocator);
 		
 	}
-	public void enterJivaId() throws InterruptedException
+	public void enterJivaId(String jivaid) throws InterruptedException
 	{
 		clickusingjs(jivamemberidlocator);
 		Thread.sleep(3000);
-		enterText(jivamemberidlocator, "574468");
+		enterText(jivamemberidlocator, jivaid);
 	}
 		
 	public void clicksearch()

@@ -22,10 +22,10 @@ public class CreateCMepisodePage extends WebElements{
 	
 	public void addepisodedetails()
 	{
-		dropdownselect(episodestatusdd, "Referral");
-		dropdownselect(assigntodd, "CCM Referral");
-		dropdownselect(acuityleveldd, "2");
-		dropdownselect(programnamelocator, "Complex Case Management");
+		dropdownSelect(episodestatusdd, "Referral");
+		dropdownSelect(assigntodd, "CCM Referral");
+		dropdownSelect(acuityleveldd, "2");
+		dropdownSelect(programnamelocator, "Complex Case Management");
 		clickusingjs(addprogrambutton);
 				
 	}
