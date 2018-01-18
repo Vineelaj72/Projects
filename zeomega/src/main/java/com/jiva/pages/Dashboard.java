@@ -14,25 +14,37 @@ public class Dashboard extends WebElements{
 	}
 	
 	By messagelocator = By.xpath("//*[@title='Messagesasdd']");
+	By menulocator=By.partialLinkText("Menu");
+	By membersearchlocator = By.linkText("Member Search");
+	By worklistslocator = By.partialLinkText("Worklists");
+	By userprofilelocator = By.xpath("(//a[@class='dropdown-toggle'])[2]");
 	
-	//By Menulink=By.xpath("//li[2]");
-	
-	By Menulink=By.partialLinkText("Menu");
-	By MemberSearchlink = By.linkText("Member Search");
 	
 	public void clickMenu()
 	{
-		clickusingjs(Menulink);
-		//click(Menulink);
+		//String userprofilename = getText(userprofilelocator);
+		//System.out.println(userprofilename);
+		clickUsingJs(menulocator);
 	}
+	
 	public void clickMemberSearch()
 	{
-		clickusingjs(MemberSearchlink);
-		//click(MemberSearchlink);
+		clickUsingJs(membersearchlocator);
 	}
 	
 	public boolean verifyDashboardDisplayed()
 	{
 		return isDisplayed(messagelocator);
 	}
+	
+	public void clickWorklists()
+	{
+		clickUsingJs(worklistslocator);
+	}
+	public String getuserprofilename()
+	{
+		return getText(userprofilelocator);
+		
+	}
+		
 }

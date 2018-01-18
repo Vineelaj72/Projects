@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.jiva.utils.WebElements;
 
-public class ConfirmAddepisodePage extends WebElements{
+public class ConfirmAddepisodePage extends WebElements {
 	
 	
 	public ConfirmAddepisodePage(WebDriver driver1) {
@@ -14,16 +14,23 @@ public class ConfirmAddepisodePage extends WebElements{
 	}
 	By addepisodelocator = By.xpath("//*/j-label[contains(text(),'Episode')]");
 	By cmlocator = By.xpath("//span[contains(text(),'Case Management')]");
+	By membernameloactor = By.xpath("//p[@class='ng-binding']");
 	
 	public void clickAddepisode() throws InterruptedException
 	{
-		clickusingjs(addepisodelocator);
-		clickusingjs(cmlocator);
+		
+		clickUsingJs(addepisodelocator);
+		clickUsingJs(cmlocator);
 		existingEpisodeAlert();
 	}
 	public void existingEpisodeAlert() throws InterruptedException
 	{
 		Thread.sleep(10000);
 		alertBox("A similar Episode has been added in the last 24 hrs.");
+	}
+	public String getmemberfullname()
+	{
+		return getText(membernameloactor);
+		
 	}
 }

@@ -28,15 +28,15 @@ public class WebElements {
 	}
 
 	public void dropdownSelect(By locator, String testdata) {
-		Select dd = new Select(driver.findElement(locator));
-		dd.selectByVisibleText(testdata);
+		Select dropdown = new Select(driver.findElement(locator));
+		dropdown.selectByVisibleText(testdata);
 	}
 
 	public boolean isDisplayed(By locator) {
 		return driver.findElement(locator).isDisplayed();
 	}
 
-	public void clickusingjs(By locator) {
+	public void clickUsingJs(By locator) {
 
 		WebElement element = driver.findElement(locator);
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
@@ -49,26 +49,40 @@ public class WebElements {
 	}
 
 	public void alertBox(String messageonalert) {
-		try
+		try {
+			Alert alert = driver.switchTo().alert();
+
+			// System.out.println("@@@@@@"+alert.getText());
+			// System.out.println("@@"+messageonalert);
+
+			if ((alert.getText().contains(messageonalert)))
+				alert.accept();
+				
+			else
+				System.out.println("Different alert");			
+			}
+		
+		catch (NoAlertPresentException e)
 		{
-			
-		
-		Alert alert = driver.switchTo().alert();
-		
-		System.out.println("@@@@@@"+alert.getText());
-		System.out.println("@@"+messageonalert);
-		if ((alert.getText().contains(messageonalert)))
-
-			alert.accept();
-
-		else
-
 			System.out.println("No alert displayed");
 		}
-		catch (NoAlertPresentException e) {
-			System.out.println("No alert displayed");
-		}
-
+	
 	}
+	
+	public String getText(By locator)
+	{
+		return driver.findElement(locator).getText();
+	
+	}
+	
+	public void wait(Long time)
+	{
+		try {
+			Thread.sleep(time);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
 
 }

@@ -32,8 +32,8 @@ public class LoginPage extends WebElements {
 	}
 
 		
-	public void login() {
-		clickusingjs(loginbutton);
+	public void loginbutton() {
+		clickUsingJs(loginbutton);
 	}
 	
 	/*public void verifyUsername()

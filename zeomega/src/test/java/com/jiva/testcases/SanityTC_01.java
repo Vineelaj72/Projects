@@ -31,10 +31,13 @@ public class SanityTC_01 extends TestBase {
 		maximizeBrowser(driver);
 		Thread.sleep(5000);
 
-		/*
-		 * LoginPage login = new LoginPage(driver); login.username(USERNAME);
-		 * login.password(PASSWORD); Thread.sleep(5000); login.login();
-		 */
+		
+		 LoginPage login = new LoginPage(driver);
+		 login.username(USERNAME);
+		 login.password(PASSWORD); 
+		 login.loginbutton();
+		 Thread.sleep(5000);
+		 
 
 		/* 
 		 * loginData.getUsername(); loginData.getPassword();
@@ -45,15 +48,15 @@ public class SanityTC_01 extends TestBase {
 		 */
 
 		// Login Page details
-		BeanFactory beanFactory = new BeanFactory();
+		/*BeanFactory beanFactory = new BeanFactory();
 		LoginData loginData = new LoginData();
 		beanFactory.loginCredentials(loginData);
 		
 		LoginPage login = new LoginPage(driver);
 		login.username(loginData.getUsername());
 		login.password(loginData.getPassword());
-		login.login();
-		Thread.sleep(5000);
+		login.loginbutton();
+		Thread.sleep(5000);*/
 		
 		// Dashboard Page details
 		Dashboard dashboard = new Dashboard(driver);
@@ -73,24 +76,17 @@ public class SanityTC_01 extends TestBase {
 		
 		//Create episode page details
 		CreateCMepisodePage createCMepisodePage = new CreateCMepisodePage(driver);
-		createCMepisodePage.addepisodedetails();
-		Assert.assertEquals(true, createCMepisodePage.verifyprogramadded(),"Program added Sucessfully");
-		createCMepisodePage.clicksave();
-		Assert.assertEquals(true, createCMepisodePage.verifyepidodeadded(),"Episode added Sucessfully");
+		createCMepisodePage.addEpisodeDetails();
+		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(),"Program added Sucessfully");
+		createCMepisodePage.clickSave();
+		Assert.assertEquals(true, createCMepisodePage.verifyEpidodeAdded(),"Episode added Sucessfully");
+		System.out.println("Verified creation of episode successfully");
 		
-	
+		
 		//Closing the browser
 		closeBrowser(driver);
 			
 
 	}
-
-
-	/*
-	 * @Test 
-	 * public void closeBrowser() { 
-	 * closeBrowser(driver);
-	 *  }
-	 */
 
 }

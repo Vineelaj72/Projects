@@ -21,7 +21,7 @@ public class MemberSearchPage extends WebElements{
 	
 	public void clickAdvSearch()
 	{
-		clickusingjs(advancedSearchlocator);
+		clickUsingJs(advancedSearchlocator);
 	}
 	public void groupname(String group) throws InterruptedException
 	{
@@ -35,14 +35,14 @@ public class MemberSearchPage extends WebElements{
 	}
 	public void enterJivaId(String jivaid) throws InterruptedException
 	{
-		clickusingjs(jivamemberidlocator);
+		clickUsingJs(jivamemberidlocator);
 		Thread.sleep(3000);
 		enterText(jivamemberidlocator, jivaid);
 	}
 		
 	public void clicksearch()
 	{
-		clickusingjs(searchlocator);
+		clickUsingJs(searchlocator);
 	}
 	
 }
