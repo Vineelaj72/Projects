@@ -8,12 +8,13 @@ import com.jiva.beanfactory.BeanFactory;
 import com.jiva.dao.LoginData;
 import com.jiva.pages.Dashboard;
 import com.jiva.pages.LoginPage;
+import com.jiva.pages.WorklistsPage;
 import com.jiva.utils.TestBase;
 
 public class WorklistsTC_02 extends TestBase{
 	WebDriver driver;
 
-	@Test(description = "Worklist episodes")
+	@Test(description = "Selects an episode from manage episodes and go to episode overview")
 	public void verify_WorklistsEpisodes() throws InterruptedException {
 		
 		//initialise browser and openurl
@@ -31,9 +32,13 @@ public class WorklistsTC_02 extends TestBase{
 		login.loginbutton();
 		Thread.sleep(5000);
 		
+		//Dashboard page details
 		Dashboard dashboard = new Dashboard(driver);
 		Assert.assertEquals(true, dashboard.verifyDashboardDisplayed(),"Logged in Sucessfully");
-		dashboard.clickWorklists();
+		String userprofilename = dashboard.getuserprofilename();
+		System.out.println("User Profile Name is "+userprofilename);
+		dashboard.clickMenu();
+		dashboard.clickManageEpisodes();
 		
 	}
 }

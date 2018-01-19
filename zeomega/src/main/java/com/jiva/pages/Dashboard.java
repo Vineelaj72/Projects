@@ -18,6 +18,7 @@ public class Dashboard extends WebElements{
 	By membersearchlocator = By.linkText("Member Search");
 	By worklistslocator = By.partialLinkText("Worklists");
 	By userprofilelocator = By.xpath("(//a[@class='dropdown-toggle'])[2]");
+	By manageepisodeslocator = By.linkText("Manage Episodes");
 	
 	
 	public void clickMenu()
@@ -30,6 +31,10 @@ public class Dashboard extends WebElements{
 	public void clickMemberSearch()
 	{
 		clickUsingJs(membersearchlocator);
+	}
+	public void clickManageEpisodes()
+	{
+		clickUsingJs(manageepisodeslocator);
 	}
 	
 	public boolean verifyDashboardDisplayed()

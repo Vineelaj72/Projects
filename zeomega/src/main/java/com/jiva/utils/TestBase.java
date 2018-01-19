@@ -52,12 +52,12 @@ public class TestBase implements Setup {
 	public DesiredCapabilities chromeProfileSetUp()
 	 {
 	  System.setProperty("webdriver.chrome.driver", CHROMEPATH);
-	  String downloadFilepath = getFilePath("Downloadspath");
+	  //String downloadFilepath = getFilePath("Downloadspath");
 	  HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 	  chromePrefs.put("credentials_enable_service", Boolean.valueOf(false));
 	        chromePrefs.put("profile.password_manager_enabled", Boolean.valueOf(false));
 	  chromePrefs.put("profile.default_content_settings.popups", 0);
-	  chromePrefs.put("download.default_directory", downloadFilepath);
+	  //chromePrefs.put("download.default_directory", downloadFilepath);
 	  ChromeOptions options = new ChromeOptions();
 	  HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
 	  options.setExperimentalOption("prefs", chromePrefs);
