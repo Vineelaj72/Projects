@@ -9,13 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">73,903</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">142,322</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.jiva.testcases.SanityTC_01</td><td><a href="#m0">verify_AddCMEpisodetoMember</a></td><td rowspan="1">1516072975880</td><td rowspan="1">73884</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.jiva.testcases.ZUflow</td><td><a href="#m0">verify_AddCMEpisodetoMember</a></td><td rowspan="1">1516333370621</td><td rowspan="1">142290</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.jiva.testcases.SanityTC_01#verify_AddCMEpisodetoMember</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: java.net.SocketException: Connection reset
+<h2>Default test</h2><h3 id="m0">com.jiva.testcases.ZUflow#verify_AddCMEpisodetoMember</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: java.net.SocketException: Connection reset
 Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;WKS22218&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+System info: host: &apos;WKS22218&apos;, ip: &apos;172.20.240.223&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
@@ -24,8 +24,8 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
 	at com.jiva.utils.WebElements.isDisplayed(WebElements.java:36)
-	at com.jiva.pages.CreateCMepisodePage.verifyepidodeadded(CreateCMepisodePage.java:44)
-	at com.jiva.testcases.SanityTC_01.verify_AddCMEpisodetoMember(SanityTC_01.java:79)
+	at com.jiva.pages.Dashboard.verifyDashboardDisplayed(Dashboard.java:42)
+	at com.jiva.testcases.ZUflow.verify_AddCMEpisodetoMember(ZUflow.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)

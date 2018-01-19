@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\vjayavarapu\AppData\Local\Temp\testng-eclipse--1410517173\testng-customsuite.xml</span>
+                    <span>C:\Users\vjayavarapu\AppData\Local\Temp\testng-eclipse--308712295\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.jiva.testcases.SanityTC_01" hash-for-method="verify_AddCMEpisodetoMember">verify_AddCMEpisodetoMember</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.jiva.testcases.ZUflow" hash-for-method="verify_AddCMEpisodetoMember">verify_AddCMEpisodetoMember</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,7 +120,7 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.jiva.testcases.SanityTC_01</span>
+              <span class="class-name">com.jiva.testcases.ZUflow</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -130,7 +130,7 @@
                   <span class="method-name">verify_AddCMEpisodetoMember</span>
                   <div class="stack-trace">org.openqa.selenium.WebDriverException: java.net.SocketException: Connection reset
 Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;WKS22218&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+System info: host: &apos;WKS22218&apos;, ip: &apos;172.20.240.223&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
@@ -139,8 +139,8 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
 	at com.jiva.utils.WebElements.isDisplayed(WebElements.java:36)
-	at com.jiva.pages.CreateCMepisodePage.verifyepidodeadded(CreateCMepisodePage.java:44)
-	at com.jiva.testcases.SanityTC_01.verify_AddCMEpisodetoMember(SanityTC_01.java:79)
+	at com.jiva.pages.Dashboard.verifyDashboardDisplayed(Dashboard.java:42)
+	at com.jiva.testcases.ZUflow.verify_AddCMEpisodetoMember(ZUflow.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -194,7 +194,7 @@ Caused by: java.net.SocketException: Connection reset
 
 </div> <!-- stack-trace -->
                   <em>
-(Add CM episode for active Jiva members)                  </em>
+(Add CM episode for active Jiva members and go to worklists)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -202,7 +202,7 @@ Caused by: java.net.SocketException: Connection reset
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\vjayavarapu\AppData\Local\Temp\testng-eclipse--1410517173\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\vjayavarapu\AppData\Local\Temp\testng-eclipse--308712295\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -211,7 +211,7 @@ Caused by: java.net.SocketException: Connection reset
 &lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.jiva.testcases.SanityTC_01&quot;/&gt;
+      &lt;class name=&quot;com.jiva.testcases.ZUflow&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -254,13 +254,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verify_AddCMEpisodetoMember')
-data.setCell(0, 2, 'com.jiva.testcases.SanityTC_01')
-data.setCell(0, 3, 73884);
+data.setCell(0, 2, 'com.jiva.testcases.ZUflow')
+data.setCell(0, 3, 142290);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -286,7 +286,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.jiva.testcases.SanityTC_01</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.jiva.testcases.ZUflow</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>

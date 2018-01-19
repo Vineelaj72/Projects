@@ -1,27 +1,30 @@
 package com.jiva.pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.jiva.testcases.ZUflow;
 import com.jiva.utils.WebElements;
 
 public class Episodeoverviewpage extends WebElements{
+
+	 private static Logger logger = Logger.getLogger(Episodeoverviewpage.class);
 
 	public Episodeoverviewpage(WebDriver driver1) {
 		super(driver1);
 	}
 	
-	By activitiesopenlocator = By.xpath("//button[@ng-click='routeActivityDataListing()']");
+	By activitiesopenlocator = By.xpath("//button[contains(@ng-click,'routeActivityDataListing()')]");
 	By activitynamelocator = By.xpath("//span[contains(text(),'Verbal consent to be received')]");
 	
-	public void openactivities()
+	public void openActivities()
 	{
 		clickUsingJs(activitiesopenlocator);
 	}
-	public void verifyactivityadded()
+	public String verifyactivityAdded()
 	{
-		String activityname = getText(activitynamelocator);
-		if(activityname=="Verbal consent to be received")
-			System.out.println();
+		return getText(activitynamelocator);
+		
 	}
 }

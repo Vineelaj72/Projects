@@ -33,7 +33,16 @@ public class WebElements {
 	}
 
 	public boolean isDisplayed(By locator) {
-		return driver.findElement(locator).isDisplayed();
+	boolean flag=false;
+		try{
+			
+			driver.findElement(locator).isDisplayed();
+			flag=true;
+		}
+		catch (Exception e) {
+			flag = false;
+		}
+		return flag;
 	}
 
 	public void clickUsingJs(By locator) {
