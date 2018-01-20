@@ -42,7 +42,7 @@ public class WorklistsTC_01 extends TestBase{
 		//Worklists page details
 		WorklistsPage worklists = new WorklistsPage(driver);
 		worklists.clickCCMreferral();
-		worklists.clickCMepisode();
+		//worklists.clickCMepisode();
 		worklists.assigntoself();
 		
 		

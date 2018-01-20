@@ -13,7 +13,7 @@ public interface Setup {
 	String PROFILENAME = "Jayavarapu, Vineela";
 	
 	String BROWSER="IE";
-	String JIVAID = "605824";
+	String JIVAID = "529760";
 	
 
 }

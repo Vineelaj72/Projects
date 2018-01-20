@@ -4,7 +4,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import com.jiva.testcases.ZUflow;
+import com.jiva.testcases.ZU_60_flow;
 import com.jiva.utils.WebElements;
 
 public class Episodeoverviewpage extends WebElements{

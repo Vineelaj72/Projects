@@ -2,6 +2,7 @@ package com.jiva.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Reporter;
 
 import com.jiva.utils.WebElements;
 
@@ -25,15 +26,20 @@ public class LoginPage extends WebElements {
 	 */
 	public void username(String sUsername) {
 		enterText(username, sUsername);
+		Reporter.log("Username Entered"+sUsername);
 	}
 
 	public void password(String spassword) {
 		enterText(password, spassword);
+		Reporter.log("Password Entered"+spassword);
+
 	}
 
 		
 	public void loginbutton() {
 		clickUsingJs(loginbutton);
+		Reporter.log("Login Button Clicked");
+
 	}
 	
 	/*public void verifyUsername()

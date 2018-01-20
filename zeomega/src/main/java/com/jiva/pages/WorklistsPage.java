@@ -1,12 +1,14 @@
 package com.jiva.pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.xml.sax.Locator;
 
 import com.jiva.utils.WebElements;
 
 public class WorklistsPage extends WebElements {
+
+	 private static Logger logger = Logger.getLogger(WorklistsPage.class);
 
 	public WorklistsPage(WebDriver driver1) {
 		super(driver1);
@@ -21,48 +23,53 @@ public class WorklistsPage extends WebElements {
 	By memberFirstNameLocator = By.xpath("//input[@placeholder='Member First Name']");
 	By searchLocator = By.xpath("//button[@title='Search Worklist']");
 	By advanceSearchLoctor = By.xpath("//button[contains(text(),'Advanced Search')]");
+	By csssel = By.cssSelector("strong");
 
 	public void clickAdvanceSearch() {
-		click(advanceSearchLoctor);
+		clickUsingJs(advanceSearchLoctor);
 	}
 
 	public void enterLastName(String lastname) {
 		enterText(memberlastNameLocator, lastname);
-		clickEnter(memberlastNameLocator);
+		clickUsingJs(csssel);
+
+		// clickEnter(memberlastNameLocator);
 	}
 
 	public void enterFirstName(String firstname) {
 		enterText(memberFirstNameLocator, firstname);
-		clickEnter(memberFirstNameLocator);
+		clickUsingJs(csssel);
+		// clickEnter(memberFirstNameLocator);
 
 	}
 
-	
-	public void clickCM(String sLastname)
+	public void clickCM(String sLastname) {
+		By cmlocator = By.xpath("//*[contains(text(),'" + sLastname + "')]/../../../..//trans-worklist-result/a[text()='CM']");
+		clickUsingJs(cmlocator);
+
+	}
+
+	public String getEpisodeID(String sLastname)
 	{
-		By cmlocator=By.xpath("//*[contains(text(),'"+sLastname+"')]/../../../..//trans-worklist-result/a[text()='CM']");
-		click(cmlocator);
+		logger.info("@getEpisodeID---lastname"+sLastname);
+		By episodeid = By.xpath("//*[contains(text(),'"+sLastname+"')]/../../../..//trans-worklist-result/a[contains(@ng-click,'Episode')]");
+		logger.info("getEpisodeID..."+getText(episodeid));
 		
+		return getText(episodeid);
+
 	}
-	
-	
-			public String getEpisodeID(String sLastname)
-			{
-				By episode= By.xpath("//*[contains(text(),'"+sLastname+"')]/../../../..//trans-worklist-result/a");	
-				return getText(episode);
-		
-			}
+
 	public void clickSearchButton() {
-		click(searchLocator);
+		clickUsingJs(searchLocator);
 	}
 
 	public void clickCCMreferral() {
 		clickUsingJs(ccmreferrallocator);
 	}
 
-	/*public void clickCMepisode() {
-		clickUsingJs(cmepisodelocator);
-	}*/
+	/*
+	 * public void clickCMepisode() { clickUsingJs(cmepisodelocator); }
+	 */
 
 	public void assigntoself() {
 		clickUsingJs(episodeassignlocator);
