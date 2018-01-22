@@ -17,6 +17,9 @@ public class Episodeoverviewpage extends WebElements{
 	
 	By activitiesopenlocator = By.xpath("//button[contains(@ng-click,'routeActivityDataListing()')]");
 	By activitynamelocator = By.xpath("//span[contains(text(),'Verbal consent to be received')]");
+	By workflowlocator = By.xpath("//button[contains(text(),'Workflow')]");
+	By activitieslinklocator = By.xpath("//a/span[contains(text(),'Activities')]");
+	
 	
 	public void openActivities()
 	{
@@ -26,5 +29,18 @@ public class Episodeoverviewpage extends WebElements{
 	{
 		return getText(activitynamelocator);
 		
+	}
+	public boolean verify_UTCLetterGenerated(String userProfileName) {
+		By correspondencerecordlocator = By.xpath("//span[contains(text(),'CM Unable To Reach')]/../../td/span[contains(text(),'"+userProfileName.split(",")[0].trim()+"')]");
+		logger.info("verify_OpenActivityRecordVisible"+isDisplayed(correspondencerecordlocator));
+		return isDisplayed(correspondencerecordlocator);
+	}
+	public void clickWorkflow()
+	{
+		clickUsingJs(workflowlocator);
+	}
+	public void clickActivities()
+	{
+		clickUsingJs(activitieslinklocator);
 	}
 }

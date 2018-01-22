@@ -50,7 +50,7 @@ public class SanityTC_02 extends TestBase{
 		MemberSearchPage memberSearchPage = new MemberSearchPage(driver);
 		memberSearchPage.clickAdvSearch();
 		memberSearchPage.enterJivaId(JIVAID);
-		memberSearchPage.clicksearch();
+		memberSearchPage.clickSearch();
 		
 		// Confirmation for Adding episode
 		

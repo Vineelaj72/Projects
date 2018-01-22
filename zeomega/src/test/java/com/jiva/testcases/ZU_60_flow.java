@@ -1,5 +1,7 @@
 package com.jiva.testcases;
 
+import java.util.Map;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -14,19 +16,21 @@ import com.jiva.pages.Episodeoverviewpage;
 import com.jiva.pages.LoginPage;
 import com.jiva.pages.MemberSearchPage;
 import com.jiva.pages.WorklistsPage;
+import com.jiva.utils.ReadFile;
 import com.jiva.utils.TestBase;
 
 public class ZU_60_flow extends TestBase {
 	private static Logger logger = Logger.getLogger(ZU_60_flow.class);
 	WebDriver driver;
 	private String sTestcaseName = null;
-
+	
 	@Test(description = "Add CM episode for active Jiva members and go to worklists-ZU 60 flow")
 	public void verify_AddCMEpisodetoMember() throws InterruptedException {
 
 		sTestcaseName = new Object() {
 		}.getClass().getEnclosingMethod().getName();
 		logger.info("Execution started for " + sTestcaseName);
+		//Map<String, String> sFileData = ReadFile.readtextFile(SFILENAME);
 
 		// initialise browser and openurl
 
@@ -48,6 +52,9 @@ public class ZU_60_flow extends TestBase {
 		Dashboard dashboard = new Dashboard(driver);
 		Assert.assertEquals(true, dashboard.verifyDashboardDisplayed(), "Logged in Sucessfully");
 		String userprofilename = dashboard.getuserprofilename();
+		
+		//Assert.assertEquals(true, sFileData.toString().contains(userprofilename.split(",")[0]));
+		
 		// System.out.println("User Profile Name is "+userprofilename);
 		logger.info("User Profile Name is " + userprofilename);
 		String[] UserLastname_Firstname = userprofilename.split(",");
@@ -61,7 +68,7 @@ public class ZU_60_flow extends TestBase {
 		MemberSearchPage memberSearchPage = new MemberSearchPage(driver);
 		memberSearchPage.clickAdvSearch();
 		memberSearchPage.enterJivaId(JIVAID);
-		memberSearchPage.clicksearch();
+		memberSearchPage.clickSearch();
 
 		// Confirmation for Adding episode
 
@@ -96,6 +103,7 @@ public class ZU_60_flow extends TestBase {
 		Thread.sleep(5000);
 		worklists.enterFirstName(MemberLastname_Firstname[1]);
 		worklists.clickSearchButton();
+		Thread.sleep(5000);
 		String cmEpisodeID = worklists.getEpisodeID(MemberLastname_Firstname[0]);
 		logger.info(cmEpisodeID);
 		worklists.clickCM(MemberLastname_Firstname[0]);
@@ -113,8 +121,8 @@ public class ZU_60_flow extends TestBase {
 		// Episode activities Page details
 
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
-		Assert.assertEquals(true, episodeactivitiespage.verify_OpenActivityRecordVisible(userprofilename),
-				"Open activity available");
+		Assert.assertEquals(true, episodeactivitiespage.verify_OpenInteractionRecordVisible(userprofilename),
+				"Open interaction available");
 		episodeactivitiespage.clickWheel();
 		episodeactivitiespage.clickAddInteraction();
 
@@ -137,11 +145,26 @@ public class ZU_60_flow extends TestBase {
 		// Add 2nd interaction details
 		addInteractionsPage.add2ndInteraction();
 		addInteractionsPage.clickSaveInteraction();
-		Assert.assertEquals(true, episodeactivitiespage.verify_ClosedActivityRecordVisible(userprofilename),
+		Assert.assertEquals(true, episodeactivitiespage.verify_ClosedInteractionRecordVisible(userprofilename),
+				"Closed interaction available");
+		
+		
+		episodeactivitiespage.clickCM();
+		Thread.sleep(10000);
+		//Assert.assertEquals(true,episodeoverviewpage.verify_UTCLetterGenerated(userprofilename),"UTC letter generated");
+		
+		episodeoverviewpage.clickWorkflow();
+		episodeoverviewpage.clickActivities();
+		episodeactivitiespage.clickAddActivity();
+		episodeactivitiespage.enterActivityDetails();
+		
+		Assert.assertEquals(true, episodeactivitiespage.verify_ActivityRecordVisible(userprofilename),
 				"Open activity available");
-
+		
+		
+		
 		// Closing the browser
-		closeBrowser(driver);
+		//closeBrowser(driver);
 
 	}
 

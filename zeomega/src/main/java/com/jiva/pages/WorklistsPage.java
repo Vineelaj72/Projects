@@ -44,16 +44,16 @@ public class WorklistsPage extends WebElements {
 	}
 
 	public void clickCM(String sLastname) {
-		By cmlocator = By.xpath("//*[contains(text(),'" + sLastname + "')]/../../../..//trans-worklist-result/a[text()='CM']");
+		By cmlocator = By.xpath("//*[contains(text(),'" +sLastname+ "')]/../../../..//trans-worklist-result/a[text()='CM']");
 		clickUsingJs(cmlocator);
 
 	}
 
 	public String getEpisodeID(String sLastname)
 	{
-		logger.info("@getEpisodeID---lastname"+sLastname);
+		logger.info("@getEpisodeID of... "+sLastname);
 		By episodeid = By.xpath("//*[contains(text(),'"+sLastname+"')]/../../../..//trans-worklist-result/a[contains(@ng-click,'Episode')]");
-		logger.info("getEpisodeID..."+getText(episodeid));
+		logger.info("episode id is..."+getText(episodeid));
 		
 		return getText(episodeid);
 

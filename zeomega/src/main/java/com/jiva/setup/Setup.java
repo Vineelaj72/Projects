@@ -13,7 +13,9 @@ public interface Setup {
 	String PROFILENAME = "Jayavarapu, Vineela";
 	
 	String BROWSER="IE";
-	String JIVAID = "529760";
+	String JIVAID = "506469";
+	String SFILENAME = "C:/Users/vjayavarapu/Desktop/textfilesample.txt";
+
 	
 
 }
@@ -21,3 +23,9 @@ public interface Setup {
 
 //taskkill /F /IM IEDriverServer.exe
 //taskkill /F /IM iexplore.exe
+
+
+
+//span[contains(text(),'CM Unable To Reach')]/../../td/span[contains(text(),'"+userprofilename.split(",")[0].trim()+"')]
+
+

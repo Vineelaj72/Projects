@@ -18,6 +18,8 @@ public class MemberSearchPage extends WebElements{
 	By jivamemberidlocator = By.name("I_CLAIMANT_ID");	
 	By groupsearchlocator = By.xpath("//input[@placeholder='Group Name']/../..//span/i[@class='fa fa-search']");
 	By searchlocator = By.xpath("(//button[@type='submit'])[2]");
+	By lastnamelocator = By.xpath("//input[@name='I_LAST_NAME']");
+	By firstnamelocator = By.xpath("//input[@name='I_FIRST_NAME']");
 	
 	public void clickAdvSearch()
 	{
@@ -40,9 +42,20 @@ public class MemberSearchPage extends WebElements{
 		enterText(jivamemberidlocator, jivaid);
 	}
 		
-	public void clicksearch()
+	public void clickSearch()
 	{
 		clickUsingJs(searchlocator);
 	}
-	
+	public void enterMemberLastname(String sLastname) throws InterruptedException
+	{
+		
+		enterText(lastnamelocator, sLastname);
+		clickEnter(lastnamelocator);
+	}
+	public void enterMemberFirstname(String sFirstname) throws InterruptedException
+	{
+		enterText(firstnamelocator, sFirstname);
+		clickEnter(firstnamelocator);
+		
+	}
 }
