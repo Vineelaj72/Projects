@@ -84,11 +84,11 @@ public class WebElements {
 	
 	}
 	
-	public void wait(Long time)
+	public void sleep(int time)
 	{
 		try {
 			Thread.sleep(time);
-		} catch (InterruptedException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}

@@ -27,9 +27,10 @@ public class CreateCMepisodePage extends WebElements{
 	
 	public void addEpisodeDetails() throws InterruptedException
 	{
-		dropdownSelect(episodestatusdd, "Referral");
-		dropdownSelect(assigntodd, "CCM Referral");
+		dropdownSelect(episodestatusdd, "Referral");		
 		dropdownSelect(acuityleveldd, "2");
+		sleep(5000);
+		dropdownSelect(assigntodd, "CCM Referral");
 		dropdownSelect(programnamelocator, "Complex Case Management");
 		Thread.sleep(5000);
 		dropdownSelect(programassigntolocator,"Jayavarapu, Vineela"); //doubt

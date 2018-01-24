@@ -24,6 +24,9 @@ public class Episodeactivitiespage extends WebElements {
 	By activitytypesdd = By.xpath("//select[contains(@name,'activitytypes')]");
 	By saveactivitylocator = By.xpath("(//button[contains(text(),'Save')])[1]");
 	By cssselector = By.cssSelector("strong");
+	By modifyactivitylocator = By.xpath("//span[contains(text(),'Modify Activity')]");
+	By activitystatusdd = By.xpath("//select[contains(@name,'activitystatus')]");
+	
 	
 	
 	public boolean verify_OpenInteractionRecordVisible(String userProfileName) {
@@ -40,14 +43,21 @@ public class Episodeactivitiespage extends WebElements {
 	{
 		clickUsingJs(addinteractionlocator);
 	}
+	public void clickModifyActivity()
+	{
+		clickUsingJs(modifyactivitylocator);
+	}
 	public void clickClosedActivities()
 	{
 		clickUsingJs(closedactivitieslocator);
 	}
+	
 	public boolean verify_ClosedInteractionRecordVisible(String userProfileName) {
 		By interactionrecordlocator = By.xpath("//*[contains(text(),'Verbal consent to be received')]/..//td[contains(text(),'"+userProfileName.split(",")[0].trim()+"')]");
+		logger.info("verify_ClosedInteractionRecordVisible "+isDisplayed(interactionrecordlocator));
 		return isDisplayed(interactionrecordlocator);
 	}
+	
 	public void clickCM()
 	{
 		clickUsingJs(cmlocator);
@@ -58,16 +68,34 @@ public class Episodeactivitiespage extends WebElements {
 	}
 	public void enterActivityDetails() throws InterruptedException
 	{
+		dropdownSelect(activitytypesdd, "Follow-up");
 		enterText(activitieslocator,"Review for Contact");
 		clickUsingJs(cssselector);
-		wait(5000);
-		dropdownSelect(activitytypesdd, "Follow-up");
+		sleep(5000);
 		clickUsingJs(saveactivitylocator);
 	}
 	
-	public boolean verify_ActivityRecordVisible(String userProfileName) {
+	public boolean verify_OpenActivityRecordVisible(String userProfileName) {
 		By activityrecordlocator = By.xpath("//*[contains(text(),'Review for Contact')]/..//td[contains(text(),'"+userProfileName.split(",")[0].trim()+"')]");
-		logger.info("verify_ActivityRecordVisible in OpenActivities tab"+isDisplayed(activityrecordlocator));
+		logger.info("verify_OpenActivityRecordVisible in Open Activities tab "+isDisplayed(activityrecordlocator));
 		return isDisplayed(activityrecordlocator);
 	}
+	
+	public void modifyActivityDetails()
+	{
+		dropdownSelect(activitystatusdd, "Closed");
+		clickUsingJs(saveactivitylocator);
+	}
+	
+	public boolean verify_ClosedActivityRecordVisible(String userProfileName) {
+		By activityrecordlocator = By.xpath("//*[contains(text(),'Review for Contact')]/..//td[contains(text(),'"+userProfileName.split(",")[0].trim()+"')]");
+		logger.info("verify_ClosedActivityRecordVisible in Closed Activities tab "+isDisplayed(activityrecordlocator));
+		return isDisplayed(activityrecordlocator);
+	}
+	public boolean verifyEpisodeStatus_Closed(String userProfileName) {
+		By closedepisoderecordlocator = By.xpath("//span[contains(text(),'Closed')]/../../../../td/div/span/span[contains(text(),'"+userProfileName.split(",")[0].trim()+"')]");
+		logger.info("verify the status of Episode as Closed "+isDisplayed(closedepisoderecordlocator));
+		return isDisplayed(closedepisoderecordlocator);
+	}
+	
 }

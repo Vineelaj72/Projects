@@ -1,7 +1,5 @@
 package com.jiva.testcases;
 
-import java.util.Map;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Sleeper;
@@ -9,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.jiva.pages.AddInteractionsPage;
+import com.jiva.pages.CalenderPage;
 import com.jiva.pages.ChangeStatusPage;
 import com.jiva.pages.ConfirmAddepisodePage;
 import com.jiva.pages.CreateCMepisodePage;
@@ -16,23 +15,22 @@ import com.jiva.pages.Dashboard;
 import com.jiva.pages.Episodeactivitiespage;
 import com.jiva.pages.Episodeoverviewpage;
 import com.jiva.pages.LoginPage;
+import com.jiva.pages.MemberOverviewPage;
 import com.jiva.pages.MemberSearchPage;
 import com.jiva.pages.WorklistsPage;
-import com.jiva.utils.ReadFile;
 import com.jiva.utils.TestBase;
 
-public class ZU_60_flow extends TestBase {
-	private static Logger logger = Logger.getLogger(ZU_60_flow.class);
+public class ZU_Calender_flow extends TestBase{
+	private static Logger logger = Logger.getLogger(ZU_Calender_flow.class);
 	WebDriver driver;
 	private String sTestcaseName = null;
-	
-	@Test(description = "ZU-60 in Jira without Calender flow")
-	public void verify_ZU_60_flow() throws InterruptedException {
+
+	@Test(description = "Add CM episode for active Jiva members and go to worklists-ZU 60 flow")
+	public void verify_ZU_Calender_flow() throws InterruptedException {
 
 		sTestcaseName = new Object() {
 		}.getClass().getEnclosingMethod().getName();
 		logger.info("Execution started for " + sTestcaseName);
-		//Map<String, String> sFileData = ReadFile.readtextFile(SFILENAME);
 
 		// initialise browser and openurl
 
@@ -54,9 +52,6 @@ public class ZU_60_flow extends TestBase {
 		Dashboard dashboard = new Dashboard(driver);
 		Assert.assertEquals(true, dashboard.verifyDashboardDisplayed(), "Logged in Sucessfully");
 		String userprofilename = dashboard.getuserprofilename();
-		
-		//Assert.assertEquals(true, sFileData.toString().contains(userprofilename.split(",")[0]));
-		
 		// System.out.println("User Profile Name is "+userprofilename);
 		logger.info("User Profile Name is " + userprofilename);
 		String[] UserLastname_Firstname = userprofilename.split(",");
@@ -117,6 +112,7 @@ public class ZU_60_flow extends TestBase {
 
 		Assert.assertEquals(episodeoverviewpage.verifyactivityAdded(), "Verbal consent to be received",
 				"Activity Added to the list");
+		Thread.sleep(10000);
 
 		episodeoverviewpage.openActivities();
 
@@ -124,25 +120,39 @@ public class ZU_60_flow extends TestBase {
 
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
 		Assert.assertEquals(true, episodeactivitiespage.verify_OpenInteractionRecordVisible(userprofilename),
-				"Open interaction available");
-		
+				"Open activity available");
 		episodeactivitiespage.clickWheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 1st interaction details
-		
 		AddInteractionsPage addInteractionsPage = new AddInteractionsPage(driver);
 		addInteractionsPage.add1stInteractiondetails();
 		addInteractionsPage.clickSaveInteraction();
 
 		// Calender Page details
-		/*
-		 * dashboard.clickCalender(); CalenderPage calenderPage = new
-		 * CalenderPage(driver); Assert.assertEquals(true,
-		 * calenderPage.verifyCalenderRecord(memberfullname)
-		 * ,"Member record appeared in Calender");
-		 */
+		dashboard.clickCalender();
+		CalenderPage calenderPage = new CalenderPage(driver);
+		Assert.assertEquals(true, calenderPage.verifyCalenderRecord(memberfullname),
+				"Member record appeared in Calender");
 
+		dashboard.clickMenu();
+		//dashboard.clickManageEpisodes();
+		dashboard.clickMemberSearch();
+		memberSearchPage.clickAdvSearch();
+		memberSearchPage.enterMemberLastname(MemberLastname_Firstname[0]);
+		memberSearchPage.enterMemberFirstname(MemberLastname_Firstname[1]);
+		memberSearchPage.clickSearch();
+		
+		confirmAddepisodePage.clickRedirecttoMCV();
+		
+		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);
+		memberOverviewPage.clickGear(cmEpisodeID);
+		memberOverviewPage.openEpisode();
+		
+		memberOverviewPage.sleep(5000);
+		
+		episodeoverviewpage.openActivities();
+		
 		episodeactivitiespage.clickWheel();
 		episodeactivitiespage.clickAddInteraction();
 
@@ -189,6 +199,6 @@ public class ZU_60_flow extends TestBase {
 		// Closing the browser
 		//closeBrowser(driver);
 
-	}
 
+	}
 }

@@ -15,6 +15,7 @@ public class ConfirmAddepisodePage extends WebElements {
 	By addepisodelocator = By.xpath("//*/j-label[contains(text(),'Episode')]");
 	By cmlocator = By.xpath("//span[contains(text(),'Case Management')]");
 	By membernameloactor = By.xpath("//p[@class='ng-binding']");
+	By redirecttoMCVlocator = By.xpath("//button[contains(text(),'Redirect to')]");
 	
 	public void clickAddepisode() throws InterruptedException
 	{
@@ -32,5 +33,10 @@ public class ConfirmAddepisodePage extends WebElements {
 	{
 		return getText(membernameloactor);
 		
+	}
+	
+	public void clickRedirecttoMCV()
+	{
+		clickUsingJs(redirecttoMCVlocator);
 	}
 }

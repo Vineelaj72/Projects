@@ -47,6 +47,6 @@ public class ReadTextFile_TC extends TestBase{
 		String userprofilename = dashboard.getuserprofilename();
 		logger.info("Split value "+userprofilename.split(",")[0]);
 		
-		Assert.assertEquals(true, sFileData.toString().contains(userprofilename.split(",")[0].toLowerCase()));
+		Assert.assertEquals(true, sFileData.toString().contains(userprofilename.split(",")[0].toLowerCase()));  //check the field in UI available and matches with data in file
 	}
 }

@@ -20,6 +20,7 @@ public class MemberSearchPage extends WebElements{
 	By searchlocator = By.xpath("(//button[@type='submit'])[2]");
 	By lastnamelocator = By.xpath("//input[@name='I_LAST_NAME']");
 	By firstnamelocator = By.xpath("//input[@name='I_FIRST_NAME']");
+	By csssel = By.cssSelector("strong");
 	
 	public void clickAdvSearch()
 	{
@@ -50,12 +51,12 @@ public class MemberSearchPage extends WebElements{
 	{
 		
 		enterText(lastnamelocator, sLastname);
-		clickEnter(lastnamelocator);
+		clickUsingJs(csssel);
 	}
 	public void enterMemberFirstname(String sFirstname) throws InterruptedException
 	{
 		enterText(firstnamelocator, sFirstname);
-		clickEnter(firstnamelocator);
+		clickUsingJs(csssel);
 		
 	}
 }

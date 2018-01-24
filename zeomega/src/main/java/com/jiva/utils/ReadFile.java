@@ -9,7 +9,7 @@ import java.util.Map;
 public class ReadFile {
 
 	public static Map<String, String> readtextFile(String sFilename) {
-		Map<String, String> readFile = new HashMap<String, String>();
+		Map<String, String> readFilemap = new HashMap<String, String>();
 		BufferedReader br = null;
 		FileReader fr = null;
 
@@ -19,17 +19,24 @@ public class ReadFile {
 			fr = new FileReader(sFilename);
 			br = new BufferedReader(fr);
 
-			String sCurrentLine;
-			String fileData[];
-			int lineno = 1;
-			while ((sCurrentLine = br.readLine()) != null) {
-				System.out.println(sCurrentLine);
-				fileData = sCurrentLine.split("\\|\\|");
-				System.out.println(fileData[0]);
-				readFile.put("FirstName" + lineno, fileData[0].split(",")[0]);
-				readFile.put("LastName" + lineno, fileData[0].split(",")[1]);
-				readFile.put("Jivaid" + lineno, fileData[1]);
-				readFile.put("CoverageId" + lineno, fileData[2]);
+			String currentLine;
+			String fileData[];   //values stored after split by pipe
+			int lineno = 1;	// key to embed data into map
+			while ((currentLine = br.readLine()) != null) {
+				//System.out.println(sCurrentLine);
+				fileData = currentLine.split("\\|\\|");
+				//System.out.println(fileData[0]);
+				String[] fullname = fileData[0].split(",");
+				readFilemap.put("MemberFullname"+ lineno, fileData[0]);
+				readFilemap.put("MemberLastName" + lineno, fullname[0]);				
+				readFilemap.put("MemberFirstName" + lineno, fullname[1]);
+				readFilemap.put("JivaId" + lineno, fileData[1]);
+				readFilemap.put("CoverageId" + lineno, fileData[2]);
+				System.out.println(readFilemap.get("MemberFullname"+ lineno));
+				System.out.println(fullname[0]);
+				System.out.println(fullname[1]);
+				System.out.println(readFilemap.get("JivaId" + lineno));
+				System.out.println(readFilemap.get("CoverageId" + lineno));
 				lineno++;
 			}
 
@@ -53,13 +60,16 @@ public class ReadFile {
 
 			}
 		}
-		return readFile;
+		return readFilemap;
 	}
 
 	public static void main(String[] args) {
 		String sFilename = "C:/Users/vjayavarapu/Desktop/textfilesample.txt";
-	//	ReadFile file = new ReadFile();
+			//	ReadFile file = new ReadFile();
 		Map<String, String> sFileData = ReadFile.readtextFile(sFilename);
+		System.out.println("");
+		System.out.println(sFileData.get("CoverageId1"));
+		
 		/*System.out.println("Firstname" + sFileData.get("FirstName"));
 		System.out.println("LastName" + sFileData.get("LastName"));
 		System.out.println("Jivaid" + sFileData.get("Jivaid"));

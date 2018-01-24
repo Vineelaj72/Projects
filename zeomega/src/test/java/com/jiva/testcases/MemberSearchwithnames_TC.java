@@ -11,9 +11,9 @@ import com.jiva.pages.MemberSearchPage;
 import com.jiva.utils.TestBase;
 import com.jiva.utils.WebElements;
 
-public class Searchwithnames_TC extends TestBase{
+public class MemberSearchwithnames_TC extends TestBase{
 
-	private static Logger logger = Logger.getLogger(Searchwithnames_TC.class);
+	private static Logger logger = Logger.getLogger(MemberSearchwithnames_TC.class);
 	WebDriver driver;
 	private String sTestcaseName = null;
 
