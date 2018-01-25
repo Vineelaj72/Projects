@@ -15,6 +15,7 @@ public class MemberOverviewPage extends WebElements {
 	}
 	
 	By openepisodelinklocator = By.xpath("//li/a/span[contains(text(),'Open')]");
+	By namelocator = By.xpath("//a/span[contains(@ng-bind,'memberScope.member_details.mbr_name')]");
 	
 	public void clickGear(String episodeId) {
 		By gearlocator = By.xpath("//div/div/div/div/div/div/span[contains(text(),'"+episodeId+"')]/../../../../../../../div/a/i[contains(@class,'fa fa-gear')]");
@@ -27,5 +28,8 @@ public class MemberOverviewPage extends WebElements {
 	{
 		clickUsingJs(openepisodelinklocator);
 	}
-
+	public String getMemberName()
+	{
+		return getText(namelocator);
+	}
 }

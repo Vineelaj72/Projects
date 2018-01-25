@@ -3,11 +3,11 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.jiva.testcases.ZU_60_flow">
+      <class name="com.jiva.testcases.DemographicDataValidation_TC">
         <methods>
-          <include name="verify_AddCMEpisodetoMember"/>
+          <include name="verify_screenDataWithFileData"/>
         </methods>
-      </class> <!-- com.jiva.testcases.ZU_60_flow -->
+      </class> <!-- com.jiva.testcases.DemographicDataValidation_TC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

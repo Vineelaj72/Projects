@@ -184,3 +184,530 @@
 2018-01-20 11:46:15,670 [main] INFO  com.jiva.pages.WorklistsPage - getEpisodeID...9392
 2018-01-20 11:46:15,903 [main] INFO  com.jiva.testcases.ZU_60_flow - 9392
 2018-01-20 11:46:21,375 [main] INFO  com.jiva.pages.Episodeactivitiespage - @@@--verify_OpenActivityRecordVisibletrue
+2018-01-20 21:40:55,218 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-20 21:41:17,300 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_screenDataWithFileData
+2018-01-20 21:43:40,035 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_screenDataWithFileData
+2018-01-20 21:44:01,446 [main] INFO  com.jiva.testcases.ZU_60_flow - Split value Jayavarapu
+2018-01-20 21:45:40,878 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_screenDataWithFileData
+2018-01-20 21:46:02,425 [main] INFO  com.jiva.testcases.ZU_60_flow - Split value Jayavarapu
+2018-01-22 09:46:37,056 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_screenDataWithFileData
+2018-01-22 09:55:25,720 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 09:55:46,277 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - User Profile Name is Jayavarapu, Vineela
+2018-01-22 09:55:46,277 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Last name Jayavarapu
+2018-01-22 09:55:46,277 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - First name  Vineela
+2018-01-22 09:55:52,079 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Member Full Name is Baldwin, Donna
+2018-01-22 09:55:52,079 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Member Last name Baldwin
+2018-01-22 09:55:52,079 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Member First name  Donna
+2018-01-22 09:56:11,024 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Verified creation of episode successfully
+2018-01-22 11:02:26,904 [main] INFO  com.jiva.testcases.Searchwithnames_TC - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 11:04:30,952 [main] INFO  com.jiva.testcases.Searchwithnames_TC - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 11:04:50,416 [main] INFO  com.jiva.testcases.Searchwithnames_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-22 11:04:50,416 [main] INFO  com.jiva.testcases.Searchwithnames_TC - Last name Jayavarapu
+2018-01-22 11:04:50,418 [main] INFO  com.jiva.testcases.Searchwithnames_TC - First name  Vineela
+2018-01-22 11:06:13,094 [main] INFO  com.jiva.testcases.Searchwithnames_TC - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 11:06:32,685 [main] INFO  com.jiva.testcases.Searchwithnames_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-22 11:06:32,685 [main] INFO  com.jiva.testcases.Searchwithnames_TC - Last name Jayavarapu
+2018-01-22 11:06:32,685 [main] INFO  com.jiva.testcases.Searchwithnames_TC - First name  Vineela
+2018-01-22 11:08:25,593 [main] INFO  com.jiva.testcases.Searchwithnames_TC - Execution started for verify_MemberSearchwithnames
+2018-01-22 11:08:45,339 [main] INFO  com.jiva.testcases.Searchwithnames_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-22 11:08:45,339 [main] INFO  com.jiva.testcases.Searchwithnames_TC - Last name Jayavarapu
+2018-01-22 11:08:45,341 [main] INFO  com.jiva.testcases.Searchwithnames_TC - First name  Vineela
+2018-01-22 14:12:31,239 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 14:12:31,255 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_screenDataWithFileData
+2018-01-22 14:14:14,390 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 14:14:33,994 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 14:14:33,994 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 14:14:33,996 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 14:14:39,995 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Baldwin, Michael
+2018-01-22 14:14:39,995 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Baldwin
+2018-01-22 14:14:39,997 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Michael
+2018-01-22 14:14:59,150 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 14:15:12,415 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID---lastnameBaldwin
+2018-01-22 14:25:44,204 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 14:26:03,985 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 14:26:03,985 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 14:26:03,987 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 14:26:10,311 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Ball, Ruby
+2018-01-22 14:26:10,311 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Ball
+2018-01-22 14:26:10,314 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Ruby
+2018-01-22 14:26:29,229 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 14:27:12,886 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Ball
+2018-01-22 14:27:13,016 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9398
+2018-01-22 14:27:17,472 [main] INFO  com.jiva.testcases.ZU_60_flow - 9398
+2018-01-22 14:27:21,203 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible true
+2018-01-22 14:28:27,664 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_OpenActivityRecordVisiblefalse
+2018-01-22 14:44:24,500 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 14:44:44,304 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 14:44:44,304 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 14:44:44,306 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 14:44:50,491 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Ballard Jr, Marcus
+2018-01-22 14:44:50,493 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Ballard Jr
+2018-01-22 14:44:50,493 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Marcus
+2018-01-22 14:45:09,411 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 14:45:22,997 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Ballard Jr
+2018-01-22 14:50:08,168 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 14:50:27,817 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 14:50:27,817 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 14:50:27,820 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 14:50:33,764 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Banas Jr, Louis
+2018-01-22 14:50:33,764 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Banas Jr
+2018-01-22 14:50:33,767 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Louis
+2018-01-22 14:50:52,839 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 14:51:17,877 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Banas Jr
+2018-01-22 14:51:28,859 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9403
+2018-01-22 14:51:37,878 [main] INFO  com.jiva.testcases.ZU_60_flow - 9403
+2018-01-22 14:52:14,500 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible true
+2018-01-22 14:53:30,640 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_OpenActivityRecordVisibletrue
+2018-01-22 15:44:28,612 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 15:44:48,642 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 15:44:48,642 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 15:44:48,642 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 15:44:54,564 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Banguel, Jessie
+2018-01-22 15:44:54,564 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Banguel
+2018-01-22 15:44:54,567 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Jessie
+2018-01-22 15:45:13,549 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 15:45:26,760 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Banguel
+2018-01-22 15:47:35,318 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 15:47:55,178 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 15:47:55,178 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 15:47:55,181 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 15:48:01,437 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Banisoleiman, Shekoufeh
+2018-01-22 15:48:01,437 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Banisoleiman
+2018-01-22 15:48:01,439 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Shekoufeh
+2018-01-22 15:49:11,163 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 15:49:30,850 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 15:49:30,850 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 15:49:30,850 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 15:49:37,153 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Banks, John
+2018-01-22 15:49:37,153 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Banks
+2018-01-22 15:49:37,153 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  John
+2018-01-22 15:49:55,940 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 15:50:22,736 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Banks
+2018-01-22 15:50:25,426 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9405
+2018-01-22 15:50:29,287 [main] INFO  com.jiva.testcases.ZU_60_flow - 9405
+2018-01-22 15:50:49,405 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible true
+2018-01-22 15:51:59,159 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_OpenActivityRecordVisibletrue
+2018-01-22 15:56:09,854 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 15:56:29,259 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 15:56:29,259 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 15:56:29,260 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 15:56:35,156 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Bankston, Helen
+2018-01-22 15:56:35,157 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Bankston
+2018-01-22 15:56:35,157 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Helen
+2018-01-22 15:56:54,495 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 15:57:12,789 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Bankston
+2018-01-22 15:57:12,957 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9406
+2018-01-22 15:57:13,085 [main] INFO  com.jiva.testcases.ZU_60_flow - 9406
+2018-01-22 15:57:16,791 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible true
+2018-01-22 15:58:26,737 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_OpenActivityRecordVisiblefalse
+2018-01-22 16:12:33,033 [main] INFO  com.jiva.testcases.ReadTextFile_TC - Execution started for verify_screenDataWithFileData
+2018-01-22 16:24:03,757 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 16:24:23,444 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 16:24:23,444 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 16:24:23,444 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 16:24:29,745 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Bankston, Lucille
+2018-01-22 16:24:29,745 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Bankston
+2018-01-22 16:24:29,749 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Lucille
+2018-01-22 16:24:49,175 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 16:25:08,287 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Bankston
+2018-01-22 16:25:08,492 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...
+2018-01-22 16:25:08,599 [main] INFO  com.jiva.testcases.ZU_60_flow - 
+2018-01-22 16:25:11,731 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible true
+2018-01-22 16:26:18,874 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_OpenActivityRecordVisiblefalse
+2018-01-22 16:30:20,583 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 16:30:40,025 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 16:30:40,025 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 16:30:40,028 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 16:30:45,898 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Bankston, Ruby
+2018-01-22 16:30:45,898 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Bankston
+2018-01-22 16:30:45,899 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Ruby
+2018-01-22 16:31:04,655 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 16:31:23,070 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Bankston
+2018-01-22 16:31:23,244 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9409
+2018-01-22 16:31:23,354 [main] INFO  com.jiva.testcases.ZU_60_flow - 9409
+2018-01-22 16:31:27,039 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible true
+2018-01-22 16:44:25,323 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 16:45:03,539 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 16:45:03,539 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 16:45:03,541 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 16:45:09,622 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Bankston jr, Cecil
+2018-01-22 16:45:09,622 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Bankston jr
+2018-01-22 16:45:09,624 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Cecil
+2018-01-22 16:45:28,759 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 16:45:47,365 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Bankston jr
+2018-01-22 16:45:47,532 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9410
+2018-01-22 16:45:47,641 [main] INFO  com.jiva.testcases.ZU_60_flow - 9410
+2018-01-22 16:45:50,706 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible true
+2018-01-22 16:49:43,047 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 16:50:20,459 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 16:50:20,459 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 16:50:20,463 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 16:50:26,629 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Bankston Jr, Edward
+2018-01-22 16:50:26,629 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Bankston Jr
+2018-01-22 16:50:26,631 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Edward
+2018-01-22 16:50:45,813 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 16:51:09,502 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Bankston Jr
+2018-01-22 16:51:10,797 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9411
+2018-01-22 16:51:13,349 [main] INFO  com.jiva.testcases.ZU_60_flow - 9411
+2018-01-22 16:51:19,115 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible true
+2018-01-22 16:55:47,499 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 16:56:25,127 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 16:56:25,127 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 16:56:25,129 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 16:56:32,112 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Bankston Jr, Wilson
+2018-01-22 16:56:32,112 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Bankston Jr
+2018-01-22 16:56:32,115 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Wilson
+2018-01-22 16:57:29,818 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 16:58:07,031 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 16:58:07,031 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 16:58:07,033 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 16:58:13,682 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Barbee, Joyce
+2018-01-22 16:58:13,682 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Barbee
+2018-01-22 16:58:13,685 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Joyce
+2018-01-22 16:58:35,048 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 16:58:53,545 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Barbee
+2018-01-22 16:58:53,736 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9412
+2018-01-22 16:58:53,862 [main] INFO  com.jiva.testcases.ZU_60_flow - 9412
+2018-01-22 16:58:58,420 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-22 17:02:43,590 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 17:03:20,326 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 17:03:20,326 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 17:03:20,328 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 17:03:26,285 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Barbee Jr, Benjamin
+2018-01-22 17:03:26,285 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Barbee Jr
+2018-01-22 17:03:26,288 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Benjamin
+2018-01-22 17:03:45,275 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 17:04:03,777 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Barbee Jr
+2018-01-22 17:04:03,967 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9413
+2018-01-22 17:04:04,076 [main] INFO  com.jiva.testcases.ZU_60_flow - 9413
+2018-01-22 17:04:07,113 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-22 17:06:39,463 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 17:07:19,493 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 17:07:19,493 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 17:07:19,493 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 17:07:25,919 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Barineau, David
+2018-01-22 17:07:25,919 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Barineau
+2018-01-22 17:07:25,921 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  David
+2018-01-22 17:07:44,767 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 17:08:02,833 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Barineau
+2018-01-22 17:08:03,028 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9414
+2018-01-22 17:08:03,137 [main] INFO  com.jiva.testcases.ZU_60_flow - 9414
+2018-01-22 17:08:06,402 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-22 17:09:42,153 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 17:10:20,253 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 17:10:20,253 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 17:10:20,255 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 17:10:26,624 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Barish, Michael
+2018-01-22 17:10:26,624 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Barish
+2018-01-22 17:10:26,626 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Michael
+2018-01-22 17:10:45,707 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 17:11:03,666 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Barish
+2018-01-22 17:11:03,819 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9415
+2018-01-22 17:11:03,965 [main] INFO  com.jiva.testcases.ZU_60_flow - 9415
+2018-01-22 17:11:07,760 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-22 19:23:00,199 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 20:15:51,683 [main] INFO  com.jiva.testcases.ReadTextFile_TC - Execution started for verify_screenDataWithFileData
+2018-01-22 20:31:39,208 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 20:32:00,896 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 20:32:00,897 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 20:32:00,897 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 20:46:17,831 [main] INFO  com.jiva.testcases.ReadTextFile_TC - Execution started for verify_screenDataWithFileData
+2018-01-22 20:46:38,523 [main] INFO  com.jiva.testcases.ReadTextFile_TC - Split value Jayavarapu
+2018-01-22 21:20:16,216 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 21:20:37,319 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 21:20:37,320 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 21:20:37,320 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 21:20:45,262 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Barnard, Nella
+2018-01-22 21:20:45,263 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Barnard
+2018-01-22 21:20:45,263 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Nella
+2018-01-22 21:21:05,343 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 21:21:24,786 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Barnard
+2018-01-22 21:21:25,014 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9416
+2018-01-22 21:21:25,140 [main] INFO  com.jiva.testcases.ZU_60_flow - 9416
+2018-01-22 21:21:29,729 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-22 21:22:47,134 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_OpenActivityRecordVisiblefalse
+2018-01-22 21:34:18,100 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 21:34:39,089 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 21:34:39,090 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 21:34:39,090 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 21:34:46,491 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Barnes, Eddie
+2018-01-22 21:34:46,492 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Barnes
+2018-01-22 21:34:46,492 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Eddie
+2018-01-22 21:35:07,588 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 21:35:26,974 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Barnes
+2018-01-22 21:35:27,220 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9417
+2018-01-22 21:35:27,431 [main] INFO  com.jiva.testcases.ZU_60_flow - 9417
+2018-01-22 21:35:32,312 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-22 21:36:08,690 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_OpenActivityRecordVisibletrue
+2018-01-22 21:37:53,317 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 21:38:35,647 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 21:38:57,110 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 21:38:57,110 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 21:38:57,110 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 21:39:04,527 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Barnett, John
+2018-01-22 21:39:04,528 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Barnett
+2018-01-22 21:39:04,528 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  John
+2018-01-22 21:39:24,970 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 21:39:44,734 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Barnett
+2018-01-22 21:39:44,982 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9418
+2018-01-22 21:39:45,156 [main] INFO  com.jiva.testcases.ZU_60_flow - 9418
+2018-01-22 21:39:49,617 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-22 21:41:12,539 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_OpenActivityRecordVisiblefalse
+2018-01-22 21:49:56,864 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 21:50:17,924 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 21:50:17,924 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 21:50:17,925 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 21:50:24,852 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Bazer Jr, Merle
+2018-01-22 21:50:24,853 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Bazer Jr
+2018-01-22 21:50:24,853 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Merle
+2018-01-22 21:50:45,458 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 21:51:04,765 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Bazer Jr
+2018-01-22 21:51:05,002 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9419
+2018-01-22 21:51:05,212 [main] INFO  com.jiva.testcases.ZU_60_flow - 9419
+2018-01-22 21:51:10,496 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-22 21:51:56,199 [main] INFO  com.jiva.pages.Episodeoverviewpage - By.xpath: //span[contains(text(),'CM Unable To Reach')]/../../td/span[contains(text(),'Jayavarapu')]
+2018-01-22 21:52:46,554 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_OpenActivityRecordVisibletrue
+2018-01-22 21:53:26,095 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ActivityRecordVisible in OpenActivities tabtrue
+2018-01-22 21:54:42,354 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 21:55:03,273 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 21:55:03,274 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 21:55:03,275 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 21:55:10,809 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Bazille, Sheron
+2018-01-22 21:55:10,809 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Bazille
+2018-01-22 21:55:10,810 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Sheron
+2018-01-22 21:56:01,583 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 21:56:20,599 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Bazille
+2018-01-22 21:56:20,819 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9420
+2018-01-22 21:56:21,027 [main] INFO  com.jiva.testcases.ZU_60_flow - 9420
+2018-01-22 21:56:25,644 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-22 21:56:57,341 [main] INFO  com.jiva.pages.Episodeoverviewpage - By.xpath: //span[contains(text(),'CM Unable To Reach')]/../../td/span[contains(text(),'Jayavarapu')]
+2018-01-22 21:57:21,350 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_OpenActivityRecordVisibletrue
+2018-01-22 21:57:31,143 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ActivityRecordVisible in OpenActivities tabtrue
+2018-01-22 22:02:02,302 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-22 22:02:22,865 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-22 22:02:22,865 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-22 22:02:22,866 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-22 22:02:30,600 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Beadle, Laura
+2018-01-22 22:02:30,600 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Beadle
+2018-01-22 22:02:30,600 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Laura
+2018-01-22 22:02:55,721 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-22 22:03:15,196 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beadle
+2018-01-22 22:03:15,421 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9421
+2018-01-22 22:03:15,632 [main] INFO  com.jiva.testcases.ZU_60_flow - 9421
+2018-01-22 22:03:19,840 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-22 22:03:51,759 [main] INFO  com.jiva.pages.Episodeoverviewpage - By.xpath: //span[contains(text(),'CM Unable To Reach')]/../../td/span[contains(text(),'Jayavarapu')]
+2018-01-22 22:04:52,058 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_OpenActivityRecordVisiblefalse
+2018-01-22 22:05:52,230 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ActivityRecordVisible in OpenActivities tabtrue
+2018-01-23 09:26:14,825 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-23 09:26:34,101 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-23 09:26:34,101 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-23 09:26:34,102 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-23 09:26:39,973 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Beamon, Bobbie
+2018-01-23 09:26:39,973 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Beamon
+2018-01-23 09:26:39,974 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Bobbie
+2018-01-23 09:27:03,577 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-23 09:27:21,693 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beamon
+2018-01-23 09:27:21,790 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9422
+2018-01-23 09:27:21,884 [main] INFO  com.jiva.testcases.ZU_60_flow - 9422
+2018-01-23 09:27:25,091 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-23 09:27:31,359 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-01-23 09:27:56,577 [main] INFO  com.jiva.pages.Episodeoverviewpage - By.xpath: //span[contains(text(),'CM Unable To Reach')]/../../td/span[contains(text(),'Jayavarapu')]
+2018-01-23 09:28:56,748 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_OpenActivityRecordVisiblefalse
+2018-01-23 09:29:53,516 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ActivityRecordVisible in OpenActivities tabtrue
+2018-01-23 09:35:03,151 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-23 09:35:22,821 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-23 09:35:22,821 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-23 09:35:22,821 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-23 09:35:29,170 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Beard, Harry
+2018-01-23 09:35:29,170 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Beard
+2018-01-23 09:35:29,171 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Harry
+2018-01-23 09:35:53,559 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-23 09:36:11,239 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beard
+2018-01-23 09:36:11,383 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9423
+2018-01-23 09:36:11,479 [main] INFO  com.jiva.testcases.ZU_60_flow - 9423
+2018-01-23 09:36:14,770 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-23 09:36:20,495 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-01-23 09:37:45,803 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_OpenActivityRecordVisiblefalse
+2018-01-23 09:41:16,460 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-23 09:41:35,682 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-23 09:41:35,682 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-23 09:41:35,682 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-23 09:41:41,806 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Beard, Luryline
+2018-01-23 09:41:41,807 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Beard
+2018-01-23 09:41:41,807 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Luryline
+2018-01-23 09:42:05,855 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-23 09:42:23,482 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beard
+2018-01-23 09:42:23,577 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9424
+2018-01-23 09:42:23,675 [main] INFO  com.jiva.testcases.ZU_60_flow - 9424
+2018-01-23 09:42:27,085 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-23 09:42:33,139 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-01-23 09:44:03,675 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCLetterGenerated false
+2018-01-23 10:45:07,892 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-23 10:45:27,199 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-23 10:45:27,199 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-23 10:45:27,199 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-23 10:45:33,583 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Beaubouef, Robert
+2018-01-23 10:45:33,583 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Beaubouef
+2018-01-23 10:45:33,583 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Robert
+2018-01-23 10:45:57,082 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-23 10:46:14,970 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beaubouef
+2018-01-23 10:46:15,125 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9425
+2018-01-23 10:46:15,223 [main] INFO  com.jiva.testcases.ZU_60_flow - 9425
+2018-01-23 10:46:19,146 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-23 10:46:25,865 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-01-23 10:46:37,151 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-01-23 10:46:46,406 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ActivityRecordVisible in OpenActivities tabtrue
+2018-01-23 13:23:08,055 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_AddCMEpisodetoMember
+2018-01-23 13:23:28,962 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-23 13:23:28,963 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-23 13:23:28,963 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-23 13:23:35,118 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Beauregard, Bobby
+2018-01-23 13:23:35,118 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Beauregard
+2018-01-23 13:23:35,119 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Bobby
+2018-01-23 13:24:00,096 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-23 13:24:18,759 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beauregard
+2018-01-23 13:24:18,936 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9426
+2018-01-23 13:24:19,090 [main] INFO  com.jiva.testcases.ZU_60_flow - 9426
+2018-01-23 13:24:22,365 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-23 13:24:28,415 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-01-23 13:24:39,894 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-01-23 13:24:49,345 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
+2018-01-23 13:24:51,845 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
+2018-01-23 13:24:54,789 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
+2018-01-23 14:52:31,910 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Execution started for verify_ZU_Calender_flow
+2018-01-23 14:52:51,180 [main] INFO  com.jiva.testcases.ZU_Calender_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-23 14:52:51,180 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Last name Jayavarapu
+2018-01-23 14:52:51,180 [main] INFO  com.jiva.testcases.ZU_Calender_flow - First name  Vineela
+2018-01-23 14:52:56,940 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Full Name is Beavers, Cathy
+2018-01-23 14:52:56,941 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Last name Beavers
+2018-01-23 14:52:56,941 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member First name  Cathy
+2018-01-23 14:53:20,705 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Verified creation of episode successfully
+2018-01-23 14:53:33,751 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beavers
+2018-01-23 15:05:51,157 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Execution started for verify_ZU_Calender_flow
+2018-01-23 15:06:10,498 [main] INFO  com.jiva.testcases.ZU_Calender_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-23 15:06:10,498 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Last name Jayavarapu
+2018-01-23 15:06:10,498 [main] INFO  com.jiva.testcases.ZU_Calender_flow - First name  Vineela
+2018-01-23 15:06:16,636 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Full Name is Beavers, Janice
+2018-01-23 15:06:16,636 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Last name Beavers
+2018-01-23 15:06:16,636 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member First name  Janice
+2018-01-23 15:06:40,555 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Verified creation of episode successfully
+2018-01-23 15:06:53,582 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beavers
+2018-01-23 15:06:53,836 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9429
+2018-01-23 15:06:53,944 [main] INFO  com.jiva.testcases.ZU_Calender_flow - 9429
+2018-01-23 16:21:17,054 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Execution started for verify_ZU_Calender_flow
+2018-01-23 16:24:12,814 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Execution started for verify_ZU_Calender_flow
+2018-01-23 16:24:32,064 [main] INFO  com.jiva.testcases.ZU_Calender_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-23 16:24:32,064 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Last name Jayavarapu
+2018-01-23 16:24:32,064 [main] INFO  com.jiva.testcases.ZU_Calender_flow - First name  Vineela
+2018-01-23 16:24:38,165 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Full Name is Beavers, Jerry
+2018-01-23 16:24:38,165 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Last name Beavers
+2018-01-23 16:24:38,165 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member First name  Jerry
+2018-01-23 16:25:01,927 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Verified creation of episode successfully
+2018-01-23 16:25:14,922 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beavers
+2018-01-23 16:26:56,094 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Execution started for verify_ZU_Calender_flow
+2018-01-23 16:27:15,764 [main] INFO  com.jiva.testcases.ZU_Calender_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-23 16:27:15,764 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Last name Jayavarapu
+2018-01-23 16:27:15,764 [main] INFO  com.jiva.testcases.ZU_Calender_flow - First name  Vineela
+2018-01-23 16:27:21,794 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Full Name is Beavers, Joseph
+2018-01-23 16:27:21,794 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Last name Beavers
+2018-01-23 16:27:21,794 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member First name  Joseph
+2018-01-23 16:27:45,546 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Verified creation of episode successfully
+2018-01-23 16:28:09,954 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beavers
+2018-01-23 16:28:10,136 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9431
+2018-01-23 16:28:17,456 [main] INFO  com.jiva.testcases.ZU_Calender_flow - 9431
+2018-01-23 16:29:06,776 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-23 16:33:27,708 [main] INFO  com.jiva.testcases.MemberSearchwithnames_TC - Execution started for verify_MemberSearchwithnames
+2018-01-23 16:33:47,030 [main] INFO  com.jiva.testcases.MemberSearchwithnames_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-23 16:33:47,030 [main] INFO  com.jiva.testcases.MemberSearchwithnames_TC - Last name Jayavarapu
+2018-01-23 16:33:47,031 [main] INFO  com.jiva.testcases.MemberSearchwithnames_TC - First name  Vineela
+2018-01-23 16:36:48,756 [main] INFO  com.jiva.testcases.MemberSearchwithnames_TC - Execution started for verify_MemberSearchwithnames
+2018-01-23 16:37:08,060 [main] INFO  com.jiva.testcases.MemberSearchwithnames_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-23 16:37:08,060 [main] INFO  com.jiva.testcases.MemberSearchwithnames_TC - Last name Jayavarapu
+2018-01-23 16:37:08,060 [main] INFO  com.jiva.testcases.MemberSearchwithnames_TC - First name  Vineela
+2018-01-23 16:38:25,141 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Execution started for verify_ZU_Calender_flow
+2018-01-23 16:38:44,474 [main] INFO  com.jiva.testcases.ZU_Calender_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-23 16:38:44,474 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Last name Jayavarapu
+2018-01-23 16:38:44,475 [main] INFO  com.jiva.testcases.ZU_Calender_flow - First name  Vineela
+2018-01-23 16:38:50,420 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Full Name is Becker, Patsy
+2018-01-23 16:38:50,420 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Last name Becker
+2018-01-23 16:38:50,421 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member First name  Patsy
+2018-01-23 16:39:14,107 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Verified creation of episode successfully
+2018-01-23 16:39:32,059 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Becker
+2018-01-23 16:39:32,253 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9432
+2018-01-23 16:39:32,361 [main] INFO  com.jiva.testcases.ZU_Calender_flow - 9432
+2018-01-23 16:39:46,041 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-23 16:41:28,306 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Execution started for verify_ZU_Calender_flow
+2018-01-23 16:41:47,704 [main] INFO  com.jiva.testcases.ZU_Calender_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-23 16:41:47,705 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Last name Jayavarapu
+2018-01-23 16:41:47,705 [main] INFO  com.jiva.testcases.ZU_Calender_flow - First name  Vineela
+2018-01-23 16:41:53,628 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Full Name is Beckham, Darryl
+2018-01-23 16:41:53,628 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Last name Beckham
+2018-01-23 16:41:53,629 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member First name  Darryl
+2018-01-23 16:42:17,265 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Verified creation of episode successfully
+2018-01-23 16:42:35,449 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beckham
+2018-01-23 16:42:35,567 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9433
+2018-01-23 16:42:35,705 [main] INFO  com.jiva.testcases.ZU_Calender_flow - 9433
+2018-01-23 16:42:48,898 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-23 16:42:56,453 [main] INFO  com.jiva.pages.Episodeactivitiespage - By.xpath: //div/div/div/div/div/div/span[contains(text(),'9433')]/../../../../../../../div/a/i[contains(@class,'fa fa-gear')]
+2018-01-23 16:47:56,547 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Execution started for verify_ZU_Calender_flow
+2018-01-23 16:48:16,039 [main] INFO  com.jiva.testcases.ZU_Calender_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-23 16:48:16,040 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Last name Jayavarapu
+2018-01-23 16:48:16,040 [main] INFO  com.jiva.testcases.ZU_Calender_flow - First name  Vineela
+2018-01-23 16:48:22,185 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Full Name is Beckham, John
+2018-01-23 16:48:22,185 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Last name Beckham
+2018-01-23 16:48:22,185 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member First name  John
+2018-01-23 16:48:46,388 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Verified creation of episode successfully
+2018-01-23 16:49:04,558 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beckham
+2018-01-23 16:49:04,691 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9434
+2018-01-23 16:49:04,799 [main] INFO  com.jiva.testcases.ZU_Calender_flow - 9434
+2018-01-23 16:49:18,092 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-23 16:49:25,452 [main] INFO  com.jiva.pages.Episodeactivitiespage - By.xpath: //div/div/div/div/div/div/span[contains(text(),'9434')]/../../../../../../../div/a/i[contains(@class,'fa fa-gear')]
+2018-01-23 16:49:36,341 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-01-23 16:49:48,212 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-01-23 16:49:57,153 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
+2018-01-23 16:49:59,729 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
+2018-01-23 16:50:02,713 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
+2018-01-24 16:03:21,944 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-24 16:03:41,843 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-24 16:03:41,844 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Last name Jayavarapu
+2018-01-24 16:03:41,844 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - First name  Vineela
+2018-01-24 16:04:46,566 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-24 16:05:05,928 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-24 16:05:05,928 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Last name Jayavarapu
+2018-01-24 16:05:05,929 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - First name  Vineela
+2018-01-24 16:08:24,991 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-24 16:08:44,714 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-24 16:08:44,714 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Last name Jayavarapu
+2018-01-24 16:08:44,714 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - First name  Vineela
+2018-01-24 16:11:33,726 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-24 16:11:52,911 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-24 16:11:52,911 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Last name Jayavarapu
+2018-01-24 16:11:52,911 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - First name  Vineela
+2018-01-24 16:13:15,248 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-24 16:13:34,726 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-24 16:13:34,726 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Last name Jayavarapu
+2018-01-24 16:13:34,726 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - First name  Vineela
+2018-01-24 16:28:45,774 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-24 16:29:05,143 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-24 16:29:05,143 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Last name Jayavarapu
+2018-01-24 16:29:05,143 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - First name  Vineela
+2018-01-24 16:35:31,306 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-24 16:35:50,795 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-24 16:35:50,796 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Last name Jayavarapu
+2018-01-24 16:35:50,796 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - First name  Vineela
+2018-01-24 16:36:54,854 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-24 16:37:14,431 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-24 16:37:14,431 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Last name Jayavarapu
+2018-01-24 16:37:14,432 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - First name  Vineela
+2018-01-24 16:38:22,154 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-24 16:38:41,399 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-24 16:38:41,399 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Last name Jayavarapu
+2018-01-24 16:38:41,399 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - First name  Vineela
+2018-01-24 19:03:21,599 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-24 19:03:41,920 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-24 19:03:41,920 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Last name Jayavarapu
+2018-01-24 19:03:41,921 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - First name  Vineela
+2018-01-24 19:04:13,950 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-24 19:04:33,874 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-24 19:04:33,874 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Last name Jayavarapu
+2018-01-24 19:04:33,874 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - First name  Vineela
