@@ -9,11 +9,10 @@ public interface Setup {
 	String FFPATH = "C:\\Softwares\\geckodriver-v0.19.1-win64\\geckodriver.exe";
 	
 	String USERNAME="vjayavarapu",PASSWORD="Password1!";
-	String BROWSER="IE";
-	String JIVAID = "611127";
+	String BROWSER="CHROME";
+	String JIVAID = "488526";
 	String SFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20171114/jiva-eligibility-demographics_20171114_171337~20171114_091506616~.txt";
 
-	
 
 }
 
@@ -21,6 +20,9 @@ public interface Setup {
 //taskkill /F /IM IEDriverServer.exe
 //taskkill /F /IM iexplore.exe
 
+
+//taskkill /F /IM chrome.exe
+//taskkill /F /IM Chromedriver.exe
 
 
 //span[contains(text(),'CM Unable To Reach')]/../../td/span[contains(text(),'"+userprofilename.split(",")[0].trim()+"')]

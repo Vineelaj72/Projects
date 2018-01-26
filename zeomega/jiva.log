@@ -711,3 +711,117 @@
 2018-01-24 19:04:33,874 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - User Profile Name is Jayavarapu, Vineela
 2018-01-24 19:04:33,874 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Last name Jayavarapu
 2018-01-24 19:04:33,874 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - First name  Vineela
+2018-01-24 23:16:16,410 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-24 23:16:44,570 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-24 23:16:44,571 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Last name Jayavarapu
+2018-01-24 23:16:44,571 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - First name  Vineela
+2018-01-24 23:18:48,929 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Execution started for verify_ZU_Calender_flow
+2018-01-24 23:19:10,797 [main] INFO  com.jiva.testcases.ZU_Calender_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-24 23:19:10,798 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Last name Jayavarapu
+2018-01-24 23:19:10,799 [main] INFO  com.jiva.testcases.ZU_Calender_flow - First name  Vineela
+2018-01-24 23:19:17,977 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Full Name is Beckham, Patricia
+2018-01-24 23:19:17,978 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member Last name Beckham
+2018-01-24 23:19:17,978 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Member First name  Patricia
+2018-01-24 23:19:43,366 [main] INFO  com.jiva.testcases.ZU_Calender_flow - Verified creation of episode successfully
+2018-01-24 23:20:03,559 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beckham
+2018-01-24 23:20:03,768 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...
+2018-01-24 23:20:03,977 [main] INFO  com.jiva.testcases.ZU_Calender_flow - 
+2018-01-24 23:20:18,052 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-24 23:23:00,298 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_ZU_60_flow
+2018-01-24 23:23:22,512 [main] INFO  com.jiva.testcases.ZU_60_flow - User Profile Name is Jayavarapu, Vineela
+2018-01-24 23:23:22,512 [main] INFO  com.jiva.testcases.ZU_60_flow - Last name Jayavarapu
+2018-01-24 23:23:22,512 [main] INFO  com.jiva.testcases.ZU_60_flow - First name  Vineela
+2018-01-24 23:23:29,438 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Full Name is Beckmann, Roger
+2018-01-24 23:23:29,438 [main] INFO  com.jiva.testcases.ZU_60_flow - Member Last name Beckmann
+2018-01-24 23:23:29,439 [main] INFO  com.jiva.testcases.ZU_60_flow - Member First name  Roger
+2018-01-24 23:23:54,225 [main] INFO  com.jiva.testcases.ZU_60_flow - Verified creation of episode successfully
+2018-01-24 23:24:13,277 [main] INFO  com.jiva.pages.WorklistsPage - @getEpisodeID of... Beckmann
+2018-01-24 23:24:13,495 [main] INFO  com.jiva.pages.WorklistsPage - episode id is...9451
+2018-01-24 23:24:13,635 [main] INFO  com.jiva.testcases.ZU_60_flow - 9451
+2018-01-24 23:24:17,777 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-01-24 23:24:24,937 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-01-24 23:24:37,640 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-01-24 23:24:47,962 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
+2018-01-24 23:24:51,475 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
+2018-01-24 23:24:55,546 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
+2018-01-25 13:42:31,472 [main] INFO  com.jiva.testcases.Filedatawithscreendata_TC - Execution started for verify_screenDataWithFileData
+2018-01-25 13:46:40,723 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-25 13:50:39,909 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-25 13:57:54,394 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-25 14:11:05,063 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-25 14:14:53,841 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-25 14:16:23,230 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-25 14:18:30,847 [main] INFO  com.jiva.testcases.ZU_60_flow - Execution started for verify_ZU_60_flow
+2018-01-25 17:08:17,632 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-25 17:55:24,730 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 17:58:25,223 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 18:01:53,008 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 18:06:30,311 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 19:23:35,682 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 19:23:58,708 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-25 19:23:58,708 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-25 19:23:58,708 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
+2018-01-25 19:24:42,528 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 19:33:55,635 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Execution started for verify_AddCMEpisodetoMember
+2018-01-25 20:16:14,402 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 20:25:52,969 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Execution started for verify_AddCMEpisodetoMember
+2018-01-25 20:28:13,920 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Execution started for verify_AddCMEpisodetoMember
+2018-01-25 20:33:33,131 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 20:35:47,469 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 20:38:44,387 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 20:48:14,411 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 20:49:10,473 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 20:52:27,882 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 20:57:04,275 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 21:01:53,819 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Execution started for verify_AddCMEpisodetoMember
+2018-01-25 21:14:09,854 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 21:14:42,447 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-25 21:21:24,322 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-26 09:07:55,529 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-26 09:14:07,664 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-26 09:15:39,559 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-26 09:16:40,427 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-26 09:17:00,468 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-26 09:17:00,468 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-26 09:17:00,469 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
+2018-01-26 09:21:42,733 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-26 09:22:06,358 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-26 09:22:06,359 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-26 09:22:06,359 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
+2018-01-26 09:48:24,567 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-26 09:48:44,722 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-26 09:48:44,723 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-26 09:48:44,723 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
+2018-01-26 10:28:45,886 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-26 10:28:59,007 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-26 10:29:19,447 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-26 10:29:19,447 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-26 10:29:19,460 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
+2018-01-26 10:29:51,388 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-26 10:30:15,532 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-26 10:30:15,532 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-26 10:30:15,544 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
+2018-01-26 10:32:14,791 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-26 10:32:40,255 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-26 10:32:40,255 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-26 10:32:40,261 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
+2018-01-26 10:34:00,258 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Execution started for verify_AddCMEpisodetoMember
+2018-01-26 10:34:20,737 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - User Profile Name is Jayavarapu, Vineela
+2018-01-26 10:34:20,737 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Last name Jayavarapu
+2018-01-26 10:34:20,739 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - First name  Vineela
+2018-01-26 10:34:25,062 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Member Full Name is Beckmann, Roger
+2018-01-26 10:34:25,062 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Member Last name Beckmann
+2018-01-26 10:34:25,063 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Member First name  Roger
+2018-01-26 10:36:37,378 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Execution started for verify_AddCMEpisodetoMember
+2018-01-26 10:36:58,377 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - User Profile Name is Jayavarapu, Vineela
+2018-01-26 10:36:58,377 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Last name Jayavarapu
+2018-01-26 10:36:58,385 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - First name  Vineela
+2018-01-26 10:37:02,695 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Member Full Name is Becnel, Michael
+2018-01-26 10:37:02,696 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Member Last name Becnel
+2018-01-26 10:37:02,696 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Member First name  Michael
+2018-01-26 10:48:41,316 [main] INFO  com.jiva.testcases.ZU_01_CalenderActivity - Execution started for verify_AddCMEpisodetoMember
+2018-01-26 15:45:16,326 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-26 15:48:22,949 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for verify_fileDatawithScreenData
+2018-01-26 15:48:43,371 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-26 15:48:43,371 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-26 15:48:43,385 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela

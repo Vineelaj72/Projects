@@ -76,10 +76,5 @@ public class DemographicDataValidation_TC extends TestBase {
 		Assert.assertEquals(sFileData.get("MemberFirstname3"), (memberOverviewPage.getMemberName().split(","))[1], "Member first name validated");
 		
 		
-		
-		
-		// Assert.assertEquals(true,
-		// sFileData.toString().contains(userprofilename.split(",")[0].toLowerCase()));
-		// //check the field in UI available and matches with data in file
 	}
 }

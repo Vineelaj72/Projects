@@ -10,42 +10,34 @@ public class LoginPage extends WebElements {
 
 	WebDriver driver;
 
-	By username = By.name("__ac_name");
-	By password = By.name("__ac_password");
-	By loginbutton = By.name("LogIn");
 
 	public LoginPage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 	}
 
-	/**
-	 * Enter username
-	 * 
-	 * @param sUsername
-	 */
+	By usernamelocator = By.name("__ac_name");
+	By passwordlocator = By.name("__ac_password");
+	By loginbuttonlocator = By.name("LogIn");
+
+	
 	public void username(String sUsername) {
-		enterText(username, sUsername);
+		enterText(usernamelocator, sUsername);
 		Reporter.log("Username Entered"+sUsername);
 	}
 
 	public void password(String spassword) {
-		enterText(password, spassword);
+		enterText(passwordlocator, spassword);
 		Reporter.log("Password Entered"+spassword);
 
 	}
 
 		
 	public void loginbutton() {
-		clickUsingJs(loginbutton);
+		clickUsingJs(loginbuttonlocator);
 		Reporter.log("Login Button Clicked");
 
 	}
-	
-	/*public void verifyUsername()
-	{
-		
-	}*/
 	
 	
 
