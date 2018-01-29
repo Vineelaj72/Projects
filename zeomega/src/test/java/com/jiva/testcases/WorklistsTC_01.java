@@ -1,17 +1,12 @@
 package com.jiva.testcases;
 
-import java.util.Map;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.jiva.beanfactory.BeanFactory;
-import com.jiva.dao.LoginData;
 import com.jiva.pages.Dashboard;
 import com.jiva.pages.LoginPage;
 import com.jiva.pages.WorklistsPage;
-import com.jiva.utils.ReadFile;
 import com.jiva.utils.TestBase;
 
 public class WorklistsTC_01 extends TestBase{

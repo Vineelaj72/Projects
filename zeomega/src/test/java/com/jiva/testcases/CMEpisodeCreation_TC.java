@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.jiva.beanfactory.BeanFactory;
 import com.jiva.dao.LoginData;
 import com.jiva.pages.AddInteractionsPage;
 import com.jiva.pages.CalenderPage;

@@ -18,6 +18,7 @@ public class MemberOverviewPage extends WebElements {
 	By namelocator = By.xpath("//a/span[contains(@ng-bind,'memberScope.member_details.mbr_name')]");
 	By memberinfoexpandlocator = By.id("yui-gen506");
 	By viewallmemberinfolocator = By.xpath("//a/span[contains(text(),'View all')]/../j-label[contains(text(),'Member')]/../span[contains(text(),'information')]/..");
+	By currentepisodecogwheellocator = By.xpath(".//*[@id='content-main']/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div/div[1]/a/i");
 	
 	By memberfirstnamelocator = By.xpath("//div/span[contains(text(),'First Name')]/../../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_first_name')]");
 	By memberlastnamelocator = By.xpath("//div/span[contains(text(),'Last Name')]/../../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_last_name')]");
@@ -26,7 +27,7 @@ public class MemberOverviewPage extends WebElements {
 	By memberDOBlocator = By.xpath("//div/span[contains(text(),'Date of Birth')]/../../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_birth_dt')]");
 	By maritalstatuslocator = By.xpath("//div[contains(text(),'Marital Status')]/../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_marital_status')]");
 	By genderlocator = By.xpath("//div/span[contains(text(),'Sex')]/../../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_gender')]");
-	By activestatuslocator = By.xpath("//td/span[contains(text(),'Coverage')]/../i[contains(@class,'fa fa-circle font-color-6cc009 margin-left-10px font-size-10px pull-right padding-top-5px ng-scope')]");
+	By activestatuslocator = By.xpath("//td/span[contains(text(),'Coverage')]/../i[contains(@class,'fa fa-circle font-color-6cc009')]");
 	By coverageidlocator = By.xpath("//span/j-label[contains(text(),'Coverage ID')]/../../span[contains(@ng-bind,'memberScope.member_details.coverage_id')]");
 	By phonelocator = By.xpath(".//*[@id='angularcontent']/div[1]/div/div[2]/table/tbody[1]/tr/td[2]/span[4]");
 	
@@ -45,26 +46,50 @@ public class MemberOverviewPage extends WebElements {
 	By PRIMARYstatelocator = By.xpath("//div/span[contains(text(),'PRIMARY')]/../../../../div/div/div[contains(text(),'State')]/../div/span[contains(@ng-bind,'record.member_state')]");
 	By PRIMARYcountrylocator = By.xpath("//div/span[contains(text(),'PRIMARY')]/../../../../div/div/div[contains(text(),'Country')]/../div/span[contains(@ng-bind,'record.member_country')]");
 	
+	By closememberinfolocator = By.xpath(".//*[@id='cms-body']/div[5]/div/div/div/div[1]/button");
+	By addepisodelocator = By.xpath(".//*[@id='angularcontent']/workflow-banner/div/div/div[3]/div[6]/button");
+	By CMlocator = By.xpath(".//*[@id='AccessDialog']/div/div[2]/div/div/div/div/div/div/div/a/span");
+	
+	public void closeMemberInfo()
+	{
+		clickUsingJs(closememberinfolocator);
+	}	
+	public void clickAddEpisode()
+	{
+		clickUsingJs(addepisodelocator);
+	}
+	public void clickCaseManagement()
+	{
+		clickUsingJs(CMlocator);
+	}
+	
 	public void clickGear(String episodeId) {
 		By gearlocator = By.xpath("//div/div/div/div/div/div/span[contains(text(),'"+episodeId+"')]/../../../../../../../div/a/i[contains(@class,'fa fa-gear')]");
 		logger.info(gearlocator);
 		clickUsingJs(gearlocator);
 		
 	}
+	public void clickCurrentEpisodecogwheel()
+	{
+		clickUsingJs(currentepisodecogwheellocator);
+	}
 	
 	public void openEpisode()
 	{
 		clickUsingJs(openepisodelinklocator);
 	}
-	public void openMemberInformation()
+	public void expandMemberInfo()
 	{
 		clickUsingJs(memberinfoexpandlocator);
+	}
+	public void openMemberInformation()
+	{		
 		clickUsingJs(viewallmemberinfolocator);
 	}
-	public String getMemberName()
+	/*public String getMemberName()
 	{
 		return getText(namelocator);
-	}
+	}*/
 	public String getMemberLastName()
 	{
 		return getText(memberlastnamelocator);
@@ -99,6 +124,7 @@ public class MemberOverviewPage extends WebElements {
 	}
 	public String getCoverageId()
 	{
+			//System.out.println(getText(coverageidlocator));
 		return getText(coverageidlocator);
 	}
 	public String getPhoneNumber()

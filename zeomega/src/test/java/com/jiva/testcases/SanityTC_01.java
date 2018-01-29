@@ -1,13 +1,9 @@
 package com.jiva.testcases;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.jiva.beanfactory.BeanFactory;
-import com.jiva.dao.LoginData;
-import com.jiva.dao.MemberData;
 import com.jiva.pages.ConfirmAddepisodePage;
 import com.jiva.pages.CreateCMepisodePage;
 import com.jiva.pages.Dashboard;

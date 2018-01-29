@@ -49,14 +49,19 @@ public class MemberSearchPage extends WebElements{
 	}
 	public void enterMemberLastname(String sLastname) throws InterruptedException
 	{
-		
 		enterText(lastnamelocator, sLastname);
-		clickUsingJs(csssel);
+		sleep(5000);
+		clickEnter(lastnamelocator);
+		//clickUsingJs(csssel);
+		//sleep(5000);
 	}
 	public void enterMemberFirstname(String sFirstname) throws InterruptedException
 	{
 		enterText(firstnamelocator, sFirstname);
-		clickUsingJs(csssel);
-		
+		sleep(5000);
+		clickEnter(firstnamelocator);
+
+	//	clickUsingJs(csssel);
+		//sleep(5000);
 	}
 }

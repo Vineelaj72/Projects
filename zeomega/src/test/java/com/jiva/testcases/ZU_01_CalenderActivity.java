@@ -1,13 +1,10 @@
 package com.jiva.testcases;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.jiva.beanfactory.BeanFactory;
-import com.jiva.dao.LoginData;
 import com.jiva.pages.AddInteractionsPage;
 import com.jiva.pages.CalenderPage;
 import com.jiva.pages.ConfirmAddepisodePage;

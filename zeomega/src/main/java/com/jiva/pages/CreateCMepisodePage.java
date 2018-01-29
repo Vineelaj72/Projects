@@ -17,6 +17,7 @@ public class CreateCMepisodePage extends WebElements{
 	By episodestatusdd = By.name("episodestatus");
 	By assigntodd = By.name("assign_to");
 	By acuityleveldd = By.name("select1");
+	By sourcedd = By.name("referralsource");
 	By programnamelocator = By.name("program");
 	By programassigntolocator = By.name("I_ASSIGNED_NURSE_IDN");
 	By addprogrambutton = By.xpath("(//button[@class='btn btn-primary'])[3]");
@@ -25,9 +26,12 @@ public class CreateCMepisodePage extends WebElements{
 	By membersearchverifylocator = By.xpath("//span[contains(text(),'Search')]");
 	By cancelbuttonlocator = By.xpath("//button[@ng-click='addEncCtrl.cancelCreateEpisode()']");
 	
+	
+	
 	public void addEpisodeDetails() throws InterruptedException
 	{
-		dropdownSelect(episodestatusdd, "Referral");		
+		dropdownSelect(episodestatusdd, "Referral");	
+		dropdownSelect(sourcedd, "Case Management");
 		dropdownSelect(acuityleveldd, "2");
 		sleep(5000);
 		dropdownSelect(assigntodd, "CCM Referral");

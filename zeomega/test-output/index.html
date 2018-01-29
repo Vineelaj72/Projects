@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\vjayavarapu\AppData\Local\Temp\testng-eclipse--1566574691\testng-customsuite.xml</span>
+                    <span>C:\Users\vjayavarapu\AppData\Local\Temp\testng-eclipse--1792249873\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -128,7 +128,7 @@
                   <a name="verify_fileDatawithScreenData">
                   </a> <!-- verify_fileDatawithScreenData -->
                   <span class="method-name">verify_fileDatawithScreenData</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;I_FIRST_NAME&apos;]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Redirect to&apos;)]&quot;}
   (Session info: chrome=63.0.3239.132)
   (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -137,8 +137,8 @@ Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: 
 System info: host: &apos;WKS22218&apos;, ip: &apos;10.80.14.36&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\VJAYAV~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
-Session ID: 052ede110cb1f1276b4c7e83f77473ae
-*** Element info: {Using=xpath, value=//input[@name=&apos;I_FIRST_NAME&apos;]}
+Session ID: 178d4a2454e2e57a35b63aad6ec5b053
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Redirect to&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -155,9 +155,9 @@ Session ID: 052ede110cb1f1276b4c7e83f77473ae
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at com.jiva.utils.WebElements.enterText(WebElements.java:22)
-	at com.jiva.pages.MemberSearchPage.enterMemberFirstname(MemberSearchPage.java:58)
-	at com.jiva.testcases.MemberFilesdatawithscreendata_TC.verify_fileDatawithScreenData(MemberFilesdatawithscreendata_TC.java:66)
+	at com.jiva.utils.WebElements.clickUsingJs(WebElements.java:50)
+	at com.jiva.pages.ConfirmAddepisodePage.clickRedirecttoMCV(ConfirmAddepisodePage.java:40)
+	at com.jiva.testcases.MemberFilesdatawithscreendata_TC.verify_fileDatawithScreenData(MemberFilesdatawithscreendata_TC.java:87)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -194,7 +194,7 @@ Session ID: 052ede110cb1f1276b4c7e83f77473ae
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\vjayavarapu\AppData\Local\Temp\testng-eclipse--1566574691\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\vjayavarapu\AppData\Local\Temp\testng-eclipse--1792249873\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -247,7 +247,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verify_fileDatawithScreenData')
 data.setCell(0, 2, 'com.jiva.testcases.MemberFilesdatawithscreendata_TC')
-data.setCell(0, 3, 81899);
+data.setCell(0, 3, 101432);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }

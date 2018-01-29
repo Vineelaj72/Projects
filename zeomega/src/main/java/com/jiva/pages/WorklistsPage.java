@@ -31,14 +31,18 @@ public class WorklistsPage extends WebElements {
 
 	public void enterLastName(String lastname) {
 		enterText(memberlastNameLocator, lastname);
-		clickUsingJs(csssel);
+		sleep(5000);
+		clickEnter(memberlastNameLocator);
+		//clickUsingJs(csssel);
 
 		// clickEnter(memberlastNameLocator);
 	}
 
 	public void enterFirstName(String firstname) {
 		enterText(memberFirstNameLocator, firstname);
-		clickUsingJs(csssel);
+		sleep(5000);
+		clickEnter(memberFirstNameLocator);
+		//clickUsingJs(csssel);
 		// clickEnter(memberFirstNameLocator);
 
 	}

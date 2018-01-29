@@ -43,7 +43,7 @@ public class MemberDemographicFile {
 				System.out.println(readdemographicFilemap.get("EligibilityId"+ lineno));
 				/*System.out.println(readdemographicFilemap.get("EnrollId"+ lineno));
 				System.out.println(readdemographicFilemap.get("ClientCode"+ lineno));*/
-				System.out.println(readdemographicFilemap.get("MemberAlternateId"+ lineno));
+				System.out.println(readdemographicFilemap.get("MemberId"+ lineno));
 				System.out.println(readdemographicFilemap.get("MemberLastname"+ lineno));
 				System.out.println(readdemographicFilemap.get("MemberFirstname"+ lineno));
 				System.out.println(readdemographicFilemap.get("MemberDOB"+ lineno));

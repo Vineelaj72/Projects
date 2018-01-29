@@ -35,6 +35,12 @@ public class Episodeactivitiespage extends WebElements {
 		return isDisplayed(interactionrecordlocator);
 	}
 	
+	public boolean verify_OpenorClosedInteractionRecordVisible() {
+		By interactionrecordlocator = By.xpath("//*[contains(text(),'Verbal consent to be received')]/..//td[contains(text(),'CCM Referral')]");
+		logger.info("verify_OpenorClosedInteractionRecordVisible "+isDisplayed(interactionrecordlocator));
+		return isDisplayed(interactionrecordlocator);
+	}
+	
 	public void clickWheel()
 	{
 		clickUsingJs(wheellocator);

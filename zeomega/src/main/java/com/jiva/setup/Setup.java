@@ -13,6 +13,7 @@ public interface Setup {
 	String JIVAID = "488526";
 	String SFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20171114/jiva-eligibility-demographics_20171114_171337~20171114_091506616~.txt";
 
+	
 
 }
 
@@ -24,18 +25,4 @@ public interface Setup {
 //taskkill /F /IM chrome.exe
 //taskkill /F /IM Chromedriver.exe
 
-
-//span[contains(text(),'CM Unable To Reach')]/../../td/span[contains(text(),'"+userprofilename.split(",")[0].trim()+"')]
-
-//span[contains(text(),'CM Unable To Reach')]/../../td[contains(text(),'Jayavarapu')]
-
-//span[contains(text(),'Closed')]/../../../../td/div/span/span[contains(text(),'"+userprofilename.split(",")[0].trim()+"')]
-
-
-
-//div/div/div/div/div/div/span[contains(text(),'ID')]/../../../../../../../div/a/i[contains(@class,'fa fa-gear')]
-
-//div/div/div/div/div/div/span[contains(text(),'9396')]/../../../../../../../div/a/i[contains(@class,'fa fa-gear')]
-
-//div/div/div/div/div/div/span[contains(text(),'"+episodeId+"')]/../../../../../../../div/a/i[contains(@class,'fa fa-gear')]
 
