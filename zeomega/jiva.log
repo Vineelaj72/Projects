@@ -1214,3 +1214,78 @@
 2018-01-29 16:59:23,695 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
 2018-01-29 16:59:29,353 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member Last name mandatoryData[8]
 2018-01-29 16:59:29,353 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member First name mandatoryData[9]
+2018-01-29 18:47:52,402 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Demo File Data[000015293^EHI0NA, 000015293, Radford, Bernetta, 1939-02-16, Y, 000015354^EHI0NA, 000015354, Puls, Carolyn, 1938-06-05, Y, 000015357^EHI0NA, 000015357, Neal, Ruby, 1923-10-22, Y, 000097741^EHI0NA, 000097741, Hampton, Antoinette, 1947-07-22, Y, 000122274^BLA0NA, 000122274, Dugas, Donald, 1939-03-27, Y, 000087699^EHI0NA, 000087699, Ackerman, Stephanie, 1944-07-06, Y]
+2018-01-29 18:47:52,414 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for--- verify_fileDatawithScreenData
+2018-01-29 19:04:32,433 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Demo File Data[000015293^EHI0NA, 000015293, Radford, Bernetta, 1939-02-16, Y, 000015354^EHI0NA, 000015354, Puls, Carolyn, 1938-06-05, Y, 000015357^EHI0NA, 000015357, Neal, Ruby, 1923-10-22, Y, 000097741^EHI0NA, 000097741, Hampton, Antoinette, 1947-07-22, Y, 000122274^BLA0NA, 000122274, Dugas, Donald, 1939-03-27, Y, 000087699^EHI0NA, 000087699, Ackerman, Stephanie, 1944-07-06, Y]
+2018-01-29 19:04:32,445 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for--- verify_Demographics_Datafromfile_toScreen
+2018-01-29 19:04:53,652 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-29 19:04:53,653 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-29 19:04:53,653 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
+2018-01-29 19:04:59,476 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member Last name Puls
+2018-01-29 19:04:59,477 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member First name Carolyn
+2018-01-29 19:05:46,455 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Verified creation of episode successfully
+2018-01-29 19:05:51,272 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenorClosedInteractionRecordVisible true
+2018-01-29 19:05:58,593 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenorClosedInteractionRecordVisible true
+2018-01-29 19:06:09,274 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-01-29 19:06:16,636 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
+2018-01-29 19:06:17,799 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
+2018-01-29 19:06:19,770 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
+2018-01-29 19:28:51,490 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Demo File Data[000015293^EHI0NA, 000015293, Radford, Bernetta, 1939-02-16, Y, , 000015354^EHI0NA, 000015354, Puls, Carolyn, 1938-06-05, Y, , 000015357^EHI0NA, 000015357, Neal, Ruby, 1923-10-22, Y, , 000097741^EHI0NA, 000097741, Hampton, Antoinette, 1947-07-22, Y, , 000122274^BLA0NA, 000122274, Dugas, Donald, 1939-03-27, Y, , 000087699^EHI0NA, 000087699, Ackerman, Stephanie, 1944-07-06, Y, ]
+2018-01-29 19:28:51,502 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for--- verify_Demographics_Datafromfile_toScreen
+2018-01-29 19:29:53,568 [main] INFO  com.jiva.testcases.DemographicDataValidation_TC - Execution started for verify_screenDataWithFileData
+2018-01-29 19:30:15,629 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Demo File Data[000015293^EHI0NA, 000015293, Radford, Bernetta, 1939-02-16, Y, , 000015354^EHI0NA, 000015354, Puls, Carolyn, 1938-06-05, Y, , 000015357^EHI0NA, 000015357, Neal, Ruby, 1923-10-22, Y, , 000097741^EHI0NA, 000097741, Hampton, Antoinette, 1947-07-22, Y, , 000122274^BLA0NA, 000122274, Dugas, Donald, 1939-03-27, Y, , 000087699^EHI0NA, 000087699, Ackerman, Stephanie, 1944-07-06, Y, ]
+2018-01-29 19:30:15,641 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for--- verify_Demographics_Datafromfile_toScreen
+2018-01-29 19:34:19,954 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Demo File Data[000015293^EHI0NA, 000015293, Radford, Bernetta, 1939-02-16, Y, F, 000015354^EHI0NA, 000015354, Puls, Carolyn, 1938-06-05, Y, F, 000015357^EHI0NA, 000015357, Neal, Ruby, 1923-10-22, Y, F, 000097741^EHI0NA, 000097741, Hampton, Antoinette, 1947-07-22, Y, F, 000122274^BLA0NA, 000122274, Dugas, Donald, 1939-03-27, Y, M, 000087699^EHI0NA, 000087699, Ackerman, Stephanie, 1944-07-06, Y, F]
+2018-01-29 19:34:19,976 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for--- verify_Demographics_Datafromfile_toScreen
+2018-01-29 19:45:22,380 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Demo File Data[000015293^EHI0NA, 000015293, Radford, Bernetta, 1939-02-16, Y, F, 000015354^EHI0NA, 000015354, Puls, Carolyn, 1938-06-05, Y, F, 000015357^EHI0NA, 000015357, Neal, Ruby, 1923-10-22, Y, F, 000097741^EHI0NA, 000097741, Hampton, Antoinette, 1947-07-22, Y, F, 000122274^BLA0NA, 000122274, Dugas, Donald, 1939-03-27, Y, M, 000087699^EHI0NA, 000087699, Ackerman, Stephanie, 1944-07-06, Y, F]
+2018-01-29 19:45:22,393 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for--- verify_Demographics_Datafromfile_toScreen
+2018-01-29 19:45:43,647 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-29 19:45:43,647 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-29 19:45:43,648 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
+2018-01-29 19:45:49,733 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member Last name 000015354
+2018-01-29 19:45:49,734 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member First name Puls
+2018-01-29 19:47:51,645 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Demo File Data[000015293^EHI0NA, 000015293, Radford, Bernetta, 1939-02-16, Y, F, 000015354^EHI0NA, 000015354, Puls, Carolyn, 1938-06-05, Y, F, 000015357^EHI0NA, 000015357, Neal, Ruby, 1923-10-22, Y, F, 000097741^EHI0NA, 000097741, Hampton, Antoinette, 1947-07-22, Y, F, 000122274^BLA0NA, 000122274, Dugas, Donald, 1939-03-27, Y, M, 000087699^EHI0NA, 000087699, Ackerman, Stephanie, 1944-07-06, Y, F]
+2018-01-29 19:47:51,658 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for--- verify_Demographics_Datafromfile_toScreen
+2018-01-29 19:48:13,206 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-29 19:48:13,207 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-29 19:48:13,207 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
+2018-01-29 19:48:19,346 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member Last name Puls
+2018-01-29 19:48:19,346 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member First name Carolyn
+2018-01-29 19:50:22,313 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Demo File Data[000015293^EHI0NA, 000015293, Radford, Bernetta, 1939-02-16, Y, F, 000015354^EHI0NA, 000015354, Puls, Carolyn, 1938-06-05, Y, F, 000015357^EHI0NA, 000015357, Neal, Ruby, 1923-10-22, Y, F, 000097741^EHI0NA, 000097741, Hampton, Antoinette, 1947-07-22, Y, F, 000122274^BLA0NA, 000122274, Dugas, Donald, 1939-03-27, Y, M, 000087699^EHI0NA, 000087699, Ackerman, Stephanie, 1944-07-06, Y, F]
+2018-01-29 19:50:22,324 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for--- verify_Demographics_Datafromfile_toScreen
+2018-01-29 19:50:43,713 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-29 19:50:43,714 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-29 19:50:43,714 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
+2018-01-29 19:50:49,817 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member Last name Puls
+2018-01-29 19:50:49,818 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member First name Carolyn
+2018-01-29 19:51:37,171 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Verified creation of episode successfully
+2018-01-29 19:51:42,375 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenorClosedInteractionRecordVisible true
+2018-01-29 19:55:29,859 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Demo File Data[000015293^EHI0NA, 000015293, Radford, Bernetta, 1939-02-16, Y, F, 000015354^EHI0NA, 000015354, Puls, Carolyn, 1938-06-05, Y, F, 000015357^EHI0NA, 000015357, Neal, Ruby, 1923-10-22, Y, F, 000097741^EHI0NA, 000097741, Hampton, Antoinette, 1947-07-22, Y, F, 000122274^BLA0NA, 000122274, Dugas, Donald, 1939-03-27, Y, M, 000087699^EHI0NA, 000087699, Ackerman, Stephanie, 1944-07-06, Y, F]
+2018-01-29 19:55:29,872 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for--- verify_Demographics_Datafromfile_toScreen
+2018-01-29 19:55:51,121 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-29 19:55:51,122 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-29 19:55:51,123 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
+2018-01-29 19:55:57,232 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member Last name Puls
+2018-01-29 19:55:57,233 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member First name Carolyn
+2018-01-29 19:56:44,780 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Verified creation of episode successfully
+2018-01-29 19:56:49,829 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenorClosedInteractionRecordVisible true
+2018-01-29 19:56:57,382 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenorClosedInteractionRecordVisible true
+2018-01-29 19:57:08,337 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-01-29 19:57:16,611 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
+2018-01-29 19:57:18,163 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
+2018-01-29 19:57:20,183 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
+2018-01-29 20:20:38,948 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Demo File Data[000015293^EHI0NA, 000015293, Radford, Bernetta, 1939-02-16, Y, F, 000015354^EHI0NA, 000015354, Puls, Carolyn, 1938-06-05, Y, F, 000015357^EHI0NA, 000015357, Neal, Ruby, 1923-10-22, Y, F, 000097741^EHI0NA, 000097741, Hampton, Antoinette, 1947-07-22, Y, F, 000122274^BLA0NA, 000122274, Dugas, Donald, 1939-03-27, Y, M, 000087699^EHI0NA, 000087699, Ackerman, Stephanie, 1944-07-06, Y, F]
+2018-01-29 20:20:38,948 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Execution started for--- verify_Demographics_Datafromfile_toScreen
+2018-01-29 20:21:01,792 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - User Profile Name is Jayavarapu, Vineela
+2018-01-29 20:21:01,792 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Last name Jayavarapu
+2018-01-29 20:21:01,802 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - First name  Vineela
+2018-01-29 20:21:07,819 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member Last name Puls
+2018-01-29 20:21:07,819 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Member First name Carolyn
+2018-01-29 20:21:26,541 [main] INFO  com.jiva.utils.WebElements - Attribute Value[fa fa-circle font-color-6cc009 margin-left-10px font-size-10px pull-right padding-top-5px ng-scope, null, , <i ng-if="!memberScope.cvgExpired" class="fa fa-circle font-color-6cc009 margin-left-10px font-size-10px pull-right padding-top-5px ng-scope"></i>, , null, ]
+2018-01-29 20:21:54,331 [main] INFO  com.jiva.testcases.MemberFilesdatawithscreendata_TC - Verified creation of episode successfully
+2018-01-29 20:21:59,404 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenorClosedInteractionRecordVisible true
+2018-01-29 20:22:07,010 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenorClosedInteractionRecordVisible true
+2018-01-29 20:22:17,840 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-01-29 20:22:27,965 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
+2018-01-29 20:22:29,130 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
+2018-01-29 20:22:31,081 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true

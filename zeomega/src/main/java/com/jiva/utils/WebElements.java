@@ -1,5 +1,8 @@
 package com.jiva.utils;
 
+import java.util.LinkedList;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -12,6 +15,8 @@ import org.openqa.selenium.support.ui.Select;
 public class WebElements {
 
 	WebDriver driver;
+	private static Logger logger = Logger.getLogger(WebElements.class);
+
 
 	public WebElements(WebDriver driver1) {
 		this.driver = driver1;
@@ -82,6 +87,24 @@ public class WebElements {
 	{
 		return driver.findElement(locator).getText();
 	
+	}
+	
+	public String getAttribute(By locator) {
+		LinkedList< String> attributeValue = new LinkedList<String>();
+		WebElement element = null;
+				element = driver.findElement(locator);
+				attributeValue.add(element.getAttribute("className"));
+				attributeValue.add( element.getAttribute("value"));
+				attributeValue.add(element.getAttribute("innerHTML"));
+				attributeValue.add(element.getAttribute("outerHTML"));
+				
+				attributeValue.add(element.getAttribute("innerText"));
+				attributeValue.add(element.getAttribute("text"));
+				attributeValue.add(element.getAttribute("textContent"));
+	
+			logger.info("Attribute Value" + attributeValue);
+		return attributeValue.toString();
+
 	}
 	
 	public void sleep(int time)

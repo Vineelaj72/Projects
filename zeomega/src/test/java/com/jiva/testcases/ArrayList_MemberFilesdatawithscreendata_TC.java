@@ -1,9 +1,6 @@
 package com.jiva.testcases;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.jiva.TestData.ReadMemberDemographicFile;
 import com.jiva.pages.AddInteractionsPage;
 import com.jiva.pages.ChangeStatusPage;
 import com.jiva.pages.ConfirmAddepisodePage;
@@ -22,44 +20,30 @@ import com.jiva.pages.LoginPage;
 import com.jiva.pages.MemberOverviewPage;
 import com.jiva.pages.MemberSearchPage;
 import com.jiva.pages.WorklistsPage;
-import com.jiva.utils.DateUtils;
-import com.jiva.utils.FileUtils;
-import com.jiva.utils.MemberDemographicFile;
 import com.jiva.utils.TestBase;
 
-public class DemographicDataValidation_TC extends TestBase {
-	private static Logger logger = Logger.getLogger(DemographicDataValidation_TC.class);
+public class ArrayList_MemberFilesdatawithscreendata_TC extends TestBase {
+	private static Logger logger = Logger.getLogger(ArrayList_MemberFilesdatawithscreendata_TC.class);
 	WebDriver driver;
 	private String sTestcaseName = null;
-	private String sDateFormat;
-	ArrayList<String> sFileName;
-	Map<String, String> sFileData;
+	private ArrayList<String> demographicData;
+	int ENROLLMENTID=7,ALTERNATEID=8,LASTNAME=9,FIRSTNAME=10,DOB=11,ACTIVESTATUS=12,GENDER=13;
+	
 	@BeforeClass
-	public void dataSetup() throws Exception {
-		sDateFormat=DateUtils.ymdhmsTime();
-	//	sFileName=FileUtils.listofFiles(SFILENAME, sDateFormat);
-		sFileData = MemberDemographicFile.readdemographicFile(SFILENAME);
-		//2.Location Wise pick
-		//1. Read 6 Files and written 6 Arry
-
+	public void dataSetup() {
+		demographicData =ReadMemberDemographicFile.mandatoryCheckPoints(SFILENAME); // demofile
+		logger.info("Demo File Data"+demographicData);
 	}
 	
-	
-	
-	@Test(description = "Screen Data with Member Demographic File Data")
-	public void verify_screenDataWithFileData() throws InterruptedException {
 
-		sTestcaseName = new Object() {
-		}.getClass().getEnclosingMethod().getName();
-		logger.info("Execution started for " + sTestcaseName);
-		
+	@Test(description = "Verify Demographic data from the file with screendata")
+	public void verify_Demographics_Datafromfile_toScreen() throws InterruptedException {
 
-		// initialise browser and openurl
+		sTestcaseName = new Object() {}.getClass().getEnclosingMethod().getName();
+		logger.info("Execution started for--- " + sTestcaseName);
 
-		driver = initializeDriver(BROWSER);
+		driver = initializeDriver(BROWSER); 		// initialise browser and openurl
 		openurl(driver, AutomationURL);
-		maximizeBrowser(driver);
-		// Thread.sleep(15000);
 
 		// Login Page details
 
@@ -88,10 +72,10 @@ public class DemographicDataValidation_TC extends TestBase {
 		
 		Thread.sleep(5000);
 		
-		logger.info("Member Last name "+sFileData.get("MemberLastname3"));
-		logger.info("Member First name "+sFileData.get("MemberFirstname3"));		
-		memberSearchPage.enterMemberLastname(sFileData.get("MemberLastname3"));
-		memberSearchPage.enterMemberFirstname(sFileData.get("MemberFirstname3"));
+		logger.info("Member Last name "+demographicData.get(LASTNAME));
+		logger.info("Member First name "+demographicData.get(FIRSTNAME));		
+		memberSearchPage.enterMemberLastname(demographicData.get(LASTNAME));// Read Firstrecord lastname from the arraylist
+		memberSearchPage.enterMemberFirstname(demographicData.get(FIRSTNAME));
 		memberSearchPage.clickSearch();
 		
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
@@ -101,25 +85,21 @@ public class DemographicDataValidation_TC extends TestBase {
 		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);
 	
 		Thread.sleep(3000);
-		Assert.assertEquals(sFileData.get("EligibilityId3"), memberOverviewPage.getCoverageId(), "Member Coverage ID validated");
+		Assert.assertEquals(demographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated");
+		Assert.assertEquals(demographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated");
 		
 		memberOverviewPage.expandMemberInfo();
 		memberOverviewPage.openMemberInformation();
 		Thread.sleep(5000);
 		
-		Assert.assertEquals(sFileData.get("MemberLastname3"), memberOverviewPage.getMemberLastName(), "Member last name validated");
+		Assert.assertEquals(demographicData.get(LASTNAME), memberOverviewPage.getMemberLastName(), "Member last name validated");
 		Thread.sleep(5000);		
-		Assert.assertEquals(sFileData.get("MemberFirstname3"), memberOverviewPage.getMemberFirstName(), "Member first name validated");			
-		Assert.assertEquals(sFileData.get("MemberId3"),memberOverviewPage.getAlternateId(),"Member alternate id validated");
+		Assert.assertEquals(demographicData.get(FIRSTNAME), memberOverviewPage.getMemberFirstName(), "Member first name validated");			
+		Assert.assertEquals(demographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");
 		
-		/*SimpleDateFormat dmyFormat = new SimpleDateFormat("yyyy-MM-dd");
-		String ymd = dmyFormat.format(memberOverviewPage.getMemberDOB());
-		System.out.println(ymd);
-		
-		Assert.assertEquals(sFileData.get("MemberDOB3"),ymd,"Member DOB validated"); */      //doubt
-		
-		Assert.assertEquals(true,memberOverviewPage.getMemberMaritalStatus().toLowerCase().contains(sFileData.get("MemberMaritalStatus3").toLowerCase()),"Member marital status validated");		
-		Assert.assertEquals(true,memberOverviewPage.getGender().contains(sFileData.get("MemberGender3")),"Member gender validated");
+		//Assert.assertEquals(demographichData.get(ALTRD),ymd,"Member DOB validated");       //doubt
+		//Assert.assertEquals(true,memberOverviewPage.getMemberMaritalStatus().toLowerCase().contains(sFileData.get("MemberMaritalStatus3").toLowerCase()),"Member marital status validated");		
+		Assert.assertEquals(true,memberOverviewPage.getGender().contains(demographicData.get(GENDER)),"Member gender validated");
 		Thread.sleep(5000);
 		memberOverviewPage.closeMemberInfo();
 		memberOverviewPage.expandMemberInfo();
@@ -138,19 +118,7 @@ public class DemographicDataValidation_TC extends TestBase {
 		// Worklists page details
 
 		WorklistsPage worklists = new WorklistsPage(driver);
-		/*dashboard.clickWorklists();
-		worklists.clickCCMreferral();
-		worklists.clickAdvanceSearch();
-		Thread.sleep(5000);
-		worklists.enterLastName(sFileData.get("MemberLastname3"));
-		Thread.sleep(5000);
-		worklists.enterFirstName(sFileData.get("MemberFirstname3"));
-		worklists.clickSearchButton();
-		Thread.sleep(5000);
-		String cmEpisodeID = worklists.getEpisodeID(sFileData.get("MemberLastname3"));
-		logger.info(cmEpisodeID);
-		worklists.clickCM(sFileData.get("MemberLastname3"));*/
-		
+				
 		memberOverviewPage.clickCurrentEpisodecogwheel();
 		memberOverviewPage.openEpisode();
 		
@@ -179,14 +147,6 @@ public class DemographicDataValidation_TC extends TestBase {
 		AddInteractionsPage addInteractionsPage = new AddInteractionsPage(driver);
 		addInteractionsPage.add1stInteractiondetails();
 		addInteractionsPage.clickSaveInteraction();
-
-		// Calender Page details
-		/*
-		 * dashboard.clickCalender(); CalenderPage calenderPage = new
-		 * CalenderPage(driver); Assert.assertEquals(true,
-		 * calenderPage.verifyCalenderRecord(memberfullname)
-		 * ,"Member record appeared in Calender");
-		 */
 
 		episodeactivitiespage.clickWheel();
 		episodeactivitiespage.clickAddInteraction();
@@ -232,8 +192,12 @@ public class DemographicDataValidation_TC extends TestBase {
 		Assert.assertEquals(true, episodeactivitiespage.verifyEpisodeStatus_Closed(userprofilename),
 				"Closed episode successfully");
 		
+		
+		
 		// Closing the browser
 		//closeBrowser(driver);
-			
+		
+		
 	}
+
 }

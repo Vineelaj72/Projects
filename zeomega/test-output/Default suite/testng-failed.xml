@@ -5,7 +5,8 @@
     <classes>
       <class name="com.jiva.testcases.MemberFilesdatawithscreendata_TC">
         <methods>
-          <include name="verify_fileDatawithScreenData"/>
+          <include name="verify_Demographics_Datafromfile_toScreen"/>
+          <include name="dataSetup"/>
         </methods>
       </class> <!-- com.jiva.testcases.MemberFilesdatawithscreendata_TC -->
     </classes>

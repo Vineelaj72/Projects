@@ -24,7 +24,7 @@ public class ReadMemberDemographicFile {
 					}
 				}
 					for (int j = 0; j < demovalue.size(); j++) {
-						//System.out.println("j--" + j + "--" + demovalue.get(j));
+					//	System.out.println("j--" + j + "--" + demovalue.get(j));
 						if(demovalue.get(j).contains("^"))
 						{
 							fileValue.add(demovalue.get(j));
@@ -33,6 +33,7 @@ public class ReadMemberDemographicFile {
 							fileValue.add(demovalue.get(j+5));
 							fileValue.add(demovalue.get(j+11));
 							fileValue.add(demovalue.get(j+21));
+							fileValue.add(demovalue.get(j+16));
 						}
 							
 					}
@@ -45,12 +46,12 @@ public class ReadMemberDemographicFile {
 
 	public static void main(String[] args) {
 		String FILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20171114/jiva-eligibility-demographics_20171114_171337~20171114_091506616~.txt";
-		ReadMemberDemographicFile files = new ReadMemberDemographicFile();
-		ArrayList<String> mandatoryData =files.mandatoryCheckPoints(FILENAME);
+	//	ReadMemberDemographicFile files = new ReadMemberDemographicFile();
+		ArrayList<String> mandatoryData =ReadMemberDemographicFile.mandatoryCheckPoints(FILENAME);
 		System.out.println(mandatoryData);
 		System.out.println(mandatoryData.size());
 		for (int i = 0; i < mandatoryData.size(); i++) {
-			
+			System.out.println("mandat--"+i+"---"+mandatoryData.get(i));
 		}
 	}
 }

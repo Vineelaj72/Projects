@@ -27,7 +27,7 @@ public class MemberOverviewPage extends WebElements {
 	By memberDOBlocator = By.xpath("//div/span[contains(text(),'Date of Birth')]/../../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_birth_dt')]");
 	By maritalstatuslocator = By.xpath("//div[contains(text(),'Marital Status')]/../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_marital_status')]");
 	By genderlocator = By.xpath("//div/span[contains(text(),'Sex')]/../../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_gender')]");
-	By activestatuslocator = By.xpath("//td/span[contains(text(),'Coverage')]/../i[contains(@class,'fa fa-circle font-color-6cc009')]");
+	By activestatuslocator = By.xpath("//i[contains(@ng-if,'!memberScope.cvgExpired')]");
 	By coverageidlocator = By.xpath("//span/j-label[contains(text(),'Coverage ID')]/../../span[contains(@ng-bind,'memberScope.member_details.coverage_id')]");
 	By phonelocator = By.xpath(".//*[@id='angularcontent']/div[1]/div/div[2]/table/tbody[1]/tr/td[2]/span[4]");
 	
@@ -120,7 +120,11 @@ public class MemberOverviewPage extends WebElements {
 	}
 	public String getActiveStatus()
 	{
-		return getText(activestatuslocator);
+		String status= getAttribute(activestatuslocator);
+		if(status.contains("6cc009"))
+			return "Y";
+		else 
+			return "N";
 	}
 	public String getCoverageId()
 	{

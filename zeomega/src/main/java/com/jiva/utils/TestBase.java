@@ -94,6 +94,7 @@ public class TestBase implements Setup {
 	public void openurl(WebDriver driver, String url)
 	{
 		driver.get(url);
+		maximizeBrowser(driver);
 	}
 
 	public void maximizeBrowser(WebDriver driver)
