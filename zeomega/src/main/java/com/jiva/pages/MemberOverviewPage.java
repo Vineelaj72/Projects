@@ -29,8 +29,9 @@ public class MemberOverviewPage extends WebElements {
 	By genderlocator = By.xpath("//div/span[contains(text(),'Sex')]/../../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_gender')]");
 	By activestatuslocator = By.xpath("//i[contains(@ng-if,'!memberScope.cvgExpired')]");
 	By coverageidlocator = By.xpath("//span/j-label[contains(text(),'Coverage ID')]/../../span[contains(@ng-bind,'memberScope.member_details.coverage_id')]");
-	By phonelocator = By.xpath(".//*[@id='angularcontent']/div[1]/div/div[2]/table/tbody[1]/tr/td[2]/span[4]");
+	By phonelocator = By.xpath("//td/span[contains(text(),'Phone')]/../span[contains(@ng-bind,'preferred_phone')]");
 	
+	By HOMEaddresstypelocator = By.xpath(".//*[@id='cms-body']/div[5]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[1]/div[4]/div[3]/span");
 	By HOMEziplocator = By.xpath("//div/span[contains(text(),'HOME')]/../../../div/div[contains(text(),'Zip')]/../div/span[contains(@ng-bind,'record.member_zipcode')]");
 	By HOMEcitylocator = By.xpath("//div/span[contains(text(),'HOME')]/../../../div/div[contains(text(),'City')]/../div/span[contains(@ng-bind,'record.member_city')]");
 	By HOMEaddressline1locator = By.xpath("//div/span[contains(text(),'HOME')]/../../../div/div[contains(text(),'Address Line 1')]/../div/span[contains(@ng-bind,'record.member_addr_1')]");
@@ -38,7 +39,7 @@ public class MemberOverviewPage extends WebElements {
 	By HOMEstatelocator = By.xpath("//div/span[contains(text(),'HOME')]/../../../../div/div/div[contains(text(),'State')]/../div/span[contains(@ng-bind,'record.member_state')]");
 	By HOMEcountrylocator = By.xpath("//div/span[contains(text(),'HOME')]/../../../../div/div/div[contains(text(),'Country')]/../div/span[contains(@ng-bind,'record.member_country')]");
 	
-	
+	By PRIMARYaddresstypelocator = By.xpath(".//*[@id='cms-body']/div[5]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/div[1]/div[1]/div[4]/div[3]/span");
 	By PRIMARYziplocator = By.xpath("//div/span[contains(text(),'PRIMARY')]/../../../div/div[contains(text(),'Zip')]/../div/span[contains(@ng-bind,'record.member_zipcode')]");
 	By PRIMARYcitylocator = By.xpath("//div/span[contains(text(),'PRIMARY')]/../../../div/div[contains(text(),'City')]/../div/span[contains(@ng-bind,'record.member_city')]");
 	By PRIMARYaddressline1locator = By.xpath("//div/span[contains(text(),'PRIMARY')]/../../../div/div[contains(text(),'Address Line 1')]/../div/span[contains(@ng-bind,'record.member_addr_1')]");
@@ -135,51 +136,59 @@ public class MemberOverviewPage extends WebElements {
 	{
 		return getText(phonelocator);
 	}
-	public String gethomeaddressline1()
+	public String getHomeAddressType()
+	{
+		return getText(HOMEaddresstypelocator);
+	}
+	public String getHomeAddressline1()
 	{
 		return getText(HOMEaddressline1locator);
 	}
-	public String gethomeaddressline2()
+	public String getHomeAddressline2()
 	{
 		return getText(HOMEaddressline2locator);
 	}
-	public String gethomecity()
+	public String getHomeCity()
 	{
 		return getText(HOMEcitylocator);
 	}
-	public String gethomestate()
+	public String getHomeState()
 	{
 		return getText(HOMEstatelocator);
 	}
-	public String gethomezip()
+	public String getHomeZip()
 	{
 		return getText(HOMEziplocator);
 	}
-	public String gethomecountry()
+	public String getHomeCountry()
 	{
 		return getText(HOMEcountrylocator);
 	}
-	public String getprimaryaddressline1()
+	public String getPrimaryAddressType()
+	{
+		return getText(PRIMARYaddresstypelocator);
+	}
+	public String getPrimaryAddressline1()
 	{
 		return getText(PRIMARYaddressline1locator);
 	}
-	public String getprimaryaddressline2()
+	public String getPrimaryAddressline2()
 	{
 		return getText(PRIMARYaddressline2locator);
 	}
-	public String getprimarycity()
+	public String getPrimaryCity()
 	{
 		return getText(PRIMARYcitylocator);
 	}
-	public String getprimarystate()
+	public String getPrimaryState()
 	{
 		return getText(PRIMARYstatelocator);
 	}
-	public String getprimaryzip()
+	public String getPrimaryZip()
 	{
 		return getText(PRIMARYziplocator);
 	}
-	public String getprimarycountry()
+	public String getPrimaryCountry()
 	{
 		return getText(PRIMARYcountrylocator);
 	}

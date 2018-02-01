@@ -13,7 +13,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-ie-driver</artifactId>
-			<version>3.8.1</version>S
+			<version>3.8.1</version>
 		</dependency>
 
 		<dependency>

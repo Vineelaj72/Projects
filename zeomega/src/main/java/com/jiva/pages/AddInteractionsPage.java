@@ -19,11 +19,12 @@ public class AddInteractionsPage extends WebElements{
 	By notenrolloutcomesreasonsdropdown = By.xpath("//select[@name='reasons']");
 	By savelocator = By.xpath("//button[contains(text(),'Save')]");
 	
-	public void add1stInteractiondetails()
+	public void add1stInteractiondetails() throws InterruptedException
 	{
 		clickUsingJs(followuprequiredyeslocator);
 		clickUsingJs(interactionstatusunsuccessfullocator);
 		clickUsingJs(enrollstatusunsuccessfullocator);
+		Thread.sleep(5000);
 		dropdownSelect(notenrolloutcomesreasonsdropdown,"Unable to contact member");
 	}
 	public void clickSaveInteraction()

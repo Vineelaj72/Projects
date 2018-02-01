@@ -7,7 +7,7 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.jiva.testcases.SanityTC_03"/>
+      <class name="com.jiva.testcases.ArrayList_MemberFilesdatawithscreendata_TC"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

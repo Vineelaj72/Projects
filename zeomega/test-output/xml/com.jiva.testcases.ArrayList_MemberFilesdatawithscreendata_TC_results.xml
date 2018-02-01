@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="114.578">
+  <properties />
+  
+  
+            <testcase name="verify_Demographics_Datafromfile_toScreen" time="114.578" classname="com.jiva.testcases.ArrayList_MemberFilesdatawithscreendata_TC" />
+      
+</testsuite>

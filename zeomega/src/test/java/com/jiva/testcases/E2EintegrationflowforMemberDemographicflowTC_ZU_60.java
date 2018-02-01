@@ -22,17 +22,18 @@ import com.jiva.pages.MemberSearchPage;
 import com.jiva.pages.WorklistsPage;
 import com.jiva.utils.TestBase;
 
-public class ArrayList_MemberFilesdatawithscreendata_TC extends TestBase {
-	private static Logger logger = Logger.getLogger(ArrayList_MemberFilesdatawithscreendata_TC.class);
+public class E2EintegrationflowforMemberDemographicflowTC_ZU_60 extends TestBase {
+	private static Logger logger = Logger.getLogger(E2EintegrationflowforMemberDemographicflowTC_ZU_60.class);
 	WebDriver driver;
 	private String sTestcaseName = null;
-	private ArrayList<String> demographicData;
-	int ENROLLMENTID=7,ALTERNATEID=8,LASTNAME=9,FIRSTNAME=10,DOB=11,ACTIVESTATUS=12,GENDER=13;
+	private ArrayList<String> MemberDemographicData;
+	//int ENROLLMENTID=7,ALTERNATEID=8,LASTNAME=9,FIRSTNAME=10,DOB=11,ACTIVESTATUS=12,GENDER=13;
+	int ENROLLMENTID=0,ALTERNATEID=1,LASTNAME=2,FIRSTNAME=3,DOB=4,ACTIVESTATUS=5,GENDER=6;
 	
 	@BeforeClass
 	public void dataSetup() {
-		demographicData =ReadMemberDemographicFile.mandatoryCheckPoints(SFILENAME); // demofile
-		logger.info("Demo File Data"+demographicData);
+		MemberDemographicData =ReadMemberDemographicFile.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME); // demographic file
+		logger.info("Member Demographic File Data "+MemberDemographicData);
 	}
 	
 
@@ -72,10 +73,10 @@ public class ArrayList_MemberFilesdatawithscreendata_TC extends TestBase {
 		
 		Thread.sleep(5000);
 		
-		logger.info("Member Last name "+demographicData.get(LASTNAME));
-		logger.info("Member First name "+demographicData.get(FIRSTNAME));		
-		memberSearchPage.enterMemberLastname(demographicData.get(LASTNAME));// Read Firstrecord lastname from the arraylist
-		memberSearchPage.enterMemberFirstname(demographicData.get(FIRSTNAME));
+		logger.info("Member Last name "+MemberDemographicData.get(LASTNAME));
+		logger.info("Member First name "+MemberDemographicData.get(FIRSTNAME));		
+		memberSearchPage.enterMemberLastname(MemberDemographicData.get(LASTNAME));// Read Firstrecord lastname from the arraylist
+		memberSearchPage.enterMemberFirstname(MemberDemographicData.get(FIRSTNAME));
 		memberSearchPage.clickSearch();
 		
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
@@ -85,21 +86,21 @@ public class ArrayList_MemberFilesdatawithscreendata_TC extends TestBase {
 		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);
 	
 		Thread.sleep(3000);
-		Assert.assertEquals(demographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated");
-		Assert.assertEquals(demographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated");
+		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated");
+		Assert.assertEquals(MemberDemographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated");
 		
 		memberOverviewPage.expandMemberInfo();
 		memberOverviewPage.openMemberInformation();
 		Thread.sleep(5000);
 		
-		Assert.assertEquals(demographicData.get(LASTNAME), memberOverviewPage.getMemberLastName(), "Member last name validated");
+		Assert.assertEquals(MemberDemographicData.get(LASTNAME), memberOverviewPage.getMemberLastName(), "Member last name validated");
 		Thread.sleep(5000);		
-		Assert.assertEquals(demographicData.get(FIRSTNAME), memberOverviewPage.getMemberFirstName(), "Member first name validated");			
-		Assert.assertEquals(demographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");
+		Assert.assertEquals(MemberDemographicData.get(FIRSTNAME), memberOverviewPage.getMemberFirstName(), "Member first name validated");			
+		Assert.assertEquals(MemberDemographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");
 		
 		//Assert.assertEquals(demographichData.get(ALTRD),ymd,"Member DOB validated");       //doubt
 		//Assert.assertEquals(true,memberOverviewPage.getMemberMaritalStatus().toLowerCase().contains(sFileData.get("MemberMaritalStatus3").toLowerCase()),"Member marital status validated");		
-		Assert.assertEquals(true,memberOverviewPage.getGender().contains(demographicData.get(GENDER)),"Member gender validated");
+		Assert.assertEquals(true,memberOverviewPage.getGender().contains(MemberDemographicData.get(GENDER)),"Member gender validated");
 		Thread.sleep(5000);
 		memberOverviewPage.closeMemberInfo();
 		memberOverviewPage.expandMemberInfo();

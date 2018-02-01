@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class ReadAddress {
+public class ReadPhoneDetails {
 
 	public static ArrayList<String> mandatoryCheckPoints(String sFileName) {
 		BufferedReader br = null;
@@ -26,14 +26,9 @@ public class ReadAddress {
 						if(demovalue.get(j).contains("^"))
 						{
 							fileValue.add(demovalue.get(j));
-							fileValue.add(demovalue.get(j+1));	//home
-							fileValue.add(demovalue.get(j+2));	//address1
-							fileValue.add(demovalue.get(j+4));	//city
-							fileValue.add(demovalue.get(j+5));	//state code
-							fileValue.add(demovalue.get(j+6));	//zip
-							fileValue.add(demovalue.get(j+7));	//country
-							fileValue.add(demovalue.get(j+10));	//active status
-						
+							fileValue.add(demovalue.get(j+2));	//phone
+							fileValue.add(demovalue.get(j+4));	//active status
+												
 					}
 							
 					}
@@ -45,8 +40,8 @@ public class ReadAddress {
 	}
 
 	public static void main(String[] args) {
-		String FILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180129/jiva-eligibility-address_20180129_100001~20180129_100653424~.txt";
-		ReadAddress files = new ReadAddress();
+		String FILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180129/jiva-eligibility-phone_20180129_100001~20180129_100655779~.txt";
+		ReadPhoneDetails files = new ReadPhoneDetails();
 		ArrayList<String> mandatoryData =files.mandatoryCheckPoints(FILENAME);
 		System.out.println(mandatoryData);
 		System.out.println(mandatoryData.size());
@@ -55,4 +50,5 @@ public class ReadAddress {
 		}
 	}
 }
+
 
