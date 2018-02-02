@@ -21,6 +21,9 @@ public class Episodeoverviewpage extends WebElements {
 	By activitieslinklocator = By.xpath("//a/span[contains(text(),'Activities')]");
 	By changestatuslinklocator = By.xpath("//a/span[contains(text(),'Change Status')]");
 	By programslinklocator = By.xpath("//a/span[contains(text(),'Programs')]");
+	By assessmentslinklocator = By.xpath("//a/span[contains(text(),'Assessments')]");
+	By hamburgerlocator = By.xpath("//button[contains(@ng-click,'openSubLinksPopOverDialog')]");
+	By correspondencelinklocator = By.xpath("//a/span[contains(text(),'Correspondence')]");
 
 	public void openActivities() {
 		clickUsingJs(activitiesopenlocator);
@@ -45,8 +48,14 @@ public class Episodeoverviewpage extends WebElements {
 	public boolean verify_CM_Mbr_Opt_OutLetterGenerated(String userProfileName)
 	{
 		By Mbr_Opt_Outletterrecordlocator = By.xpath("//span[contains(text(),'CM Mbr Opt Out')]/../../td[contains(text(),'"+userProfileName.split(",")[0].trim()+"')]");		
-		logger.info("verify_UTCletterGenerated in Letters screen "+isDisplayed(Mbr_Opt_Outletterrecordlocator));
+		logger.info("verify_CM_Mbr_Opt_OutLetterGenerated in Letters screen "+isDisplayed(Mbr_Opt_Outletterrecordlocator));
 		return isDisplayed(Mbr_Opt_Outletterrecordlocator);
+	}
+	public boolean verify_CM_PostEnrollmentLetterGenerated(String userProfileName)
+	{
+		By CM_PostEnrollmentletterrecordlocator = By.xpath("//span[contains(text(),'CM Post Enrollment')]/../../td[contains(text(),'"+userProfileName.split(",")[0].trim()+"')]");		
+		logger.info("verify_CM_PostEnrollmentLetterGenerated in Letters screen "+isDisplayed(CM_PostEnrollmentletterrecordlocator));
+		return isDisplayed(CM_PostEnrollmentletterrecordlocator);
 	}
 	
 	public void openCorrespondence()
@@ -56,6 +65,10 @@ public class Episodeoverviewpage extends WebElements {
 	
 	public void clickWorkflow() {
 		clickUsingJs(workflowlocator);
+	}
+	
+	public void clickHamBurger() {
+		clickUsingJs(hamburgerlocator);
 	}
 
 	public void clickActivities() {
@@ -69,4 +82,11 @@ public class Episodeoverviewpage extends WebElements {
 	public void clickPrograms() {
 		clickUsingJs(programslinklocator);
 	}
+	public void clickAssessments() {
+		clickUsingJs(assessmentslinklocator);
+	}
+	public void clickCorrespondence() {
+		clickUsingJs(correspondencelinklocator);
+	}
+	
 }

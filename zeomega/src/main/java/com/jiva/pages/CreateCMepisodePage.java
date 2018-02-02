@@ -25,6 +25,7 @@ public class CreateCMepisodePage extends WebElements{
 	By savebuttonlocator = By.xpath("(//button[@class='btn btn-success'])[1]");
 	By membersearchverifylocator = By.xpath("//span[contains(text(),'Search')]");
 	By cancelbuttonlocator = By.xpath("//button[@ng-click='addEncCtrl.cancelCreateEpisode()']");
+	By saveandcontinuelocator = By.xpath("(//button[@class='btn btn-success'])[2]");
 	
 	
 	
@@ -37,7 +38,7 @@ public class CreateCMepisodePage extends WebElements{
 		dropdownSelect(assigntodd, "CCM Referral");
 		dropdownSelect(programnamelocator, "Complex Case Management");
 		Thread.sleep(5000);
-		dropdownSelect(programassigntolocator,"Jayavarapu, Vineela"); //doubt
+		dropdownSelect(programassigntolocator,"Jayavarapu, Vineela"); 
 		clickUsingJs(addprogrambutton);
 				
 	}
@@ -48,11 +49,15 @@ public class CreateCMepisodePage extends WebElements{
 		
 	}
 	
-	public void clickSave() throws InterruptedException  //doubt
+	public void clickSaveEpisode() throws InterruptedException  //doubt
 	{
 		clickUsingJs(savebuttonlocator);
 		//duplicateCMEpisodeAlert();       // use this for duplicate episodes data
 		//clickUsingJs(cancelbuttonlocator);
+	}
+	public void clickSaveandContinueEpisode()
+	{
+		clickUsingJs(saveandcontinuelocator);
 	}
 	
 	public boolean verifyEpidodeAdded()

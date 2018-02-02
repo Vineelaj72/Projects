@@ -155,7 +155,7 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		CreateCMepisodePage createCMepisodePage = new CreateCMepisodePage(driver);
 		createCMepisodePage.addEpisodeDetails();
 		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(), "Program added Sucessfully");
-		createCMepisodePage.clickSave();
+		createCMepisodePage.clickSaveEpisode();
 		logger.info("Verified creation of episode successfully");
 
 		// Worklists page details

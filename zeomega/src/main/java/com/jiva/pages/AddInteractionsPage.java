@@ -17,6 +17,7 @@ public class AddInteractionsPage extends WebElements{
 	By interactionstatusunsuccessfullocator = By.xpath("//label[contains(text(),'Interaction Status')]/../div/label/span[contains(text(),'Unsuccessful')]/../input");
 	By interactionstatussuccessfullocator = By.xpath("//label[contains(text(),'Interaction Status')]/../div/label/span[contains(text(),'Successful')]/../input");
 	By enrollstatusunsuccessfullocator = By.xpath("(//input[@name='Successful'])[2]");
+	By enrollstatussuccessfullocator = By.xpath("(//input[@name='Successful'])[1]");
 	By notenrolloutcomesreasonsdropdown = By.xpath("//select[@name='reasons']");
 	By outreachoutcomesdropdown = By.xpath("//select[@name='status']");
 	By assigntodropdown = By.xpath("//select[@name='assignTo']");
@@ -38,6 +39,16 @@ public class AddInteractionsPage extends WebElements{
 		Thread.sleep(5000);
 		dropdownSelect(notenrolloutcomesreasonsdropdown,"Appointment Scheduled");
 	}
+	
+	public void add1stInteractionforCCM(String userProfileName) throws InterruptedException
+	{
+		clickUsingJs(interactionstatussuccessfullocator);
+		clickUsingJs(enrollstatussuccessfullocator);
+		Thread.sleep(5000);
+		dropdownSelect(outreachoutcomesdropdown, "Open");
+		dropdownSelect(assigntodropdown, userProfileName);
+	}
+	
 	public void clickSaveInteraction()
 	{
 		clickUsingJs(savelocator);
@@ -66,5 +77,11 @@ public class AddInteractionsPage extends WebElements{
 		Thread.sleep(10000);
 		alertBox("This Episode has Open Activities");
 	}
+	public void changingAssignedUserAlert() throws InterruptedException
+	{
+		Thread.sleep(10000);
+		alertBox("You are changing the assigned user");
+	}
+	
 	
 }

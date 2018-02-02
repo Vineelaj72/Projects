@@ -127,7 +127,7 @@ public class Map_DemographicDataValidation_TC extends TestBase {
 		CreateCMepisodePage createCMepisodePage = new CreateCMepisodePage(driver);
 		createCMepisodePage.addEpisodeDetails();
 		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(), "Program added Sucessfully");
-		createCMepisodePage.clickSave();
+		createCMepisodePage.clickSaveEpisode();
 		//Assert.assertEquals(true, createCMepisodePage.verifyEpidodeAdded(), "Episode added Sucessfully");
 		// System.out.println("Verified creation of episode successfully");
 		logger.info("Verified creation of episode successfully");
