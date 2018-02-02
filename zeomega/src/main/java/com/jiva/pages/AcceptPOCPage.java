@@ -47,6 +47,7 @@ public class AcceptPOCPage extends WebElements{
 		dropdownSelect(calendermonthdropdown, "December");
 		clickUsingJs(monthsubmitlocator);
 		clickUsingJs(dateselectlocator);
+		Thread.sleep(3000);
 		clickUsingJs(savedetailslocator);
 		Thread.sleep(5000);
 		clickUsingJs(problemradiobuttonlocator);
@@ -54,7 +55,7 @@ public class AcceptPOCPage extends WebElements{
 		clickUsingJs(goalradiobuttonlocator);
 		Thread.sleep(1000);
 		clickUsingJs(interventionradiobuttonlocator);
-		Thread.sleep(1000);
+		Thread.sleep(10000);
 		clickUsingJs(acceptPOClocator);
 	}
 	public void closePOCWindow()

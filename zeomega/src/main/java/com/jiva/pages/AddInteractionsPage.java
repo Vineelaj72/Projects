@@ -46,7 +46,8 @@ public class AddInteractionsPage extends WebElements{
 		clickUsingJs(enrollstatussuccessfullocator);
 		Thread.sleep(5000);
 		dropdownSelect(outreachoutcomesdropdown, "Open");
-		dropdownSelect(assigntodropdown, userProfileName);
+		Thread.sleep(10000);
+		dropdownSelect(assigntodropdown,userProfileName);
 	}
 	
 	public void clickSaveInteraction()

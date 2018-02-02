@@ -63,7 +63,8 @@ public class Episodeoverviewpage extends WebElements {
 		clickUsingJs(correspondenceopenlocator);
 	}
 	
-	public void clickWorkflow() {
+	public void clickWorkflow() 
+	{
 		clickUsingJs(workflowlocator);
 	}
 	

@@ -49,6 +49,10 @@ public class WebElements {
 		}
 		return flag;
 	}
+	public boolean isEnabled(By locator)
+	{
+		return driver.findElement(locator).isEnabled();
+	}
 
 	public void clickUsingJs(By locator) {
 

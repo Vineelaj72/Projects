@@ -1,8 +1,12 @@
 package com.jiva.pages;
 
+import java.sql.Driver;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.jiva.testcases.E2EintegrationflowTC_ZU_63;
 import com.jiva.utils.WebElements;
 
 public class ChangeStatusPage extends WebElements{
@@ -10,6 +14,7 @@ public class ChangeStatusPage extends WebElements{
 	public ChangeStatusPage(WebDriver driver1) {
 		super(driver1);
 		}
+	private static Logger logger = Logger.getLogger(ChangeStatusPage.class);
 	
 	By enrolloutcomeunsuccessfullocator = By.xpath("//label/input[contains(@value,'Un-Successful')]");
 	By outreachoutcomedd = By.xpath("//label[contains(text(),'Outreach Outcomes')]/../div/select[contains(@name,'status')]");
@@ -25,9 +30,9 @@ public class ChangeStatusPage extends WebElements{
 	}
 	public void changeStatusDetailsforIdentifiedNeeds() throws InterruptedException
 	{
-		Thread.sleep(5000);
 		dropdownSelect(statusdropdown, "Closed");
 		dropdownSelect(reasonsdropdown, "Identified Needs/Goals Have Been Met");
+		//Thread.sleep(3000);
 		clickUsingJs(savelocator);
 	}
 	public void existingOpenActivitiesforEpisodeAlert() throws InterruptedException

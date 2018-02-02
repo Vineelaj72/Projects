@@ -198,14 +198,15 @@ public class E2EintegrationflowTC_ZU_63 extends TestBase {
 				
 				AcceptPOCPage acceptPOCPage = new AcceptPOCPage(driver);
 				acceptPOCPage.managePOCDetails();
+				Thread.sleep(5000);
 				acceptPOCPage.closePOCWindow();
 				Thread.sleep(5000);
-				
 				episodeoverviewpage.clickWorkflow();
+				Thread.sleep(5000);
 				episodeoverviewpage.clickChangeStatus();
 				
 				ChangeStatusPage changeStatusPage = new ChangeStatusPage(driver);
-				Thread.sleep(5000);
+				//Thread.sleep(5000);
 				changeStatusPage.changeStatusDetailsforIdentifiedNeeds();
 				changeStatusPage.existingOpenActivitiesforEpisodeAlert();
 				Thread.sleep(5000);
