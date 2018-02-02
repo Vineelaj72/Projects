@@ -20,6 +20,7 @@ public class Episodeoverviewpage extends WebElements {
 	By workflowlocator = By.xpath("//button[contains(text(),'Workflow')]");
 	By activitieslinklocator = By.xpath("//a/span[contains(text(),'Activities')]");
 	By changestatuslinklocator = By.xpath("//a/span[contains(text(),'Change Status')]");
+	By programslinklocator = By.xpath("//a/span[contains(text(),'Programs')]");
 
 	public void openActivities() {
 		clickUsingJs(activitiesopenlocator);
@@ -34,6 +35,18 @@ public class Episodeoverviewpage extends WebElements {
 		By UTCletterrecordlocator = By.xpath("//span[contains(text(),'CM Unable To Reach')]/../../td[contains(text(),'"+userProfileName.split(",")[0].trim()+"')]");		
 		logger.info("verify_UTCletterGenerated in Letters screen "+isDisplayed(UTCletterrecordlocator));
 		return isDisplayed(UTCletterrecordlocator);
+	}
+	public boolean verify_CM_PCP_Mbr_Opt_OutLetterGenerated(String userProfileName)
+	{
+		By PCP_Mbr_Opt_Outletterrecordlocator = By.xpath("//span[contains(text(),'CM PCP Mbr Opt Out Ltr')]/../../td[contains(text(),'"+userProfileName.split(",")[0].trim()+"')]");		
+		logger.info("verify_UTCletterGenerated in Letters screen "+isDisplayed(PCP_Mbr_Opt_Outletterrecordlocator));
+		return isDisplayed(PCP_Mbr_Opt_Outletterrecordlocator);
+	}
+	public boolean verify_CM_Mbr_Opt_OutLetterGenerated(String userProfileName)
+	{
+		By Mbr_Opt_Outletterrecordlocator = By.xpath("//span[contains(text(),'CM Mbr Opt Out')]/../../td[contains(text(),'"+userProfileName.split(",")[0].trim()+"')]");		
+		logger.info("verify_UTCletterGenerated in Letters screen "+isDisplayed(Mbr_Opt_Outletterrecordlocator));
+		return isDisplayed(Mbr_Opt_Outletterrecordlocator);
 	}
 	
 	public void openCorrespondence()
@@ -51,5 +64,9 @@ public class Episodeoverviewpage extends WebElements {
 	
 	public void clickChangeStatus() {
 		clickUsingJs(changestatuslinklocator);
+	}
+	
+	public void clickPrograms() {
+		clickUsingJs(programslinklocator);
 	}
 }

@@ -103,5 +103,11 @@ public class Episodeactivitiespage extends WebElements {
 		logger.info("verify the status of Episode as Closed "+isDisplayed(closedepisoderecordlocator));
 		return isDisplayed(closedepisoderecordlocator);
 	}
+	public boolean verifyEpisodeStatus() {
+		By episodestatuslocator = By.xpath("//span[contains(text(),'Closed')]");
+		logger.info("verify the status of Episode as Closed "+isDisplayed(episodestatuslocator));
+		return isDisplayed(episodestatuslocator);
+	}
+	
 	
 }

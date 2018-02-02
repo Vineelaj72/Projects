@@ -174,7 +174,7 @@ public class Map_DemographicDataValidation_TC extends TestBase {
 		// Add 1st interaction details
 		
 		AddInteractionsPage addInteractionsPage = new AddInteractionsPage(driver);
-		addInteractionsPage.add1stInteractiondetails();
+		addInteractionsPage.add1stInteractionforUTC();
 		addInteractionsPage.clickSaveInteraction();
 
 		// Calender Page details
@@ -190,7 +190,7 @@ public class Map_DemographicDataValidation_TC extends TestBase {
 
 		// Add 2nd interaction details
 		Thread.sleep(5000);
-		addInteractionsPage.add2ndInteraction();
+		addInteractionsPage.add2ndInteractionforUTC();
 		addInteractionsPage.clickSaveInteraction();
 		episodeactivitiespage.clickClosedActivities();
 		Assert.assertEquals(true,episodeactivitiespage.verify_OpenorClosedInteractionRecordVisible(),"Closed interaction available");

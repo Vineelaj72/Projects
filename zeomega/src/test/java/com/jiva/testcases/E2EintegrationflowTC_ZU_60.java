@@ -51,7 +51,7 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 	}
 	
 
-	@Test(description = "Verify Member data from the files with screendata")
+	@Test(description = "Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member")
 	public void verify_MemberDatafromfile_toScreen() throws InterruptedException {
 
 		sTestcaseName = new Object() {}.getClass().getEnclosingMethod().getName();
@@ -184,7 +184,7 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		// Add 1st interaction details
 		
 		AddInteractionsPage addInteractionsPage = new AddInteractionsPage(driver);
-		addInteractionsPage.add1stInteractiondetails();
+		addInteractionsPage.add1stInteractionforUTC();
 		addInteractionsPage.clickSaveInteraction();
 
 		episodeactivitiespage.clickWheel();
@@ -192,7 +192,7 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 
 		// Add 2nd interaction details
 		Thread.sleep(5000);
-		addInteractionsPage.add2ndInteraction();
+		addInteractionsPage.add2ndInteractionforUTC();
 		addInteractionsPage.clickSaveInteraction();
 		episodeactivitiespage.clickClosedActivities();
 		Assert.assertEquals(true,episodeactivitiespage.verify_OpenorClosedInteractionRecordVisible(),"Closed interaction available");

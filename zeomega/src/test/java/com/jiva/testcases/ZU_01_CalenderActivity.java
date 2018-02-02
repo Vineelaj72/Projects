@@ -121,7 +121,7 @@ public class ZU_01_CalenderActivity extends TestBase {
 
 		// Add 1st interaction details
 		AddInteractionsPage addInteractionsPage = new AddInteractionsPage(driver);
-		addInteractionsPage.add1stInteractiondetails();
+		addInteractionsPage.add1stInteractionforUTC();
 		addInteractionsPage.clickSaveInteraction();
 
 		// Calender Page details

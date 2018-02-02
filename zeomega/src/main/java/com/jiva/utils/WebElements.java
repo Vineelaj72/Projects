@@ -66,9 +66,6 @@ public class WebElements {
 		try {
 			Alert alert = driver.switchTo().alert();
 
-			// System.out.println("@@@@@@"+alert.getText());
-			// System.out.println("@@"+messageonalert);
-
 			if ((alert.getText().contains(messageonalert)))
 				alert.accept();
 				

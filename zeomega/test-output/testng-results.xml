@@ -11,16 +11,16 @@
       <![CDATA[Login Button Clicked]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="110985" started-at="2018-02-01T22:36:28Z" finished-at="2018-02-01T22:38:19Z">
+  <suite name="Default suite" duration-ms="140531" started-at="2018-02-02T02:06:29Z" finished-at="2018-02-02T02:08:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="110985" started-at="2018-02-01T22:36:28Z" finished-at="2018-02-01T22:38:19Z">
-      <class name="com.jiva.testcases.E2EintegrationflowTC_ZU_60">
-        <test-method status="PASS" signature="dataSetup()[pri:0, instance:com.jiva.testcases.E2EintegrationflowTC_ZU_60@5a8806ef]" name="dataSetup" is-config="true" duration-ms="78" started-at="2018-02-01T16:36:28Z" finished-at="2018-02-01T16:36:29Z">
+    <test name="Default test" duration-ms="140531" started-at="2018-02-02T02:06:29Z" finished-at="2018-02-02T02:08:50Z">
+      <class name="com.jiva.testcases.E2EintegrationflowTC_ZU_61">
+        <test-method status="PASS" signature="dataSetup()[pri:0, instance:com.jiva.testcases.E2EintegrationflowTC_ZU_61@5a8806ef]" name="dataSetup" is-config="true" duration-ms="117" started-at="2018-02-01T20:06:29Z" finished-at="2018-02-01T20:06:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataSetup -->
-        <test-method status="PASS" signature="verify_MemberDatafromfile_toScreen()[pri:0, instance:com.jiva.testcases.E2EintegrationflowTC_ZU_60@5a8806ef]" name="verify_MemberDatafromfile_toScreen" duration-ms="110872" started-at="2018-02-01T16:36:29Z" description="Verify Member data from the files with screendata" finished-at="2018-02-01T16:38:19Z">
+        <test-method status="PASS" signature="verify_MemberDatafromfile_toScreen()[pri:0, instance:com.jiva.testcases.E2EintegrationflowTC_ZU_61@5a8806ef]" name="verify_MemberDatafromfile_toScreen" duration-ms="140389" started-at="2018-02-01T20:06:29Z" description="Verify Member data from the files with screendata and execute ZU-61 flow for CCM-Member Opts out" finished-at="2018-02-01T20:08:50Z">
           <reporter-output>
             <line>
               <![CDATA[Username Enteredvjayavarapu]]>
@@ -33,7 +33,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- verify_MemberDatafromfile_toScreen -->
-      </class> <!-- com.jiva.testcases.E2EintegrationflowTC_ZU_60 -->
+      </class> <!-- com.jiva.testcases.E2EintegrationflowTC_ZU_61 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

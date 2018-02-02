@@ -10,7 +10,7 @@ public interface Setup {
 	
 	String USERNAME="vjayavarapu",PASSWORD="Password1!";
 	String BROWSER="CHROME";
-	String JIVAID = "488526";
+	String JIVAID = "610570";
 	
 	String SFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20171114/jiva-eligibility-demographics_20171114_171337~20171114_091506616~.txt";
 	

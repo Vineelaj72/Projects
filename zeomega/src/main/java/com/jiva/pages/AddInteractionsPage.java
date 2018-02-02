@@ -15,11 +15,14 @@ public class AddInteractionsPage extends WebElements{
 	By followuprequiredyeslocator = By.xpath("//label[contains(text(),'Follow-up Required')]/../div/label/span[contains(text(),'Yes')]/../input");
 	By followuprequirednolocator = By.xpath("//label[contains(text(),'Follow-up Required')]/../div/label/span[contains(text(),'No')]/../input");
 	By interactionstatusunsuccessfullocator = By.xpath("//label[contains(text(),'Interaction Status')]/../div/label/span[contains(text(),'Unsuccessful')]/../input");
+	By interactionstatussuccessfullocator = By.xpath("//label[contains(text(),'Interaction Status')]/../div/label/span[contains(text(),'Successful')]/../input");
 	By enrollstatusunsuccessfullocator = By.xpath("(//input[@name='Successful'])[2]");
 	By notenrolloutcomesreasonsdropdown = By.xpath("//select[@name='reasons']");
+	By outreachoutcomesdropdown = By.xpath("//select[@name='status']");
+	By assigntodropdown = By.xpath("//select[@name='assignTo']");
 	By savelocator = By.xpath("//button[contains(text(),'Save')]");
 	
-	public void add1stInteractiondetails() throws InterruptedException
+	public void add1stInteractionforUTC() throws InterruptedException
 	{
 		clickUsingJs(followuprequiredyeslocator);
 		clickUsingJs(interactionstatusunsuccessfullocator);
@@ -27,18 +30,41 @@ public class AddInteractionsPage extends WebElements{
 		Thread.sleep(5000);
 		dropdownSelect(notenrolloutcomesreasonsdropdown,"Unable to contact member");
 	}
+	public void add1stInteractionforMemberOptsOut() throws InterruptedException
+	{
+		clickUsingJs(followuprequiredyeslocator);
+		clickUsingJs(interactionstatusunsuccessfullocator);
+		clickUsingJs(enrollstatusunsuccessfullocator);
+		Thread.sleep(5000);
+		dropdownSelect(notenrolloutcomesreasonsdropdown,"Appointment Scheduled");
+	}
 	public void clickSaveInteraction()
 	{
 		clickUsingJs(savelocator);
 	}
-	public void add2ndInteraction()
+	public void add2ndInteractionforUTC()
 	{
-		//clickUsingJs(followuprequirednolocator);  //by default - no
-		//clickUsingJs(interactionstatusunsuccessfullocator);	//by default - no --------- doubt
+		//clickUsingJs(followuprequirednolocator);  //by default 
+		//clickUsingJs(interactionstatusunsuccessfullocator);	//by default  
 		clickUsingJs(enrollstatusunsuccessfullocator);
-		//dropdownSelect(notenrolloutcomesreasonsdropdown,"Unable to contact member"); 	//by default - no
+		//dropdownSelect(notenrolloutcomesreasonsdropdown,"Unable to contact member"); 	//by default 
 		
 	}
-	
+	public void add2ndInteractionforMemberOptsOut(String Userprofilename) throws InterruptedException
+	{
+		
+		clickUsingJs(interactionstatussuccessfullocator);	//by default - no --------- doubt
+		clickUsingJs(enrollstatusunsuccessfullocator);
+		dropdownSelect(notenrolloutcomesreasonsdropdown,"Refused Services"); 
+		dropdownSelect(outreachoutcomesdropdown, "Closed");
+		Thread.sleep(3000);
+		dropdownSelect(assigntodropdown, Userprofilename);
+		
+	}
+	public void episodeOpenActivitiesAlert() throws InterruptedException
+	{
+		Thread.sleep(10000);
+		alertBox("This Episode has Open Activities");
+	}
 	
 }
