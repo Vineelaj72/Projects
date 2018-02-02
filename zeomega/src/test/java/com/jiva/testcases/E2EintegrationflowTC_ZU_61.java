@@ -8,7 +8,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.jiva.TestData.ReadAddress;
+import com.jiva.TestData.ReadAddressFile;
+import com.jiva.TestData.ReadMemberCoverageFile;
 import com.jiva.TestData.ReadMemberDemographicFile;
 import com.jiva.TestData.ReadPhoneDetails;
 import com.jiva.pages.AddInteractionsPage;
@@ -39,16 +40,22 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 	private ArrayList<String> MemberPhoneData;
 	int PHN_ENROLLMENTID=0,PHONENUMBER=1,PHN_ACTIVESTATUS=2;
 	
+	private ArrayList<String> MemberCoverageData;
+	int CVRG_ENROLLMENTID=0;
+	
 	@BeforeClass
 	public void dataSetup() {
 		MemberDemographicData =ReadMemberDemographicFile.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME); // demographic file
 		logger.info("Member Demographic File Data "+MemberDemographicData);
 	
-		MemberAddressData =ReadAddress.mandatoryCheckPoints(MEMBERADDRESSFILENAME); // address file
+		MemberAddressData =ReadAddressFile.mandatoryCheckPoints(MEMBERADDRESSFILENAME); // address file
 		logger.info("Member Address File Data "+MemberAddressData);
 		
 		MemberPhoneData = ReadPhoneDetails.mandatoryCheckPoints(MEMBERPHONEFILENAME); //Phone file
 		logger.info("Member Phone File Data "+MemberPhoneData);
+		
+		MemberCoverageData = ReadMemberCoverageFile.mandatoryCheckPoints(MEMBERCOVERAGEFILENAME); //Coverage File
+		logger.info("Member Coverage File Data "+MemberCoverageData);
 	}
 	
 
@@ -103,6 +110,9 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 		Thread.sleep(3000);
 		memberOverviewPage.expandMemberInfo();
 		
+		logger.info(MemberDemographicData.get(ENROLLMENTID));
+		logger.info(memberOverviewPage.getCoverageId());
+		
 		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
 		Assert.assertEquals(MemberDemographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against demographic file");
 		Assert.assertEquals(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against address file");
@@ -110,19 +120,17 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 		Assert.assertEquals(MemberPhoneData.get(PHN_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Member Phone file");
 		Assert.assertEquals(MemberPhoneData.get(PHONENUMBER), memberOverviewPage.getPhoneNumber(), "Member Phone Number validated against Member Phone file");
 		Assert.assertEquals(MemberPhoneData.get(PHN_ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against Member Phone file");
-		
+		Assert.assertEquals(MemberCoverageData.get(CVRG_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Coverage file");
 		
 		//memberOverviewPage.expandMemberInfo();
 		memberOverviewPage.openMemberInformation();
 		Thread.sleep(5000);
 		
 		Assert.assertEquals(MemberDemographicData.get(LASTNAME), memberOverviewPage.getMemberLastName(), "Member last name validated");
-		Thread.sleep(5000);		
+		//Thread.sleep(5000);		
 		Assert.assertEquals(MemberDemographicData.get(FIRSTNAME), memberOverviewPage.getMemberFirstName(), "Member first name validated");			
-		Assert.assertEquals(MemberDemographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");
-		
-		//Assert.assertEquals(MemberDemographicData.get(DOB),memberOverviewPage.getMemberDOB(),"Member DOB validated");       //doubt
-			
+		Assert.assertEquals(MemberDemographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");		
+		//Assert.assertEquals(MemberDemographicData.get(DOB),memberOverviewPage.getMemberDOB(),"Member DOB validated");       //doubt			
 		Assert.assertEquals(true,memberOverviewPage.getGender().contains(MemberDemographicData.get(GENDER)),"Member gender validated");
 		
 		Assert.assertEquals(MemberAddressData.get(HOME_ADDRESSTYPE).toUpperCase(),memberOverviewPage.getHomeAddressType(),"Home Address type validated");		
@@ -138,10 +146,7 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 		Assert.assertEquals(MemberAddressData.get(PRIMARY_STATE),memberOverviewPage.getPrimaryState(),"PRIMARY state validated");
 		Assert.assertEquals(MemberAddressData.get(PRIMARY_ZIP),memberOverviewPage.getPrimaryZip(),"PRIMARY Zip validated");
 		Assert.assertEquals(MemberAddressData.get(PRIMARY_COUNTRY),memberOverviewPage.getPrimaryCountry(),"PRIMARY country validated");
-		
-		
-		
-		
+				
 		Thread.sleep(5000);
 		memberOverviewPage.closeMemberInfo();
 		memberOverviewPage.expandMemberInfo();
@@ -161,24 +166,20 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 				
 		memberOverviewPage.clickCurrentEpisodecogwheel();
 		memberOverviewPage.openEpisode();
-		
-		
+				
 		worklists.assigntoself();
 
 		// Episode overview Page details
-
+		
 		Episodeoverviewpage episodeoverviewpage = new Episodeoverviewpage(driver);
-
 		Assert.assertEquals(episodeoverviewpage.verifyactivityAdded(), "Verbal consent to be received",
 				"Activity Added to the list");
-
 		episodeoverviewpage.openActivities();
 
 		// Episode activities Page details
 
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
 		Assert.assertEquals(true,episodeactivitiespage.verify_OpenorClosedInteractionRecordVisible(),"Open interaction available");
-		
 		episodeactivitiespage.clickWheel();
 		episodeactivitiespage.clickAddInteraction();
 
@@ -214,7 +215,7 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 		ProgramsPage programsPage = new ProgramsPage(driver);		
 		Assert.assertEquals(true, programsPage.verify_ProgramClosed(),"Program is closed successfully");
 		
-		logger.info("Successfully completed validating member files integration flow of ZU-61 - CCM_Member Opts out");
+		logger.info("Successfully completed validating member files integration flow of ZU-61_CCM_Member Opts out");
 		
 		// Closing the browser
 		//closeBrowser(driver);

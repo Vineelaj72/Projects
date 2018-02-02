@@ -36,7 +36,6 @@ public class E2EintegrationflowforMemberDemographicflowTC_ZU_60 extends TestBase
 		logger.info("Member Demographic File Data "+MemberDemographicData);
 	}
 	
-
 	@Test(description = "Verify Demographic data from the file with screendata")
 	public void verify_Demographics_Datafromfile_toScreen() throws InterruptedException {
 

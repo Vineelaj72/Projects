@@ -11,16 +11,16 @@
       <![CDATA[Login Button Clicked]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="140531" started-at="2018-02-02T02:06:29Z" finished-at="2018-02-02T02:08:50Z">
+  <suite name="Default suite" duration-ms="111691" started-at="2018-02-02T16:22:40Z" finished-at="2018-02-02T16:24:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="140531" started-at="2018-02-02T02:06:29Z" finished-at="2018-02-02T02:08:50Z">
+    <test name="Default test" duration-ms="111691" started-at="2018-02-02T16:22:40Z" finished-at="2018-02-02T16:24:32Z">
       <class name="com.jiva.testcases.E2EintegrationflowTC_ZU_61">
-        <test-method status="PASS" signature="dataSetup()[pri:0, instance:com.jiva.testcases.E2EintegrationflowTC_ZU_61@5a8806ef]" name="dataSetup" is-config="true" duration-ms="117" started-at="2018-02-01T20:06:29Z" finished-at="2018-02-01T20:06:29Z">
+        <test-method status="PASS" signature="dataSetup()[pri:0, instance:com.jiva.testcases.E2EintegrationflowTC_ZU_61@5a8806ef]" name="dataSetup" is-config="true" duration-ms="125" started-at="2018-02-02T10:22:40Z" finished-at="2018-02-02T10:22:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataSetup -->
-        <test-method status="PASS" signature="verify_MemberDatafromfile_toScreen()[pri:0, instance:com.jiva.testcases.E2EintegrationflowTC_ZU_61@5a8806ef]" name="verify_MemberDatafromfile_toScreen" duration-ms="140389" started-at="2018-02-01T20:06:29Z" description="Verify Member data from the files with screendata and execute ZU-61 flow for CCM-Member Opts out" finished-at="2018-02-01T20:08:50Z">
+        <test-method status="PASS" signature="verify_MemberDatafromfile_toScreen()[pri:0, instance:com.jiva.testcases.E2EintegrationflowTC_ZU_61@5a8806ef]" name="verify_MemberDatafromfile_toScreen" duration-ms="111564" started-at="2018-02-02T10:22:40Z" description="Verify Member data from the files with screendata and execute ZU-61 flow for CCM-Member Opts out" finished-at="2018-02-02T10:24:32Z">
           <reporter-output>
             <line>
               <![CDATA[Username Enteredvjayavarapu]]>
