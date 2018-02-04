@@ -1,6 +1,7 @@
 package com.jiva.testcases;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +21,7 @@ import com.jiva.pages.Dashboard;
 import com.jiva.pages.Episodeactivitiespage;
 import com.jiva.pages.Episodeoverviewpage;
 import com.jiva.pages.LoginPage;
+import com.jiva.pages.ManageEpisodesPage;
 import com.jiva.pages.MemberOverviewPage;
 import com.jiva.pages.MemberSearchPage;
 import com.jiva.pages.WorklistsPage;
@@ -27,7 +29,7 @@ import com.jiva.utils.TestBase;
 
 public class E2EintegrationflowTC_ZU_60 extends TestBase {
 	private static Logger logger = Logger.getLogger(E2EintegrationflowTC_ZU_60.class);
-	WebDriver driver;
+	private WebDriver driver;
 	private String sTestcaseName = null;
 	
 	private ArrayList<String> MemberDemographicData;
@@ -44,10 +46,14 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 	
 	@BeforeClass
 	public void dataSetup() {
+	//	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		MemberDemographicData =ReadMemberDemographicFile.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME); // demographic file
 		logger.info("Member Demographic File Data "+MemberDemographicData);
-	
+		
 		MemberAddressData =ReadAddressFile.mandatoryCheckPoints(MEMBERADDRESSFILENAME); // address file
+		
+		logger.info("Enrollment Compar"+MemberDemographicData.get(ENROLLMENTID).contains(MemberAddressData.get(ADDR_ENROLLMENTID)));
 		logger.info("Member Address File Data "+MemberAddressData);
 		
 		MemberPhoneData = ReadPhoneDetails.mandatoryCheckPoints(MEMBERPHONEFILENAME); //Phone file
@@ -73,7 +79,7 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		login.username(USERNAME);
 		login.password(PASSWORD);
 		login.loginbutton();
-		Thread.sleep(15000);
+		//Thread.sleep(15000);
 
 		// Dashboard Page details
 

@@ -11,7 +11,7 @@ public class ReadMemberDemographicFile {
 		BufferedReader br = null;
 		FileReader fr = null;
 		ArrayList<String> demovalue = new ArrayList<String>(); // full file reading
-		ArrayList<String> fileValue = new ArrayList<String>(); // mandatory recrds
+		ArrayList<String> fileValue = new ArrayList<String>(); // mandatory records
 		try {
 			fr = new FileReader(sFileName);
 			br = new BufferedReader(fr);

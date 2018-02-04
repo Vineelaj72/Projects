@@ -12,23 +12,25 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class WebElements {
+public class WebElements  extends WaitForElements{
 
 	WebDriver driver;
 	private static Logger logger = Logger.getLogger(WebElements.class);
 
 
-	public WebElements(WebDriver driver1) {
-		this.driver = driver1;
+	public WebElements(WebDriver driver) {
+		super(driver);
+		this.driver = driver;
 	}
 
 	public void enterText(By locator, String testData) {
-
+		waitforElementPresent(locator);
 		driver.findElement(locator).sendKeys(testData);
 
 	}
 
 	public void click(By locator) {
+		waitforElementPresent(locator);
 		driver.findElement(locator).click();
 	}
 
@@ -97,8 +99,7 @@ public class WebElements {
 				attributeValue.add(element.getAttribute("className"));
 				attributeValue.add( element.getAttribute("value"));
 				attributeValue.add(element.getAttribute("innerHTML"));
-				attributeValue.add(element.getAttribute("outerHTML"));
-				
+				attributeValue.add(element.getAttribute("outerHTML"));		
 				attributeValue.add(element.getAttribute("innerText"));
 				attributeValue.add(element.getAttribute("text"));
 				attributeValue.add(element.getAttribute("textContent"));

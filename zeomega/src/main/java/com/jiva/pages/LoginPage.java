@@ -19,6 +19,7 @@ public class LoginPage extends WebElements {
 	By usernamelocator = By.name("__ac_name");
 	By passwordlocator = By.name("__ac_password");
 	By loginbuttonlocator = By.name("LogIn");
+	static By messagelocator = By.xpath("//*[@title='Messagesasdd']");
 
 	
 	public void username(String sUsername) {
@@ -36,7 +37,7 @@ public class LoginPage extends WebElements {
 	public void loginbutton() {
 		clickUsingJs(loginbuttonlocator);
 		Reporter.log("Login Button Clicked");
-
+		waitforElementPresent(messagelocator);
 	}
 	
 	
