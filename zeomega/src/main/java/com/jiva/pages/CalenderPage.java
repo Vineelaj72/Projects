@@ -7,8 +7,8 @@ import com.jiva.utils.WebElements;
 
 public class CalenderPage extends WebElements{
 
-	public CalenderPage(WebDriver driver1) {
-		super(driver1);
+	public CalenderPage(WebDriver driver) {
+		super(driver);
 	}
 	public boolean verifyCalenderRecord(String membername)
 	{

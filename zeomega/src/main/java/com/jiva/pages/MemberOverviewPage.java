@@ -10,8 +10,8 @@ public class MemberOverviewPage extends WebElements {
 	
 	private static Logger logger = Logger.getLogger(MemberOverviewPage.class);
 
-	public MemberOverviewPage(WebDriver driver1) {
-		super(driver1);
+	public MemberOverviewPage(WebDriver driver) {
+		super(driver);
 	}
 	
 	By openepisodelinklocator = By.xpath("//li/a/span[contains(text(),'Open')]");
@@ -49,7 +49,7 @@ public class MemberOverviewPage extends WebElements {
 	
 	By closememberinfolocator = By.xpath(".//*[@id='cms-body']/div[5]/div/div/div/div[1]/button");
 	By addepisodelocator = By.xpath(".//*[@id='angularcontent']/workflow-banner/div/div/div[3]/div[6]/button");
-	By CMlocator = By.xpath(".//*[@id='AccessDialog']/div/div[2]/div/div/div/div/div/div/div/a/span");
+	By casemanagementlocator = By.xpath("//a/span[contains(text(),'Case Management')]");
 	
 	public void closeMemberInfo()
 	{
@@ -61,7 +61,7 @@ public class MemberOverviewPage extends WebElements {
 	}
 	public void clickCaseManagement()
 	{
-		clickUsingJs(CMlocator);
+		clickUsingJs(casemanagementlocator);
 	}
 	
 	public void clickGear(String episodeId) {
@@ -87,10 +87,7 @@ public class MemberOverviewPage extends WebElements {
 	{		
 		clickUsingJs(viewallmemberinfolocator);
 	}
-	/*public String getMemberName()
-	{
-		return getText(namelocator);
-	}*/
+	
 	public String getMemberLastName()
 	{
 		return getText(memberlastnamelocator);
@@ -129,8 +126,8 @@ public class MemberOverviewPage extends WebElements {
 	}
 	public String getCoverageId()
 	{
-			//System.out.println(getText(coverageidlocator));
-		return getText(coverageidlocator);
+			logger.info(getText(coverageidlocator));
+			return getText(coverageidlocator);
 	}
 	public String getPhoneNumber()
 	{

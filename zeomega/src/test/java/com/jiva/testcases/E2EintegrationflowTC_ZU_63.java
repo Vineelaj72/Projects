@@ -30,7 +30,7 @@ import com.jiva.utils.TestBase;
 
 public class E2EintegrationflowTC_ZU_63 extends TestBase {
 	private static Logger logger = Logger.getLogger(E2EintegrationflowTC_ZU_63.class);
-	WebDriver driver;
+	private WebDriver driver;
 	private String sTestcaseName = null;
 	
 	private ArrayList<String> MemberDemographicData;
@@ -47,10 +47,13 @@ public class E2EintegrationflowTC_ZU_63 extends TestBase {
 	
 	@BeforeClass
 	public void dataSetup() {
+			
 		MemberDemographicData =ReadMemberDemographicFile.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME); // demographic file
 		logger.info("Member Demographic File Data "+MemberDemographicData);
-	
+		
 		MemberAddressData =ReadAddressFile.mandatoryCheckPoints(MEMBERADDRESSFILENAME); // address file
+		
+		//logger.info("Enrollment ID in Demographic file compared with Address File "+MemberDemographicData.get(ENROLLMENTID).contains(MemberAddressData.get(ADDR_ENROLLMENTID)));
 		logger.info("Member Address File Data "+MemberAddressData);
 		
 		MemberPhoneData = ReadPhoneDetails.mandatoryCheckPoints(MEMBERPHONEFILENAME); //Phone file
@@ -61,57 +64,53 @@ public class E2EintegrationflowTC_ZU_63 extends TestBase {
 	}
 	
 
-	@Test(description = "Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member")
-	public void verify_MemberDatafromfile_toScreen() throws InterruptedException {
+	@Test(description = "Verify Member data from the files with screendata and execute ZU-63 flow for CCM-Member_Identified Needs/Goals Have Been Met")
+	public void verify_MemberDatafromfile_toScreen_ZU_63flow() throws InterruptedException {
 
 		sTestcaseName = new Object() {}.getClass().getEnclosingMethod().getName();
 		logger.info("Execution started for--- " + sTestcaseName);
-
-		driver = initializeDriver(BROWSER); 		// initialise browser and openurl
+		
+		// initialise browser and openurl
+		
+		driver = initializeDriver(BROWSER); 		
 		openurl(driver, AutomationURL);
 
 		// Login Page details
 
 		LoginPage login = new LoginPage(driver);
-		login.username(USERNAME);
-		login.password(PASSWORD);
+		login.enterUsername(USERNAME);
+		login.enterPassword(PASSWORD);
 		login.loginbutton();
-		Thread.sleep(15000);
-
+		
 		// Dashboard Page details
 
 		Dashboard dashboard = new Dashboard(driver);
 		Assert.assertEquals(true, dashboard.verifyDashboardDisplayed(), "Logged in Sucessfully");
 		String userprofilename = dashboard.getuserprofilename();
 		logger.info("User Profile Name is " + userprofilename);
-		String[] UserLastname_Firstname = userprofilename.split(",");
-		logger.info("Last name " + UserLastname_Firstname[0]);
-		logger.info("First name " + UserLastname_Firstname[1]);
+		String[] UserFullname = userprofilename.split(",");
+		logger.info("User Last name " + UserFullname[0]);
+		logger.info("User First name " + UserFullname[1]);
 		dashboard.clickMenu();
 		dashboard.clickMemberSearch();
 
 		// MemberSearch Page details
 
 		MemberSearchPage memberSearchPage = new MemberSearchPage(driver);
-		memberSearchPage.clickAdvSearch();
-		
-		Thread.sleep(5000);
-		
+		memberSearchPage.clickAdvSearch();		
+		memberSearchPage.sleep(5000);			
 		logger.info("Member Last name "+MemberDemographicData.get(LASTNAME));
 		logger.info("Member First name "+MemberDemographicData.get(FIRSTNAME));		
-		memberSearchPage.enterMemberLastname(MemberDemographicData.get(LASTNAME));// Read Firstrecord lastname from the arraylist
+		memberSearchPage.enterMemberLastname(MemberDemographicData.get(LASTNAME));// Read First record lastname from the arraylist
 		memberSearchPage.enterMemberFirstname(MemberDemographicData.get(FIRSTNAME));
 		memberSearchPage.clickSearch();
 		
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
-		Thread.sleep(5000);
 		confirmAddepisodePage.clickRedirecttoMCV();
 			
-		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);
-	
-		Thread.sleep(3000);
-		memberOverviewPage.expandMemberInfo();
-		
+		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
+		memberOverviewPage.sleep(3000);
+		memberOverviewPage.expandMemberInfo();		
 		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
 		Assert.assertEquals(MemberDemographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against demographic file");
 		Assert.assertEquals(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against address file");
@@ -121,17 +120,18 @@ public class E2EintegrationflowTC_ZU_63 extends TestBase {
 		Assert.assertEquals(MemberPhoneData.get(PHN_ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against Member Phone file");
 		Assert.assertEquals(MemberCoverageData.get(CVRG_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Coverage file");
 		
-		
-		//memberOverviewPage.expandMemberInfo();
 		memberOverviewPage.openMemberInformation();
-		Thread.sleep(5000);
+		memberOverviewPage.sleep(5000);		
 		
 		Assert.assertEquals(MemberDemographicData.get(LASTNAME), memberOverviewPage.getMemberLastName(), "Member last name validated");
-		//Thread.sleep(5000);		
 		Assert.assertEquals(MemberDemographicData.get(FIRSTNAME), memberOverviewPage.getMemberFirstName(), "Member first name validated");			
-		Assert.assertEquals(MemberDemographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");		
-		//Assert.assertEquals(MemberDemographicData.get(DOB),memberOverviewPage.getMemberDOB(),"Member DOB validated");       //doubt			
-		Assert.assertEquals(true,memberOverviewPage.getGender().contains(MemberDemographicData.get(GENDER)),"Member gender validated");
+		Assert.assertEquals(MemberDemographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");
+		Assert.assertEquals(true,memberOverviewPage.getGender().contains(MemberDemographicData.get(GENDER)),"Member gender validated");		
+		logger.info("Member DOB on screen "+memberOverviewPage.getMemberDOB());
+		String DOBonscreen[] = memberOverviewPage.getMemberDOB().split("/");
+		String DOBinFileFormat = DOBonscreen[2]+"-"+DOBonscreen[0]+"-"+DOBonscreen[1];	
+		logger.info("Member DOB on screen changed to File format "+DOBinFileFormat);		
+		Assert.assertEquals(MemberDemographicData.get(DOB),DOBinFileFormat,"Member DOB validated");  			
 		
 		Assert.assertEquals(MemberAddressData.get(HOME_ADDRESSTYPE).toUpperCase(),memberOverviewPage.getHomeAddressType(),"Home Address type validated");		
 		Assert.assertEquals(MemberAddressData.get(HOME_ADDRESS1),memberOverviewPage.getHomeAddressline1(),"Home Address line 1 validated");		
@@ -147,84 +147,78 @@ public class E2EintegrationflowTC_ZU_63 extends TestBase {
 		Assert.assertEquals(MemberAddressData.get(PRIMARY_ZIP),memberOverviewPage.getPrimaryZip(),"PRIMARY Zip validated");
 		Assert.assertEquals(MemberAddressData.get(PRIMARY_COUNTRY),memberOverviewPage.getPrimaryCountry(),"PRIMARY country validated");		
 		
-		
-		Thread.sleep(5000);
+
+		memberOverviewPage.sleep(5000);
 		memberOverviewPage.closeMemberInfo();
 		memberOverviewPage.expandMemberInfo();
-		
+
 		memberOverviewPage.clickAddEpisode();
 		memberOverviewPage.clickCaseManagement();
-		
+
 		CreateCMepisodePage createCMepisodePage = new CreateCMepisodePage(driver);
 		createCMepisodePage.addEpisodeDetails();
 		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(), "Program added Sucessfully");
 		createCMepisodePage.clickSaveandContinueEpisode();
-		
-		
+
 		// Episode overview Page details
 
 		Episodeoverviewpage episodeoverviewpage = new Episodeoverviewpage(driver);
 		Assert.assertEquals(episodeoverviewpage.verifyactivityAdded(), "Verbal consent to be received",
-						"Activity Added to the list");
+				"Activity Added to the list");
 		episodeoverviewpage.openActivities();
-		
+
 		// Episode activities Page details
 
-				Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
-				Assert.assertEquals(true,episodeactivitiespage.verify_OpenorClosedInteractionRecordVisible(),"Open interaction available");
-				
-				episodeactivitiespage.clickWheel();
-				episodeactivitiespage.clickAddInteraction();
+		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
+		Assert.assertEquals(true, episodeactivitiespage.verify_OpenorClosedInteractionRecordVisible(),
+				"Open interaction available");
 
+		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickAddInteraction();
 
-				// Add 1st interaction details
-				
-				AddInteractionsPage addInteractionsPage = new AddInteractionsPage(driver);
-								
-				addInteractionsPage.add1stInteractionforCCM(userprofilename);
-				Thread.sleep(5000);
-				addInteractionsPage.clickSaveInteraction();
-				addInteractionsPage.changingAssignedUserAlert();
-				Thread.sleep(5000);
-				
-				episodeoverviewpage.clickWorkflow();				
-				episodeoverviewpage.clickAssessments();
-			
-				AssessmentsPage assessmentsPage = new AssessmentsPage(driver);
-				assessmentsPage.selectDefaultAssessment();
-				assessmentsPage.startDefaultAssessment();
-				assessmentsPage.answerAssessmentQuestions();
-				assessmentsPage.completeAssessment();
-				
-				AcceptPOCPage acceptPOCPage = new AcceptPOCPage(driver);
-				acceptPOCPage.managePOCDetails();
-				Thread.sleep(5000);
-				acceptPOCPage.closePOCWindow();
-				Thread.sleep(5000);
-				episodeoverviewpage.clickWorkflow();
-				Thread.sleep(5000);
-				episodeoverviewpage.clickChangeStatus();
-				
-				ChangeStatusPage changeStatusPage = new ChangeStatusPage(driver);
-				//Thread.sleep(5000);
-				changeStatusPage.changeStatusDetailsforIdentifiedNeeds();
-				changeStatusPage.existingOpenActivitiesforEpisodeAlert();
-				Thread.sleep(5000);
-				
-				episodeoverviewpage.clickHamBurger();
-				episodeoverviewpage.clickCorrespondence();
-				Assert.assertEquals(true,episodeoverviewpage.verify_CM_PostEnrollmentLetterGenerated(userprofilename),"Post Enrollment Letter Generated");
-						
-				episodeoverviewpage.clickWorkflow();
-				episodeoverviewpage.clickPrograms();
-				
-				ProgramsPage programsPage = new ProgramsPage(driver);		
-				Assert.assertEquals(true, programsPage.verify_ProgramClosed(),"Program is closed successfully");
-				
-				logger.info("Successfully completed validating member files integration flow of ZU-63_CCM_Member_Identified Needs/Goals Have Been Met");
-		
-	
+		// Add 1st interaction details
+
+		AddInteractionsPage addInteractionsPage = new AddInteractionsPage(driver);
+
+		addInteractionsPage.add1stInteractionforCCM(userprofilename);
+		addInteractionsPage.clickSaveInteraction();
+		addInteractionsPage.changingAssignedUserAlert();	
+		addInteractionsPage.sleep(5000);
+		episodeoverviewpage.clickWorkflow();
+		episodeoverviewpage.clickAssessments();
+
+		AssessmentsPage assessmentsPage = new AssessmentsPage(driver);
+		assessmentsPage.selectDefaultAssessment();
+		assessmentsPage.startDefaultAssessment();
+		assessmentsPage.answerAssessmentQuestions();
+		assessmentsPage.completeAssessment();
+
+		AcceptPOCPage acceptPOCPage = new AcceptPOCPage(driver);
+		acceptPOCPage.managePOCDetails();
+		acceptPOCPage.sleep(5000);
+		acceptPOCPage.closePOCWindow();
+		episodeoverviewpage.clickWorkflow();
+		acceptPOCPage.sleep(5000);
+		episodeoverviewpage.clickChangeStatus();
+
+		ChangeStatusPage changeStatusPage = new ChangeStatusPage(driver);
+		changeStatusPage.changeStatusDetailsforIdentifiedNeeds();
+		changeStatusPage.existingOpenActivitiesforEpisodeAlert();
+		changeStatusPage.sleep(5000);
+
+		episodeoverviewpage.clickHamBurger();
+		episodeoverviewpage.clickCorrespondence();
+		Assert.assertEquals(true, episodeoverviewpage.verify_CM_PostEnrollmentLetterGenerated(userprofilename),
+				"Post Enrollment Letter Generated");
+
+		episodeoverviewpage.clickWorkflow();
+		episodeoverviewpage.clickPrograms();
+
+		ProgramsPage programsPage = new ProgramsPage(driver);
+		Assert.assertEquals(true, programsPage.verify_ProgramClosed(), "Program is closed successfully");
+
+		logger.info("Successfully completed validating member files integration flow of ZU-63_CCM_Member_Identified Needs/Goals Have Been Met");
+
 	}
 
 }
-

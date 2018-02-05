@@ -7,8 +7,8 @@ import com.jiva.utils.WebElements;
 
 public class AssessmentsPage extends WebElements{
 
-	public AssessmentsPage(WebDriver driver1) {
-		super(driver1);
+	public AssessmentsPage(WebDriver driver) {
+		super(driver);
 	}
 	
 	By assessmentselectionlocator = By.xpath("//input[contains(@type,'radio')]");
@@ -23,6 +23,7 @@ public class AssessmentsPage extends WebElements{
 	{
 		clickUsingJs(assessmentselectionlocator);
 	}
+	
 	public void startDefaultAssessment()
 	{
 		clickUsingJs(startassessmentlocator);

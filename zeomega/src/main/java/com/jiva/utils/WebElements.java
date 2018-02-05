@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class WebElements  extends WaitForElements{
+public class WebElements extends WaitForElements{
 
 	WebDriver driver;
 	private static Logger logger = Logger.getLogger(WebElements.class);

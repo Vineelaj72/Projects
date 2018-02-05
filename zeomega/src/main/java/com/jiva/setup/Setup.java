@@ -6,7 +6,7 @@ public interface Setup {
 	
 	String IEPATH = "../JivaAutomation/drivers/IEDriverServer.exe";	
 	String CHROMEPATH = "../JivaAutomation/drivers/chromedriver.exe";
-	String FFPATH = "C:\\Softwares\\geckodriver-v0.19.1-win64\\geckodriver.exe";
+	String FFPATH = "../JivaAutomation/drivers/geckodriver.exe";
 	
 	String USERNAME="vjayavarapu",PASSWORD="Password1!";
 	String BROWSER="CHROME";

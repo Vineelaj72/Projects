@@ -18,9 +18,9 @@ public class WaitForElements implements Setup {
 
 	}
 	
-	public void waitforElementPresent(By by)
+	public void waitforElementPresent(By locator)
 	{
-		driverWait.until(ExpectedConditions.presenceOfElementLocated(by));
+		driverWait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
 	
 	

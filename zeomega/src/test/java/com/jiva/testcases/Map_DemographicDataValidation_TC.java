@@ -61,11 +61,10 @@ public class Map_DemographicDataValidation_TC extends TestBase {
 		// Login Page details
 
 		LoginPage login = new LoginPage(driver);
-		login.username(USERNAME);
-		login.password(PASSWORD);
+		login.enterUsername(USERNAME);
+		login.enterPassword(PASSWORD);
 		login.loginbutton();
-		Thread.sleep(15000);
-
+		
 		// Dashboard Page details
 
 		Dashboard dashboard = new Dashboard(driver);

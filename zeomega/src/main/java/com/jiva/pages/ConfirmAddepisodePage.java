@@ -8,14 +8,15 @@ import com.jiva.utils.WebElements;
 public class ConfirmAddepisodePage extends WebElements {
 	
 	
-	public ConfirmAddepisodePage(WebDriver driver1) {
-		super(driver1);
+	public ConfirmAddepisodePage(WebDriver driver) {
+		super(driver);
 		
 	}
 	By addepisodelocator = By.xpath("//*/j-label[contains(text(),'Episode')]");
 	By cmlocator = By.xpath("//span[contains(text(),'Case Management')]");
 	By membernameloactor = By.xpath("//p[@class='ng-binding']");
 	By redirecttoMCVlocator = By.xpath("//button[contains(text(),'Redirect to')]");
+	static By memberinfoexpandlocator = By.id("yui-gen506");
 	
 	public void clickAddepisode() throws InterruptedException
 	{
@@ -38,5 +39,6 @@ public class ConfirmAddepisodePage extends WebElements {
 	public void clickRedirecttoMCV()
 	{
 		clickUsingJs(redirecttoMCVlocator);
+		waitforElementPresent(memberinfoexpandlocator);
 	}
 }

@@ -3,12 +3,13 @@ package com.jiva.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.jiva.utils.DateUtils;
 import com.jiva.utils.WebElements;
 
 public class AcceptPOCPage extends WebElements{
 
-	public AcceptPOCPage(WebDriver driver1) {
-		super(driver1);
+	public AcceptPOCPage(WebDriver driver) {
+		super(driver);
 	}
 	
 	By problemradiobuttonlocator = By.xpath("//label/span[contains(text(),'Problem')]/../input");
@@ -17,6 +18,7 @@ public class AcceptPOCPage extends WebElements{
 	By editPOClocator = By.xpath("//button[contains(@class,'edit_poc')]");
 	By problemprioritydropdown = By.xpath("//select[contains(@name,'I_P_PRIORITY')]");
 	By problemexpecteddatelocator = By.xpath("//input[contains(@name,'P_EXPECTED_DATE')]");
+	By calendercloselocator = By.xpath("//a/span[contains(@class,'calclose')]");
 	By calendermonthlocator = By.xpath("//a[contains(@class,'calnav yuilisten')]");
 	By calendermonthdropdown = By.xpath("//select[contains(@name,'calendarContainer_nav_month')]");
 	By monthsubmitlocator = By.xpath("//button[contains(@id,'calendarContainer_nav_submit')]");
@@ -27,6 +29,7 @@ public class AcceptPOCPage extends WebElements{
 	By savedetailslocator = By.xpath("//button[contains(text(),'Save Details')]");
 	By acceptPOClocator = By.xpath("(//button[contains(text(),'Accept Plan of Care')])[1]");
 	By closePOCwindowlocator = By.xpath("//span[contains(@title,'Click here to close this window')]");
+	static By workflowlocator = By.xpath("//button[contains(text(),'Workflow')]");
 	
 	public void managePOCDetails() throws InterruptedException
 	{
@@ -34,32 +37,40 @@ public class AcceptPOCPage extends WebElements{
 		clickUsingJs(goalradiobuttonlocator);
 		clickUsingJs(interventionradiobuttonlocator);
 		clickUsingJs(editPOClocator);
-		dropdownSelect(problemprioritydropdown, "Medium");
-		clickUsingJs(problemexpecteddatelocator);
+		enterText(problemexpecteddatelocator, DateUtils.dateFormatbyFutureDate());
+		clickUsingJs(calendercloselocator);
+		dropdownSelect(problemprioritydropdown, "Medium");		
+		
+		/*clickUsingJs(problemexpecteddatelocator);
 		clickUsingJs(calendermonthlocator);
 		dropdownSelect(calendermonthdropdown, "December");
 		clickUsingJs(monthsubmitlocator);
-		clickUsingJs(dateselectlocator);
+		clickUsingJs(dateselectlocator);*/
+		
 		clickUsingJs(goalcopylocator);
 		clickUsingJs(interventioncopylocator);
-		clickUsingJs(interventionduedatelocator);
+		enterText(interventionduedatelocator, DateUtils.dateFormatbyFutureDate());
+		
+		/*clickUsingJs(interventionduedatelocator);
 		clickUsingJs(calendermonthlocator);
 		dropdownSelect(calendermonthdropdown, "December");
 		clickUsingJs(monthsubmitlocator);
-		clickUsingJs(dateselectlocator);
-		Thread.sleep(3000);
+		clickUsingJs(dateselectlocator);*/
+		
+		sleep(3000);
 		clickUsingJs(savedetailslocator);
-		Thread.sleep(5000);
+		sleep(5000);
 		clickUsingJs(problemradiobuttonlocator);
-		Thread.sleep(1000);
+		sleep(1000);
 		clickUsingJs(goalradiobuttonlocator);
-		Thread.sleep(1000);
+		sleep(1000);
 		clickUsingJs(interventionradiobuttonlocator);
-		Thread.sleep(10000);
+		sleep(10000);
 		clickUsingJs(acceptPOClocator);
 	}
 	public void closePOCWindow()
 	{
 		clickUsingJs(closePOCwindowlocator);
+		waitforElementPresent(workflowlocator);
 	}
 }

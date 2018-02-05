@@ -27,7 +27,7 @@ import com.jiva.pages.WorklistsPage;
 import com.jiva.utils.TestBase;
 
 public class E2EintegrationflowTC_ZU_61 extends TestBase {
-	private static Logger logger = Logger.getLogger(E2EintegrationflowTC_ZU_60.class);
+	private static Logger logger = Logger.getLogger(E2EintegrationflowTC_ZU_61.class);
 	WebDriver driver;
 	private String sTestcaseName = null;
 	
@@ -60,7 +60,7 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 	
 
 	@Test(description = "Verify Member data from the files with screendata and execute ZU-61 flow for CCM-Member Opts out")
-	public void verify_MemberDatafromfile_toScreen() throws InterruptedException {
+	public void verify_MemberDatafromfile_toScreen_ZU_61flow() throws InterruptedException {
 
 		sTestcaseName = new Object() {}.getClass().getEnclosingMethod().getName();
 		logger.info("Execution started for--- " + sTestcaseName);
@@ -71,48 +71,39 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 		// Login Page details
 
 		LoginPage login = new LoginPage(driver);
-		login.username(USERNAME);
-		login.password(PASSWORD);
+		login.enterUsername(USERNAME);
+		login.enterPassword(PASSWORD);
 		login.loginbutton();
-		Thread.sleep(15000);
-
+		
 		// Dashboard Page details
 
 		Dashboard dashboard = new Dashboard(driver);
 		Assert.assertEquals(true, dashboard.verifyDashboardDisplayed(), "Logged in Sucessfully");
 		String userprofilename = dashboard.getuserprofilename();
 		logger.info("User Profile Name is " + userprofilename);
-		String[] UserLastname_Firstname = userprofilename.split(",");
-		logger.info("Last name " + UserLastname_Firstname[0]);
-		logger.info("First name " + UserLastname_Firstname[1]);
+		String[] UserFullname = userprofilename.split(",");
+		logger.info("User Last name " + UserFullname[0]);
+		logger.info("User First name " + UserFullname[1]);
 		dashboard.clickMenu();
 		dashboard.clickMemberSearch();
 
 		// MemberSearch Page details
 
 		MemberSearchPage memberSearchPage = new MemberSearchPage(driver);
-		memberSearchPage.clickAdvSearch();
-		
-		Thread.sleep(5000);
-		
+		memberSearchPage.clickAdvSearch();		
+		memberSearchPage.sleep(5000);		
 		logger.info("Member Last name "+MemberDemographicData.get(LASTNAME));
 		logger.info("Member First name "+MemberDemographicData.get(FIRSTNAME));		
-		memberSearchPage.enterMemberLastname(MemberDemographicData.get(LASTNAME));// Read Firstrecord lastname from the arraylist
+		memberSearchPage.enterMemberLastname(MemberDemographicData.get(LASTNAME));
 		memberSearchPage.enterMemberFirstname(MemberDemographicData.get(FIRSTNAME));
 		memberSearchPage.clickSearch();
 		
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
-		Thread.sleep(5000);
 		confirmAddepisodePage.clickRedirecttoMCV();
 			
-		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);
-	
-		Thread.sleep(3000);
+		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
+		memberOverviewPage.sleep(3000);
 		memberOverviewPage.expandMemberInfo();
-		
-		logger.info(MemberDemographicData.get(ENROLLMENTID));
-		logger.info(memberOverviewPage.getCoverageId());
-		
 		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
 		Assert.assertEquals(MemberDemographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against demographic file");
 		Assert.assertEquals(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against address file");
@@ -122,16 +113,17 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 		Assert.assertEquals(MemberPhoneData.get(PHN_ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against Member Phone file");
 		Assert.assertEquals(MemberCoverageData.get(CVRG_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Coverage file");
 		
-		//memberOverviewPage.expandMemberInfo();
 		memberOverviewPage.openMemberInformation();
-		Thread.sleep(5000);
-		
+		memberOverviewPage.sleep(5000);			
 		Assert.assertEquals(MemberDemographicData.get(LASTNAME), memberOverviewPage.getMemberLastName(), "Member last name validated");
-		//Thread.sleep(5000);		
 		Assert.assertEquals(MemberDemographicData.get(FIRSTNAME), memberOverviewPage.getMemberFirstName(), "Member first name validated");			
-		Assert.assertEquals(MemberDemographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");		
-		//Assert.assertEquals(MemberDemographicData.get(DOB),memberOverviewPage.getMemberDOB(),"Member DOB validated");       //doubt			
+		Assert.assertEquals(MemberDemographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");					
 		Assert.assertEquals(true,memberOverviewPage.getGender().contains(MemberDemographicData.get(GENDER)),"Member gender validated");
+		logger.info("Member DOB on screen "+memberOverviewPage.getMemberDOB());
+		String DOBonscreen[] = memberOverviewPage.getMemberDOB().split("/");
+		String DOBinFileFormat = DOBonscreen[2]+"-"+DOBonscreen[0]+"-"+DOBonscreen[1];	
+		logger.info("Member DOB on screen changed to File format "+DOBinFileFormat);		
+		Assert.assertEquals(MemberDemographicData.get(DOB),DOBinFileFormat,"Member DOB validated");  
 		
 		Assert.assertEquals(MemberAddressData.get(HOME_ADDRESSTYPE).toUpperCase(),memberOverviewPage.getHomeAddressType(),"Home Address type validated");		
 		Assert.assertEquals(MemberAddressData.get(HOME_ADDRESS1),memberOverviewPage.getHomeAddressline1(),"Home Address line 1 validated");		
@@ -147,7 +139,7 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 		Assert.assertEquals(MemberAddressData.get(PRIMARY_ZIP),memberOverviewPage.getPrimaryZip(),"PRIMARY Zip validated");
 		Assert.assertEquals(MemberAddressData.get(PRIMARY_COUNTRY),memberOverviewPage.getPrimaryCountry(),"PRIMARY country validated");
 				
-		Thread.sleep(5000);
+		memberOverviewPage.sleep(5000);
 		memberOverviewPage.closeMemberInfo();
 		memberOverviewPage.expandMemberInfo();
 		
@@ -162,11 +154,9 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 
 		// Worklists page details
 
-		WorklistsPage worklists = new WorklistsPage(driver);
-				
+		WorklistsPage worklists = new WorklistsPage(driver);				
 		memberOverviewPage.clickCurrentEpisodecogwheel();
-		memberOverviewPage.openEpisode();
-				
+		memberOverviewPage.openEpisode();				
 		worklists.assigntoself();
 
 		// Episode overview Page details
@@ -193,22 +183,17 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 2nd interaction details
-		Thread.sleep(5000);
+		episodeactivitiespage.sleep(5000);
 		addInteractionsPage.add2ndInteractionforMemberOptsOut(userprofilename);
 		addInteractionsPage.clickSaveInteraction();
 		
-		addInteractionsPage.episodeOpenActivitiesAlert();
-		
-		/*Assert.assertEquals(true, episodeactivitiespage.verifyEpisodeStatus(),
-				"Verified Episode status as Closed");*/
-		
-		Thread.sleep(5000);
+		addInteractionsPage.episodeOpenActivitiesAlert();				
+		addInteractionsPage.sleep(5000);
 		episodeactivitiespage.clickCM();
-		Thread.sleep(10000);
+		episodeactivitiespage.sleep(10000);
 		episodeoverviewpage.openCorrespondence();
 		Assert.assertEquals(true,episodeoverviewpage.verify_CM_PCP_Mbr_Opt_OutLetterGenerated(userprofilename),"Member Opts out letter generated to PCP");
 		Assert.assertEquals(true,episodeoverviewpage.verify_CM_Mbr_Opt_OutLetterGenerated(userprofilename),"Member Opts out letter generated to Member");
-		
 		episodeoverviewpage.clickWorkflow();
 		episodeoverviewpage.clickPrograms();
 		

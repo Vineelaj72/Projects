@@ -3,12 +3,12 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.jiva.testcases.E2EintegrationflowTC_ZU_60">
+      <class name="com.jiva.testcases.E2EintegrationflowTC_ZU_61">
         <methods>
-          <include name="verify_MemberDatafromfile_toScreen"/>
+          <include name="verify_MemberDatafromfile_toScreen_ZU_61flow"/>
           <include name="dataSetup"/>
         </methods>
-      </class> <!-- com.jiva.testcases.E2EintegrationflowTC_ZU_60 -->
+      </class> <!-- com.jiva.testcases.E2EintegrationflowTC_ZU_61 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

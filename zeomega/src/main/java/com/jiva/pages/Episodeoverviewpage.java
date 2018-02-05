@@ -10,8 +10,8 @@ public class Episodeoverviewpage extends WebElements {
 
 	private static Logger logger = Logger.getLogger(Episodeoverviewpage.class);
 
-	public Episodeoverviewpage(WebDriver driver1) {
-		super(driver1);
+	public Episodeoverviewpage(WebDriver driver) {
+		super(driver);
 	}
 
 	By activitiesopenlocator = By.xpath("//button[contains(@ng-click,'routeActivityDataListing()')]");

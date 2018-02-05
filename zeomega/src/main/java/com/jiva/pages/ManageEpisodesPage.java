@@ -6,8 +6,8 @@ import com.jiva.utils.WebElements;
 
 public class ManageEpisodesPage extends WebElements{
 
-	public ManageEpisodesPage(WebDriver driver1) {
-		super(driver1);
+	public ManageEpisodesPage(WebDriver driver) {
+		super(driver);
 	}
 
 }

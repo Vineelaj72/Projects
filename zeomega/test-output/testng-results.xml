@@ -11,16 +11,16 @@
       <![CDATA[Login Button Clicked]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="118049" started-at="2018-02-04T15:42:31Z" finished-at="2018-02-04T15:44:29Z">
+  <suite name="Default suite" duration-ms="107740" started-at="2018-02-05T23:21:11Z" finished-at="2018-02-05T23:22:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="118049" started-at="2018-02-04T15:42:31Z" finished-at="2018-02-04T15:44:29Z">
-      <class name="com.jiva.testcases.E2EintegrationflowTC_ZU_60">
-        <test-method status="PASS" signature="dataSetup()[pri:0, instance:com.jiva.testcases.E2EintegrationflowTC_ZU_60@5a8806ef]" name="dataSetup" is-config="true" duration-ms="146" started-at="2018-02-04T09:42:31Z" finished-at="2018-02-04T09:42:31Z">
+    <test name="Default test" duration-ms="107740" started-at="2018-02-05T23:21:11Z" finished-at="2018-02-05T23:22:59Z">
+      <class name="com.jiva.testcases.E2EintegrationflowTC_ZU_61">
+        <test-method status="PASS" signature="dataSetup()[pri:0, instance:com.jiva.testcases.E2EintegrationflowTC_ZU_61@4f063c0a]" name="dataSetup" is-config="true" duration-ms="132" started-at="2018-02-05T17:21:11Z" finished-at="2018-02-05T17:21:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataSetup -->
-        <test-method status="PASS" signature="verify_MemberDatafromfile_toScreen()[pri:0, instance:com.jiva.testcases.E2EintegrationflowTC_ZU_60@5a8806ef]" name="verify_MemberDatafromfile_toScreen" duration-ms="117890" started-at="2018-02-04T09:42:31Z" description="Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member" finished-at="2018-02-04T09:44:29Z">
+        <test-method status="PASS" signature="verify_MemberDatafromfile_toScreen_ZU_61flow()[pri:0, instance:com.jiva.testcases.E2EintegrationflowTC_ZU_61@4f063c0a]" name="verify_MemberDatafromfile_toScreen_ZU_61flow" duration-ms="107608" started-at="2018-02-05T17:21:11Z" description="Verify Member data from the files with screendata and execute ZU-61 flow for CCM-Member Opts out" finished-at="2018-02-05T17:22:59Z">
           <reporter-output>
             <line>
               <![CDATA[Username Enteredvjayavarapu]]>
@@ -32,8 +32,8 @@
               <![CDATA[Login Button Clicked]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verify_MemberDatafromfile_toScreen -->
-      </class> <!-- com.jiva.testcases.E2EintegrationflowTC_ZU_60 -->
+        </test-method> <!-- verify_MemberDatafromfile_toScreen_ZU_61flow -->
+      </class> <!-- com.jiva.testcases.E2EintegrationflowTC_ZU_61 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -34,13 +34,12 @@ public class ZU_01_CalenderActivity extends TestBase {
 		driver = initializeDriver(BROWSER);
 		openurl(driver, AutomationURL);
 		maximizeBrowser(driver);
-		// Thread.sleep(15000);
-
+	
 		// Login Page details
 
 		LoginPage login = new LoginPage(driver);
-		login.username(USERNAME);
-		login.password(PASSWORD);
+		login.enterUsername(USERNAME);
+		login.enterPassword(PASSWORD);
 		login.loginbutton();
 		Thread.sleep(15000);
 

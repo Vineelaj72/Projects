@@ -11,8 +11,8 @@ import com.jiva.utils.WebElements;
 
 public class ChangeStatusPage extends WebElements{
 
-	public ChangeStatusPage(WebDriver driver1) {
-		super(driver1);
+	public ChangeStatusPage(WebDriver driver) {
+		super(driver);
 		}
 	private static Logger logger = Logger.getLogger(ChangeStatusPage.class);
 	
@@ -32,12 +32,11 @@ public class ChangeStatusPage extends WebElements{
 	{
 		dropdownSelect(statusdropdown, "Closed");
 		dropdownSelect(reasonsdropdown, "Identified Needs/Goals Have Been Met");
-		//Thread.sleep(3000);
 		clickUsingJs(savelocator);
-	}
+			}
 	public void existingOpenActivitiesforEpisodeAlert() throws InterruptedException
 	{
-		Thread.sleep(5000);
+		sleep(5000);
 		alertBox("This Episode has Open Activities");
 	}
 	

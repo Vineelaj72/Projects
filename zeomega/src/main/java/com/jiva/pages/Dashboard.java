@@ -24,8 +24,6 @@ public class Dashboard extends WebElements{
 	
 	public void clickMenu()
 	{
-		//String userprofilename = getText(userprofilelocator);
-		//System.out.println(userprofilename);
 		clickUsingJs(menulocator);
 	}
 	

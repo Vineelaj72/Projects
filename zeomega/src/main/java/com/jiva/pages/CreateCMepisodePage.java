@@ -10,8 +10,8 @@ import com.jiva.utils.WebElements;
 
 public class CreateCMepisodePage extends WebElements{
 
-	public CreateCMepisodePage(WebDriver driver1) {
-		super(driver1);
+	public CreateCMepisodePage(WebDriver driver) {
+		super(driver);
 				}
 	
 	By episodestatusdd = By.name("episodestatus");
@@ -37,8 +37,8 @@ public class CreateCMepisodePage extends WebElements{
 		sleep(5000);
 		dropdownSelect(assigntodd, "CCM Referral");
 		dropdownSelect(programnamelocator, "Complex Case Management");
-		Thread.sleep(5000);
-		dropdownSelect(programassigntolocator,"Jayavarapu, Vineela"); 
+		sleep(5000);
+		//dropdownSelect(programassigntolocator,"Jayavarapu, Vineela"); 
 		clickUsingJs(addprogrambutton);
 				
 	}

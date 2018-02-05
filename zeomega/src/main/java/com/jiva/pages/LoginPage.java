@@ -10,7 +10,6 @@ public class LoginPage extends WebElements {
 
 	WebDriver driver;
 
-
 	public LoginPage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
@@ -22,17 +21,16 @@ public class LoginPage extends WebElements {
 	static By messagelocator = By.xpath("//*[@title='Messagesasdd']");
 
 	
-	public void username(String sUsername) {
+	public void enterUsername(String sUsername) {
 		enterText(usernamelocator, sUsername);
 		Reporter.log("Username Entered"+sUsername);
 	}
 
-	public void password(String spassword) {
+	public void enterPassword(String spassword) {
 		enterText(passwordlocator, spassword);
 		Reporter.log("Password Entered"+spassword);
 
 	}
-
 		
 	public void loginbutton() {
 		clickUsingJs(loginbuttonlocator);

@@ -5,9 +5,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -24,6 +26,9 @@ public class TestBase implements Setup {
 			}
 			if (sbrowser.equalsIgnoreCase("CHROME")) {
 				driver = new ChromeDriver(chromeProfileSetUp());
+			}
+			if (sbrowser.equalsIgnoreCase("FF")) {
+				driver = new FirefoxDriver(firefoxProfileSetUp());
 			}
 			
 		}
@@ -72,8 +77,13 @@ public class TestBase implements Setup {
 	    return cap; 
 	 }
 	
-	
-	public String getFilePath(String sFilepath) {
+	public DesiredCapabilities firefoxProfileSetUp() {
+		System.setProperty("webdriver.gecko.driver", FFPATH);
+		DesiredCapabilities caps = DesiredCapabilities.firefox();
+		return caps;
+	}
+		
+	/*public String getFilePath(String sFilepath) {
 		  char cforwardslash = (char) 47;
 		  char cbackslash = (char) 92;
 		  //logger.info("File path is "+sFilepath);
@@ -88,7 +98,7 @@ public class TestBase implements Setup {
 		  } else {
 		  }
 		  return sPath;
-		 }
+		 }*/
 	
 	
 	public void openurl(WebDriver driver, String url)

@@ -7,9 +7,9 @@ import com.jiva.utils.WebElements;
 
 public class MemberSearchPage extends WebElements{
 
-	public MemberSearchPage(WebDriver driver1) {
+	public MemberSearchPage(WebDriver driver) {
 		
-		super(driver1);
+		super(driver);
 			}
 	
 	By advancedSearchlocator = By.id("dropdownMenu1");
@@ -30,9 +30,6 @@ public class MemberSearchPage extends WebElements{
 	{
 		enterText(groupnamelocator, "Blue Advantage 001");
 		Thread.sleep(8000);
-		//click(groupsearchlocator);
-		//Thread.sleep(5000);
-		//click(groupvaluelocator);
 		clickEnter(groupnamelocator);
 		
 	}
@@ -52,8 +49,6 @@ public class MemberSearchPage extends WebElements{
 		enterText(lastnamelocator, sLastname);
 		sleep(5000);
 		clickEnter(lastnamelocator);
-		//clickUsingJs(csssel);
-		//sleep(5000);
 	}
 	public void enterMemberFirstname(String sFirstname) throws InterruptedException
 	{
@@ -61,7 +56,5 @@ public class MemberSearchPage extends WebElements{
 		sleep(5000);
 		clickEnter(firstnamelocator);
 
-	//	clickUsingJs(csssel);
-		//sleep(5000);
 	}
 }

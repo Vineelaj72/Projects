@@ -9,8 +9,8 @@ import com.jiva.utils.WebElements;
 
 public class ProgramsPage extends WebElements{
 
-	public ProgramsPage(WebDriver driver1) {
-		super(driver1);
+	public ProgramsPage(WebDriver driver) {
+		super(driver);
 		}
 	private static Logger logger = Logger.getLogger(ProgramsPage.class);
 	

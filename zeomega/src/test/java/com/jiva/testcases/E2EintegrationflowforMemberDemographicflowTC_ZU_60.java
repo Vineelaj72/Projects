@@ -48,11 +48,10 @@ public class E2EintegrationflowforMemberDemographicflowTC_ZU_60 extends TestBase
 		// Login Page details
 
 		LoginPage login = new LoginPage(driver);
-		login.username(USERNAME);
-		login.password(PASSWORD);
+		login.enterUsername(USERNAME);
+		login.enterPassword(PASSWORD);
 		login.loginbutton();
-		Thread.sleep(15000);
-
+		
 		// Dashboard Page details
 
 		Dashboard dashboard = new Dashboard(driver);
@@ -97,8 +96,11 @@ public class E2EintegrationflowforMemberDemographicflowTC_ZU_60 extends TestBase
 		Assert.assertEquals(MemberDemographicData.get(FIRSTNAME), memberOverviewPage.getMemberFirstName(), "Member first name validated");			
 		Assert.assertEquals(MemberDemographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");
 		
-		//Assert.assertEquals(demographichData.get(ALTRD),ymd,"Member DOB validated");       //doubt
-		//Assert.assertEquals(true,memberOverviewPage.getMemberMaritalStatus().toLowerCase().contains(sFileData.get("MemberMaritalStatus3").toLowerCase()),"Member marital status validated");		
+		logger.info("Member DOB on screen "+memberOverviewPage.getMemberDOB());
+		String DOBonscreen[] = memberOverviewPage.getMemberDOB().split("/");
+		String DOBinFileFormat = DOBonscreen[2]+"-"+DOBonscreen[0]+"-"+DOBonscreen[1];	
+		logger.info("Member DOB on screen changed to File format "+DOBinFileFormat);		
+		Assert.assertEquals(MemberDemographicData.get(DOB),DOBinFileFormat,"Member DOB validated");  		
 		Assert.assertEquals(true,memberOverviewPage.getGender().contains(MemberDemographicData.get(GENDER)),"Member gender validated");
 		Thread.sleep(5000);
 		memberOverviewPage.closeMemberInfo();

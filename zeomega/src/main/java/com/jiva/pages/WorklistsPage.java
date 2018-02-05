@@ -10,8 +10,8 @@ public class WorklistsPage extends WebElements {
 
 	 private static Logger logger = Logger.getLogger(WorklistsPage.class);
 
-	public WorklistsPage(WebDriver driver1) {
-		super(driver1);
+	public WorklistsPage(WebDriver driver) {
+		super(driver);
 	}
 
 	By ccmreferrallocator = By.xpath("//div[contains(text(),'CCM Referral')]");
@@ -34,7 +34,6 @@ public class WorklistsPage extends WebElements {
 		sleep(5000);
 		clickEnter(memberlastNameLocator);
 		//clickUsingJs(csssel);
-
 		// clickEnter(memberlastNameLocator);
 	}
 

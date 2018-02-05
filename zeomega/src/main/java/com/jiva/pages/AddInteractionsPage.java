@@ -7,11 +7,10 @@ import com.jiva.utils.WebElements;
 
 public class AddInteractionsPage extends WebElements{
 
-	public AddInteractionsPage(WebDriver driver1) {
-		super(driver1);
+	public AddInteractionsPage(WebDriver driver) {
+		super(driver);
 	}
-	//By followuprequiredyeslocator = By.xpath("(//label[contains(text(),'Follow-up Required')]/../../div/div/label)[1]");
-	
+		
 	By followuprequiredyeslocator = By.xpath("//label[contains(text(),'Follow-up Required')]/../div/label/span[contains(text(),'Yes')]/../input");
 	By followuprequirednolocator = By.xpath("//label[contains(text(),'Follow-up Required')]/../div/label/span[contains(text(),'No')]/../input");
 	By interactionstatusunsuccessfullocator = By.xpath("//label[contains(text(),'Interaction Status')]/../div/label/span[contains(text(),'Unsuccessful')]/../input");
@@ -22,6 +21,7 @@ public class AddInteractionsPage extends WebElements{
 	By outreachoutcomesdropdown = By.xpath("//select[@name='status']");
 	By assigntodropdown = By.xpath("//select[@name='assignTo']");
 	By savelocator = By.xpath("//button[contains(text(),'Save')]");
+	static By workflowlocator = By.xpath("//button[contains(text(),'Workflow')]");
 	
 	public void add1stInteractionforUTC() throws InterruptedException
 	{
@@ -48,6 +48,7 @@ public class AddInteractionsPage extends WebElements{
 		dropdownSelect(outreachoutcomesdropdown, "Open");
 		Thread.sleep(10000);
 		dropdownSelect(assigntodropdown,userProfileName);
+		waitforElementPresent(savelocator);
 	}
 	
 	public void clickSaveInteraction()
@@ -75,13 +76,14 @@ public class AddInteractionsPage extends WebElements{
 	}
 	public void episodeOpenActivitiesAlert() throws InterruptedException
 	{
-		Thread.sleep(10000);
+		sleep(5000);
 		alertBox("This Episode has Open Activities");
 	}
 	public void changingAssignedUserAlert() throws InterruptedException
 	{
-		Thread.sleep(10000);
+		sleep(10000);
 		alertBox("You are changing the assigned user");
+		waitforElementPresent(workflowlocator);
 	}
 	
 	
