@@ -1,4 +1,4 @@
-package com.jiva.testcases;
+package com.jivaUAT2.testcases;
 
 import java.util.ArrayList;
 
@@ -12,7 +12,9 @@ import com.jiva.TestData.ReadAddressFile;
 import com.jiva.TestData.ReadMemberCoverageFile;
 import com.jiva.TestData.ReadMemberDemographicFile;
 import com.jiva.TestData.ReadPhoneDetails;
+import com.jiva.pages.AcceptPOCPage;
 import com.jiva.pages.AddInteractionsPage;
+import com.jiva.pages.AssessmentsPage;
 import com.jiva.pages.ChangeStatusPage;
 import com.jiva.pages.ConfirmAddepisodePage;
 import com.jiva.pages.CreateCMepisodePage;
@@ -26,9 +28,9 @@ import com.jiva.pages.ProgramsPage;
 import com.jiva.pages.WorklistsPage;
 import com.framework.utils.TestBase;
 
-public class E2EintegrationflowTC_ZU_61 extends TestBase {
-	private static Logger logger = Logger.getLogger(E2EintegrationflowTC_ZU_61.class);
-	WebDriver driver;
+public class CCM_PostEnrollmentLetterGeneration_TC extends TestBase {
+	private static Logger logger = Logger.getLogger(CCM_PostEnrollmentLetterGeneration_TC.class);
+	private WebDriver driver;
 	private String sTestcaseName = null;
 	
 	private ArrayList<String> MemberDemographicData;
@@ -45,10 +47,13 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 	
 	@BeforeClass
 	public void dataSetup() {
+			
 		MemberDemographicData =ReadMemberDemographicFile.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME); // demographic file
 		logger.info("Member Demographic File Data "+MemberDemographicData);
-	
+		
 		MemberAddressData =ReadAddressFile.mandatoryCheckPoints(MEMBERADDRESSFILENAME); // address file
+		
+		//logger.info("Enrollment ID in Demographic file compared with Address File "+MemberDemographicData.get(ENROLLMENTID).contains(MemberAddressData.get(ADDR_ENROLLMENTID)));
 		logger.info("Member Address File Data "+MemberAddressData);
 		
 		MemberPhoneData = ReadPhoneDetails.mandatoryCheckPoints(MEMBERPHONEFILENAME); //Phone file
@@ -59,13 +64,15 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 	}
 	
 
-	@Test(description = "Verify Member data from the files with screendata and execute ZU-61 flow for CCM-Member Opts out")
-	public void verify_MemberDatafromfile_toScreen_ZU_61flow() throws InterruptedException {
+	@Test(description = "Verify Member data from the files with screendata and execute ZU-63 flow for CCM-Member_Identified Needs/Goals Have Been Met")
+	public void verify_MemberDatafromfile_toScreen_ZU_63flow() throws InterruptedException {
 
 		sTestcaseName = new Object() {}.getClass().getEnclosingMethod().getName();
 		logger.info("Execution started for--- " + sTestcaseName);
-
-		driver = initializeDriver(BROWSER); 		// initialise browser and openurl
+		
+		// initialise browser and openurl
+		
+		driver = initializeDriver(BROWSER); 		
 		openurl(driver, AutomationURL);
 
 		// Login Page details
@@ -91,10 +98,10 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 
 		MemberSearchPage memberSearchPage = new MemberSearchPage(driver);
 		memberSearchPage.clickAdvSearch();		
-		memberSearchPage.sleep(5000);		
+		memberSearchPage.sleep(5000);			
 		logger.info("Member Last name "+MemberDemographicData.get(LASTNAME));
 		logger.info("Member First name "+MemberDemographicData.get(FIRSTNAME));		
-		memberSearchPage.enterMemberLastname(MemberDemographicData.get(LASTNAME));
+		memberSearchPage.enterMemberLastname(MemberDemographicData.get(LASTNAME));// Read First record lastname from the arraylist
 		memberSearchPage.enterMemberFirstname(MemberDemographicData.get(FIRSTNAME));
 		memberSearchPage.clickSearch();
 		
@@ -103,7 +110,7 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 			
 		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
 		memberOverviewPage.sleep(3000);
-		memberOverviewPage.expandMemberInfo();
+		memberOverviewPage.expandMemberInfo();		
 		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
 		Assert.assertEquals(MemberDemographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against demographic file");
 		Assert.assertEquals(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against address file");
@@ -114,16 +121,17 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 		Assert.assertEquals(MemberCoverageData.get(CVRG_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Coverage file");
 		
 		memberOverviewPage.openMemberInformation();
-		memberOverviewPage.sleep(5000);			
+		memberOverviewPage.sleep(5000);		
+		
 		Assert.assertEquals(MemberDemographicData.get(LASTNAME), memberOverviewPage.getMemberLastName(), "Member last name validated");
 		Assert.assertEquals(MemberDemographicData.get(FIRSTNAME), memberOverviewPage.getMemberFirstName(), "Member first name validated");			
-		Assert.assertEquals(MemberDemographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");					
-		Assert.assertEquals(true,memberOverviewPage.getGender().contains(MemberDemographicData.get(GENDER)),"Member gender validated");
+		Assert.assertEquals(MemberDemographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");
+		Assert.assertEquals(true,memberOverviewPage.getGender().contains(MemberDemographicData.get(GENDER)),"Member gender validated");		
 		logger.info("Member DOB on screen "+memberOverviewPage.getMemberDOB());
 		String DOBonscreen[] = memberOverviewPage.getMemberDOB().split("/");
 		String DOBinFileFormat = DOBonscreen[2]+"-"+DOBonscreen[0]+"-"+DOBonscreen[1];	
 		logger.info("Member DOB on screen changed to File format "+DOBinFileFormat);		
-		Assert.assertEquals(MemberDemographicData.get(DOB),DOBinFileFormat,"Member DOB validated");  
+		Assert.assertEquals(MemberDemographicData.get(DOB),DOBinFileFormat,"Member DOB validated");  			
 		
 		Assert.assertEquals(MemberAddressData.get(HOME_ADDRESSTYPE).toUpperCase(),memberOverviewPage.getHomeAddressType(),"Home Address type validated");		
 		Assert.assertEquals(MemberAddressData.get(HOME_ADDRESS1),memberOverviewPage.getHomeAddressline1(),"Home Address line 1 validated");		
@@ -137,30 +145,24 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 		Assert.assertEquals(MemberAddressData.get(PRIMARY_CITY),memberOverviewPage.getPrimaryCity(),"PRIMARY city validated");
 		Assert.assertEquals(MemberAddressData.get(PRIMARY_STATE),memberOverviewPage.getPrimaryState(),"PRIMARY state validated");
 		Assert.assertEquals(MemberAddressData.get(PRIMARY_ZIP),memberOverviewPage.getPrimaryZip(),"PRIMARY Zip validated");
-		Assert.assertEquals(MemberAddressData.get(PRIMARY_COUNTRY),memberOverviewPage.getPrimaryCountry(),"PRIMARY country validated");
-				
+		Assert.assertEquals(MemberAddressData.get(PRIMARY_COUNTRY),memberOverviewPage.getPrimaryCountry(),"PRIMARY country validated");		
+		
+
 		memberOverviewPage.sleep(5000);
 		memberOverviewPage.closeMemberInfo();
 		memberOverviewPage.expandMemberInfo();
-		
+
 		memberOverviewPage.clickAddEpisode();
 		memberOverviewPage.clickCaseManagement();
-		
+		memberOverviewPage.similarEpisodeAlert();
+
 		CreateCMepisodePage createCMepisodePage = new CreateCMepisodePage(driver);
-		createCMepisodePage.addEpisodeDetails();
+		createCMepisodePage.addEpisodeDetails(userprofilename);
 		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(), "Program added Sucessfully");
-		createCMepisodePage.clickSaveEpisode();
-		logger.info("Verified creation of episode successfully");
-
-		// Worklists page details
-
-		WorklistsPage worklists = new WorklistsPage(driver);				
-		memberOverviewPage.clickCurrentEpisodecogwheel();
-		memberOverviewPage.openEpisode();				
-		worklists.assigntoself();
+		createCMepisodePage.clickSaveandContinueEpisode();
 
 		// Episode overview Page details
-		
+
 		Episodeoverviewpage episodeoverviewpage = new Episodeoverviewpage(driver);
 		Assert.assertEquals(episodeoverviewpage.verifyactivityAdded(), "Verbal consent to be received",
 				"Activity Added to the list");
@@ -169,43 +171,64 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 		// Episode activities Page details
 
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
-		Assert.assertEquals(true,episodeactivitiespage.verify_OpenorClosedInteractionRecordVisible(),"Open interaction available");
+		Assert.assertEquals(true, episodeactivitiespage.verify_OpenInteractionRecordVisible(userprofilename),
+				"Open interaction available");
+
 		episodeactivitiespage.clickWheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 1st interaction details
-		
+
 		AddInteractionsPage addInteractionsPage = new AddInteractionsPage(driver);
-		addInteractionsPage.add1stInteractionforMemberOptsOut();
-		addInteractionsPage.clickSaveInteraction();
 
-		episodeactivitiespage.clickWheel();
-		episodeactivitiespage.clickAddInteraction();
-
-		// Add 2nd interaction details
-		episodeactivitiespage.sleep(5000);
-		addInteractionsPage.add2ndInteractionforMemberOptsOut(userprofilename);
+		addInteractionsPage.add1stInteractionforCCM(userprofilename);
 		addInteractionsPage.clickSaveInteraction();
-		
-		addInteractionsPage.episodeOpenActivitiesAlert();				
+		addInteractionsPage.changingAssignedUserAlert();	
 		addInteractionsPage.sleep(5000);
-		episodeactivitiespage.clickCM();
-		episodeactivitiespage.sleep(10000);
-		episodeoverviewpage.openCorrespondence();
-		Assert.assertEquals(true,episodeoverviewpage.verify_CM_PCP_Mbr_Opt_OutLetterGenerated(userprofilename),"Member Opts out letter generated to PCP");
-		Assert.assertEquals(true,episodeoverviewpage.verify_CM_Mbr_Opt_OutLetterGenerated(userprofilename),"Member Opts out letter generated to Member");
+		episodeoverviewpage.clickWorkflow();
+		episodeoverviewpage.clickAssessments();
+
+		AssessmentsPage assessmentsPage = new AssessmentsPage(driver);
+		assessmentsPage.selectDefaultAssessment();
+		assessmentsPage.startDefaultAssessment();
+		assessmentsPage.answerAssessmentQuestions();
+		assessmentsPage.completeAssessment();
+
+		AcceptPOCPage acceptPOCPage = new AcceptPOCPage(driver);
+		acceptPOCPage.managePOCDetails();
+		acceptPOCPage.sleep(5000);
+		acceptPOCPage.closePOCWindow();
+		episodeoverviewpage.clickWorkflow();
+		acceptPOCPage.sleep(5000);
+		episodeoverviewpage.clickChangeStatus();
+
+		ChangeStatusPage changeStatusPage = new ChangeStatusPage(driver);
+		changeStatusPage.changeStatusDetailsforIdentifiedNeeds();
+		changeStatusPage.existingOpenActivitiesforEpisodeAlert();
+		changeStatusPage.sleep(5000);
+
+		episodeoverviewpage.clickHamBurger();
+		episodeoverviewpage.clickCorrespondence();
+		Assert.assertEquals(true, episodeoverviewpage.verify_CM_PostEnrollmentLetterGenerated(userprofilename),
+				"Post Enrollment Letter Generated");
+
 		episodeoverviewpage.clickWorkflow();
 		episodeoverviewpage.clickPrograms();
+
+		ProgramsPage programsPage = new ProgramsPage(driver);
+		Assert.assertEquals(true, programsPage.verify_ProgramClosed(), "Program is closed successfully");
+
+		logger.info("Successfully completed validating member files integration flow of ZU-63_CCM_Member_Identified Needs/Goals Have Been Met");
 		
-		ProgramsPage programsPage = new ProgramsPage(driver);		
-		Assert.assertEquals(true, programsPage.verify_ProgramClosed(),"Program is closed successfully");
-		
-		logger.info("Successfully completed validating member files integration flow of ZU-61_CCM_Member Opts out");
+
+		programsPage.clickMemberOverview();
+		memberOverviewPage.clickCurrentEpisodecogwheel();
+		memberOverviewPage.performDeactivateEpisode();		
 		
 		// Closing the browser
-		//closeBrowser(driver);
+		closeBrowser(driver);
 		
-		
+
 	}
 
 }

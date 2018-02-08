@@ -3,10 +3,42 @@ package com.jiva.TestData;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+
 
 public class ReadMemberDemographicFile {
 
+	
+	public static ArrayList<String> mandatoryCheckPoints(String sFileName,int linenumber) throws IOException {
+		
+		ArrayList<String> fileValue= new ArrayList<String>();
+		
+		 String[] currentLine = Files.readAllLines(Paths.get(sFileName)).get(linenumber).split("\\|", -1);
+
+						//System.out.println("j--" + j + "--" + demovalue.get(j));
+		 for (int j = 0; j < currentLine.length; j++) {
+			
+					if(currentLine[j].contains("^"))
+					{
+							fileValue.add(currentLine[j]);
+							fileValue.add(currentLine[j+1]);		
+							fileValue.add(currentLine[j+4]);
+							fileValue.add(currentLine[j+5]);
+							fileValue.add(currentLine[j+11]);
+							fileValue.add(currentLine[j+21]);
+							fileValue.add(currentLine[j+16]);
+							
+		 }
+					}
+
+		
+		return fileValue;
+	}
+
+	
+	
 	public static ArrayList<String> mandatoryCheckPoints(String sFileName) {
 		BufferedReader br = null;
 		FileReader fr = null;
@@ -44,10 +76,10 @@ public class ReadMemberDemographicFile {
 		return fileValue;
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		String FILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20171114/jiva-eligibility-demographics_20171114_171337~20171114_091506616~.txt";
 	//	ReadMemberDemographicFile files = new ReadMemberDemographicFile();
-		ArrayList<String> mandatoryData =ReadMemberDemographicFile.mandatoryCheckPoints(FILENAME);
+		ArrayList<String> mandatoryData =ReadMemberDemographicFile.mandatoryCheckPoints(FILENAME,3);
 		System.out.println(mandatoryData);
 		System.out.println(mandatoryData.size());
 		for (int i = 0; i < mandatoryData.size(); i++) {

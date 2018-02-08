@@ -6,10 +6,8 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-
-import com.jiva.testcases.E2EintegrationflowTC_ZU_63;
 import com.framework.utils.WebElements;
-
+import com.jivaUAT1.testcases.E2EintegrationflowTC_ZU_63;
 import com.framework.utils.WebElements;
 
 

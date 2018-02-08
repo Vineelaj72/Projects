@@ -7,11 +7,24 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="com.jiva.testcases.SanityTC_03">
+      <class name="com.jivaUAT2.testcases.CCM_UTCLetterGeneration_TC">
         <methods>
-          <include name="verify_AddCMEpisodetoMember"/>
+          <include name="dataSetup"/>
+          <include name="verify_MemberDatafromfile_toScreen_ZU_60flow"/>
         </methods>
-      </class> <!-- com.jiva.testcases.SanityTC_03 -->
+      </class> <!-- com.jivaUAT2.testcases.CCM_UTCLetterGeneration_TC -->
+      <class name="com.jivaUAT2.testcases.CCM_MemberOptOutLetterGeneration_TC">
+        <methods>
+          <include name="dataSetup"/>
+          <include name="verify_MemberDatafromfile_toScreen_ZU_61flow"/>
+        </methods>
+      </class> <!-- com.jivaUAT2.testcases.CCM_MemberOptOutLetterGeneration_TC -->
+      <class name="com.jivaUAT2.testcases.CCM_PostEnrollmentLetterGeneration_TC">
+        <methods>
+          <include name="dataSetup"/>
+          <include name="verify_MemberDatafromfile_toScreen_ZU_63flow"/>
+        </methods>
+      </class> <!-- com.jivaUAT2.testcases.CCM_PostEnrollmentLetterGeneration_TC -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Sanity Suite] -->

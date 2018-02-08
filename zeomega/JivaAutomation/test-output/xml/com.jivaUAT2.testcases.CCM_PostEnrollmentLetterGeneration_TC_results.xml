@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="147.957">
+  <properties />
+  
+  
+            <testcase name="verify_MemberDatafromfile_toScreen_ZU_63flow" time="147.957" classname="com.jivaUAT2.testcases.CCM_PostEnrollmentLetterGeneration_TC" />
+      
+</testsuite>

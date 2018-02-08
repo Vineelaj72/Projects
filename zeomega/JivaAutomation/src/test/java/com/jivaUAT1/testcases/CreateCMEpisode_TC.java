@@ -1,4 +1,4 @@
-package com.jiva.testcases;
+package com.jivaUAT1.testcases;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;

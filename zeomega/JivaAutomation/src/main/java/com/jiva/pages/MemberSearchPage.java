@@ -47,7 +47,7 @@ public class MemberSearchPage extends WebElements{
 	public void enterMemberLastname(String sLastname) throws InterruptedException
 	{
 		enterText(lastnamelocator, sLastname);
-		sleep(5000);
+		sleep(6000);
 		clickEnter(lastnamelocator);
 	}
 	public void enterMemberFirstname(String sFirstname) throws InterruptedException

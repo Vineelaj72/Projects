@@ -7,7 +7,9 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.jiva.testcases.ArrayList_MemberFilesdatawithscreendata_TC"/>
+      <class name="com.jivaUAT2.testcases.CCM_UTCLetterGeneration_TC"/>
+      <class name="com.jivaUAT2.testcases.CCM_MemberOptOutLetterGeneration_TC"/>
+      <class name="com.jivaUAT2.testcases.CCM_PostEnrollmentLetterGeneration_TC"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

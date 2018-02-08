@@ -1,14 +1,17 @@
-package com.jiva.testcases;
+package com.jivaUAT2.testcases;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.jiva.TestData.ReadAddressFileNew;
 import com.jiva.TestData.ReadAddressFile;
 import com.jiva.TestData.ReadMemberCoverageFile;
 import com.jiva.TestData.ReadMemberDemographicFile;
@@ -27,13 +30,14 @@ import com.jiva.pages.ProgramsPage;
 import com.jiva.pages.WorklistsPage;
 import com.framework.utils.TestBase;
 
-public class E2EintegrationflowTC_ZU_60 extends TestBase {
-	private static Logger logger = Logger.getLogger(E2EintegrationflowTC_ZU_60.class);
+public class ZU_60_Sanity_TC extends TestBase {
+	private static Logger logger = Logger.getLogger(ZU_60_Sanity_TC.class);
 	private WebDriver driver;
 	private String sTestcaseName = null;
 	
 	private ArrayList<String> MemberDemographicData;
 	int ENROLLMENTID=0,ALTERNATEID=1,LASTNAME=2,FIRSTNAME=3,DOB=4,ACTIVESTATUS=5,GENDER=6;
+	
 	
 	private ArrayList<String> MemberAddressData;	
 	int ADDR_ENROLLMENTID=0,HOME_ADDRESSTYPE=1,HOME_ADDRESS1=2,HOME_CITY=3,HOME_STATE=4,HOME_ZIP=5,HOME_COUNTRY=6,ADDR_ACTIVESTATUS=7,PRIMARY_ADDRESSTYPE=9,PRIMARY_ADDRESS1=10,PRIMARY_CITY=11,PRIMARY_STATE=12,PRIMARY_ZIP=13,PRIMARY_COUNTRY=14;
@@ -43,15 +47,17 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 	
 	private ArrayList<String> MemberCoverageData;
 	int CVRG_ENROLLMENTID=0;
+	private int lineNumber=2;
 	
 	@BeforeClass
-	public void dataSetup() {
+	public void dataSetup() throws IOException {
 			
-		MemberDemographicData =ReadMemberDemographicFile.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME); // demographic file
+		MemberDemographicData =ReadMemberDemographicFile.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME,lineNumber); // demographic file
 		logger.info("Member Demographic File Data "+MemberDemographicData);
 		
-		MemberAddressData =ReadAddressFile.mandatoryCheckPoints(MEMBERADDRESSFILENAME); // address file
-		
+		//MemberAddressData =ReadAddressFile.mandatoryCheckPoints(MEMBERADDRESSFILENAME); // address file	
+		MemberAddressData = ReadAddressFileNew.addressFileCode(MEMBERADDRESSFILENAME, MemberDemographicData.get(ENROLLMENTID));
+		logger.info("---"+MemberAddressData);
 		//logger.info("Enrollment ID in Demographic file compared with Address File "+MemberDemographicData.get(ENROLLMENTID).contains(MemberAddressData.get(ADDR_ENROLLMENTID)));
 		logger.info("Member Address File Data "+MemberAddressData);
 		
@@ -62,7 +68,13 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		logger.info("Member Coverage File Data "+MemberCoverageData);
 	}
 	
-
+	@BeforeMethod
+	public void checkPersonExpired()
+	{
+		 
+	}
+	
+	
 	@Test(description = "Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member")
 	public void verify_MemberDatafromfile_toScreen_ZU_60flow() throws InterruptedException {
 
@@ -100,14 +112,23 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		memberSearchPage.sleep(5000);			
 		logger.info("Member Last name "+MemberDemographicData.get(LASTNAME));
 		logger.info("Member First name "+MemberDemographicData.get(FIRSTNAME));		
-		memberSearchPage.enterMemberLastname(MemberDemographicData.get(LASTNAME)); // Read First record lastname from the arraylist
-		memberSearchPage.enterMemberFirstname(MemberDemographicData.get(FIRSTNAME));
+		memberSearchPage.enterMemberLastname("Reynolds"); 
+		memberSearchPage.enterMemberFirstname("William");
 		memberSearchPage.clickSearch();
 		
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
 		confirmAddepisodePage.clickRedirecttoMCV();
+		
+		/*By deadColor= By.xpath(".//*[@id='angularcontent']//div[contains(@class,'4d4d4d')]");
+		confirmAddepisodePage.getAttribute(deadColor).contains("4d4d4d"))
+
+*/
+	
+
+	}
+}
 			
-		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
+		/*MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
 		memberOverviewPage.sleep(3000);
 		memberOverviewPage.expandMemberInfo();		
 		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
@@ -151,11 +172,15 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		memberOverviewPage.closeMemberInfo();
 		memberOverviewPage.expandMemberInfo();
 		
+		memberOverviewPage.performDeactivateEpisodeforClosedEpisodes();
+		
+		
 		memberOverviewPage.clickAddEpisode();
 		memberOverviewPage.clickCaseManagement();
+		memberOverviewPage.similarEpisodeAlert();
 		
 		CreateCMepisodePage createCMepisodePage = new CreateCMepisodePage(driver);
-		createCMepisodePage.addEpisodeDetails();
+		createCMepisodePage.addEpisodeDetails(userprofilename);
 		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(), "Program added Sucessfully");
 		createCMepisodePage.clickSaveEpisode();
 		logger.info("Verified creation of episode successfully");
@@ -165,7 +190,7 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		WorklistsPage worklists = new WorklistsPage(driver);				
 		memberOverviewPage.clickCurrentEpisodecogwheel();
 		memberOverviewPage.openEpisode();			
-		worklists.assigntoself();
+		//worklists.assigntoself();  -- assign to self if it is not assigned to you
 
 		// Episode overview Page details
 		
@@ -177,7 +202,7 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		// Episode activities Page details
 
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
-		Assert.assertEquals(true,episodeactivitiespage.verify_OpenorClosedInteractionRecordVisible(),"Open interaction available");
+		Assert.assertEquals(true,episodeactivitiespage.verify_OpenInteractionRecordVisible(userprofilename),"Open interaction available");
 		
 		episodeactivitiespage.clickWheel();
 		episodeactivitiespage.clickAddInteraction();
@@ -195,7 +220,7 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		addInteractionsPage.add2ndInteractionforUTC();
 		addInteractionsPage.clickSaveInteraction();
 		episodeactivitiespage.clickClosedActivities();
-		Assert.assertEquals(true,episodeactivitiespage.verify_OpenorClosedInteractionRecordVisible(),"Closed interaction available");
+		Assert.assertEquals(true,episodeactivitiespage.verify_ClosedInteractionRecordVisible(userprofilename),"Closed interaction available");
 		
 		
 		episodeactivitiespage.clickCM();
@@ -237,10 +262,16 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		
 		logger.info("Successfully completed validating member files integration flow of ZU-60_Unable to reach member");
 		
-		// Closing the browser
-		//closeBrowser(driver);
 		
+		programsPage.clickMemberOverview();
+		memberOverviewPage.clickCurrentEpisodecogwheel();
+		memberOverviewPage.performDeactivateEpisode();		
+		
+		// Closing the browser
+		closeBrowser(driver);
 		
 	}
 
 }
+
+*/

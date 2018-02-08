@@ -2,7 +2,9 @@ package com.framework.setup;
 
 public interface Setup {
 	
-String AutomationURL="https://lumerisuat.zeomega.com";
+	//String AutomationURL="https://lumerisuat.zeomega.com";
+	
+	String AutomationURL="https://lumerisuat2.zeomega.com";  //UAT 2 url
 	
 	String IEPATH = "../JivaAutomation/drivers/IEDriverServer.exe";	
 	String CHROMEPATH = "../JivaAutomation/drivers/chromedriver.exe";

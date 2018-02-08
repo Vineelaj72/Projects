@@ -1,7 +1,10 @@
 package com.jiva.pages;
 
+import java.util.NoSuchElementException;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 
 import com.framework.utils.WebElements;
@@ -19,6 +22,11 @@ public class MemberOverviewPage extends WebElements {
 	By memberinfoexpandlocator = By.id("yui-gen506");
 	By viewallmemberinfolocator = By.xpath("//a/span[contains(text(),'View all')]/../j-label[contains(text(),'Member')]/../span[contains(text(),'information')]/..");
 	By currentepisodecogwheellocator = By.xpath(".//*[@id='content-main']/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div/div[1]/a/i");
+	By deactivateepisodelink = By.xpath("//a/span[contains(text(),'Deactivate')]");
+	By deactivatebuttonlocator = By.xpath("//div/button[contains(text(),'Deactivate')]");
+	By CCMstatusclosedlocator = By.xpath("//div[contains(@class,'ng-scope')]//div[contains(@class,'clearfix col-sm-6 padding-left-0px padding-right-0px')]/div/span[contains(text(),'Complex')]/../../../div[contains(@class,'clearfix col-sm-6')]/div[4]/span[contains(text(),'Closed')]");
+	By CCMstatusreferrallocator = By.xpath("//div[contains(@class,'ng-scope')]//div[contains(@class,'clearfix col-sm-6 padding-left-0px padding-right-0px')]/div/span[contains(text(),'Complex')]/../../../div[contains(@class,'clearfix col-sm-6')]/div[4]/span[contains(text(),'Referral')]");
+	By CCMstatusopenlocator = By.xpath("//div[contains(@class,'ng-scope')]//div[contains(@class,'clearfix col-sm-6 padding-left-0px padding-right-0px')]/div/span[contains(text(),'Complex')]/../../../div[contains(@class,'clearfix col-sm-6')]/div[4]/span[contains(text(),'open')]");
 	
 	By memberfirstnamelocator = By.xpath("//div/span[contains(text(),'First Name')]/../../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_first_name')]");
 	By memberlastnamelocator = By.xpath("//div/span[contains(text(),'Last Name')]/../../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_last_name')]");
@@ -49,7 +57,7 @@ public class MemberOverviewPage extends WebElements {
 	
 	By closememberinfolocator = By.xpath(".//*[@id='cms-body']/div[5]/div/div/div/div[1]/button");
 	By addepisodelocator = By.xpath(".//*[@id='angularcontent']/workflow-banner/div/div/div[3]/div[6]/button");
-	By casemanagementlocator = By.xpath("//a/span[contains(text(),'Case Management')]");
+	By casemanagementlocator = By.xpath("(//a/span[contains(text(),'Case Management')])[2]");
 	
 	public void closeMemberInfo()
 	{
@@ -74,7 +82,33 @@ public class MemberOverviewPage extends WebElements {
 	{
 		clickUsingJs(currentepisodecogwheellocator);
 	}
+	public void performDeactivateEpisode()
+	{
+		click(deactivateepisodelink);
+		click(deactivatebuttonlocator);
+	}
+	public void performDeactivateEpisodeforClosedEpisodes()
+	{
+		try
+		{
+			if(isDisplayed(CCMstatusclosedlocator))
+			{
+				click(deactivateepisodelink);
+				click(deactivatebuttonlocator);
+			}
+		}
+		catch (NoSuchElementException e)
+		{
+			System.out.println("No CCM closed episodes available");
+		}
 	
+		
+	}
+	public void similarEpisodeAlert()
+	{
+		sleep(10000);
+		alertBox("similar episode");
+	}
 	public void openEpisode()
 	{
 		clickUsingJs(openepisodelinklocator);

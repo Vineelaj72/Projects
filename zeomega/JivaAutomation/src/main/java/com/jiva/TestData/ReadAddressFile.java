@@ -33,7 +33,6 @@ public class ReadAddressFile {
 							fileValue.add(demovalue.get(j+6));	//zip
 							fileValue.add(demovalue.get(j+7));	//country
 							fileValue.add(demovalue.get(j+10));	//active status
-						
 					}
 							
 					}
@@ -43,6 +42,31 @@ public class ReadAddressFile {
 		}
 		return fileValue;
 	}
+	
+	public static ArrayList<String> otherFilesData(String sFileName) {
+		BufferedReader br = null;
+		FileReader fr = null;
+		ArrayList<String> demovalue = new ArrayList<String>(); // full file reading
+		ArrayList<String> fileValue = new ArrayList<String>(); // mandatory records
+		try {
+			fr = new FileReader(sFileName);
+			br = new BufferedReader(fr);
+			String sCurrentLine;
+			while ((sCurrentLine = br.readLine()) != null) {
+					for (int j = 0; j < sCurrentLine.split("\\|", -1).length; j++) { //regular expression
+						demovalue.add(sCurrentLine.split("\\|", -1)[j]);
+					}
+				}
+					for (int j = 0; j < demovalue.size(); j++) {
+							fileValue.add(demovalue.get(j));
+					}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return fileValue;
+	}
+
 
 	public static void main(String[] args) {
 		String FILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180129/jiva-eligibility-address_20180129_100001~20180129_100653424~.txt";
@@ -53,6 +77,8 @@ public class ReadAddressFile {
 		for (int i = 0; i < mandatoryData.size(); i++) {
 				System.out.println("");
 		}
+		
+		
 	}
 }
 

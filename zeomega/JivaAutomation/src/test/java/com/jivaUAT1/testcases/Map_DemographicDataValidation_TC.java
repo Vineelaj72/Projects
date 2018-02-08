@@ -1,4 +1,4 @@
-package com.jiva.testcases;
+package com.jivaUAT1.testcases;
 
 import java.util.ArrayList;
 import java.util.Map;

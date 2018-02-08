@@ -1,22 +1,19 @@
-package com.jiva.testcases;
+package com.jivaUAT1.testcases;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Sleeper;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
 import com.jiva.pages.AddInteractionsPage;
 import com.jiva.pages.CalenderPage;
-import com.jiva.pages.ChangeStatusPage;
 import com.jiva.pages.ConfirmAddepisodePage;
 import com.jiva.pages.CreateCMepisodePage;
 import com.jiva.pages.Dashboard;
 import com.jiva.pages.Episodeactivitiespage;
 import com.jiva.pages.Episodeoverviewpage;
 import com.jiva.pages.LoginPage;
-import com.jiva.pages.MemberOverviewPage;
 import com.jiva.pages.MemberSearchPage;
 import com.jiva.pages.WorklistsPage;
 import com.framework.utils.TestBase;
@@ -25,13 +22,13 @@ import com.jiva.pages.ConfirmAddepisodePage;
 import com.framework.utils.TestBase;
 
 
-public class ZU_Calender_flow extends TestBase{
-	private static Logger logger = Logger.getLogger(ZU_Calender_flow.class);
+public class ZU_01_CalenderActivity extends TestBase {
+	private static Logger logger = Logger.getLogger(ZU_01_CalenderActivity.class);
 	WebDriver driver;
 	private String sTestcaseName = null;
 
 	@Test(description = "Add CM episode for active Jiva members and go to worklists-ZU 60 flow")
-	public void verify_ZU_Calender_flow() throws InterruptedException {
+	public void verify_AddCMEpisodetoMember() throws InterruptedException {
 
 		sTestcaseName = new Object() {
 		}.getClass().getEnclosingMethod().getName();
@@ -42,7 +39,7 @@ public class ZU_Calender_flow extends TestBase{
 		driver = initializeDriver(BROWSER);
 		openurl(driver, AutomationURL);
 		maximizeBrowser(driver);
-		
+	
 		// Login Page details
 
 		LoginPage login = new LoginPage(driver);
@@ -104,7 +101,6 @@ public class ZU_Calender_flow extends TestBase{
 		Thread.sleep(5000);
 		worklists.enterFirstName(MemberLastname_Firstname[1]);
 		worklists.clickSearchButton();
-		Thread.sleep(5000);
 		String cmEpisodeID = worklists.getEpisodeID(MemberLastname_Firstname[0]);
 		logger.info(cmEpisodeID);
 		worklists.clickCM(MemberLastname_Firstname[0]);
@@ -116,7 +112,6 @@ public class ZU_Calender_flow extends TestBase{
 
 		Assert.assertEquals(episodeoverviewpage.verifyactivityAdded(), "Verbal consent to be received",
 				"Activity Added to the list");
-		Thread.sleep(10000);
 
 		episodeoverviewpage.openActivities();
 
@@ -141,68 +136,9 @@ public class ZU_Calender_flow extends TestBase{
 
 		dashboard.clickMenu();
 		//dashboard.clickManageEpisodes();
-		dashboard.clickMemberSearch();
 		memberSearchPage.clickAdvSearch();
-		memberSearchPage.enterMemberLastname(MemberLastname_Firstname[0]);
-		memberSearchPage.enterMemberFirstname(MemberLastname_Firstname[1]);
-		memberSearchPage.clickSearch();
 		
-		confirmAddepisodePage.clickRedirecttoMCV();
-		
-		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);
-		memberOverviewPage.clickGear(cmEpisodeID);
-		memberOverviewPage.openEpisode();
-		
-		memberOverviewPage.sleep(5000);
-		
-		episodeoverviewpage.openActivities();
-		
-		episodeactivitiespage.clickWheel();
-		episodeactivitiespage.clickAddInteraction();
-
-		// Add 2nd interaction details
-		addInteractionsPage.add2ndInteractionforUTC();
-		addInteractionsPage.clickSaveInteraction();
-		Assert.assertEquals(true, episodeactivitiespage.verify_ClosedInteractionRecordVisible(userprofilename),
-				"Closed interaction available");
-		
-		
-		episodeactivitiespage.clickCM();
-		Thread.sleep(10000);
-		episodeoverviewpage.openCorrespondence();
-		Assert.assertEquals(true,episodeoverviewpage.verify_UTCletterGenerated(userprofilename),"UTC letter generated");
-		
-		//Thread.sleep(10000);
-		episodeoverviewpage.clickWorkflow();
-		episodeoverviewpage.clickActivities();
-		episodeactivitiespage.clickAddActivity();
-		episodeactivitiespage.enterActivityDetails();
-		
-		Assert.assertEquals(true, episodeactivitiespage.verify_OpenActivityRecordVisible(userprofilename),
-				"Review for Contact Open activity available");
-		
-		episodeactivitiespage.clickWheel();
-		episodeactivitiespage.clickModifyActivity();
-		episodeactivitiespage.modifyActivityDetails();
-		episodeactivitiespage.clickClosedActivities();
-		
-		Assert.assertEquals(true, episodeactivitiespage.verify_ClosedActivityRecordVisible(userprofilename),
-				"Review for Contact Closed activity available");
-		
-		episodeoverviewpage.clickWorkflow();
-		episodeoverviewpage.clickChangeStatus();
-		
-		// Change status page details
-		
-		ChangeStatusPage changeStatusPage = new ChangeStatusPage(driver);
-		changeStatusPage.changeStatusDetails();
-		
-		Assert.assertEquals(true, episodeactivitiespage.verifyEpisodeStatus_Closed(userprofilename),
-				"Closed episode successfully");
-		
-		// Closing the browser
-		//closeBrowser(driver);
-
 
 	}
+
 }
