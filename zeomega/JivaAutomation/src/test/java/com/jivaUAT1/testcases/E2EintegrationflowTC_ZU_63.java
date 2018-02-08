@@ -8,10 +8,10 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.jiva.TestData.ReadAddressFile;
-import com.jiva.TestData.ReadMemberCoverageFile;
-import com.jiva.TestData.ReadMemberDemographicFile;
-import com.jiva.TestData.ReadPhoneDetails;
+import com.jiva.OLDTestData.ReadAddressFile;
+import com.jiva.OLDTestData.ReadMemberCoverageFile;
+import com.jiva.OLDTestData.ReadMemberDemographicFile;
+import com.jiva.OLDTestData.ReadPhoneDetails;
 import com.jiva.pages.AcceptPOCPage;
 import com.jiva.pages.AddInteractionsPage;
 import com.jiva.pages.AssessmentsPage;
@@ -103,7 +103,7 @@ public class E2EintegrationflowTC_ZU_63 extends TestBase {
 		logger.info("Member First name "+MemberDemographicData.get(FIRSTNAME));		
 		memberSearchPage.enterMemberLastname(MemberDemographicData.get(LASTNAME));// Read First record lastname from the arraylist
 		memberSearchPage.enterMemberFirstname(MemberDemographicData.get(FIRSTNAME));
-		memberSearchPage.clickSearch();
+		memberSearchPage.clickSearchinAdvancedSearch();
 		
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
 		confirmAddepisodePage.clickRedirecttoMCV();
@@ -156,7 +156,7 @@ public class E2EintegrationflowTC_ZU_63 extends TestBase {
 		memberOverviewPage.clickCaseManagement();
 
 		CreateCMepisodePage createCMepisodePage = new CreateCMepisodePage(driver);
-		createCMepisodePage.addEpisodeDetails();
+		createCMepisodePage.addEpisodeDetails(userprofilename);
 		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(), "Program added Sucessfully");
 		createCMepisodePage.clickSaveandContinueEpisode();
 

@@ -38,6 +38,8 @@ public class MemberOverviewPage extends WebElements {
 	By activestatuslocator = By.xpath("//i[contains(@ng-if,'!memberScope.cvgExpired')]");
 	By coverageidlocator = By.xpath("//span/j-label[contains(text(),'Coverage ID')]/../../span[contains(@ng-bind,'memberScope.member_details.coverage_id')]");
 	By phonelocator = By.xpath("//td/span[contains(text(),'Phone')]/../span[contains(@ng-bind,'preferred_phone')]");
+	By homephonelocator = By.xpath("//td/div/div/label[contains(text(),'Home')]/../div/span");
+	By clientnamelocator = By.xpath("//label/j-label[contains(text(),'Client')]/../../div/span");
 	
 	By HOMEaddresstypelocator = By.xpath(".//*[@id='cms-body']/div[5]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[1]/div[4]/div[3]/span");
 	By HOMEziplocator = By.xpath("//div/span[contains(text(),'HOME')]/../../../div/div[contains(text(),'Zip')]/../div/span[contains(@ng-bind,'record.member_zipcode')]");
@@ -63,6 +65,10 @@ public class MemberOverviewPage extends WebElements {
 	{
 		clickUsingJs(closememberinfolocator);
 	}	
+	public String getClientName()
+	{
+		return getText(clientnamelocator);
+	}
 	public void clickAddEpisode()
 	{
 		clickUsingJs(addepisodelocator);
@@ -153,7 +159,7 @@ public class MemberOverviewPage extends WebElements {
 	public String getActiveStatus()
 	{
 		String status= getAttribute(activestatuslocator);
-		if(status.contains("6cc009"))
+		if(status.contains("[6cc009,ff6262]"))
 			return "Y";
 		else 
 			return "N";
@@ -165,7 +171,7 @@ public class MemberOverviewPage extends WebElements {
 	}
 	public String getPhoneNumber()
 	{
-		return getText(phonelocator);
+		return getText(homephonelocator);
 	}
 	public String getHomeAddressType()
 	{

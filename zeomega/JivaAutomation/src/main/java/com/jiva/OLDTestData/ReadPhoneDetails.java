@@ -1,11 +1,12 @@
-package com.jiva.TestData;
+package com.jiva.OLDTestData;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class ReadMemberCoverageFile {
+public class ReadPhoneDetails {
+
 	public static ArrayList<String> mandatoryCheckPoints(String sFileName) {
 		BufferedReader br = null;
 		FileReader fr = null;
@@ -25,8 +26,10 @@ public class ReadMemberCoverageFile {
 						if(demovalue.get(j).contains("^"))
 						{
 							fileValue.add(demovalue.get(j));
-							
-						}
+							fileValue.add(demovalue.get(j+2));	//phone
+							fileValue.add(demovalue.get(j+4));	//active status
+												
+					}
 							
 					}
 
@@ -37,8 +40,8 @@ public class ReadMemberCoverageFile {
 	}
 
 	public static void main(String[] args) {
-		String FILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180129/jiva-eligibility-coverage_20180129_100001~20180129_100651053~.txt";
-		ReadMemberCoverageFile files = new ReadMemberCoverageFile();
+		String FILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180129/jiva-eligibility-phone_20180129_100001~20180129_100655779~.txt";
+		ReadPhoneDetails files = new ReadPhoneDetails();
 		ArrayList<String> mandatoryData =files.mandatoryCheckPoints(FILENAME);
 		System.out.println(mandatoryData);
 		System.out.println(mandatoryData.size());
@@ -47,3 +50,5 @@ public class ReadMemberCoverageFile {
 		}
 	}
 }
+
+

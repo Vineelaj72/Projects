@@ -11,11 +11,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.jiva.TestData.ReadAddressFileNew;
-import com.jiva.TestData.ReadAddressFile;
-import com.jiva.TestData.ReadMemberCoverageFile;
-import com.jiva.TestData.ReadMemberDemographicFile;
-import com.jiva.TestData.ReadPhoneDetails;
+import com.jiva.TestData.AddressFileInput;
+import com.jiva.TestData.CoverageFileInput;
+import com.jiva.TestData.PhoneFileInput;
+import com.jiva.TestData.DemographicFileInput;
 import com.jiva.pages.AddInteractionsPage;
 import com.jiva.pages.ChangeStatusPage;
 import com.jiva.pages.ConfirmAddepisodePage;
@@ -30,51 +29,44 @@ import com.jiva.pages.ProgramsPage;
 import com.jiva.pages.WorklistsPage;
 import com.framework.utils.TestBase;
 
-public class ZU_60_Sanity_TC extends TestBase {
-	private static Logger logger = Logger.getLogger(ZU_60_Sanity_TC.class);
+public class ZU_60_Integrationflow_TC extends TestBase {
+	private static Logger logger = Logger.getLogger(ZU_60_Integrationflow_TC.class);
 	private WebDriver driver;
 	private String sTestcaseName = null;
 	
 	private ArrayList<String> MemberDemographicData;
-	int ENROLLMENTID=0,ALTERNATEID=1,LASTNAME=2,FIRSTNAME=3,DOB=4,ACTIVESTATUS=5,GENDER=6;
+	int ENROLLMENTID=0,ALTERNATEID=1,LASTNAME=2,FIRSTNAME=3,DOB=4,ACTIVESTATUS=5,GENDER=6;	
 	
+	private int lineNumber=2;
 	
 	private ArrayList<String> MemberAddressData;	
-	int ADDR_ENROLLMENTID=0,HOME_ADDRESSTYPE=1,HOME_ADDRESS1=2,HOME_CITY=3,HOME_STATE=4,HOME_ZIP=5,HOME_COUNTRY=6,ADDR_ACTIVESTATUS=7,PRIMARY_ADDRESSTYPE=9,PRIMARY_ADDRESS1=10,PRIMARY_CITY=11,PRIMARY_STATE=12,PRIMARY_ZIP=13,PRIMARY_COUNTRY=14;
+	int ADDR_ENROLLMENTID=0,HOME_ADDRESSTYPE=1,HOME_ADDRESS1=2,HOME_CITY=3,HOME_STATE=4,HOME_ZIP=5,HOME_COUNTRY=6;
+	int PRIMARY_ADDRESSTYPE=8,PRIMARY_ADDRESS1=9,PRIMARY_CITY=10,PRIMARY_STATE=11,PRIMARY_ZIP=12,PRIMARY_COUNTRY=13;
 	
 	private ArrayList<String> MemberPhoneData;
-	int PHN_ENROLLMENTID=0,PHONENUMBER=1,PHN_ACTIVESTATUS=2;
+	int PHN_ENROLLMENTID=0,PHONENUMBER=1;
 	
 	private ArrayList<String> MemberCoverageData;
 	int CVRG_ENROLLMENTID=0;
-	private int lineNumber=2;
+	
 	
 	@BeforeClass
 	public void dataSetup() throws IOException {
 			
-		MemberDemographicData =ReadMemberDemographicFile.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME,lineNumber); // demographic file
+		MemberDemographicData =DemographicFileInput.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME,lineNumber);   // demographic file
 		logger.info("Member Demographic File Data "+MemberDemographicData);
 		
-		//MemberAddressData =ReadAddressFile.mandatoryCheckPoints(MEMBERADDRESSFILENAME); // address file	
-		MemberAddressData = ReadAddressFileNew.addressFileCode(MEMBERADDRESSFILENAME, MemberDemographicData.get(ENROLLMENTID));
-		logger.info("---"+MemberAddressData);
-		//logger.info("Enrollment ID in Demographic file compared with Address File "+MemberDemographicData.get(ENROLLMENTID).contains(MemberAddressData.get(ADDR_ENROLLMENTID)));
-		logger.info("Member Address File Data "+MemberAddressData);
+		MemberAddressData = AddressFileInput.addressFileCode(MEMBERADDRESSFILENAME, MemberDemographicData.get(ENROLLMENTID));  //Address File
+		logger.info("Member Address File Data "+MemberAddressData);	
 		
-		MemberPhoneData = ReadPhoneDetails.mandatoryCheckPoints(MEMBERPHONEFILENAME); //Phone file
+		MemberPhoneData = PhoneFileInput.phoneFileCode(MEMBERPHONEFILENAME,MemberDemographicData.get(ENROLLMENTID));   //Phone file
 		logger.info("Member Phone File Data "+MemberPhoneData);
 		
-		MemberCoverageData = ReadMemberCoverageFile.mandatoryCheckPoints(MEMBERCOVERAGEFILENAME); //Coverage File
+		MemberCoverageData = CoverageFileInput.coverageFileCode(MEMBERCOVERAGEFILENAME,MemberDemographicData.get(ENROLLMENTID));  //Coverage File
 		logger.info("Member Coverage File Data "+MemberCoverageData);
 	}
 	
-	@BeforeMethod
-	public void checkPersonExpired()
-	{
-		 
-	}
-	
-	
+		
 	@Test(description = "Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member")
 	public void verify_MemberDatafromfile_toScreen_ZU_60flow() throws InterruptedException {
 
@@ -93,7 +85,7 @@ public class ZU_60_Sanity_TC extends TestBase {
 		loginPage.enterPassword(PASSWORD);
 		loginPage.loginbutton();
 		
-		// Dashboard Page details
+	
 
 		Dashboard dashboard = new Dashboard(driver);
 		Assert.assertEquals(true, dashboard.verifyDashboardDisplayed(), "Logged in Sucessfully");
@@ -102,42 +94,35 @@ public class ZU_60_Sanity_TC extends TestBase {
 		String[] UserFullname = userprofilename.split(",");
 		logger.info("User Last name " + UserFullname[0]);
 		logger.info("User First name " + UserFullname[1]);
-		dashboard.clickMenu();
-		dashboard.clickMemberSearch();
-
-		// MemberSearch Page details
-
-		MemberSearchPage memberSearchPage = new MemberSearchPage(driver);
-		memberSearchPage.clickAdvSearch();			
-		memberSearchPage.sleep(5000);			
 		logger.info("Member Last name "+MemberDemographicData.get(LASTNAME));
 		logger.info("Member First name "+MemberDemographicData.get(FIRSTNAME));		
-		memberSearchPage.enterMemberLastname("Reynolds"); 
-		memberSearchPage.enterMemberFirstname("William");
-		memberSearchPage.clickSearch();
+		dashboard.clickMenu();
+		dashboard.clickMemberSearch();
+		
+		// MemberSearch Page details
+		
+		MemberSearchPage memberSearchPage = new MemberSearchPage(driver);
+		memberSearchPage.enterMemberId(MemberDemographicData.get(ALTERNATEID));
+		
+		memberSearchPage.clickMainSearch();;
 		
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
 		confirmAddepisodePage.clickRedirecttoMCV();
 		
 		/*By deadColor= By.xpath(".//*[@id='angularcontent']//div[contains(@class,'4d4d4d')]");
-		confirmAddepisodePage.getAttribute(deadColor).contains("4d4d4d"))
-
-*/
-	
-
-	}
-}
-			
-		/*MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
+		confirmAddepisodePage.getAttribute(deadColor).contains("4d4d4d"))*/		
+		
+		
+		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
 		memberOverviewPage.sleep(3000);
-		memberOverviewPage.expandMemberInfo();		
+		memberOverviewPage.expandMemberInfo();	
+		String clientname = memberOverviewPage.getClientName();
+		logger.info("Verifying the flow for the Client : "+clientname);
 		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
-		Assert.assertEquals(MemberDemographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against demographic file");
+		//Assert.assertEquals(MemberDemographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against demographic file");
 		Assert.assertEquals(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against address file");
-		Assert.assertEquals(MemberAddressData.get(ADDR_ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against address file");
 		Assert.assertEquals(MemberPhoneData.get(PHN_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Member Phone file");
 		Assert.assertEquals(MemberPhoneData.get(PHONENUMBER), memberOverviewPage.getPhoneNumber(), "Member Phone Number validated against Member Phone file");
-		Assert.assertEquals(MemberPhoneData.get(PHN_ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against Member Phone file");
 		Assert.assertEquals(MemberCoverageData.get(CVRG_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Coverage file");
 		
 		memberOverviewPage.openMemberInformation();
@@ -172,9 +157,6 @@ public class ZU_60_Sanity_TC extends TestBase {
 		memberOverviewPage.closeMemberInfo();
 		memberOverviewPage.expandMemberInfo();
 		
-		memberOverviewPage.performDeactivateEpisodeforClosedEpisodes();
-		
-		
 		memberOverviewPage.clickAddEpisode();
 		memberOverviewPage.clickCaseManagement();
 		memberOverviewPage.similarEpisodeAlert();
@@ -183,6 +165,7 @@ public class ZU_60_Sanity_TC extends TestBase {
 		createCMepisodePage.addEpisodeDetails(userprofilename);
 		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(), "Program added Sucessfully");
 		createCMepisodePage.clickSaveEpisode();
+		createCMepisodePage.invalidEpisodeCoverageAlert();
 		logger.info("Verified creation of episode successfully");
 
 		// Worklists page details
@@ -263,15 +246,14 @@ public class ZU_60_Sanity_TC extends TestBase {
 		logger.info("Successfully completed validating member files integration flow of ZU-60_Unable to reach member");
 		
 		
-		programsPage.clickMemberOverview();
+	/*	programsPage.clickMemberOverview();
 		memberOverviewPage.clickCurrentEpisodecogwheel();
 		memberOverviewPage.performDeactivateEpisode();		
 		
 		// Closing the browser
-		closeBrowser(driver);
-		
+		closeBrowser(driver);*/
+
 	}
-
 }
-
-*/
+			
+	

@@ -69,7 +69,7 @@ public class ZU_Calender_flow extends TestBase{
 		MemberSearchPage memberSearchPage = new MemberSearchPage(driver);
 		memberSearchPage.clickAdvSearch();
 		memberSearchPage.enterJivaId(JIVAID);
-		memberSearchPage.clickSearch();
+		memberSearchPage.clickSearchinAdvancedSearch();
 
 		// Confirmation for Adding episode
 
@@ -86,7 +86,7 @@ public class ZU_Calender_flow extends TestBase{
 		// Create episode page details
 
 		CreateCMepisodePage createCMepisodePage = new CreateCMepisodePage(driver);
-		createCMepisodePage.addEpisodeDetails();
+		createCMepisodePage.addEpisodeDetails(userprofilename);
 		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(), "Program added Sucessfully");
 		createCMepisodePage.clickSaveEpisode();
 		Assert.assertEquals(true, createCMepisodePage.verifyEpidodeAdded(), "Episode added Sucessfully");
@@ -145,7 +145,7 @@ public class ZU_Calender_flow extends TestBase{
 		memberSearchPage.clickAdvSearch();
 		memberSearchPage.enterMemberLastname(MemberLastname_Firstname[0]);
 		memberSearchPage.enterMemberFirstname(MemberLastname_Firstname[1]);
-		memberSearchPage.clickSearch();
+		memberSearchPage.clickSearchinAdvancedSearch();
 		
 		confirmAddepisodePage.clickRedirecttoMCV();
 		

@@ -17,10 +17,12 @@ public class MemberSearchPage extends WebElements{
 	By groupvaluelocator = By.xpath("//strong[contains(text(),'Blue Advantage 001')]");
 	By jivamemberidlocator = By.name("I_CLAIMANT_ID");	
 	By groupsearchlocator = By.xpath("//input[@placeholder='Group Name']/../..//span/i[@class='fa fa-search']");
-	By searchlocator = By.xpath("(//button[@type='submit'])[2]");
+	By searchlocatorinadvancedsearch = By.xpath("(//button[@type='submit'])[2]");
+	By mainsearchlocator = By.xpath("//span/button[contains(text(),'Search')]");
 	By lastnamelocator = By.xpath("//input[@name='I_LAST_NAME']");
 	By firstnamelocator = By.xpath("//input[@name='I_FIRST_NAME']");
 	By csssel = By.cssSelector("strong");
+	By memberidtextbox = By.xpath("//div/input[contains(@ng-model,'mbrSearchParam.mbrSrchDropDown')]");
 	
 	public void clickAdvSearch()
 	{
@@ -39,10 +41,14 @@ public class MemberSearchPage extends WebElements{
 		Thread.sleep(3000);
 		enterText(jivamemberidlocator, jivaid);
 	}
-		
-	public void clickSearch()
+	public void clickMainSearch()
 	{
-		clickUsingJs(searchlocator);
+		clickUsingJs(mainsearchlocator);
+	}
+		
+	public void clickSearchinAdvancedSearch()
+	{
+		clickUsingJs(searchlocatorinadvancedsearch);
 	}
 	public void enterMemberLastname(String sLastname) throws InterruptedException
 	{
@@ -56,5 +62,11 @@ public class MemberSearchPage extends WebElements{
 		sleep(5000);
 		clickEnter(firstnamelocator);
 
+	}
+	public void enterMemberId(String smemberid) throws InterruptedException
+	{
+		enterText(memberidtextbox, smemberid);
+		sleep(3000);
+		//clickEnter(lastnamelocator);
 	}
 }

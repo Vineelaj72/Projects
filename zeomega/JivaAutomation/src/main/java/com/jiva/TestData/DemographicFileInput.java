@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 
 
-public class ReadMemberDemographicFile {
+public class DemographicFileInput {
 
 	
 	public static ArrayList<String> mandatoryCheckPoints(String sFileName,int linenumber) throws IOException {
@@ -23,7 +23,7 @@ public class ReadMemberDemographicFile {
 					if(currentLine[j].contains("^"))
 					{
 							fileValue.add(currentLine[j]);
-							fileValue.add(currentLine[j+1]);		
+							fileValue.add(currentLine[j+1]);	
 							fileValue.add(currentLine[j+4]);
 							fileValue.add(currentLine[j+5]);
 							fileValue.add(currentLine[j+11]);
@@ -79,7 +79,7 @@ public class ReadMemberDemographicFile {
 	public static void main(String[] args) throws IOException {
 		String FILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20171114/jiva-eligibility-demographics_20171114_171337~20171114_091506616~.txt";
 	//	ReadMemberDemographicFile files = new ReadMemberDemographicFile();
-		ArrayList<String> mandatoryData =ReadMemberDemographicFile.mandatoryCheckPoints(FILENAME,3);
+		ArrayList<String> mandatoryData =DemographicFileInput.mandatoryCheckPoints(FILENAME,3);
 		System.out.println(mandatoryData);
 		System.out.println(mandatoryData.size());
 		for (int i = 0; i < mandatoryData.size(); i++) {

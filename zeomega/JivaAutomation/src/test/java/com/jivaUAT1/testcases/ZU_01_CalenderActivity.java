@@ -66,7 +66,7 @@ public class ZU_01_CalenderActivity extends TestBase {
 		MemberSearchPage memberSearchPage = new MemberSearchPage(driver);
 		memberSearchPage.clickAdvSearch();
 		memberSearchPage.enterJivaId(JIVAID);
-		memberSearchPage.clickSearch();
+		memberSearchPage.clickSearchinAdvancedSearch();
 
 		// Confirmation for Adding episode
 
@@ -83,7 +83,7 @@ public class ZU_01_CalenderActivity extends TestBase {
 		// Create episode page details
 
 		CreateCMepisodePage createCMepisodePage = new CreateCMepisodePage(driver);
-		createCMepisodePage.addEpisodeDetails();
+		createCMepisodePage.addEpisodeDetails(userprofilename);
 		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(), "Program added Sucessfully");
 		createCMepisodePage.clickSaveEpisode();
 		Assert.assertEquals(true, createCMepisodePage.verifyEpidodeAdded(), "Episode added Sucessfully");

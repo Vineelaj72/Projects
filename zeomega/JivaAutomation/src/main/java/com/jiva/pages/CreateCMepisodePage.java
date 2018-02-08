@@ -40,7 +40,7 @@ public class CreateCMepisodePage extends WebElements{
 		sleep(5000);
 		//dropdownSelect(programassigntolocator,"Jayavarapu, Vineela"); 
 		clickUsingJs(addprogrambutton);
-				
+					
 	}
 	
 	public boolean verifyProgramAdded()
@@ -71,6 +71,15 @@ public class CreateCMepisodePage extends WebElements{
 		alertBox("Duplicate CM Episode");
 		clickUsingJs(cancelbuttonlocator);
 	}
+	
+	public void invalidEpisodeCoverageAlert() throws InterruptedException
+	{
+		Thread.sleep(10000);
+		alertBox("Invalid Episode Coverage");
+	}
+	
+	
+	
 	
 	public boolean duplicateCM(String username)
 	{

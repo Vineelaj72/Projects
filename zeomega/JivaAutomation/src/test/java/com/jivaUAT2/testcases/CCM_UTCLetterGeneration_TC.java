@@ -11,10 +11,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.jiva.TestData.ReadAddressFile;
-import com.jiva.TestData.ReadMemberCoverageFile;
-import com.jiva.TestData.ReadMemberDemographicFile;
-import com.jiva.TestData.ReadPhoneDetails;
+import com.jiva.OLDTestData.ReadAddressFile;
+import com.jiva.OLDTestData.ReadMemberCoverageFile;
+import com.jiva.OLDTestData.ReadMemberDemographicFile;
+import com.jiva.OLDTestData.ReadPhoneDetails;
 import com.jiva.pages.AddInteractionsPage;
 import com.jiva.pages.ChangeStatusPage;
 import com.jiva.pages.ConfirmAddepisodePage;
@@ -106,7 +106,7 @@ public class CCM_UTCLetterGeneration_TC extends TestBase {
 		logger.info("Member First name "+MemberDemographicData.get(FIRSTNAME));		
 		memberSearchPage.enterMemberLastname(MemberDemographicData.get(LASTNAME)); 
 		memberSearchPage.enterMemberFirstname(MemberDemographicData.get(FIRSTNAME));
-		memberSearchPage.clickSearch();
+		memberSearchPage.clickSearchinAdvancedSearch();
 		
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
 		confirmAddepisodePage.clickRedirecttoMCV();
@@ -155,7 +155,7 @@ public class CCM_UTCLetterGeneration_TC extends TestBase {
 		memberOverviewPage.closeMemberInfo();
 		memberOverviewPage.expandMemberInfo();
 		
-		memberOverviewPage.performDeactivateEpisodeforClosedEpisodes();
+		//memberOverviewPage.performDeactivateEpisodeforClosedEpisodes();
 		
 		
 		memberOverviewPage.clickAddEpisode();
@@ -245,13 +245,13 @@ public class CCM_UTCLetterGeneration_TC extends TestBase {
 		
 		logger.info("Successfully completed validating member files integration flow of ZU-60_Unable to reach member");
 		
-		
+		/*
 		programsPage.clickMemberOverview();
 		memberOverviewPage.clickCurrentEpisodecogwheel();
 		memberOverviewPage.performDeactivateEpisode();		
 		
 		// Closing the browser
-		closeBrowser(driver);
+		closeBrowser(driver);*/
 		
 	}
 

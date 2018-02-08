@@ -3,12 +3,12 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.jivaUAT2.testcases.CCM_UTCLetterGeneration_TC">
+      <class name="com.jivaUAT2.testcases.ZU_60_Sanity_TC">
         <methods>
           <include name="dataSetup"/>
           <include name="verify_MemberDatafromfile_toScreen_ZU_60flow"/>
         </methods>
-      </class> <!-- com.jivaUAT2.testcases.CCM_UTCLetterGeneration_TC -->
+      </class> <!-- com.jivaUAT2.testcases.ZU_60_Sanity_TC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

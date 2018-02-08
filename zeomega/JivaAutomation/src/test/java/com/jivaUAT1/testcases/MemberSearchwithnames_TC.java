@@ -58,7 +58,7 @@ public class MemberSearchwithnames_TC extends TestBase{
 		memberSearchPage.clickAdvSearch();
 		memberSearchPage.enterMemberLastname("Armwood");
 		memberSearchPage.enterMemberFirstname("Linda");
-		memberSearchPage.clickSearch();
+		memberSearchPage.clickSearchinAdvancedSearch();
 
 	}
 }

@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.jiva.TestData.ReadMemberDemographicFile;
+import com.jiva.TestData.DemographicFileInput;
 import com.jiva.pages.AddInteractionsPage;
 import com.jiva.pages.ChangeStatusPage;
 import com.jiva.pages.ConfirmAddepisodePage;
@@ -32,7 +32,7 @@ public class E2EintegrationflowforMemberDemographicflowTC_ZU_60 extends TestBase
 	
 	@BeforeClass
 	public void dataSetup() {
-		MemberDemographicData =ReadMemberDemographicFile.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME); // demographic file
+		MemberDemographicData =DemographicFileInput.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME); // demographic file
 		logger.info("Member Demographic File Data "+MemberDemographicData);
 	}
 	
@@ -75,7 +75,7 @@ public class E2EintegrationflowforMemberDemographicflowTC_ZU_60 extends TestBase
 		logger.info("Member First name "+MemberDemographicData.get(FIRSTNAME));		
 		memberSearchPage.enterMemberLastname(MemberDemographicData.get(LASTNAME));// Read Firstrecord lastname from the arraylist
 		memberSearchPage.enterMemberFirstname(MemberDemographicData.get(FIRSTNAME));
-		memberSearchPage.clickSearch();
+		memberSearchPage.clickSearchinAdvancedSearch();
 		
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
 		Thread.sleep(5000);
@@ -110,7 +110,7 @@ public class E2EintegrationflowforMemberDemographicflowTC_ZU_60 extends TestBase
 		memberOverviewPage.clickCaseManagement();
 		
 		CreateCMepisodePage createCMepisodePage = new CreateCMepisodePage(driver);
-		createCMepisodePage.addEpisodeDetails();
+		createCMepisodePage.addEpisodeDetails(userprofilename);
 		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(), "Program added Sucessfully");
 		createCMepisodePage.clickSaveEpisode();
 		//Assert.assertEquals(true, createCMepisodePage.verifyEpidodeAdded(), "Episode added Sucessfully");

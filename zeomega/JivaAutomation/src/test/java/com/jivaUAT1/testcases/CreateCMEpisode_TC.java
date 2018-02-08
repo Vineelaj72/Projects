@@ -42,7 +42,7 @@ public class CreateCMEpisode_TC extends TestBase {
 		MemberSearchPage memberSearchPage = new MemberSearchPage(driver);
 		memberSearchPage.clickAdvSearch();
 		memberSearchPage.enterJivaId(JIVAID);
-		memberSearchPage.clickSearch();
+		memberSearchPage.clickSearchinAdvancedSearch();
 		
 		// Confirmation for Adding episode
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
@@ -50,7 +50,7 @@ public class CreateCMEpisode_TC extends TestBase {
 		
 		//Create episode page details
 		CreateCMepisodePage createCMepisodePage = new CreateCMepisodePage(driver);
-		createCMepisodePage.addEpisodeDetails();
+		createCMepisodePage.addEpisodeDetails("");
 		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(),"Program added Sucessfully");
 		createCMepisodePage.clickSaveEpisode();
 		Assert.assertEquals(true, createCMepisodePage.verifyEpidodeAdded(),"Episode added Sucessfully");

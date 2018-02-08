@@ -95,7 +95,7 @@ public class Map_DemographicDataValidation_TC extends TestBase {
 		logger.info("Member First name "+sFileData.get("MemberFirstname3"));		
 		memberSearchPage.enterMemberLastname(sFileData.get("MemberLastname3"));
 		memberSearchPage.enterMemberFirstname(sFileData.get("MemberFirstname3"));
-		memberSearchPage.clickSearch();
+		memberSearchPage.clickSearchinAdvancedSearch();
 		
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
 		Thread.sleep(5000);
@@ -131,7 +131,7 @@ public class Map_DemographicDataValidation_TC extends TestBase {
 		memberOverviewPage.clickCaseManagement();
 		
 		CreateCMepisodePage createCMepisodePage = new CreateCMepisodePage(driver);
-		createCMepisodePage.addEpisodeDetails();
+		createCMepisodePage.addEpisodeDetails(userprofilename);
 		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(), "Program added Sucessfully");
 		createCMepisodePage.clickSaveEpisode();
 		//Assert.assertEquals(true, createCMepisodePage.verifyEpidodeAdded(), "Episode added Sucessfully");
