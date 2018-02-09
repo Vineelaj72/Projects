@@ -1,0 +1,52 @@
+2018-02-09 11:42:53,489 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
+2018-02-09 11:42:53,520 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
+2018-02-09 11:42:53,520 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
+2018-02-09 11:42:53,567 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
+2018-02-09 11:42:53,583 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Execution started for--- verify_MemberDatafromfile_toScreen_ZU_60flow
+2018-02-09 11:43:04,608 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - User Profile Name is Jayavarapu, Vineela
+2018-02-09 11:43:04,609 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - User Last name Jayavarapu
+2018-02-09 11:43:04,609 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - User First name  Vineela
+2018-02-09 11:43:04,609 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Last name Graff
+2018-02-09 11:43:04,609 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member First name Dorothy
+2018-02-09 11:43:11,957 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Verifying the flow for the Client : EHI
+2018-02-09 11:43:11,986 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
+2018-02-09 11:43:12,007 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
+2018-02-09 11:43:12,039 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
+2018-02-09 11:43:12,101 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
+2018-02-09 11:43:17,331 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member DOB on screen 10/21/1938
+2018-02-09 11:43:17,355 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member DOB on screen changed to File format 1938-10-21
+2018-02-09 11:43:54,528 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Verified creation of episode successfully
+2018-02-09 11:43:58,315 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-02-09 11:44:09,733 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-02-09 11:44:20,140 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-02-09 11:44:26,821 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
+2018-02-09 11:44:27,692 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
+2018-02-09 11:44:29,061 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
+2018-02-09 11:44:29,441 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-02-09 11:44:29,461 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Successfully completed validating integration flow of ZU-60_Unable to reach member for the member in line #2holding the Member Id 000003433and for the client: EHI
+2018-02-09 11:47:00,046 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
+2018-02-09 11:47:00,062 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
+2018-02-09 11:47:00,077 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
+2018-02-09 11:47:00,124 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
+2018-02-09 11:47:00,124 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Execution started for--- verify_MemberDatafromfile_toScreen_ZU_60flow
+2018-02-09 11:47:11,808 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - User Profile Name is Jayavarapu, Vineela
+2018-02-09 11:47:11,808 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - User Last name Jayavarapu
+2018-02-09 11:47:11,808 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - User First name  Vineela
+2018-02-09 11:47:11,808 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Last name Graff
+2018-02-09 11:47:11,809 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member First name Dorothy
+2018-02-09 11:47:19,397 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Verifying the flow for the Client : EHI
+2018-02-09 11:47:19,423 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
+2018-02-09 11:47:19,454 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
+2018-02-09 11:47:19,485 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
+2018-02-09 11:47:19,548 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
+2018-02-09 11:47:24,795 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member DOB on screen 10/21/1938
+2018-02-09 11:47:24,820 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member DOB on screen changed to File format 1938-10-21
+2018-02-09 11:48:02,155 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Verified creation of episode successfully
+2018-02-09 11:48:05,985 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-02-09 11:48:17,483 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-02-09 11:48:27,922 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-02-09 11:48:34,577 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
+2018-02-09 11:48:35,394 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
+2018-02-09 11:48:36,868 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
+2018-02-09 11:48:37,282 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-02-09 11:48:37,311 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Successfully completed validating integration flow of ZU-60_Unable to reach member for the member in line #2 holding the Member Id: 000003433 and for the client: EHI

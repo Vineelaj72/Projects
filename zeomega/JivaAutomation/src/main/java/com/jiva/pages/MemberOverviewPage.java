@@ -27,6 +27,7 @@ public class MemberOverviewPage extends WebElements {
 	By CCMstatusclosedlocator = By.xpath("//div[contains(@class,'ng-scope')]//div[contains(@class,'clearfix col-sm-6 padding-left-0px padding-right-0px')]/div/span[contains(text(),'Complex')]/../../../div[contains(@class,'clearfix col-sm-6')]/div[4]/span[contains(text(),'Closed')]");
 	By CCMstatusreferrallocator = By.xpath("//div[contains(@class,'ng-scope')]//div[contains(@class,'clearfix col-sm-6 padding-left-0px padding-right-0px')]/div/span[contains(text(),'Complex')]/../../../div[contains(@class,'clearfix col-sm-6')]/div[4]/span[contains(text(),'Referral')]");
 	By CCMstatusopenlocator = By.xpath("//div[contains(@class,'ng-scope')]//div[contains(@class,'clearfix col-sm-6 padding-left-0px padding-right-0px')]/div/span[contains(text(),'Complex')]/../../../div[contains(@class,'clearfix col-sm-6')]/div[4]/span[contains(text(),'open')]");
+	By episodecountlocator = By.xpath("//div/span[contains(text(),'Episodes')]/../span[contains(@ng-bind,'count')]");
 	
 	By memberfirstnamelocator = By.xpath("//div/span[contains(text(),'First Name')]/../../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_first_name')]");
 	By memberlastnamelocator = By.xpath("//div/span[contains(text(),'Last Name')]/../../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_last_name')]");
@@ -64,7 +65,11 @@ public class MemberOverviewPage extends WebElements {
 	public void closeMemberInfo()
 	{
 		clickUsingJs(closememberinfolocator);
-	}	
+	}
+	public String getEpisodeCount()
+	{
+		return getText(episodecountlocator);
+	}
 	public String getClientName()
 	{
 		return getText(clientnamelocator);

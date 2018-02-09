@@ -29,8 +29,8 @@ import com.jiva.pages.ProgramsPage;
 import com.jiva.pages.WorklistsPage;
 import com.framework.utils.TestBase;
 
-public class ZU_60_Integrationflow_TC extends TestBase {
-	private static Logger logger = Logger.getLogger(ZU_60_Integrationflow_TC.class);
+public class ZU_60_Integration_HappyPath_TC extends TestBase {
+	private static Logger logger = Logger.getLogger(ZU_60_Integration_HappyPath_TC.class);
 	private WebDriver driver;
 	private String sTestcaseName = null;
 	
@@ -243,15 +243,15 @@ public class ZU_60_Integrationflow_TC extends TestBase {
 		ProgramsPage programsPage = new ProgramsPage(driver);		
 		Assert.assertEquals(true, programsPage.verify_ProgramClosed(),"Program is closed successfully");
 		
-		logger.info("Successfully completed validating member files integration flow of ZU-60_Unable to reach member");
+		logger.info("Successfully completed validating integration flow of ZU-60_Unable to reach member for the member in line #"+lineNumber+" holding the Member Id: "+MemberDemographicData.get(ALTERNATEID)+" and for the client: "+clientname);
 		
 		
-	/*	programsPage.clickMemberOverview();
+		programsPage.clickMemberOverview();
 		memberOverviewPage.clickCurrentEpisodecogwheel();
 		memberOverviewPage.performDeactivateEpisode();		
 		
 		// Closing the browser
-		closeBrowser(driver);*/
+		closeBrowser(driver);
 
 	}
 }

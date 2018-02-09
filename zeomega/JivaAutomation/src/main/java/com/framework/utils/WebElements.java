@@ -89,7 +89,7 @@ public class WebElements extends WaitForElements{
 	public String getText(By locator)
 	{
 		return driver.findElement(locator).getText();
-	
+		
 	}
 	
 	public String getAttribute(By locator) {

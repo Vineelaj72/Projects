@@ -2,7 +2,7 @@ package com.framework.setup;
 
 public interface Setup {
 	
-	//String AutomationURL="https://lumerisuat.zeomega.com";
+	//String AutomationURL="https://lumerisuat.zeomega.com";  //UAT 1 url
 	
 	String AutomationURL="https://lumerisuat2.zeomega.com";  //UAT 2 url
 	
@@ -54,6 +54,7 @@ public interface Setup {
 	000008748 - good data - line 8
 	000020893 - good data - line 24
 	000079353 - good data - line 61
+	000079353 - good data - line 1
 
 	01/27
 
