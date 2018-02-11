@@ -17,10 +17,10 @@ public interface Setup {
 	String SFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20171114/jiva-eligibility-demographics_20171114_171337~20171114_091506616~.txt";
 	
 	/*JIVA*/
-	/*String MEMBERDEMOGRAPHICFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180129/jiva-eligibility-demographics_20180129_100001~20180129_100647371~.txt";
+	String MEMBERDEMOGRAPHICFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180129/jiva-eligibility-demographics_20180129_100001~20180129_100647371~.txt";
 	String MEMBERADDRESSFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180129/jiva-eligibility-address_20180129_100001~20180129_100653424~.txt";
 	String MEMBERPHONEFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180129/jiva-eligibility-phone_20180129_100001~20180129_100655779~.txt";
-	String MEMBERCOVERAGEFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180129/jiva-eligibility-coverage_20180129_100001~20180129_100651053~.txt";*/
+	String MEMBERCOVERAGEFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180129/jiva-eligibility-coverage_20180129_100001~20180129_100651053~.txt";
 	
 	/*String MEMBERDEMOGRAPHICFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180127/jiva-eligibility-demographics_20180127_100001~20180127_100518103~.txt";
 	String MEMBERADDRESSFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180127/jiva-eligibility-address_20180127_100001~20180127_100523516~.txt";
@@ -28,10 +28,10 @@ public interface Setup {
 	String MEMBERCOVERAGEFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180127/jiva-eligibility-coverage_20180127_100001~20180127_100521363~.txt";*/
 	
 	
-	String MEMBERDEMOGRAPHICFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180204/jiva-eligibility-demographics_20180204_100001~20180204_101341232~.txt";
+	/*String MEMBERDEMOGRAPHICFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180204/jiva-eligibility-demographics_20180204_100001~20180204_101341232~.txt";
 	String MEMBERADDRESSFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180204/jiva-eligibility-address_20180204_100001~20180204_101346942~.txt";
 	String MEMBERPHONEFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180204/jiva-eligibility-phone_20180204_100001~20180204_101349906~.txt";
-	String MEMBERCOVERAGEFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180204/jiva-eligibility-coverage_20180204_100001~20180204_101343666~.txt";
+	String MEMBERCOVERAGEFILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20180204/jiva-eligibility-coverage_20180204_100001~20180204_101343666~.txt";*/
 	
 	/*QA M360*/
 	String m360_url = "https://uatapp.med-adv360.com/mss/quay/homePage.htm";

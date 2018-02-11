@@ -1,52 +1,72 @@
-2018-02-09 11:42:53,489 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
-2018-02-09 11:42:53,520 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
-2018-02-09 11:42:53,520 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
-2018-02-09 11:42:53,567 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
-2018-02-09 11:42:53,583 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Execution started for--- verify_MemberDatafromfile_toScreen_ZU_60flow
-2018-02-09 11:43:04,608 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-09 11:43:04,609 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - User Last name Jayavarapu
-2018-02-09 11:43:04,609 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - User First name  Vineela
-2018-02-09 11:43:04,609 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Last name Graff
-2018-02-09 11:43:04,609 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member First name Dorothy
-2018-02-09 11:43:11,957 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Verifying the flow for the Client : EHI
-2018-02-09 11:43:11,986 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
-2018-02-09 11:43:12,007 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
-2018-02-09 11:43:12,039 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
-2018-02-09 11:43:12,101 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
-2018-02-09 11:43:17,331 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member DOB on screen 10/21/1938
-2018-02-09 11:43:17,355 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member DOB on screen changed to File format 1938-10-21
-2018-02-09 11:43:54,528 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Verified creation of episode successfully
-2018-02-09 11:43:58,315 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
-2018-02-09 11:44:09,733 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
-2018-02-09 11:44:20,140 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
-2018-02-09 11:44:26,821 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
-2018-02-09 11:44:27,692 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
-2018-02-09 11:44:29,061 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
-2018-02-09 11:44:29,441 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
-2018-02-09 11:44:29,461 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Successfully completed validating integration flow of ZU-60_Unable to reach member for the member in line #2holding the Member Id 000003433and for the client: EHI
-2018-02-09 11:47:00,046 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
-2018-02-09 11:47:00,062 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
-2018-02-09 11:47:00,077 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
-2018-02-09 11:47:00,124 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
-2018-02-09 11:47:00,124 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Execution started for--- verify_MemberDatafromfile_toScreen_ZU_60flow
-2018-02-09 11:47:11,808 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-09 11:47:11,808 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - User Last name Jayavarapu
-2018-02-09 11:47:11,808 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - User First name  Vineela
-2018-02-09 11:47:11,808 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member Last name Graff
-2018-02-09 11:47:11,809 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member First name Dorothy
-2018-02-09 11:47:19,397 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Verifying the flow for the Client : EHI
-2018-02-09 11:47:19,423 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
-2018-02-09 11:47:19,454 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
-2018-02-09 11:47:19,485 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
-2018-02-09 11:47:19,548 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003433^EHI0NA
-2018-02-09 11:47:24,795 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member DOB on screen 10/21/1938
-2018-02-09 11:47:24,820 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Member DOB on screen changed to File format 1938-10-21
-2018-02-09 11:48:02,155 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Verified creation of episode successfully
-2018-02-09 11:48:05,985 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
-2018-02-09 11:48:17,483 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
-2018-02-09 11:48:27,922 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
-2018-02-09 11:48:34,577 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
-2018-02-09 11:48:35,394 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
-2018-02-09 11:48:36,868 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
-2018-02-09 11:48:37,282 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
-2018-02-09 11:48:37,311 [main] INFO  com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC - Successfully completed validating integration flow of ZU-60_Unable to reach member for the member in line #2 holding the Member Id: 000003433 and for the client: EHI
+2018-02-10 23:28:45,002 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Demographic File Data [000000275^EHI0NA, 000000275, Moore, Maggie, 1929-12-15, Y, F]
+2018-02-10 23:28:45,054 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Address File Data [000000275^EHI0NA, Home, 7428 Stanford Ave., Saint Louis, MO, 63130, USA, 000000275^EHI0NA, Primary, 7428 Stanford Ave., Saint Louis, MO, 63130, USA]
+2018-02-10 23:28:45,057 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Phone File Data [000000275^EHI0NA, 3148624690]
+2018-02-10 23:28:45,097 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Coverage File Data [000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA]
+2018-02-10 23:28:45,098 [main] INFO  com.jivaUAT2.testcases.Flow1 - Execution started for--- verify_MemberActiveStatus
+2018-02-10 23:28:59,087 [main] INFO  com.jivaUAT2.testcases.Flow1 - User Profile Name is Jayavarapu, Vineela
+2018-02-10 23:28:59,088 [main] INFO  com.jivaUAT2.testcases.Flow1 - User Last name Jayavarapu
+2018-02-10 23:28:59,088 [main] INFO  com.jivaUAT2.testcases.Flow1 - User First name  Vineela
+2018-02-10 23:28:59,088 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Last name Moore
+2018-02-10 23:28:59,088 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member First name Maggie
+2018-02-10 23:30:16,770 [main] INFO  com.jivaUAT2.testcases.Flow1 - Verifying the flow for the Client : EHI
+2018-02-10 23:30:16,841 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:30:16,923 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:30:16,981 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:30:17,069 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:30:22,458 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member DOB on screen 12/15/1929
+2018-02-10 23:30:22,494 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member DOB on screen changed to File format 1929-12-15
+2018-02-10 23:30:48,831 [main] INFO  com.framework.utils.WebElements - Alert Clicked
+2018-02-10 23:37:03,214 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Demographic File Data [000000275^EHI0NA, 000000275, Moore, Maggie, 1929-12-15, Y, F]
+2018-02-10 23:37:03,264 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Address File Data [000000275^EHI0NA, Home, 7428 Stanford Ave., Saint Louis, MO, 63130, USA, 000000275^EHI0NA, Primary, 7428 Stanford Ave., Saint Louis, MO, 63130, USA]
+2018-02-10 23:37:03,268 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Phone File Data [000000275^EHI0NA, 3148624690]
+2018-02-10 23:37:03,306 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Coverage File Data [000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA]
+2018-02-10 23:37:03,307 [main] INFO  com.jivaUAT2.testcases.Flow1 - Execution started for--- verify_MemberActiveStatus
+2018-02-10 23:37:17,381 [main] INFO  com.jivaUAT2.testcases.Flow1 - User Profile Name is Jayavarapu, Vineela
+2018-02-10 23:37:17,381 [main] INFO  com.jivaUAT2.testcases.Flow1 - User Last name Jayavarapu
+2018-02-10 23:37:17,381 [main] INFO  com.jivaUAT2.testcases.Flow1 - User First name  Vineela
+2018-02-10 23:37:17,381 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Last name Moore
+2018-02-10 23:37:17,382 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member First name Maggie
+2018-02-10 23:38:25,333 [main] INFO  com.jivaUAT2.testcases.Flow1 - Verifying the flow for the Client : EHI
+2018-02-10 23:38:25,397 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:38:25,453 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:38:25,500 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:38:25,642 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:38:31,050 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member DOB on screen 12/15/1929
+2018-02-10 23:38:31,086 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member DOB on screen changed to File format 1929-12-15
+2018-02-10 23:39:53,452 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Demographic File Data [000000275^EHI0NA, 000000275, Moore, Maggie, 1929-12-15, Y, F]
+2018-02-10 23:39:53,497 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Address File Data [000000275^EHI0NA, Home, 7428 Stanford Ave., Saint Louis, MO, 63130, USA, 000000275^EHI0NA, Primary, 7428 Stanford Ave., Saint Louis, MO, 63130, USA]
+2018-02-10 23:39:53,503 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Phone File Data [000000275^EHI0NA, 3148624690]
+2018-02-10 23:39:53,542 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Coverage File Data [000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA]
+2018-02-10 23:39:53,543 [main] INFO  com.jivaUAT2.testcases.Flow1 - Execution started for--- verify_MemberActiveStatus
+2018-02-10 23:40:08,451 [main] INFO  com.jivaUAT2.testcases.Flow1 - User Profile Name is Jayavarapu, Vineela
+2018-02-10 23:40:08,452 [main] INFO  com.jivaUAT2.testcases.Flow1 - User Last name Jayavarapu
+2018-02-10 23:40:08,452 [main] INFO  com.jivaUAT2.testcases.Flow1 - User First name  Vineela
+2018-02-10 23:40:08,452 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Last name Moore
+2018-02-10 23:40:08,452 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member First name Maggie
+2018-02-10 23:41:16,324 [main] INFO  com.jivaUAT2.testcases.Flow1 - Verifying the flow for the Client : EHI
+2018-02-10 23:41:16,387 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:41:16,465 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:41:16,543 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:41:16,683 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:41:22,100 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member DOB on screen 12/15/1929
+2018-02-10 23:41:22,138 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member DOB on screen changed to File format 1929-12-15
+2018-02-10 23:41:48,260 [main] INFO  com.framework.utils.WebElements - Alert Clicked
+2018-02-10 23:43:35,295 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Demographic File Data [000000275^EHI0NA, 000000275, Moore, Maggie, 1929-12-15, Y, F]
+2018-02-10 23:43:35,339 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Address File Data [000000275^EHI0NA, Home, 7428 Stanford Ave., Saint Louis, MO, 63130, USA, 000000275^EHI0NA, Primary, 7428 Stanford Ave., Saint Louis, MO, 63130, USA]
+2018-02-10 23:43:35,346 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Phone File Data [000000275^EHI0NA, 3148624690]
+2018-02-10 23:43:35,387 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Coverage File Data [000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA, 000000275^EHI0NA]
+2018-02-10 23:43:35,388 [main] INFO  com.jivaUAT2.testcases.Flow1 - Execution started for--- verify_MemberActiveStatus
+2018-02-10 23:43:49,927 [main] INFO  com.jivaUAT2.testcases.Flow1 - User Profile Name is Jayavarapu, Vineela
+2018-02-10 23:43:49,928 [main] INFO  com.jivaUAT2.testcases.Flow1 - User Last name Jayavarapu
+2018-02-10 23:43:49,928 [main] INFO  com.jivaUAT2.testcases.Flow1 - User First name  Vineela
+2018-02-10 23:43:49,928 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Last name Moore
+2018-02-10 23:43:49,928 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member First name Maggie
+2018-02-10 23:44:58,579 [main] INFO  com.jivaUAT2.testcases.Flow1 - Verifying the flow for the Client : EHI
+2018-02-10 23:44:58,644 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:44:58,720 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:44:58,800 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:44:58,947 [main] INFO  com.jiva.pages.MemberOverviewPage - 000000275^EHI0NA
+2018-02-10 23:45:04,362 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member DOB on screen 12/15/1929
+2018-02-10 23:45:04,400 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member DOB on screen changed to File format 1929-12-15
+2018-02-10 23:45:30,602 [main] INFO  com.framework.utils.WebElements - Alert Clicked
+2018-02-10 23:46:01,754 [main] INFO  com.jivaUAT2.testcases.Flow1 - Verified creation of episode successfully

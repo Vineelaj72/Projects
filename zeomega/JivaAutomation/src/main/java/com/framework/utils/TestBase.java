@@ -14,9 +14,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import com.framework.setup.RecordsIndex;
 import com.framework.setup.Setup;
 
-public class TestBase implements Setup {
+public class TestBase implements Setup,RecordsIndex {
 
 	public WebDriver initializeDriver(String sbrowser) {
 		WebDriver driver = null;

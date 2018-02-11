@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 07 14:43:34 CST 2018</td>
+<td>Started on:</td><td>Sat Feb 10 11:08:45 CST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>358 seconds (358709 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (22 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,55 +67,104 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.jivaUAT2.testcases.CCM_UTCLetterGeneration_TC.verify_MemberDatafromfile_toScreen_ZU_60flow()'><b>verify_MemberDatafromfile_toScreen_ZU_60flow</b><br>Test class: com.jivaUAT2.testcases.CCM_UTCLetterGeneration_TC<br>Test method: Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member<br/>
-<a href="#Output-1266534280" onClick='toggleBox("Output-1266534280", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1266534280" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1266534280">
-Username Enteredvjayavarapu<br/>
-Password EnteredPassword1!<br/>
-Login Button Clicked<br/>
-</div>
-</td>
-<td></td>
-<td>103</td>
-<td>com.jivaUAT2.testcases.CCM_UTCLetterGeneration_TC@553a3d88</td></tr>
+<td title='com.jivaUAT2.testcases.Flow1.verify_MemberActiveStatus()'><b>verify_MemberActiveStatus</b><br>Test class: com.jivaUAT2.testcases.Flow1</td>
+<td><div><pre>org.testng.TestNGException: 
+Method verify_MemberActiveStatus requires 1 parameters but 2 were supplied in the BeforeMethod annotation.
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace255944888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace255944888'><pre>org.testng.TestNGException: 
+Method verify_MemberActiveStatus requires 1 parameters but 2 were supplied in the BeforeMethod annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:415)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:516)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.jivaUAT2.testcases.Flow1@8e24743</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.jivaUAT2.testcases.CCM_MemberOptOutLetterGeneration_TC.verify_MemberDatafromfile_toScreen_ZU_61flow()'><b>verify_MemberDatafromfile_toScreen_ZU_61flow</b><br>Test class: com.jivaUAT2.testcases.CCM_MemberOptOutLetterGeneration_TC<br>Test method: Verify Member data from the files with screendata and execute ZU-61 flow for CCM-Member Opts out<br/>
-<a href="#Output-2061774051" onClick='toggleBox("Output-2061774051", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2061774051" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2061774051">
-Username Enteredvjayavarapu<br/>
-Password EnteredPassword1!<br/>
-Login Button Clicked<br/>
-</div>
-</td>
+<td title='com.jivaUAT2.testcases.Flow1.closeBrowser()'><b>closeBrowser</b><br>Test class: com.jivaUAT2.testcases.Flow1</td>
 <td></td>
-<td>107</td>
-<td>com.jivaUAT2.testcases.CCM_MemberOptOutLetterGeneration_TC@7a30d1e6</td></tr>
+<td>0</td>
+<td>com.jivaUAT2.testcases.Flow1@8e24743</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.jivaUAT2.testcases.CCM_PostEnrollmentLetterGeneration_TC.verify_MemberDatafromfile_toScreen_ZU_63flow()'><b>verify_MemberDatafromfile_toScreen_ZU_63flow</b><br>Test class: com.jivaUAT2.testcases.CCM_PostEnrollmentLetterGeneration_TC<br>Test method: Verify Member data from the files with screendata and execute ZU-63 flow for CCM-Member_Identified Needs/Goals Have Been Met<br/>
-<a href="#Output-768185844" onClick='toggleBox("Output-768185844", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-768185844" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-768185844">
-Username Enteredvjayavarapu<br/>
-Password EnteredPassword1!<br/>
-Login Button Clicked<br/>
-</div>
-</td>
-<td></td>
-<td>147</td>
-<td>com.jivaUAT2.testcases.CCM_PostEnrollmentLetterGeneration_TC@5891e32e</td></tr>
+<td title='com.jivaUAT2.testcases.Flow1.verify_MemberDatafromfile_toScreen_ZU_60flow()'><b>verify_MemberDatafromfile_toScreen_ZU_60flow</b><br>Test class: com.jivaUAT2.testcases.Flow1<br>Test method: Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member</td>
+<td><div><pre>org.testng.TestNGException: 
+Method verify_MemberActiveStatus requires 1 parameters but 2 were supplied in the BeforeMethod annotation.
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace793315160", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace793315160'><pre>org.testng.TestNGException: 
+Method verify_MemberActiveStatus requires 1 parameters but 2 were supplied in the BeforeMethod annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:415)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:516)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.jivaUAT2.testcases.Flow1@8e24743</td></tr>
 </table><p>
 </body>
 </html>

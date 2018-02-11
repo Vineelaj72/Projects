@@ -4,17 +4,20 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
+import org.testng.annotations.Parameters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.framework.utils.TestBase;
 import com.jiva.TestData.AddressFileInput;
 import com.jiva.TestData.CoverageFileInput;
-import com.jiva.TestData.PhoneFileInput;
 import com.jiva.TestData.DemographicFileInput;
+import com.jiva.TestData.PhoneFileInput;
 import com.jiva.pages.AddInteractionsPage;
 import com.jiva.pages.ChangeStatusPage;
 import com.jiva.pages.ConfirmAddepisodePage;
@@ -27,10 +30,9 @@ import com.jiva.pages.MemberOverviewPage;
 import com.jiva.pages.MemberSearchPage;
 import com.jiva.pages.ProgramsPage;
 import com.jiva.pages.WorklistsPage;
-import com.framework.utils.TestBase;
 
-public class ZU_60_Integrationflow_TC_V1 extends TestBase {
-	private static Logger logger = Logger.getLogger(ZU_60_Integrationflow_TC_V1.class);
+public class Flow1 extends TestBase {
+	private static Logger logger = Logger.getLogger(Flow1.class);
 	private WebDriver driver;
 	private String sTestcaseName = null;
 	
@@ -40,20 +42,23 @@ public class ZU_60_Integrationflow_TC_V1 extends TestBase {
 	private int lineNumber=1;
 	
 	private ArrayList<String> MemberAddressData;	
-	int ADDR_ENROLLMENTID=0,HOME_ADDRESSTYPE=1,HOME_ADDRESS1=2,HOME_CITY=3,HOME_STATE=4,HOME_ZIP=5,HOME_COUNTRY=6;
-	int PRIMARY_ADDRESSTYPE=8,PRIMARY_ADDRESS1=9,PRIMARY_CITY=10,PRIMARY_STATE=11,PRIMARY_ZIP=12,PRIMARY_COUNTRY=13;
+
 	
 	private ArrayList<String> MemberPhoneData;
 	int PHN_ENROLLMENTID=0,PHONENUMBER=1;
 	
 	private ArrayList<String> MemberCoverageData;
-	int CVRG_ENROLLMENTID=0;
+	int CVRG_ENROLLMENTID=0;	
+	
+	private MemberOverviewPage memberOverviewPage=null;
+	private String sUSERPROFILENAME=null;
 	
 	
-	@BeforeClass
-	public void dataSetup() throws IOException {
+//	@Parameters({"linenumber"})
+	@BeforeMethod
+		public void verify_MemberActiveStatus(/*String linenumber*/) throws IOException, InterruptedException {
 			
-		MemberDemographicData =DemographicFileInput.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME,lineNumber);   // demographic file
+		MemberDemographicData =DemographicFileInput.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME,lineNumber/*Integer.parseInt(linenumber)*/);   // demographic file
 		logger.info("Member Demographic File Data "+MemberDemographicData);
 		
 		MemberAddressData = AddressFileInput.addressFileCode(MEMBERADDRESSFILENAME, MemberDemographicData.get(ENROLLMENTID));  //Address File
@@ -64,12 +69,8 @@ public class ZU_60_Integrationflow_TC_V1 extends TestBase {
 		
 		MemberCoverageData = CoverageFileInput.coverageFileCode(MEMBERCOVERAGEFILENAME,MemberDemographicData.get(ENROLLMENTID));  //Coverage File
 		logger.info("Member Coverage File Data "+MemberCoverageData);
-	}
-	
 		
-	@Test(description = "Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member")
-	public void verify_MemberDatafromfile_toScreen_ZU_60flow() throws InterruptedException {
-
+		
 		sTestcaseName = new Object() {}.getClass().getEnclosingMethod().getName();
 		logger.info("Execution started for--- " + sTestcaseName);
 		
@@ -89,9 +90,9 @@ public class ZU_60_Integrationflow_TC_V1 extends TestBase {
 
 		Dashboard dashboard = new Dashboard(driver);
 		Assert.assertEquals(true, dashboard.verifyDashboardDisplayed(), "Logged in Sucessfully");
-		String userprofilename = dashboard.getuserprofilename();
-		logger.info("User Profile Name is " + userprofilename);
-		String[] UserFullname = userprofilename.split(",");
+		sUSERPROFILENAME = dashboard.getuserprofilename();
+		logger.info("User Profile Name is " + sUSERPROFILENAME);
+		String[] UserFullname = sUSERPROFILENAME.split(",");
 		logger.info("User Last name " + UserFullname[0]);
 		logger.info("User First name " + UserFullname[1]);
 		logger.info("Member Last name "+MemberDemographicData.get(LASTNAME));
@@ -106,16 +107,37 @@ public class ZU_60_Integrationflow_TC_V1 extends TestBase {
 		
 		memberSearchPage.clickMainSearch();;
 		
+		
+		//String clientname = memberOverviewPage.getClientName();
+		//logger.info("Verifying the flow for the Client : "+clientname);
+		
+		
+		
+		
+	}
+	
+	
+	
+	@Test(description = "Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member")
+	public void verify_MemberDatafromfile_toScreen_ZU_60flow() throws InterruptedException {
+		
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
 		confirmAddepisodePage.clickRedirecttoMCV();
 		
-		/*By deadColor= By.xpath(".//*[@id='angularcontent']//div[contains(@class,'4d4d4d')]");
-		confirmAddepisodePage.getAttribute(deadColor).contains("4d4d4d"))*/		
+		By grayMemberBanner= By.xpath(".//*[@id='angularcontent']//div[contains(@class,'4d4d4d')]");
 		
 		
-		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
+		
+		memberOverviewPage = new MemberOverviewPage(driver);	
 		memberOverviewPage.sleep(3000);
 		memberOverviewPage.expandMemberInfo();	
+		
+		if(confirmAddepisodePage.isDisplayed(grayMemberBanner))
+			Assert.assertFalse(true, "The person is deceased");
+		else
+			Assert.assertTrue(true, "The person is Alive and happy");
+		
+		
 		String clientname = memberOverviewPage.getClientName();
 		logger.info("Verifying the flow for the Client : "+clientname);
 		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
@@ -125,6 +147,8 @@ public class ZU_60_Integrationflow_TC_V1 extends TestBase {
 		Assert.assertEquals(MemberPhoneData.get(PHONENUMBER), memberOverviewPage.getPhoneNumber(), "Member Phone Number validated against Member Phone file");
 		Assert.assertEquals(MemberCoverageData.get(CVRG_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Coverage file");
 		
+
+		//MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
 		memberOverviewPage.openMemberInformation();
 		memberOverviewPage.sleep(5000);		
 		
@@ -157,7 +181,7 @@ public class ZU_60_Integrationflow_TC_V1 extends TestBase {
 		memberOverviewPage.closeMemberInfo();
 		memberOverviewPage.expandMemberInfo();
 		
-		
+		//memberOverviewPage.deActivate();
 		
 		/////////////////////////////////////
 		/*By currentepisodecogwheellocator = By.xpath(".//*[@id='content-main']/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div/div[1]/a/i");
@@ -176,7 +200,7 @@ public class ZU_60_Integrationflow_TC_V1 extends TestBase {
 		memberOverviewPage.similarEpisodeAlert();
 		
 		CreateCMepisodePage createCMepisodePage = new CreateCMepisodePage(driver);
-		createCMepisodePage.addEpisodeDetails(userprofilename);
+		createCMepisodePage.addEpisodeDetails(sUSERPROFILENAME);
 		Assert.assertEquals(true, createCMepisodePage.verifyProgramAdded(), "Program added Sucessfully");
 		createCMepisodePage.clickSaveEpisode();
 		createCMepisodePage.invalidEpisodeCoverageAlert();
@@ -199,7 +223,7 @@ public class ZU_60_Integrationflow_TC_V1 extends TestBase {
 		// Episode activities Page details
 
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
-		Assert.assertEquals(true,episodeactivitiespage.verify_OpenInteractionRecordVisible(userprofilename),"Open interaction available");
+		Assert.assertEquals(true,episodeactivitiespage.verify_OpenInteractionRecordVisible(sUSERPROFILENAME),"Open interaction available");
 		
 		episodeactivitiespage.clickWheel();
 		episodeactivitiespage.clickAddInteraction();
@@ -217,19 +241,19 @@ public class ZU_60_Integrationflow_TC_V1 extends TestBase {
 		addInteractionsPage.add2ndInteractionforUTC();
 		addInteractionsPage.clickSaveInteraction();
 		episodeactivitiespage.clickClosedActivities();
-		Assert.assertEquals(true,episodeactivitiespage.verify_ClosedInteractionRecordVisible(userprofilename),"Closed interaction available");
+		Assert.assertEquals(true,episodeactivitiespage.verify_ClosedInteractionRecordVisible(sUSERPROFILENAME),"Closed interaction available");
 		
 		
 		episodeactivitiespage.clickCM();
 		episodeactivitiespage.sleep(10000);
 		episodeoverviewpage.openCorrespondence();
-		Assert.assertEquals(true,episodeoverviewpage.verify_UTCletterGenerated(userprofilename),"UTC letter generated");
+		Assert.assertEquals(true,episodeoverviewpage.verify_UTCletterGenerated(sUSERPROFILENAME),"UTC letter generated");
 		
 		episodeoverviewpage.clickWorkflow();
 		episodeoverviewpage.clickActivities();
 		episodeactivitiespage.clickAddActivity();
 		episodeactivitiespage.enterActivityDetails();		
-		Assert.assertEquals(true, episodeactivitiespage.verify_OpenActivityRecordVisible(userprofilename),
+		Assert.assertEquals(true, episodeactivitiespage.verify_OpenActivityRecordVisible(sUSERPROFILENAME),
 				"Review for Contact Open activity available");
 		
 		episodeactivitiespage.clickWheel();
@@ -237,7 +261,7 @@ public class ZU_60_Integrationflow_TC_V1 extends TestBase {
 		episodeactivitiespage.modifyActivityDetails();
 		episodeactivitiespage.clickClosedActivities();
 		
-		Assert.assertEquals(true, episodeactivitiespage.verify_ClosedActivityRecordVisible(userprofilename),
+		Assert.assertEquals(true, episodeactivitiespage.verify_ClosedActivityRecordVisible(sUSERPROFILENAME),
 				"Review for Contact Closed activity available");
 		
 		episodeoverviewpage.clickWorkflow();
@@ -248,7 +272,7 @@ public class ZU_60_Integrationflow_TC_V1 extends TestBase {
 		ChangeStatusPage changeStatusPage = new ChangeStatusPage(driver);
 		changeStatusPage.changeStatusDetails();
 		
-		Assert.assertEquals(true, episodeactivitiespage.verifyEpisodeStatus_Closed(userprofilename),
+		Assert.assertEquals(true, episodeactivitiespage.verifyEpisodeStatus_Closed(sUSERPROFILENAME),
 				"Closed episode successfully");
 		
 		episodeoverviewpage.clickWorkflow();
@@ -263,11 +287,16 @@ public class ZU_60_Integrationflow_TC_V1 extends TestBase {
 		programsPage.clickMemberOverview();
 		memberOverviewPage.clickCurrentEpisodecogwheel();
 		memberOverviewPage.performDeactivateEpisode();		
-		
-		// Closing the browser
-		closeBrowser(driver);
 
 	}
+	
+	@AfterMethod
+	public void closeBrowser()
+	{
+		// Closing the browser
+		closeBrowser(driver);
+	}
+	
 }
 			
 	

@@ -5,26 +5,16 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="Test(failed)">
+  <test name="Line 2(failed)">
+    <parameter name="linenumber" value="2"/>
     <classes>
-      <class name="com.jivaUAT2.testcases.CCM_UTCLetterGeneration_TC">
+      <class name="com.jivaUAT2.testcases.Flow1">
         <methods>
-          <include name="dataSetup"/>
+          <include name="closeBrowser"/>
+          <include name="verify_MemberActiveStatus"/>
           <include name="verify_MemberDatafromfile_toScreen_ZU_60flow"/>
         </methods>
-      </class> <!-- com.jivaUAT2.testcases.CCM_UTCLetterGeneration_TC -->
-      <class name="com.jivaUAT2.testcases.CCM_MemberOptOutLetterGeneration_TC">
-        <methods>
-          <include name="dataSetup"/>
-          <include name="verify_MemberDatafromfile_toScreen_ZU_61flow"/>
-        </methods>
-      </class> <!-- com.jivaUAT2.testcases.CCM_MemberOptOutLetterGeneration_TC -->
-      <class name="com.jivaUAT2.testcases.CCM_PostEnrollmentLetterGeneration_TC">
-        <methods>
-          <include name="dataSetup"/>
-          <include name="verify_MemberDatafromfile_toScreen_ZU_63flow"/>
-        </methods>
-      </class> <!-- com.jivaUAT2.testcases.CCM_PostEnrollmentLetterGeneration_TC -->
+      </class> <!-- com.jivaUAT2.testcases.Flow1 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Line 2(failed) -->
 </suite> <!-- Failed suite [Sanity Suite] -->

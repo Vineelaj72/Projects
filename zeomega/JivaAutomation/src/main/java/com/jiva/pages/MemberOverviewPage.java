@@ -1,20 +1,24 @@
 package com.jiva.pages;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.framework.utils.WebElements;
 
 public class MemberOverviewPage extends WebElements {
 	
 	private static Logger logger = Logger.getLogger(MemberOverviewPage.class);
-
+	WebDriver driver;
 	public MemberOverviewPage(WebDriver driver) {
 		super(driver);
+		this.driver =driver;
 	}
 	
 	By openepisodelinklocator = By.xpath("//li/a/span[contains(text(),'Open')]");
@@ -62,10 +66,47 @@ public class MemberOverviewPage extends WebElements {
 	By addepisodelocator = By.xpath(".//*[@id='angularcontent']/workflow-banner/div/div/div[3]/div[6]/button");
 	By casemanagementlocator = By.xpath("(//a/span[contains(text(),'Case Management')])[2]");
 	
+	
+	public void deActivate()
+	{
+		By episodeCountlocator=By.xpath("//span[@ng-bind='episodeList.episode_count']"); // episode_count
+		By episodeExpandlocator=By.xpath("//button[@ng-click='routeEpisodeGridView()']/i");
+		By closed_CCM_Episodelocator=By.xpath("//*[contains(text(),'Complex Case Management')]/../../..//*[contains(text(),'Closed')]/../../..//a[contains(@class,'dropdown')]");
+		
+		By deaactivate_EpisodeLocator=By.xpath("//*[contains(text(),'Deactivate')]");
+
+		if (Integer.parseInt(getText(episodeCountlocator)) != 0) {
+			click(episodeExpandlocator);
+			sleep(5000);
+			List<WebElement> episodeList = listofelements(closed_CCM_Episodelocator);
+			for (int i = 0; i < episodeList.size(); i++) {
+				episodeList.get(i).click();
+				sleep(5000);
+				clickUsingJs(deaactivate_EpisodeLocator);// (deaactivate_EpisodeLocator);
+				sleep(5000);
+				deactivateEpisodeAlert();
+
+			}
+		}
+		
+	}
+	
 	public void closeMemberInfo()
 	{
 		clickUsingJs(closememberinfolocator);
 	}
+	
+	public void deactivateEpisodeAlert()
+	{
+		sleep(5000);
+		alertBox("deactivate the episode");
+		//driver.findElement(By.className("body")).sendKeys(Keys.ENTER);
+	}
+	
+	
+	
+	
+	
 	public String getEpisodeCount()
 	{
 		return getText(episodecountlocator);

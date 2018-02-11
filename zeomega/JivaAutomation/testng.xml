@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Sanity Suite">
-<listeners>
+<!-- <parameter name="linenumber" value="2"></parameter>
+ --><listeners>
  <listener class-name="org.uncommons.reportng.HTMLReporter" />
   <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 </listeners>
-  <test thread-count="5" name="Test">
+  <test name="Line 1">
+<parameter name="linenumber" value="1"></parameter>
     <classes>
-      <class name="com.jivaUAT2.testcases.CCM_UTCLetterGeneration_TC"/>
-      <class name="com.jivaUAT2.testcases.CCM_MemberOptOutLetterGeneration_TC"/>
-      <class name="com.jivaUAT2.testcases.CCM_PostEnrollmentLetterGeneration_TC"/>
+      <class name="com.jivaUAT2.testcases.Flow1"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Line 2">
+<parameter name="linenumber" value="2"></parameter>
+    <classes>
+      <class name="com.jivaUAT2.testcases.Flow1"/>
+    </classes>
+  </test>
 </suite> <!-- Suite -->
