@@ -5,6 +5,7 @@ import java.util.NoSuchElementException;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
@@ -32,6 +33,7 @@ public class MemberOverviewPage extends WebElements {
 	By CCMstatusreferrallocator = By.xpath("//div[contains(@class,'ng-scope')]//div[contains(@class,'clearfix col-sm-6 padding-left-0px padding-right-0px')]/div/span[contains(text(),'Complex')]/../../../div[contains(@class,'clearfix col-sm-6')]/div[4]/span[contains(text(),'Referral')]");
 	By CCMstatusopenlocator = By.xpath("//div[contains(@class,'ng-scope')]//div[contains(@class,'clearfix col-sm-6 padding-left-0px padding-right-0px')]/div/span[contains(text(),'Complex')]/../../../div[contains(@class,'clearfix col-sm-6')]/div[4]/span[contains(text(),'open')]");
 	By episodecountlocator = By.xpath("//div/span[contains(text(),'Episodes')]/../span[contains(@ng-bind,'count')]");
+	By memberoverviewlocator = By.xpath("//a[contains(text(),'Member Overview')]");
 	
 	By memberfirstnamelocator = By.xpath("//div/span[contains(text(),'First Name')]/../../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_first_name')]");
 	By memberlastnamelocator = By.xpath("//div/span[contains(text(),'Last Name')]/../../div/span[contains(@ng-bind,'mbrAbstractCtrl.memberDetails.member_last_name')]");
@@ -69,10 +71,11 @@ public class MemberOverviewPage extends WebElements {
 	
 	public void deActivate()
 	{
-		By episodeCountlocator=By.xpath("//span[@ng-bind='episodeList.episode_count']"); // episode_count
+		By episodeCountlocator=By.xpath("//span[@ng-bind='episodeList.episode_count']"); 
 		By episodeExpandlocator=By.xpath("//button[@ng-click='routeEpisodeGridView()']/i");
 		By closed_CCM_Episodelocator=By.xpath("//*[contains(text(),'Complex Case Management')]/../../..//*[contains(text(),'Closed')]/../../..//a[contains(@class,'dropdown')]");
-		
+		By referral_CCM_Episodelocator=By.xpath("//*[contains(text(),'Complex Case Management')]/../../..//*[contains(text(),'Referral')]/../../..//a[contains(@class,'dropdown')]");
+		By Open_CCM_Episodelocator=By.xpath("//*[contains(text(),'Complex Case Management')]/../../..//*[contains(text(),'Open')]/../../..//a[contains(@class,'dropdown')]");		
 		By deaactivate_EpisodeLocator=By.xpath("//*[contains(text(),'Deactivate')]");
 
 		if (Integer.parseInt(getText(episodeCountlocator)) != 0) {
@@ -80,9 +83,9 @@ public class MemberOverviewPage extends WebElements {
 			sleep(5000);
 			List<WebElement> episodeList = listofelements(closed_CCM_Episodelocator);
 			for (int i = 0; i < episodeList.size(); i++) {
-				episodeList.get(i).click();
+				episodeList.get(i).click();		
 				sleep(5000);
-				clickUsingJs(deaactivate_EpisodeLocator);// (deaactivate_EpisodeLocator);
+				clickUsingJs(deaactivate_EpisodeLocator);
 				sleep(5000);
 				deactivateEpisodeAlert();
 
@@ -91,22 +94,24 @@ public class MemberOverviewPage extends WebElements {
 		
 	}
 	
+	
 	public void closeMemberInfo()
 	{
 		clickUsingJs(closememberinfolocator);
+	}
+	public void clickMemberOverview()
+	{
+		clickUsingJs(memberoverviewlocator);
 	}
 	
 	public void deactivateEpisodeAlert()
 	{
 		sleep(5000);
 		alertBox("deactivate the episode");
+		sleep(5000);
 		//driver.findElement(By.className("body")).sendKeys(Keys.ENTER);
 	}
-	
-	
-	
-	
-	
+		
 	public String getEpisodeCount()
 	{
 		return getText(episodecountlocator);

@@ -66,7 +66,7 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 		logger.info("Execution started for--- " + sTestcaseName);
 
 		driver = initializeDriver(BROWSER); 		// initialise browser and openurl
-		openurl(driver, AutomationURL);
+		openurl(driver, JivaUAT2URL);
 
 		// Login Page details
 
@@ -170,7 +170,7 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
 		Assert.assertEquals(true,episodeactivitiespage.verify_OpenorClosedInteractionRecordVisible(),"Open interaction available");
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 1st interaction details
@@ -179,7 +179,7 @@ public class E2EintegrationflowTC_ZU_61 extends TestBase {
 		addInteractionsPage.add1stInteractionforMemberOptsOut();
 		addInteractionsPage.clickSaveInteraction();
 
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 2nd interaction details

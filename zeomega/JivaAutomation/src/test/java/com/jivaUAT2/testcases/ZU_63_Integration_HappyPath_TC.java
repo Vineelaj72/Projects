@@ -80,7 +80,7 @@ public class ZU_63_Integration_HappyPath_TC extends TestBase {
 		// initialise browser and openurl
 		
 		driver = initializeDriver(BROWSER); 		
-		openurl(driver, AutomationURL);
+		openurl(driver, JivaUAT2URL);
 
 		// Login Page details
 
@@ -184,7 +184,7 @@ public class ZU_63_Integration_HappyPath_TC extends TestBase {
 		Assert.assertEquals(true, episodeactivitiespage.verify_OpenInteractionRecordVisible(userprofilename),
 				"Open interaction available");
 
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 1st interaction details

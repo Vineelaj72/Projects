@@ -14,10 +14,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import com.framework.setup.RecordsIndex;
+import com.framework.setup.JivaRecordsIndexing;
 import com.framework.setup.Setup;
 
-public class TestBase implements Setup,RecordsIndex {
+public class TestBase implements Setup,JivaRecordsIndexing {
 
 	public WebDriver initializeDriver(String sbrowser) {
 		WebDriver driver = null;
@@ -57,25 +57,22 @@ public class TestBase implements Setup,RecordsIndex {
 	
 	public DesiredCapabilities chromeProfileSetUp()
 	 {
-	  System.setProperty("webdriver.chrome.driver", CHROMEPATH);
-	  //String downloadFilepath = getFilePath("Downloadspath");
+	  System.setProperty("webdriver.chrome.driver", CHROMEPATH);	  
 	  HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 	  chromePrefs.put("credentials_enable_service", Boolean.valueOf(false));
 	        chromePrefs.put("profile.password_manager_enabled", Boolean.valueOf(false));
 	  chromePrefs.put("profile.default_content_settings.popups", 0);
-	  //chromePrefs.put("download.default_directory", downloadFilepath);
 	  ChromeOptions options = new ChromeOptions();
 	  HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
 	  options.setExperimentalOption("prefs", chromePrefs);
 	  options.addArguments("--test-type");
-	  DesiredCapabilities cap = DesiredCapabilities.chrome();
-	  cap.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
-	  cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-	  cap.setCapability(ChromeOptions.CAPABILITY, options);
+	  DesiredCapabilities caps = DesiredCapabilities.chrome();
+	  caps.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
+	  caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+	  caps.setCapability(ChromeOptions.CAPABILITY, options);
 	  options.addArguments("--always-authorize-plugins");
 	  options.addArguments("--ignore-certificate-errors");
-	  //logger.info("The Chrome Profile is setup");
-	    return cap; 
+	    return caps; 
 	 }
 	
 	public DesiredCapabilities firefoxProfileSetUp() {
@@ -84,24 +81,6 @@ public class TestBase implements Setup,RecordsIndex {
 		return caps;
 	}
 		
-	/*public String getFilePath(String sFilepath) {
-		  char cforwardslash = (char) 47;
-		  char cbackslash = (char) 92;
-		  //logger.info("File path is "+sFilepath);
-		  String sPath = System.getProperty("user.dir").replace(cbackslash,
-		    cforwardslash)
-		    + sFilepath;
-
-		  File file = new File(sPath);
-		  if (file.exists()) {
-		   sPath = file.getAbsolutePath();
-		   //logger.info("The File Path is " + sPath);
-		  } else {
-		  }
-		  return sPath;
-		 }*/
-	
-	
 	public void openurl(WebDriver driver, String url)
 	{
 		driver.get(url);
@@ -126,4 +105,5 @@ public class TestBase implements Setup,RecordsIndex {
 	public void closeBrowser(WebDriver driver) {
 		driver.quit();
 	}
+	
 }

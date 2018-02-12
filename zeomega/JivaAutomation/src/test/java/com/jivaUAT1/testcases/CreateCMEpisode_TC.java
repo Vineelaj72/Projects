@@ -23,7 +23,7 @@ public class CreateCMEpisode_TC extends TestBase {
 		driver = initializeDriver(BROWSER);
 		
 		
-		openurl(driver, AutomationURL);
+		openurl(driver, JivaUAT2URL);
 		maximizeBrowser(driver);
 		Thread.sleep(5000);
 		

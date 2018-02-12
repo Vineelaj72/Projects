@@ -40,7 +40,7 @@ public class ZU_Calender_flow extends TestBase{
 		// initialise browser and openurl
 
 		driver = initializeDriver(BROWSER);
-		openurl(driver, AutomationURL);
+		openurl(driver, JivaUAT2URL);
 		maximizeBrowser(driver);
 		
 		// Login Page details
@@ -125,7 +125,7 @@ public class ZU_Calender_flow extends TestBase{
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
 		Assert.assertEquals(true, episodeactivitiespage.verify_OpenInteractionRecordVisible(userprofilename),
 				"Open activity available");
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 1st interaction details
@@ -157,7 +157,7 @@ public class ZU_Calender_flow extends TestBase{
 		
 		episodeoverviewpage.openActivities();
 		
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 2nd interaction details
@@ -181,7 +181,7 @@ public class ZU_Calender_flow extends TestBase{
 		Assert.assertEquals(true, episodeactivitiespage.verify_OpenActivityRecordVisible(userprofilename),
 				"Review for Contact Open activity available");
 		
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickModifyActivity();
 		episodeactivitiespage.modifyActivityDetails();
 		episodeactivitiespage.clickClosedActivities();

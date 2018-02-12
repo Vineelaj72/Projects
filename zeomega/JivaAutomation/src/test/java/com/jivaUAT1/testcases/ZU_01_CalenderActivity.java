@@ -37,7 +37,7 @@ public class ZU_01_CalenderActivity extends TestBase {
 		// initialise browser and openurl
 
 		driver = initializeDriver(BROWSER);
-		openurl(driver, AutomationURL);
+		openurl(driver, JivaUAT2URL);
 		maximizeBrowser(driver);
 	
 		// Login Page details
@@ -120,7 +120,7 @@ public class ZU_01_CalenderActivity extends TestBase {
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
 		Assert.assertEquals(true, episodeactivitiespage.verify_OpenInteractionRecordVisible(userprofilename),
 				"Open activity available");
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 1st interaction details

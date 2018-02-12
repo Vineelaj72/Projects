@@ -16,8 +16,7 @@ public class DemographicFileInput {
 		ArrayList<String> fileValue= new ArrayList<String>();
 		
 		 String[] currentLine = Files.readAllLines(Paths.get(sFileName)).get(linenumber).split("\\|", -1);
-
-						//System.out.println("j--" + j + "--" + demovalue.get(j));
+						
 		 for (int j = 0; j < currentLine.length; j++) {
 			
 					if(currentLine[j].contains("^"))
@@ -30,8 +29,8 @@ public class DemographicFileInput {
 							fileValue.add(currentLine[j+21]);
 							fileValue.add(currentLine[j+16]);
 							
-		 }
 					}
+				}
 
 		
 		return fileValue;

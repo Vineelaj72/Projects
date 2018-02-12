@@ -1,4 +1,4 @@
-package com.framework.utils;
+package com.jiva.OLDTestData;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MemberDemographicFile {
+public class Map_MemberDemographicFile {
 
 	public static Map<String, String> readdemographicFile(String sFilename) {
 		Map<String, String> readdemographicFilemap = new HashMap<String, String>();

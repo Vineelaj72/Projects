@@ -73,7 +73,7 @@ public class E2EintegrationflowTC_ZU_63 extends TestBase {
 		// initialise browser and openurl
 		
 		driver = initializeDriver(BROWSER); 		
-		openurl(driver, AutomationURL);
+		openurl(driver, JivaUAT2URL);
 
 		// Login Page details
 
@@ -173,7 +173,7 @@ public class E2EintegrationflowTC_ZU_63 extends TestBase {
 		Assert.assertEquals(true, episodeactivitiespage.verify_OpenorClosedInteractionRecordVisible(),
 				"Open interaction available");
 
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 1st interaction details

@@ -66,7 +66,7 @@ public class CCM_MemberOptOutLetterGeneration_TC extends TestBase {
 		logger.info("Execution started for--- " + sTestcaseName);
 
 		driver = initializeDriver(BROWSER); 		// initialise browser and openurl
-		openurl(driver, AutomationURL);
+		openurl(driver, JivaUAT2URL);
 
 		// Login Page details
 
@@ -171,7 +171,7 @@ public class CCM_MemberOptOutLetterGeneration_TC extends TestBase {
 
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
 		Assert.assertEquals(true,episodeactivitiespage.verify_OpenInteractionRecordVisible(userprofilename),"Open interaction available");
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 1st interaction details
@@ -180,7 +180,7 @@ public class CCM_MemberOptOutLetterGeneration_TC extends TestBase {
 		addInteractionsPage.add1stInteractionforMemberOptsOut();
 		addInteractionsPage.clickSaveInteraction();
 
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 2nd interaction details

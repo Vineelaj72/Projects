@@ -43,7 +43,7 @@ public class E2EintegrationflowforMemberDemographicflowTC_ZU_60 extends TestBase
 		logger.info("Execution started for--- " + sTestcaseName);
 
 		driver = initializeDriver(BROWSER); 		// initialise browser and openurl
-		openurl(driver, AutomationURL);
+		openurl(driver, JivaUAT2URL);
 
 		// Login Page details
 
@@ -141,7 +141,7 @@ public class E2EintegrationflowforMemberDemographicflowTC_ZU_60 extends TestBase
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
 		Assert.assertEquals(true,episodeactivitiespage.verify_OpenorClosedInteractionRecordVisible(),"Open interaction available");
 		
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 1st interaction details
@@ -150,7 +150,7 @@ public class E2EintegrationflowforMemberDemographicflowTC_ZU_60 extends TestBase
 		addInteractionsPage.add1stInteractionforUTC();
 		addInteractionsPage.clickSaveInteraction();
 
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 2nd interaction details
@@ -175,7 +175,7 @@ public class E2EintegrationflowforMemberDemographicflowTC_ZU_60 extends TestBase
 		Assert.assertEquals(true, episodeactivitiespage.verify_OpenActivityRecordVisible(userprofilename),
 				"Review for Contact Open activity available");
 		
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickModifyActivity();
 		episodeactivitiespage.modifyActivityDetails();
 		episodeactivitiespage.clickClosedActivities();

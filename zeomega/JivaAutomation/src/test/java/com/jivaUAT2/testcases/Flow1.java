@@ -37,18 +37,20 @@ public class Flow1 extends TestBase {
 	private String sTestcaseName = null;
 	
 	private ArrayList<String> MemberDemographicData;
-	int ENROLLMENTID=0,ALTERNATEID=1,LASTNAME=2,FIRSTNAME=3,DOB=4,ACTIVESTATUS=5,GENDER=6;	
+	//int ENROLLMENTID=0,ALTERNATEID=1,LASTNAME=2,FIRSTNAME=3,DOB=4,ACTIVESTATUS=5,GENDER=6;	
 	
 	private int lineNumber=1;
 	
-	private ArrayList<String> MemberAddressData;	
+	private ArrayList<String> MemberAddressData;
+	//int ADDR_ENROLLMENTID=0,HOME_ADDRESSTYPE=1,HOME_ADDRESS1=2,HOME_CITY=3,HOME_STATE=4,HOME_ZIP=5,HOME_COUNTRY=6;
+	//int PRIMARY_ADDRESSTYPE=8,PRIMARY_ADDRESS1=9,PRIMARY_CITY=10,PRIMARY_STATE=11,PRIMARY_ZIP=12,PRIMARY_COUNTRY=13;
 
 	
 	private ArrayList<String> MemberPhoneData;
-	int PHN_ENROLLMENTID=0,PHONENUMBER=1;
+	//int PHN_ENROLLMENTID=0,PHONENUMBER=1;
 	
 	private ArrayList<String> MemberCoverageData;
-	int CVRG_ENROLLMENTID=0;	
+	//int CVRG_ENROLLMENTID=0;	
 	
 	private MemberOverviewPage memberOverviewPage=null;
 	private String sUSERPROFILENAME=null;
@@ -77,7 +79,7 @@ public class Flow1 extends TestBase {
 		// initialise browser and openurl
 		
 		driver = initializeDriver(BROWSER); 		
-		openurl(driver, AutomationURL);
+		openurl(driver, JivaUAT2URL);
 
 		// Login Page details
 
@@ -105,14 +107,9 @@ public class Flow1 extends TestBase {
 		MemberSearchPage memberSearchPage = new MemberSearchPage(driver);
 		memberSearchPage.enterMemberId(MemberDemographicData.get(ALTERNATEID));
 		
-		memberSearchPage.clickMainSearch();;
+		memberSearchPage.clickMainSearch();
 		
-		
-		//String clientname = memberOverviewPage.getClientName();
-		//logger.info("Verifying the flow for the Client : "+clientname);
-		
-		
-		
+				
 		
 	}
 	
@@ -183,18 +180,7 @@ public class Flow1 extends TestBase {
 		
 		//memberOverviewPage.deActivate();
 		
-		/////////////////////////////////////
-		/*By currentepisodecogwheellocator = By.xpath(".//*[@id='content-main']/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div/div[1]/a/i");
-		//boolean episodeavailable = memberOverviewPage.isDisplayed(currentepisodecogwheellocator);
-		while(memberOverviewPage.isDisplayed(currentepisodecogwheellocator))
-		{
-			memberOverviewPage.clickCurrentEpisodecogwheel();
-			memberOverviewPage.performDeactivateEpisode();
-			logger.info("Deactivated");
-		}
-		
-		String episodecount = memberOverviewPage.getEpisodeCount();*/
-			
+				
 		memberOverviewPage.clickAddEpisode();
 		memberOverviewPage.clickCaseManagement();
 		memberOverviewPage.similarEpisodeAlert();
@@ -205,6 +191,8 @@ public class Flow1 extends TestBase {
 		createCMepisodePage.clickSaveEpisode();
 		createCMepisodePage.invalidEpisodeCoverageAlert();
 		logger.info("Verified creation of episode successfully");
+		
+		//memberOverviewPage.clickMemberOverview();
 
 		// Worklists page details
 
@@ -225,7 +213,7 @@ public class Flow1 extends TestBase {
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
 		Assert.assertEquals(true,episodeactivitiespage.verify_OpenInteractionRecordVisible(sUSERPROFILENAME),"Open interaction available");
 		
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 1st interaction details
@@ -233,7 +221,7 @@ public class Flow1 extends TestBase {
 		AddInteractionsPage addInteractionsPage = new AddInteractionsPage(driver);
 		addInteractionsPage.add1stInteractionforUTC();
 		addInteractionsPage.clickSaveInteraction();
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 2nd interaction details
@@ -256,7 +244,7 @@ public class Flow1 extends TestBase {
 		Assert.assertEquals(true, episodeactivitiespage.verify_OpenActivityRecordVisible(sUSERPROFILENAME),
 				"Review for Contact Open activity available");
 		
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickModifyActivity();
 		episodeactivitiespage.modifyActivityDetails();
 		episodeactivitiespage.clickClosedActivities();

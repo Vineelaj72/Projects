@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-
+import com.jiva.OLDTestData.Map_MemberDemographicFile;
 import com.jiva.pages.AddInteractionsPage;
 import com.jiva.pages.ChangeStatusPage;
 import com.jiva.pages.ConfirmAddepisodePage;
@@ -22,12 +22,10 @@ import com.jiva.pages.MemberOverviewPage;
 import com.jiva.pages.MemberSearchPage;
 import com.jiva.pages.WorklistsPage;
 import com.framework.utils.DateUtils;
-import com.framework.utils.MemberDemographicFile;
 import com.framework.utils.TestBase;
 
 import com.jiva.pages.ConfirmAddepisodePage;
 import com.framework.utils.DateUtils;
-import com.framework.utils.MemberDemographicFile;
 import com.framework.utils.TestBase;
 
 
@@ -42,7 +40,7 @@ public class Map_DemographicDataValidation_TC extends TestBase {
 	public void dataSetup() throws Exception {
 		sDateFormat=DateUtils.ymdhmsTime();
 	//	sFileName=FileUtils.listofFiles(SFILENAME, sDateFormat);
-		sFileData = MemberDemographicFile.readdemographicFile(SFILENAME);
+		sFileData = Map_MemberDemographicFile.readdemographicFile(SFILENAME);
 		//2.Location Wise pick
 		//1. Read 6 Files and written 6 Arry
 
@@ -61,7 +59,7 @@ public class Map_DemographicDataValidation_TC extends TestBase {
 		// initialise browser and openurl
 
 		driver = initializeDriver(BROWSER);
-		openurl(driver, AutomationURL);
+		openurl(driver, JivaUAT2URL);
 		maximizeBrowser(driver);
 		// Thread.sleep(15000);
 
@@ -174,7 +172,7 @@ public class Map_DemographicDataValidation_TC extends TestBase {
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
 		Assert.assertEquals(true,episodeactivitiespage.verify_OpenorClosedInteractionRecordVisible(),"Open interaction available");
 		
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 1st interaction details
@@ -191,7 +189,7 @@ public class Map_DemographicDataValidation_TC extends TestBase {
 		 * ,"Member record appeared in Calender");
 		 */
 
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 2nd interaction details
@@ -216,7 +214,7 @@ public class Map_DemographicDataValidation_TC extends TestBase {
 		Assert.assertEquals(true, episodeactivitiespage.verify_OpenActivityRecordVisible(userprofilename),
 				"Review for Contact Open activity available");
 		
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickModifyActivity();
 		episodeactivitiespage.modifyActivityDetails();
 		episodeactivitiespage.clickClosedActivities();

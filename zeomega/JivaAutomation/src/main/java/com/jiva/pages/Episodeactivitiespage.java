@@ -40,7 +40,7 @@ public class Episodeactivitiespage extends WebElements {
 		return isDisplayed(interactionrecordlocator);
 	}
 	
-	public void clickWheel()
+	public void clickCogwheel()
 	{
 		clickUsingJs(wheellocator);
 	}

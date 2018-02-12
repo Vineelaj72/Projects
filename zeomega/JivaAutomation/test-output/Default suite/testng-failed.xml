@@ -3,13 +3,12 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.jivaUAT2.testcases.Flow1">
+      <class name="com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="verify_MemberActiveStatus"/>
           <include name="verify_MemberDatafromfile_toScreen_ZU_60flow"/>
+          <include name="dataSetup"/>
         </methods>
-      </class> <!-- com.jivaUAT2.testcases.Flow1 -->
+      </class> <!-- com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

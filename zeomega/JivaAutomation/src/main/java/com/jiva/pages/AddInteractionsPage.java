@@ -66,7 +66,7 @@ public class AddInteractionsPage extends WebElements{
 	public void add2ndInteractionforMemberOptsOut(String Userprofilename) throws InterruptedException
 	{
 		
-		clickUsingJs(interactionstatussuccessfullocator);	//by default - no --------- doubt
+		clickUsingJs(interactionstatussuccessfullocator);	
 		clickUsingJs(enrollstatusunsuccessfullocator);
 		dropdownSelect(notenrolloutcomesreasonsdropdown,"Refused Services"); 
 		dropdownSelect(outreachoutcomesdropdown, "Closed");

@@ -35,9 +35,9 @@ public class ConfirmAddepisodePage extends WebElements {
 		clickUsingJs(cmlocator);
 		existingEpisodeAlert();
 	}
-	public void existingEpisodeAlert() throws InterruptedException
+	public void existingEpisodeAlert()
 	{
-		Thread.sleep(10000);
+		sleep(10000);
 		alertBox("A similar Episode has been added in the last 24 hrs.");
 	}
 	public String getmemberfullname()

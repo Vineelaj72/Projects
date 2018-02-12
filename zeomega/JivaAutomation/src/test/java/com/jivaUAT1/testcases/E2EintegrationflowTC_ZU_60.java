@@ -71,7 +71,7 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		// initialise browser and openurl
 		
 		driver = initializeDriver(BROWSER); 		
-		openurl(driver, AutomationURL);
+		openurl(driver, JivaUAT2URL);
 
 		// Login Page details
 
@@ -178,7 +178,7 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
 		Assert.assertEquals(true,episodeactivitiespage.verify_OpenorClosedInteractionRecordVisible(),"Open interaction available");
 		
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 1st interaction details
@@ -186,7 +186,7 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		AddInteractionsPage addInteractionsPage = new AddInteractionsPage(driver);
 		addInteractionsPage.add1stInteractionforUTC();
 		addInteractionsPage.clickSaveInteraction();
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 2nd interaction details
@@ -209,7 +209,7 @@ public class E2EintegrationflowTC_ZU_60 extends TestBase {
 		Assert.assertEquals(true, episodeactivitiespage.verify_OpenActivityRecordVisible(userprofilename),
 				"Review for Contact Open activity available");
 		
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickModifyActivity();
 		episodeactivitiespage.modifyActivityDetails();
 		episodeactivitiespage.clickClosedActivities();

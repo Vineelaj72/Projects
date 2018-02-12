@@ -1,4 +1,4 @@
-package JiavExceptions;
+package JivaExceptions;
 
 public class JivaExceptions extends AssertionError{
 	

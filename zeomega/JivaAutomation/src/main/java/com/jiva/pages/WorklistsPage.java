@@ -33,17 +33,12 @@ public class WorklistsPage extends WebElements {
 		enterText(memberlastNameLocator, lastname);
 		sleep(5000);
 		clickEnter(memberlastNameLocator);
-		//clickUsingJs(csssel);
-		// clickEnter(memberlastNameLocator);
 	}
 
 	public void enterFirstName(String firstname) {
 		enterText(memberFirstNameLocator, firstname);
 		sleep(5000);
 		clickEnter(memberFirstNameLocator);
-		//clickUsingJs(csssel);
-		// clickEnter(memberFirstNameLocator);
-
 	}
 
 	public void clickCM(String sLastname) {
@@ -69,10 +64,6 @@ public class WorklistsPage extends WebElements {
 	public void clickCCMreferral() {
 		clickUsingJs(ccmreferrallocator);
 	}
-
-	/*
-	 * public void clickCMepisode() { clickUsingJs(cmepisodelocator); }
-	 */
 
 	public void assigntoself() {
 		clickUsingJs(episodeassignlocator);

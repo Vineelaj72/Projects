@@ -28,17 +28,17 @@ public class MemberSearchPage extends WebElements{
 	{
 		clickUsingJs(advancedSearchlocator);
 	}
-	public void groupname(String group) throws InterruptedException
+	public void groupname(String group)
 	{
 		enterText(groupnamelocator, "Blue Advantage 001");
-		Thread.sleep(8000);
+		sleep(8000);
 		clickEnter(groupnamelocator);
 		
 	}
-	public void enterJivaId(String jivaid) throws InterruptedException
+	public void enterJivaId(String jivaid)
 	{
 		clickUsingJs(jivamemberidlocator);
-		Thread.sleep(3000);
+		sleep(3000);
 		enterText(jivamemberidlocator, jivaid);
 	}
 	public void clickMainSearch()
@@ -50,23 +50,22 @@ public class MemberSearchPage extends WebElements{
 	{
 		clickUsingJs(searchlocatorinadvancedsearch);
 	}
-	public void enterMemberLastname(String sLastname) throws InterruptedException
+	public void enterMemberLastname(String sLastname)
 	{
 		enterText(lastnamelocator, sLastname);
 		sleep(6000);
 		clickEnter(lastnamelocator);
 	}
-	public void enterMemberFirstname(String sFirstname) throws InterruptedException
+	public void enterMemberFirstname(String sFirstname)
 	{
 		enterText(firstnamelocator, sFirstname);
 		sleep(5000);
 		clickEnter(firstnamelocator);
 
 	}
-	public void enterMemberId(String smemberid) throws InterruptedException
+	public void enterMemberId(String smemberid)
 	{
 		enterText(memberidtextbox, smemberid);
 		sleep(3000);
-		//clickEnter(lastnamelocator);
 	}
 }

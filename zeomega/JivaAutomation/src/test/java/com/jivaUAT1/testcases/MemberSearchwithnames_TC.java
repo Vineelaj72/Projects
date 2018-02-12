@@ -27,7 +27,7 @@ public class MemberSearchwithnames_TC extends TestBase{
 		// initialise browser and openurl
 
 		driver = initializeDriver(BROWSER);
-		openurl(driver, AutomationURL);
+		openurl(driver, JivaUAT2URL);
 		maximizeBrowser(driver);
 	
 		// Login Page details

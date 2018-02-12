@@ -29,7 +29,7 @@ public class CreateCMepisodePage extends WebElements{
 	
 	
 	
-	public void addEpisodeDetails(String userProfileName) throws InterruptedException
+	public void addEpisodeDetails(String userProfileName)
 	{
 		dropdownSelect(episodestatusdd, "Referral");	
 		dropdownSelect(sourcedd, "Case Management");
@@ -49,11 +49,9 @@ public class CreateCMepisodePage extends WebElements{
 		
 	}
 	
-	public void clickSaveEpisode() throws InterruptedException  //doubt
+	public void clickSaveEpisode()
 	{
 		clickUsingJs(savebuttonlocator);
-		//duplicateCMEpisodeAlert();       // use this for duplicate episodes data
-		//clickUsingJs(cancelbuttonlocator);
 	}
 	public void clickSaveandContinueEpisode()
 	{
@@ -65,28 +63,24 @@ public class CreateCMepisodePage extends WebElements{
 		return isDisplayed(membersearchverifylocator);
 	}
 	
-	public void duplicateCMEpisodeAlert() throws InterruptedException
+	public void duplicateCMEpisodeAlert()
 	{
-		Thread.sleep(10000);
+		sleep(10000);
 		alertBox("Duplicate CM Episode");
 		clickUsingJs(cancelbuttonlocator);
 	}
 	
-	public void invalidEpisodeCoverageAlert() throws InterruptedException
+	public void invalidEpisodeCoverageAlert()
 	{
-		Thread.sleep(10000);
+		sleep(10000);
 		alertBox("Invalid Episode Coverage");
 	}
-	
-	
-	
 	
 	public boolean duplicateCM(String username)
 	{
 		By duplicateCM = By.xpath("//*[contains(text(),'Complex Case Management')]/../..//*[contains(text(),'"+username+"')]");
 		return isDisplayed(duplicateCM);
 	}
-	// if true - click cancel
-	// if not, enter episode details and click save
+	
 }
 

@@ -1,6 +1,5 @@
 package com.framework.utils;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -44,9 +43,8 @@ public class WebElements extends WaitForElements{
 	
 	public  List<WebElement> listofelements(By by)
 	{
-		//List<Web.findElements(by);
-		List<WebElement> el=driver.findElements(by);
-		return el;
+		List<WebElement> li=driver.findElements(by);
+		return li;
 	}
 	
 	public boolean isDisplayed(By locator) {
@@ -74,7 +72,7 @@ public class WebElements extends WaitForElements{
 	}
 
 	public void clickEnter(By locator) {
-
+		
 		driver.findElement(locator).sendKeys(Keys.ENTER);
 	}
 
@@ -82,10 +80,9 @@ public class WebElements extends WaitForElements{
 		try {
 			Alert alert = driver.switchTo().alert();
 
-			if ((alert.getText().contains(messageonalert))){
-				
+			if ((alert.getText().contains(messageonalert)))
+			{			
 				alert.accept();
-				logger.info("Alert Clicked");
 			}
 			else
 				System.out.println("Different alert");			
@@ -109,13 +106,12 @@ public class WebElements extends WaitForElements{
 		WebElement element = null;
 				element = driver.findElement(locator);
 				attributeValue.add(element.getAttribute("className"));
-				attributeValue.add( element.getAttribute("value"));
+				attributeValue.add(element.getAttribute("value"));
 				attributeValue.add(element.getAttribute("innerHTML"));
 				attributeValue.add(element.getAttribute("outerHTML"));		
 				attributeValue.add(element.getAttribute("innerText"));
 				attributeValue.add(element.getAttribute("text"));
-				attributeValue.add(element.getAttribute("textContent"));
-	
+				attributeValue.add(element.getAttribute("textContent"));	
 			logger.info("Attribute Value" + attributeValue);
 		return attributeValue.toString();
 

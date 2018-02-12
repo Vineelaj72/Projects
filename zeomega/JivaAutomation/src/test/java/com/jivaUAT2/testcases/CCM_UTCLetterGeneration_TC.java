@@ -76,7 +76,7 @@ public class CCM_UTCLetterGeneration_TC extends TestBase {
 		// initialise browser and openurl
 		
 		driver = initializeDriver(BROWSER); 		
-		openurl(driver, AutomationURL);
+		openurl(driver, JivaUAT2URL);
 
 		// Login Page details
 
@@ -187,7 +187,7 @@ public class CCM_UTCLetterGeneration_TC extends TestBase {
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
 		Assert.assertEquals(true,episodeactivitiespage.verify_OpenInteractionRecordVisible(userprofilename),"Open interaction available");
 		
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 1st interaction details
@@ -195,7 +195,7 @@ public class CCM_UTCLetterGeneration_TC extends TestBase {
 		AddInteractionsPage addInteractionsPage = new AddInteractionsPage(driver);
 		addInteractionsPage.add1stInteractionforUTC();
 		addInteractionsPage.clickSaveInteraction();
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
 		// Add 2nd interaction details
@@ -218,7 +218,7 @@ public class CCM_UTCLetterGeneration_TC extends TestBase {
 		Assert.assertEquals(true, episodeactivitiespage.verify_OpenActivityRecordVisible(userprofilename),
 				"Review for Contact Open activity available");
 		
-		episodeactivitiespage.clickWheel();
+		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickModifyActivity();
 		episodeactivitiespage.modifyActivityDetails();
 		episodeactivitiespage.clickClosedActivities();
