@@ -8,6 +8,7 @@ import org.testng.annotations.Parameters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -36,60 +37,50 @@ public class Flow1 extends TestBase {
 	private WebDriver driver;
 	private String sTestcaseName = null;
 	
-	private ArrayList<String> MemberDemographicData;
-	//int ENROLLMENTID=0,ALTERNATEID=1,LASTNAME=2,FIRSTNAME=3,DOB=4,ACTIVESTATUS=5,GENDER=6;	
-	
 	private int lineNumber=1;
-	
+	private ArrayList<String> MemberDemographicData;
 	private ArrayList<String> MemberAddressData;
-	//int ADDR_ENROLLMENTID=0,HOME_ADDRESSTYPE=1,HOME_ADDRESS1=2,HOME_CITY=3,HOME_STATE=4,HOME_ZIP=5,HOME_COUNTRY=6;
-	//int PRIMARY_ADDRESSTYPE=8,PRIMARY_ADDRESS1=9,PRIMARY_CITY=10,PRIMARY_STATE=11,PRIMARY_ZIP=12,PRIMARY_COUNTRY=13;
-
-	
 	private ArrayList<String> MemberPhoneData;
-	//int PHN_ENROLLMENTID=0,PHONENUMBER=1;
-	
-	private ArrayList<String> MemberCoverageData;
-	//int CVRG_ENROLLMENTID=0;	
+	private ArrayList<String> MemberCoverageData;	
 	
 	private MemberOverviewPage memberOverviewPage=null;
 	private String sUSERPROFILENAME=null;
 	
 	
 //	@Parameters({"linenumber"})
-	@BeforeMethod
-		public void verify_MemberActiveStatus(/*String linenumber*/) throws IOException, InterruptedException {
-			
-		MemberDemographicData =DemographicFileInput.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME,lineNumber/*Integer.parseInt(linenumber)*/);   // demographic file
-		logger.info("Member Demographic File Data "+MemberDemographicData);
-		
-		MemberAddressData = AddressFileInput.addressFileCode(MEMBERADDRESSFILENAME, MemberDemographicData.get(ENROLLMENTID));  //Address File
-		logger.info("Member Address File Data "+MemberAddressData);	
-		
-		MemberPhoneData = PhoneFileInput.phoneFileCode(MEMBERPHONEFILENAME,MemberDemographicData.get(ENROLLMENTID));   //Phone file
-		logger.info("Member Phone File Data "+MemberPhoneData);
-		
-		MemberCoverageData = CoverageFileInput.coverageFileCode(MEMBERCOVERAGEFILENAME,MemberDemographicData.get(ENROLLMENTID));  //Coverage File
-		logger.info("Member Coverage File Data "+MemberCoverageData);
-		
+	@BeforeMethod(description = "Read the Member data files and perform Member Search with Member ID")
+		public void verify_MemberSearch(/*String linenumber*/) throws IOException, InterruptedException {
 		
 		sTestcaseName = new Object() {}.getClass().getEnclosingMethod().getName();
-		logger.info("Execution started for--- " + sTestcaseName);
+		logger.info("Execution started for --- " + sTestcaseName);		
 		
-		// initialise browser and openurl
+		// ----- Member Demographic file data -----
+		MemberDemographicData =DemographicFileInput.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME,lineNumber/*Integer.parseInt(linenumber)*/);   
+		logger.info("Member Demographic File Data "+MemberDemographicData);
 		
+		// ----- Member Address file data -----
+		MemberAddressData = AddressFileInput.addressFileCode(MEMBERADDRESSFILENAME, MemberDemographicData.get(ENROLLMENTID)); 
+		logger.info("Member Address File Data "+MemberAddressData);	
+		
+		// ----- Member Phone file data -----
+		MemberPhoneData = PhoneFileInput.phoneFileCode(MEMBERPHONEFILENAME,MemberDemographicData.get(ENROLLMENTID));  
+		logger.info("Member Phone File Data "+MemberPhoneData);
+		
+		// ----- Member Coverage file data -----
+		MemberCoverageData = CoverageFileInput.coverageFileCode(MEMBERCOVERAGEFILENAME,MemberDemographicData.get(ENROLLMENTID));  
+		logger.info("Member Coverage File Data "+MemberCoverageData);
+				
+		// ----- Initialize browser and open the application url	-----
 		driver = initializeDriver(BROWSER); 		
 		openurl(driver, JivaUAT2URL);
 
-		// Login Page details
-
+		// ----- Enter the Login details -----
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.enterUsername(USERNAME);
 		loginPage.enterPassword(PASSWORD);
 		loginPage.loginbutton();
 		
-	
-
+		// ----- Capture User profile name and Member name details -----
 		Dashboard dashboard = new Dashboard(driver);
 		Assert.assertEquals(true, dashboard.verifyDashboardDisplayed(), "Logged in Sucessfully");
 		sUSERPROFILENAME = dashboard.getuserprofilename();
@@ -98,66 +89,56 @@ public class Flow1 extends TestBase {
 		logger.info("User Last name " + UserFullname[0]);
 		logger.info("User First name " + UserFullname[1]);
 		logger.info("Member Last name "+MemberDemographicData.get(LASTNAME));
-		logger.info("Member First name "+MemberDemographicData.get(FIRSTNAME));		
+		logger.info("Member First name "+MemberDemographicData.get(FIRSTNAME));			
+		
+		// ----- Perform Member Search with Member ID -----
 		dashboard.clickMenu();
-		dashboard.clickMemberSearch();
-		
-		// MemberSearch Page details
-		
+		dashboard.clickMemberSearch();		
 		MemberSearchPage memberSearchPage = new MemberSearchPage(driver);
-		memberSearchPage.enterMemberId(MemberDemographicData.get(ALTERNATEID));
-		
+		memberSearchPage.enterMemberId(MemberDemographicData.get(ALTERNATEID));				
 		memberSearchPage.clickMainSearch();
 		
-				
-		
 	}
-	
-	
+		
 	
 	@Test(description = "Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member")
-	public void verify_MemberDatafromfile_toScreen_ZU_60flow() throws InterruptedException {
+	public void verify_MemberData_fromfile_toScreen_ZU_60Integrationflow() throws InterruptedException {
 		
+		sTestcaseName = new Object() {}.getClass().getEnclosingMethod().getName();
+		logger.info("Execution started for --- " + sTestcaseName);		
+		
+		// ----- Verify the person availability and continue -----
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
-		confirmAddepisodePage.clickRedirecttoMCV();
-		
-		By grayMemberBanner= By.xpath(".//*[@id='angularcontent']//div[contains(@class,'4d4d4d')]");
-		
-		
-		
+		confirmAddepisodePage.clickRedirecttoMCV();			
 		memberOverviewPage = new MemberOverviewPage(driver);	
 		memberOverviewPage.sleep(3000);
-		memberOverviewPage.expandMemberInfo();	
-		
+		memberOverviewPage.expandMemberInfo();			
+		By grayMemberBanner= By.xpath(".//*[@id='angularcontent']//div[contains(@class,'4d4d4d')]");	
 		if(confirmAddepisodePage.isDisplayed(grayMemberBanner))
 			Assert.assertFalse(true, "The person is deceased");
 		else
 			Assert.assertTrue(true, "The person is Alive and happy");
 		
-		
+		// ----- Verify the file data with screen data -----
 		String clientname = memberOverviewPage.getClientName();
 		logger.info("Verifying the flow for the Client : "+clientname);
 		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
-		//Assert.assertEquals(MemberDemographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against demographic file");
 		Assert.assertEquals(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against address file");
-		Assert.assertEquals(MemberPhoneData.get(PHN_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Member Phone file");
-		Assert.assertEquals(MemberPhoneData.get(PHONENUMBER), memberOverviewPage.getPhoneNumber(), "Member Phone Number validated against Member Phone file");
 		Assert.assertEquals(MemberCoverageData.get(CVRG_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Coverage file");
 		
-
+		Assert.assertEquals(MemberPhoneData.get(PHN_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Member Phone file");
+		Assert.assertEquals(MemberPhoneData.get(PHONENUMBER), memberOverviewPage.getPhoneNumber(), "Member Phone Number validated against Member Phone file");		
+		
 		//MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
 		memberOverviewPage.openMemberInformation();
-		memberOverviewPage.sleep(5000);		
-		
+		memberOverviewPage.sleep(5000);			
 		Assert.assertEquals(MemberDemographicData.get(LASTNAME), memberOverviewPage.getMemberLastName(), "Member last name validated");
 		Assert.assertEquals(MemberDemographicData.get(FIRSTNAME), memberOverviewPage.getMemberFirstName(), "Member first name validated");			
 		Assert.assertEquals(MemberDemographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");
 		Assert.assertEquals(true,memberOverviewPage.getGender().contains(MemberDemographicData.get(GENDER)),"Member gender validated");		
-		logger.info("Member DOB on screen "+memberOverviewPage.getMemberDOB());
 		String DOBonscreen[] = memberOverviewPage.getMemberDOB().split("/");
 		String DOBinFileFormat = DOBonscreen[2]+"-"+DOBonscreen[0]+"-"+DOBonscreen[1];	
-		logger.info("Member DOB on screen changed to File format "+DOBinFileFormat);		
-		Assert.assertEquals(MemberDemographicData.get(DOB),DOBinFileFormat,"Member DOB validated");  			
+		Assert.assertEquals(MemberDemographicData.get(DOB),DOBinFileFormat,"Member DOB validated");  
 		
 		Assert.assertEquals(MemberAddressData.get(HOME_ADDRESSTYPE).toUpperCase(),memberOverviewPage.getHomeAddressType(),"Home Address type validated");		
 		Assert.assertEquals(MemberAddressData.get(HOME_ADDRESS1),memberOverviewPage.getHomeAddressline1(),"Home Address line 1 validated");		
@@ -180,7 +161,7 @@ public class Flow1 extends TestBase {
 		
 		//memberOverviewPage.deActivate();
 		
-				
+		// ----- Create Case Management Episode -----
 		memberOverviewPage.clickAddEpisode();
 		memberOverviewPage.clickCaseManagement();
 		memberOverviewPage.similarEpisodeAlert();
@@ -193,95 +174,87 @@ public class Flow1 extends TestBase {
 		logger.info("Verified creation of episode successfully");
 		
 		//memberOverviewPage.clickMemberOverview();
+		
 
-		// Worklists page details
-
-		WorklistsPage worklists = new WorklistsPage(driver);				
+		// ----- Verify Activity added -----		
 		memberOverviewPage.clickCurrentEpisodecogwheel();
 		memberOverviewPage.openEpisode();			
-		//worklists.assigntoself();  -- assign to self if it is not assigned to you
-
-		// Episode overview Page details
-		
 		Episodeoverviewpage episodeoverviewpage = new Episodeoverviewpage(driver);
 		Assert.assertEquals(episodeoverviewpage.verifyactivityAdded(), "Verbal consent to be received",
 				"Activity Added to the list");
 		episodeoverviewpage.openActivities();
 
-		// Episode activities Page details
-
+		// ----- Enter Interaction details -----
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
-		Assert.assertEquals(true,episodeactivitiespage.verify_OpenInteractionRecordVisible(sUSERPROFILENAME),"Open interaction available");
-		
+		Assert.assertEquals(true,episodeactivitiespage.verify_OpenInteractionRecordVisible(sUSERPROFILENAME),"Open interaction available");		
 		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
-		// Add 1st interaction details
-		
+		// ----- Add 1st interaction details -----		
 		AddInteractionsPage addInteractionsPage = new AddInteractionsPage(driver);
 		addInteractionsPage.add1stInteractionforUTC();
 		addInteractionsPage.clickSaveInteraction();
 		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
 
-		// Add 2nd interaction details
+		// ----- Add 2nd interaction details -----	
 		episodeactivitiespage.sleep(5000);
 		addInteractionsPage.add2ndInteractionforUTC();
 		addInteractionsPage.clickSaveInteraction();
 		episodeactivitiespage.clickClosedActivities();
 		Assert.assertEquals(true,episodeactivitiespage.verify_ClosedInteractionRecordVisible(sUSERPROFILENAME),"Closed interaction available");
 		
-		
+		// ----- Verify UTC letter generation -----	
 		episodeactivitiespage.clickCM();
 		episodeactivitiespage.sleep(10000);
 		episodeoverviewpage.openCorrespondence();
 		Assert.assertEquals(true,episodeoverviewpage.verify_UTCletterGenerated(sUSERPROFILENAME),"UTC letter generated");
 		
+		// ----- Verify Activity Added and Closed -----	
 		episodeoverviewpage.clickWorkflow();
 		episodeoverviewpage.clickActivities();
 		episodeactivitiespage.clickAddActivity();
 		episodeactivitiespage.enterActivityDetails();		
 		Assert.assertEquals(true, episodeactivitiespage.verify_OpenActivityRecordVisible(sUSERPROFILENAME),
-				"Review for Contact Open activity available");
-		
+				"Review for Contact Open activity available");		
 		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickModifyActivity();
 		episodeactivitiespage.modifyActivityDetails();
-		episodeactivitiespage.clickClosedActivities();
-		
+		episodeactivitiespage.clickClosedActivities();		
 		Assert.assertEquals(true, episodeactivitiespage.verify_ClosedActivityRecordVisible(sUSERPROFILENAME),
 				"Review for Contact Closed activity available");
 		
+		// ----- Verify Episode Status Closed -----	
 		episodeoverviewpage.clickWorkflow();
-		episodeoverviewpage.clickChangeStatus();
-		
-		// Change status page details
-		
+		episodeoverviewpage.clickChangeStatus();		
 		ChangeStatusPage changeStatusPage = new ChangeStatusPage(driver);
-		changeStatusPage.changeStatusDetails();
-		
+		changeStatusPage.changeStatusDetails();		
 		Assert.assertEquals(true, episodeactivitiespage.verifyEpisodeStatus_Closed(sUSERPROFILENAME),
 				"Closed episode successfully");
 		
+		// ----- Verify Program Status Closed -----	
 		episodeoverviewpage.clickWorkflow();
-		episodeoverviewpage.clickPrograms();
-		
+		episodeoverviewpage.clickPrograms();		
 		ProgramsPage programsPage = new ProgramsPage(driver);		
 		Assert.assertEquals(true, programsPage.verify_ProgramClosed(),"Program is closed successfully");
 		
 		logger.info("Successfully completed validating member files integration flow of ZU-60_Unable to reach member");
 		
-		
+		/*
 		programsPage.clickMemberOverview();
 		memberOverviewPage.clickCurrentEpisodecogwheel();
-		memberOverviewPage.performDeactivateEpisode();		
+		memberOverviewPage.performDeactivateEpisode();		*/
 
 	}
 	
-	@AfterMethod
+	
+	@AfterMethod(description = "Close the browser")
 	public void closeBrowser()
 	{
-		// Closing the browser
+		sTestcaseName = new Object() {}.getClass().getEnclosingMethod().getName();
+		logger.info("Execution started for --- " + sTestcaseName);
+		
+		// ----- Close the browser -----
 		closeBrowser(driver);
 	}
 	

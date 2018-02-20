@@ -1,0 +1,48 @@
+2018-02-20 14:26:00,216 [main] INFO  com.jivaUAT2.testcases.Flow1 - Execution started for --- verify_MemberSearch
+2018-02-20 14:26:00,223 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
+2018-02-20 14:26:00,247 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
+2018-02-20 14:26:00,252 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Phone File Data [000003048^EHI0NA, 6189396858]
+2018-02-20 14:26:00,304 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
+2018-02-20 14:26:11,435 [main] INFO  com.jivaUAT2.testcases.Flow1 - User Profile Name is Jayavarapu, Vineela
+2018-02-20 14:26:11,436 [main] INFO  com.jivaUAT2.testcases.Flow1 - User Last name Jayavarapu
+2018-02-20 14:26:11,436 [main] INFO  com.jivaUAT2.testcases.Flow1 - User First name  Vineela
+2018-02-20 14:26:11,436 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Last name Carr
+2018-02-20 14:26:11,436 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member First name Thomas
+2018-02-20 14:26:15,450 [main] INFO  com.jivaUAT2.testcases.Flow1 - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-02-20 14:27:18,820 [main] INFO  com.jivaUAT2.testcases.Flow1 - Verifying the flow for the Client : EHI
+2018-02-20 14:27:18,850 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003048^EHI0NA
+2018-02-20 14:27:18,885 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003048^EHI0NA
+2018-02-20 14:27:18,919 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003048^EHI0NA
+2018-02-20 14:27:18,953 [main] INFO  com.jiva.pages.MemberOverviewPage - 000003048^EHI0NA
+2018-02-20 14:28:01,589 [main] INFO  com.jivaUAT2.testcases.Flow1 - Verified creation of episode successfully
+2018-02-20 14:28:02,807 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-02-20 14:28:14,266 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-02-20 14:28:24,719 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-02-20 14:28:31,390 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
+2018-02-20 14:28:32,179 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
+2018-02-20 14:28:33,752 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
+2018-02-20 14:28:34,128 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-02-20 14:28:34,151 [main] INFO  com.jivaUAT2.testcases.Flow1 - Successfully completed validating member files integration flow of ZU-60_Unable to reach member
+2018-02-20 14:28:34,156 [main] INFO  com.jivaUAT2.testcases.Flow1 - Execution started for --- closeBrowser
+2018-02-20 14:30:20,790 [main] INFO  com.jivaUAT2.testcases.Flow1 - Execution started for --- verify_MemberSearch
+2018-02-20 14:30:20,795 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
+2018-02-20 14:30:20,821 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
+2018-02-20 14:30:20,828 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Phone File Data [000003048^EHI0NA, 6189396858]
+2018-02-20 14:30:20,880 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
+2018-02-20 14:30:32,290 [main] INFO  com.jivaUAT2.testcases.Flow1 - User Profile Name is Jayavarapu, Vineela
+2018-02-20 14:30:32,291 [main] INFO  com.jivaUAT2.testcases.Flow1 - User Last name Jayavarapu
+2018-02-20 14:30:32,291 [main] INFO  com.jivaUAT2.testcases.Flow1 - User First name  Vineela
+2018-02-20 14:30:32,291 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member Last name Carr
+2018-02-20 14:30:32,291 [main] INFO  com.jivaUAT2.testcases.Flow1 - Member First name Thomas
+2018-02-20 14:30:36,485 [main] INFO  com.jivaUAT2.testcases.Flow1 - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-02-20 14:31:39,858 [main] INFO  com.jivaUAT2.testcases.Flow1 - Verifying the flow for the Client : EHI
+2018-02-20 14:32:22,580 [main] INFO  com.jivaUAT2.testcases.Flow1 - Verified creation of episode successfully
+2018-02-20 14:32:23,743 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-02-20 14:32:35,245 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-02-20 14:32:45,663 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-02-20 14:32:52,297 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
+2018-02-20 14:32:53,147 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
+2018-02-20 14:32:54,437 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
+2018-02-20 14:32:54,807 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-02-20 14:32:54,825 [main] INFO  com.jivaUAT2.testcases.Flow1 - Successfully completed validating member files integration flow of ZU-60_Unable to reach member
+2018-02-20 14:32:54,828 [main] INFO  com.jivaUAT2.testcases.Flow1 - Execution started for --- closeBrowser

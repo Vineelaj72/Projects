@@ -11,16 +11,12 @@
       <![CDATA[Login Button Clicked]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="106733" started-at="2018-02-12T21:40:29Z" finished-at="2018-02-12T21:42:16Z">
+  <suite name="Default suite" duration-ms="154782" started-at="2018-02-20T20:30:20Z" finished-at="2018-02-20T20:32:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="106733" started-at="2018-02-12T21:40:29Z" finished-at="2018-02-12T21:42:16Z">
-      <class name="com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC">
-        <test-method status="PASS" signature="dataSetup()[pri:0, instance:com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC@694e1548]" name="dataSetup" is-config="true" duration-ms="100" started-at="2018-02-12T15:40:29Z" finished-at="2018-02-12T15:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataSetup -->
-        <test-method status="PASS" signature="verify_MemberDatafromfile_toScreen_ZU_60flow()[pri:0, instance:com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC@694e1548]" name="verify_MemberDatafromfile_toScreen_ZU_60flow" duration-ms="106629" started-at="2018-02-12T15:40:29Z" description="Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member" finished-at="2018-02-12T15:42:16Z">
+    <test name="Default test" duration-ms="154782" started-at="2018-02-20T20:30:20Z" finished-at="2018-02-20T20:32:55Z">
+      <class name="com.jivaUAT2.testcases.Flow1">
+        <test-method status="PASS" signature="verify_MemberSearch()[pri:0, instance:com.jivaUAT2.testcases.Flow1@1c3a4799]" name="verify_MemberSearch" is-config="true" duration-ms="15694" started-at="2018-02-20T14:30:20Z" description="Read the Member data files and perform Member Search with Member ID" finished-at="2018-02-20T14:30:36Z">
           <reporter-output>
             <line>
               <![CDATA[Username Enteredvjayavarapu]]>
@@ -32,8 +28,16 @@
               <![CDATA[Login Button Clicked]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verify_MemberDatafromfile_toScreen_ZU_60flow -->
-      </class> <!-- com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC -->
+        </test-method> <!-- verify_MemberSearch -->
+        <test-method status="PASS" signature="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow()[pri:0, instance:com.jivaUAT2.testcases.Flow1@1c3a4799]" name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow" duration-ms="138348" started-at="2018-02-20T14:30:36Z" description="Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member" finished-at="2018-02-20T14:32:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.jivaUAT2.testcases.Flow1@1c3a4799]" name="closeBrowser" is-config="true" duration-ms="721" started-at="2018-02-20T14:32:54Z" description="Close the browser" finished-at="2018-02-20T14:32:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.jivaUAT2.testcases.Flow1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

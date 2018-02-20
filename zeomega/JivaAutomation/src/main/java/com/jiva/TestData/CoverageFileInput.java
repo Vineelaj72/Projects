@@ -16,7 +16,7 @@ private static Logger logger = Logger.getLogger(CoverageFileInput.class);
 	public static ArrayList<String> coverageFileCode(String sFileName,String enrollID) {
 		  BufferedReader br = null;
 		  FileReader fr = null;
-		  ArrayList<String> demovalue = new ArrayList<String>();
+		  ArrayList<String> coveragevalue = new ArrayList<String>();
 		  ArrayList<String> fileValue = new ArrayList<String>();
 		  try {
 		   fr = new FileReader(sFileName);
@@ -24,15 +24,13 @@ private static Logger logger = Logger.getLogger(CoverageFileInput.class);
 		   String sCurrentLine;
 		   while ((sCurrentLine = br.readLine()) != null) {
 		    for (int j = 0; j < sCurrentLine.split("\\|", -1).length; j++) {
-		     demovalue.add(sCurrentLine.split("\\|", -1)[j]);
+		     coveragevalue.add(sCurrentLine.split("\\|", -1)[j]);
 		    }
 		   }
-		     for (int k = 0; k < demovalue.size(); k++) {
-		    //  System.out.println("@@"+k+"--"+demovalue.get(k)); // to print all the values in the file.
-		      if (demovalue.get(k).equals(enrollID)) {
-		    	 // logger.info("j value is" + k);
-		       fileValue.add(demovalue.get(k));
-		       		      
+		     for (int k = 0; k < coveragevalue.size(); k++) {
+		    	 
+		      if (coveragevalue.get(k).equals(enrollID)) {		    
+		       fileValue.add(coveragevalue.get(k));		       		      
 		      }
 		     }
 		  } catch (IOException e) {
@@ -43,8 +41,7 @@ private static Logger logger = Logger.getLogger(CoverageFileInput.class);
 
 	public static void main(String[] args) {
 		
-		String coverageFile=Setup.MEMBERCOVERAGEFILENAME;
-		
+		String coverageFile=Setup.MEMBERCOVERAGEFILENAME;		
 		System.out.println(PhoneFileInput.phoneFileCode(coverageFile,"000000275^EHI0NA"));
 	}
 }

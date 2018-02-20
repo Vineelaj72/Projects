@@ -204,6 +204,7 @@ public class ZU_60_Integration_HappyPath_TC extends TestBase {
 		episodeactivitiespage.sleep(10000);
 		episodeoverviewpage.openCorrespondence();
 		Assert.assertEquals(true,episodeoverviewpage.verify_UTCletterGenerated(userprofilename),"UTC letter generated");
+		episodeoverviewpage.sleep(5000);
 		
 		episodeoverviewpage.clickWorkflow();
 		episodeoverviewpage.clickActivities();

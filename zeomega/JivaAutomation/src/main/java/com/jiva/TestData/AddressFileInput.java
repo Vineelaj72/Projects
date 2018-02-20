@@ -16,7 +16,7 @@ public class AddressFileInput {
 	public static ArrayList<String> addressFileCode(String sFileName,String enrollID) {
 		  BufferedReader br = null;
 		  FileReader fr = null;
-		  ArrayList<String> demovalue = new ArrayList<String>();
+		  ArrayList<String> addressvalue = new ArrayList<String>();
 		  ArrayList<String> fileValue = new ArrayList<String>();
 		  try {
 		   fr = new FileReader(sFileName);
@@ -24,21 +24,19 @@ public class AddressFileInput {
 		   String sCurrentLine;
 		   while ((sCurrentLine = br.readLine()) != null) {
 		    for (int j = 0; j < sCurrentLine.split("\\|", -1).length; j++) {
-		     demovalue.add(sCurrentLine.split("\\|", -1)[j]);
+		     addressvalue.add(sCurrentLine.split("\\|", -1)[j]);
 		    }
 		   }
-		     for (int k = 0; k < demovalue.size(); k++) {
-		    //  System.out.println("@@"+k+"--"+demovalue.get(k)); // to print all the values in the file.
-		      if (demovalue.get(k).equals(enrollID)) {
-		    	//  logger.info("j value is" + k);
-		       fileValue.add(demovalue.get(k));
-		       fileValue.add(demovalue.get(k+1));
-		       fileValue.add(demovalue.get(k+2));
-		       fileValue.add(demovalue.get(k+4));
-		       fileValue.add(demovalue.get(k+5));
-		       fileValue.add(demovalue.get(k+6));
-		       fileValue.add(demovalue.get(k+7));
-		     	 
+		     for (int k = 0; k < addressvalue.size(); k++) {		   
+		    	 
+		      if (addressvalue.get(k).equals(enrollID)) {		 
+		       fileValue.add(addressvalue.get(k));
+		       fileValue.add(addressvalue.get(k+1));
+		       fileValue.add(addressvalue.get(k+2));
+		       fileValue.add(addressvalue.get(k+4));
+		       fileValue.add(addressvalue.get(k+5));
+		       fileValue.add(addressvalue.get(k+6));
+		       fileValue.add(addressvalue.get(k+7));		     	 
 		      }
 		     }
 		  } catch (IOException e) {
@@ -49,8 +47,7 @@ public class AddressFileInput {
 
 	public static void main(String[] args) {
 		
-		String Addressfile=Setup.MEMBERADDRESSFILENAME;
-		
+		String Addressfile=Setup.MEMBERADDRESSFILENAME;		
 		System.out.println(AddressFileInput.addressFileCode(Addressfile, "000000877^EHI0NA"));
 	}
 }

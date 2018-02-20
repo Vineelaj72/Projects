@@ -217,7 +217,6 @@ public class MemberOverviewPage extends WebElements {
 	}
 	public String getCoverageId()
 	{
-			logger.info(getText(coverageidlocator));
 			return getText(coverageidlocator);
 	}
 	public String getPhoneNumber()

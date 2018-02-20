@@ -16,7 +16,7 @@ public class PhoneFileInput {
 	public static ArrayList<String> phoneFileCode(String sFileName,String enrollID) {
 		  BufferedReader br = null;
 		  FileReader fr = null;
-		  ArrayList<String> demovalue = new ArrayList<String>();
+		  ArrayList<String> phonevalue = new ArrayList<String>();
 		  ArrayList<String> fileValue = new ArrayList<String>();
 		  try {
 		   fr = new FileReader(sFileName);
@@ -24,15 +24,15 @@ public class PhoneFileInput {
 		   String sCurrentLine;
 		   while ((sCurrentLine = br.readLine()) != null) {
 		    for (int j = 0; j < sCurrentLine.split("\\|", -1).length; j++) {
-		     demovalue.add(sCurrentLine.split("\\|", -1)[j]);
+		     phonevalue.add(sCurrentLine.split("\\|", -1)[j]);
 		    }
 		   }
-		     for (int k = 0; k < demovalue.size(); k++) {
-		    //  System.out.println("@@"+k+"--"+demovalue.get(k)); // to print all the values in the file.
-		      if (demovalue.get(k).equals(enrollID)) {
-		    	  //logger.info("j value is" + k);
-		       fileValue.add(demovalue.get(k));
-		       fileValue.add(demovalue.get(k+2));
+		     for (int k = 0; k < phonevalue.size(); k++) {
+		    	 
+		      if (phonevalue.get(k).equals(enrollID)) {
+		    	 
+		       fileValue.add(phonevalue.get(k));
+		       fileValue.add(phonevalue.get(k+2));
 		      
 		      }
 		     }
@@ -44,8 +44,7 @@ public class PhoneFileInput {
 
 	public static void main(String[] args) {
 		
-		String phoneFile=Setup.MEMBERPHONEFILENAME;
-		
+		String phoneFile=Setup.MEMBERPHONEFILENAME;		
 		System.out.println(PhoneFileInput.phoneFileCode(phoneFile,"000000877^EHI0NA"));
 	}
 }

@@ -27,8 +27,7 @@ public class DemographicFileInput {
 							fileValue.add(currentLine[j+5]);
 							fileValue.add(currentLine[j+11]);
 							fileValue.add(currentLine[j+21]);
-							fileValue.add(currentLine[j+16]);
-							
+							fileValue.add(currentLine[j+16]);							
 					}
 				}
 
@@ -49,13 +48,13 @@ public class DemographicFileInput {
 			String sCurrentLine;
 			while ((sCurrentLine = br.readLine()) != null)
 				{
-					for (int j = 0; j < sCurrentLine.split("\\|", -1).length; j++)  //regular expression
+					for (int j = 0; j < sCurrentLine.split("\\|", -1).length; j++)  
 					{
 						demovalue.add(sCurrentLine.split("\\|", -1)[j]);
 					}
 				}
 					for (int j = 0; j < demovalue.size(); j++) {
-						//System.out.println("j--" + j + "--" + demovalue.get(j));
+						
 						if(demovalue.get(j).contains("^"))
 						{
 							fileValue.add(demovalue.get(j));
@@ -77,7 +76,6 @@ public class DemographicFileInput {
 
 	public static void main(String[] args) throws IOException {
 		String FILENAME = "C:/Users/vjayavarapu/Reference Docs/Jiva Input files/20171114/jiva-eligibility-demographics_20171114_171337~20171114_091506616~.txt";
-	//	ReadMemberDemographicFile files = new ReadMemberDemographicFile();
 		ArrayList<String> mandatoryData =DemographicFileInput.mandatoryCheckPoints(FILENAME,3);
 		System.out.println(mandatoryData);
 		System.out.println(mandatoryData.size());
