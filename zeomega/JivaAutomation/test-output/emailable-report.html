@@ -1,18 +1,58 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-<title>TestNG Report</title>
-<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
 </head>
 <body>
-<table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">154,782</td><td></td><td></td></tr>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">ZU_60_TC01_Line 1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">36.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.jivaUAT2.testcases.Flow1</td><td><a href="#m0">verify_MemberData_fromfile_toScreen_ZU_60Integrationflow</a></td><td rowspan="1">1519158636478</td><td rowspan="1">138348</td></tr></tbody>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">ZU_60_TC01_Line 1 &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC</td><td><a href="#m1"><b>verify_MemberData_fromfile_toScreen_ZU_60Integrationflow</b>  ("Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member")</a></td><td class="numi">1</td><td>1519609514808</td><td class="numi">13700</td></tr>
 </table>
-<h2>Default test</h2><h3 id="m0">com.jivaUAT2.testcases.Flow1#verify_MemberData_fromfile_toScreen_ZU_60Integrationflow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-</body>
-</html>
+<h1>ZU_60_TC01_Line 1</h1>
+<h2 id="m1">com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC:verify_MemberData_fromfile_toScreen_ZU_60Integrationflow</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+Expected-000003048^EHI0NA--Actual Result-000003048^EHI0NAMember Coverage ID validated against address file<br><br/>
+<font color='red'>Expected: 000003048^EHI0NA Actual: EHINot equal </font><br/>
+<h3>Failure</h3>
+<p>Member Coverage ID validated against address file expected [EHI] but found [000003048^EHI0NA]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC.customReport(ZU_60_E2EIntegrationFlow_TC.java:116)
+<br/>at com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC.verify_MemberData_fromfile_toScreen_ZU_60Integrationflow(ZU_60_E2EIntegrationFlow_TC.java:150)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

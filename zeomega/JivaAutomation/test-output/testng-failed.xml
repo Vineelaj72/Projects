@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Sanity Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="ZU_60_TC01_Line 1(failed)">
     <classes>
-      <class name="com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC">
+      <class name="com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC">
         <methods>
-          <include name="verify_MemberDatafromfile_toScreen_ZU_60flow"/>
-          <include name="dataSetup"/>
+          <include name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow"/>
+          <include name="verify_MemberSearch"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.jivaUAT2.testcases.ZU_60_Integration_HappyPath_TC -->
+      </class> <!-- com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- ZU_60_TC01_Line 1(failed) -->
+</suite> <!-- Failed suite [Sanity Suite] -->

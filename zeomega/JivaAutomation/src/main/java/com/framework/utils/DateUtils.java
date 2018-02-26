@@ -37,6 +37,9 @@ public class DateUtils {
 	public static void main(String[] args) throws Exception {
 		System.out.println(DateUtils.dd_mm_yyyy_currentDate());
 		System.out.println("Future date " + DateUtils.dateFormatbyFutureDate());
+		System.out.println("Current date " + DateUtils.dd_mm_yyyy_currentDate());
+		System.out.println("today " + DateUtils.today());
+		System.out.println("yesterday " + DateUtils.yesterday());
 	}
 	
 	public static Date today() {

@@ -1,0 +1,669 @@
+ENROLL_ID|ADDRESS_TYPE_CD|ADDRESS1|ADDRESS2|CITY|STATE_CD|ZIP|COUNTRY_CD|COUNTY|PREFERRED_ADDR_FLAG|RECORD_ACTIVE
+000003048^EHI0NA|Home|4105 State Rte. 156||Waterloo|IL|62298|USA|Monroe|N|Y
+000003048^EHI0NA|Primary|4512 Fountain Brook Dr.||Waterloo|IL|62298|USA|Monroe|Y|Y
+000003433^EHI0NA|Home|204 E. Jefferson St.||Columbia|IL|62236|USA|Monroe|N|Y
+000003433^EHI0NA|Primary|204 E. Jefferson St.||Columbia|IL|62236|USA|Monroe|Y|Y
+000003502^EHI0NA|Home|6926 Julian Ave.||Saint Louis|MO|63130|USA|St Louis|N|Y
+000003502^EHI0NA|Primary|6926 Julian Ave.||Saint Louis|MO|63130|USA|St Louis|Y|Y
+000004238^EHI0NA|Home|773 Willow Creek Dr.||Fenton|MO|63026|USA|St Louis|N|Y
+000004238^EHI0NA|Primary|773 Willow Creek Dr.||Fenton|MO|63026|USA|St Louis|Y|Y
+000006515^EHI0NA|Home|Southview Assisted Living|9916 Reavis Rd|Saint Louis|MO|63123|USA|St Louis|N|Y
+000006515^EHI0NA|Primary|Southview Assisted Living|9916 Reavis Rd|Saint Louis|MO|63123|USA|St Louis|Y|Y
+000006516^EHI0NA|Home|Southview Assisted Living|9916 Reavis Rd|Affton|MO|63123|USA|St Louis|N|Y
+000006516^EHI0NA|Primary|Southview Assisted Living|9916 Reavis Rd|Affton|MO|63123|USA|St Louis|Y|Y
+000007716^EHI0NA|Home|5812 Chrisbrook Dr.||Saint Louis|MO|63128|USA|St Louis|N|Y
+000007716^EHI0NA|Primary|5812 Chrisbrook Dr.||Saint Louis|MO|63128|USA|St Louis|Y|Y
+000008099^EHI0NA|Home|12073 Natural Bridge Rd|Apt C|Bridgeton|MO|63044|USA|St Louis|N|Y
+000008099^EHI0NA|Primary|12073 Natural Bridge Rd|Apt C|Bridgeton|MO|63044|USA|St Louis|Y|Y
+000008878^EHI0NA|Home|1025 Grandtree Court||Fenton|MO|63026|USA|Jefferson|N|Y
+000008878^EHI0NA|Primary|1025 Grandtree Court||Fenton|MO|63026|USA|Jefferson|Y|Y
+000009608^EHI0NA|Home|442 S. Geyer Rd.||Saint Louis|MO|63122|USA|St Louis|N|Y
+000009608^EHI0NA|Primary|442 S. Geyer Rd.||Saint Louis|MO|63122|USA|St Louis|Y|Y
+000010742^EHI0NA|Home|12142 Diers Dr.||Saint Louis|MO|63128|USA|St Louis|N|Y
+000010742^EHI0NA|Primary|12142 Diers Dr.||Saint Louis|MO|63128|USA|St Louis|Y|Y
+000012373^EHI0NA|Home|10130 Cabana Club Dr.|Apt. 1-a|Saint Ann|MO|63074|USA|St Louis|N|Y
+000012373^EHI0NA|Primary|10130 Cabana Club Dr.|Apt. 1-a|Saint Ann|MO|63074|USA|St Louis|Y|Y
+000014443^EHI0NA|Home|2535 Oakmont Terrace Dr.|Apt. 311|Saint Louis|MO|63129|USA|St Louis|N|Y
+000014443^EHI0NA|Primary|2535 Oakmont Terrace Dr.|Apt. 311|Saint Louis|MO|63129|USA|St Louis|Y|Y
+000014834^EHI0NA|Home|12073 Natural Bridge Rd|Apt C|Bridgeton|MO|63044|USA|St Louis|N|Y
+000014834^EHI0NA|Primary|12073 Natural Bridge Rd|Apt C|Bridgeton|MO|63044|USA|St Louis|Y|Y
+000014846^EHI0NA|Home|618 Wintergreen Dr.||O Fallon|IL|62269|USA|St Clair|N|Y
+000014846^EHI0NA|Primary|618 Wintergreen Dr.||O Fallon|IL|62269|USA|St Clair|Y|Y
+000015060^EHI0NA|Home|6631 Barken Ave.||Saint Louis|MO|63121|USA|St Louis|N|Y
+000015060^EHI0NA|Primary|6631 Barken Ave.||Saint Louis|MO|63121|USA|St Louis|Y|Y
+000016673^EHI0NA|Home|9 Kassing Ave|Apt. 12|Fairview Heights|IL|62208|USA|Madison|N|Y
+000016673^EHI0NA|Primary|9 Kassing Ave|Apt. 12|Fairview Heights|IL|62208|USA|Madison|Y|Y
+000020321^EHI0NA|Home|703 Saint Maud Dr.||East Saint Louis|IL|62206|USA|St Clair|N|Y
+000020321^EHI0NA|Primary|703 Saint Maud Dr.||East Saint Louis|IL|62206|USA|St Clair|Y|Y
+000021849^EHI0NA|Home|5 Fieldcrest Dr.||Columbia|IL|62236|USA|Monroe|N|Y
+000021849^EHI0NA|Primary|5 Fieldcrest Dr.||Columbia|IL|62236|USA|Monroe|Y|Y
+000024768^EHI0NA|Home|705 E Clement||De Soto|MO|63020|USA|Jefferson|N|Y
+000024768^EHI0NA|Primary|1525 Suncrest Dr|Apt 2|Kingsport|TN|37665|USA|Sullivan|Y|Y
+000027969^EHI0NA|Home|5967 Ponderosa Ct.||Saint Louis|MO|63128|USA|St Louis|N|Y
+000027969^EHI0NA|Primary|5967 Ponderosa Ct.||Saint Louis|MO|63128|USA|St Louis|Y|Y
+000029101^EHI0NA|Home|201 Vasel Dr.||Fenton|MO|63026|USA|St Louis|N|Y
+000029101^EHI0NA|Primary|201 Vasel Dr.||Fenton|MO|63026|USA|St Louis|Y|Y
+000029227^EHI0NA|Home|2323 Dotley Ave.||Saint Louis|MO|63136|USA|St Louis|N|Y
+000029227^EHI0NA|Primary|2323 Dotley Ave.||Saint Louis|MO|63136|USA|St Louis|Y|Y
+000032417^EHI0NA|Home|8618 Hume Ave.||Saint Louis|MO|63114|USA|St Louis|N|Y
+000032417^EHI0NA|Primary|8618 Hume Ave.||Saint Louis|MO|63114|USA|St Louis|Y|Y
+000032770^EHI0NA|Home|5830 Barberry Dr.||Imperial|MO|63052|USA|Jefferson|N|Y
+000032770^EHI0NA|Primary|5830 Barberry Dr.||Imperial|MO|63052|USA|Jefferson|Y|Y
+000044297^EHI0NA|Home|5 Fleming Dr.||Columbia|MO|65201|USA|Boone|N|Y
+000044297^EHI0NA|Primary|3801 Miller Dr.||Columbia|MO|65201|USA|Boone|Y|Y
+000048450^EHI0NA|Home|804 Gauen Ct.||Waterloo|IL|62298|USA|Monroe|N|Y
+000048450^EHI0NA|Primary|804 Gauen Ct.||Waterloo|IL|62298|USA|Monroe|Y|Y
+000060249^EHI0NA|Home|5 Village Green Dr|Apt D|Pevely|MO|63070|USA|Jefferson|N|Y
+000060249^EHI0NA|Primary|5 Village Green Dr|Apt D|Pevely|MO|63070|USA|Jefferson|Y|Y
+000062885^EHI0NA|Home|6866 Howdershell Rd.||Hazelwood|MO|63042|USA|St Louis|N|Y
+000062885^EHI0NA|Primary|6866 Howdershell Rd.||Hazelwood|MO|63042|USA|St Louis|Y|Y
+000063203^EHI0NA|Home|5927 Helen Ave.||Saint Louis|MO|63134|USA|St Louis|N|Y
+000063203^EHI0NA|Primary|5927 Helen Ave.||Saint Louis|MO|63134|USA|St Louis|Y|Y
+000066062^EHI0NA|Home|3061 Shady Oak Dr.||Saint Charles|MO|63301|USA|St Charles|N|Y
+000066062^EHI0NA|Primary|3061 SHADY OAK DR.||SAINT CHARLES|MO|63301|USA||Y|Y
+000068196^EHI0NA|Home|450 Adrian Dr.||Saint Louis|MO|63137|USA|St Louis|N|Y
+000068196^EHI0NA|Primary|450 Adrian Dr.||Saint Louis|MO|63137|USA|St Louis|Y|Y
+000068708^EHI0NA|Home|5686 Dantonaire Pl.||Saint Louis|MO|63128|USA|St Louis|N|Y
+000068708^EHI0NA|Primary|5686 Dantonaire Pl.||Saint Louis|MO|63128|USA|St Louis|Y|Y
+000068841^EHI0NA|Home|5686 Dantonaire Pl.||Saint Louis|MO|63128|USA|St Louis|N|Y
+000068841^EHI0NA|Primary|5686 Dantonaire Pl.||Saint Louis|MO|63128|USA|St Louis|Y|Y
+000069345^EHI0NA|Home|1805 Sapling Dr.||O Fallon|MO|63366|USA|St Charles|N|Y
+000069345^EHI0NA|Primary|1805 Sapling Dr.||O Fallon|MO|63366|USA|St Charles|Y|Y
+000071664^EHI0NA|Home|129 Peaceful Meadows Ct.||Lake Saint Louis|MO|63367|USA|St Charles|N|Y
+000071664^EHI0NA|Primary|129 Peaceful Meadows Ct.||Lake Saint Louis|MO|63367|USA|St Charles|Y|Y
+000071665^EHI0NA|Home|129 Peaceful Meadows Ct.||Lake Saint Louis|MO|63367|USA|St Charles|N|Y
+000071665^EHI0NA|Primary|129 Peaceful Meadows Ct.||Lake Saint Louis|MO|63367|USA|St Charles|Y|Y
+000073078^EHI0NA|Home|4400 Lindell Blvd.|Apt. 9-M|Saint Louis|MO|63108|USA|St Louis City|N|Y
+000073078^EHI0NA|Primary|4400 Lindell Blvd.|Apt. 9-M|Saint Louis|MO|63108|USA|St Louis City|Y|Y
+000078067^EHI0NA|Home|5276 Camelot Estates Dr.||Saint Louis|MO|63129|USA|St Louis|N|Y
+000078067^EHI0NA|Primary|5276 Camelot Estates Dr.||Saint Louis|MO|63129|USA|St Louis|Y|Y
+000078178^EHI0NA|Home|10116 Shapfield Ln.||Saint Louis|MO|63123|USA|St Louis|N|Y
+000078178^EHI0NA|Primary|10116 Shapfield Ln.||Saint Louis|MO|63123|USA|St Louis|Y|Y
+000079353^EHI0NA|Home|2150 West Randolph St|Suite. 11e|Saint Charles|MO|63301|USA|St Charles|N|Y
+000079353^EHI0NA|Primary|2150 West Randolph St|Suite. 11e|Saint Charles|MO|63301|USA|St Charles|Y|Y
+000080258^EHI0NA|Home|110 Julie Ln.||Saint Peters|MO|63376|USA|St Charles|N|Y
+000080258^EHI0NA|Primary|110 Julie Ln.||Saint Peters|MO|63376|USA|St Charles|Y|Y
+000080716^EHI0NA|Home|733 N. 85th St.||East Saint Louis|IL|62203|USA|St Clair|N|Y
+000080716^EHI0NA|Primary|733 N. 85th St.||East Saint Louis|IL|62203|USA|St Clair|Y|Y
+000081949^EHI0NA|Home|3708 Belcanto Dr.||Saint Louis|MO|63125|USA|St Louis|N|Y
+000081949^EHI0NA|Primary|3708 Belcanto Dr.||Saint Louis|MO|63125|USA|St Louis|Y|Y
+000084089^EHI0NA|Home|5232 Gravois Ave||Saint Louis|MO|63116|USA|St Louis City|N|Y
+000084089^EHI0NA|Primary|5232 Gravois Ave||Saint Louis|MO|63116|USA|St Louis City|Y|Y
+000085937^EHI0NA|Home|226 Olympia Dr.||Ferguson|MO|63135|USA|St Louis|N|Y
+000085937^EHI0NA|Primary|226 Olympia Dr.||Ferguson|MO|63135|USA|St Louis|Y|Y
+000087557^EHI0NA|Home|15 Pilot Hill Dr.||Saint Peters|MO|63376|USA|St Charles|N|Y
+000087557^EHI0NA|Primary|15 Pilot Hill Dr.||Saint Peters|MO|63376|USA|St Charles|Y|Y
+000088094^EHI0NA|Home|15 Deer Creek Dr.||O Fallon|MO|63366|USA|St Charles|N|Y
+000088094^EHI0NA|Primary|15 Deer Creek Dr.||O Fallon|MO|63366|USA|St Charles|Y|Y
+000088568^EHI0NA|Home|9 Tudor Dr.||Belleville|IL|62226|USA|St Clair|N|Y
+000088568^EHI0NA|Primary|9 Tudor Dr.||Belleville|IL|62226|USA|St Clair|Y|Y
+000088877^EHI0NA|Home|1022 N 11th Street|Apt B|Saint Louis|MO|63101|USA|St Louis City|N|Y
+000088877^EHI0NA|Primary|1022 N 11th Street|Apt B|Saint Louis|MO|63101|USA|St Louis City|Y|Y
+000089165^EHI0NA|Home|7723 Kenridge Ln.||Saint Louis|MO|63119|USA|St Louis|N|Y
+000089165^EHI0NA|Primary|7723 Kenridge Ln.||Saint Louis|MO|63119|USA|St Louis|Y|Y
+000090083^EHI0NA|Home|411 Jefferson Ave.||Crystal City|MO|63019|USA|Jefferson|N|Y
+000090083^EHI0NA|Primary|411 Jefferson Ave.||Crystal City|MO|63019|USA|Jefferson|Y|Y
+000090185^EHI0NA|Home|1010 Lexington Dr.||Columbia|IL|62236|USA|Monroe|N|Y
+000090185^EHI0NA|Primary|1010 Lexington Dr.||Columbia|IL|62236|USA|Monroe|Y|Y
+000091378^EHI0NA|Home|25 Nordell Court|Apt 3|Black Jack|MO|63033|USA|St Louis|N|Y
+000091378^EHI0NA|Primary|25 Nordell Court|Apt 3|Black Jack|MO|63033|USA|St Louis|Y|Y
+000093348^EHI0NA|Home|4340 New Colony Estates Dr|Apt. 118|Saint Louis|MO|63129|USA|St Louis|N|Y
+000093348^EHI0NA|Primary|4340 NEW COLONY ESTATES DR||SAINT LOUIS|MO|63129|USA||Y|Y
+000093350^EHI0NA|Home|12563 Village Circle Dr.|Apt. 1212|Saint Louis|MO|63127|USA|St Louis|N|Y
+000093350^EHI0NA|Primary|12563 Village Circle Dr.|Apt. 1212|Saint Louis|MO|63127|USA|St Louis|Y|Y
+000093733^EHI0NA|Home|7 Savoy Dr.||Lake Saint Louis|MO|63367|USA|St Charles|N|Y
+000093733^EHI0NA|Primary|7 Savoy Dr.||Lake Saint Louis|MO|63367|USA|St Charles|Y|Y
+000094103^EHI0NA|Home|7611 Green Hedge Rd.||Edwardsville|IL|62025|USA|Madison|N|Y
+000094103^EHI0NA|Primary|7611 Green Hedge Rd.||Edwardsville|IL|62025|USA|Madison|Y|Y
+000095358^EHI0NA|Home|6608 Winnebago St.||Saint Louis|MO|63109|USA|St Louis City|N|Y
+000095358^EHI0NA|Primary|6608 Winnebago St.||Saint Louis|MO|63109|USA|St Louis City|Y|Y
+000095883^EHI0NA|Home|426 Nantucket Dr.||Saint Charles|MO|63301|USA|St Charles|N|Y
+000095883^EHI0NA|Primary|426 Nantucket Dr.||Saint Charles|MO|63301|USA|St Charles|Y|Y
+000099210^EHI0NA|Home|7205 Berkridge Dr.||Hazelwood|MO|63040|USA|St Louis|N|Y
+000099210^EHI0NA|Primary|7205 Berkridge Dr.||Hazelwood|MO|63040|USA|St Louis|Y|Y
+000099211^EHI0NA|Home|7205 Berkridge Dr.||Hazelwood|MO|63042|USA|St Louis|N|Y
+000099211^EHI0NA|Primary|7205 Berkridge Dr.||Hazelwood|MO|63042|USA|St Louis|Y|Y
+000099502^EHI0NA|Home|21014 Aspen Ct.||Warrenton|MO|63383|USA|Warren|N|Y
+000099502^EHI0NA|Primary|21014 Aspen Ct.||Warrenton|MO|63383|USA|Warren|Y|Y
+000100238^EHI0NA|Home|790 Willow Bend Pl||Fenton|MO|630263751|USA|Jefferson|N|Y
+000100238^EHI0NA|Primary|790 Willow Bend Pl||Fenton|MO|630263751|USA|Jefferson|Y|Y
+000100461^EHI0NA|Home|3418 S. Virginia Ave.||Springfield|MO|65807|USA|Greene|N|Y
+000100461^EHI0NA|Primary|3418 S. Virginia Ave.||Springfield|MO|65807|USA|Greene|Y|Y
+000100639^EHI0NA|Home|5557 Pierre Ct.||Saint Louis|MO|63128|USA|St Louis|N|Y
+000100639^EHI0NA|Primary|5557 Pierre Ct.||Saint Louis|MO|63128|USA|St Louis|Y|Y
+000101727^EHI0NA|Home|2236 Illinios Ave.||East Saint Louis|IL|62205|USA|St Clair|N|Y
+000101727^EHI0NA|Primary|2236 ILLINIOS AVE.||EAST SAINT LOUIS|IL|62205|USA||Y|Y
+000104633^EHI0NA|Home|4310 Sequoia Pl||Belleville|IL|62226|USA|St Clair|N|Y
+000104633^EHI0NA|Primary|4310 Sequoia Pl||Belleville|IL|62226|USA|St Clair|Y|Y
+000105909^EHI0NA|Home|5012 S. Charleston||Springfield|MO|65804|USA|Greene|N|Y
+000105909^EHI0NA|Primary|5012 S. Charleston||Springfield|MO|65804|USA|Greene|Y|Y
+000107045^EHI0NA|Home|804 Stiening St||Waterloo|IL|62298|USA|Monroe|N|Y
+000107045^EHI0NA|Primary|804 Stiening St||Waterloo|IL|62298|USA|Monroe|Y|Y
+000107867^EHI0NA|Home|3969 W. Greenwood St.||Springfield|MO|65807|USA|Greene|N|Y
+000107867^EHI0NA|Primary|3969 W. Greenwood St.||Springfield|MO|65807|USA|Greene|Y|Y
+000109078^EHI0NA|Home|2636 White Manor Ct.||Saint Louis|MO|63114|USA|St Louis|N|Y
+000109078^EHI0NA|Primary|2636 White Manor Ct.||Saint Louis|MO|63114|USA|St Louis|Y|Y
+000109156^EHI0NA|Home|10046 Willdan Dr.  Apt||Affton|MO|63123|USA|St Louis|N|Y
+000109156^EHI0NA|Primary|10046 Willdan Dr.  Apt||Affton|MO|63123|USA|St Louis|Y|Y
+000111662^EHI0NA|Home|5309 Olene Dr.||Saint Louis|MO|63121|USA|St Louis|N|Y
+000111662^EHI0NA|Primary|5309 OLENE DR.||SAINT LOUIS|MO|63121|USA||Y|Y
+000114752^EHI0NA|Home|3755 W. Driftwood||Springfield|MO|65807|USA|Greene|N|Y
+000114752^EHI0NA|Primary|3755 W. Driftwood||Springfield|MO|65807|USA|Greene|Y|Y
+000118071^EHI0NA|Home|60 Flamingo Dr.||Saint Louis|MO|63123|USA|St Louis|N|Y
+000118071^EHI0NA|Primary|60 Flamingo Dr.||Saint Louis|MO|63123|USA|St Louis|Y|Y
+000118641^EHI0NA|Home|1388 S. State Hwy. Mm||Springfield|MO|65802|USA|Greene|N|Y
+000118641^EHI0NA|Primary|Po Box 423||Crane|MO|65633|USA||Y|Y
+000118803^EHI0NA|Home|309 State Hwy. 14 W||Billings|MO|65610|USA|Christian|N|Y
+000118803^EHI0NA|Primary|309 State Hwy. 14 W||Billings|MO|65610|USA|Christian|Y|Y
+000119042^EHI0NA|Home|1101 Garden Plaza Dr|Ste 303|Florissant|MO|63033|USA|St Louis|N|Y
+000119042^EHI0NA|Primary|838 Marvin Lane||Bellevue|WI|54311|USA|Brown|Y|Y
+000119220^EHI0NA|Home|11839 Boward Ct.||Maryland Heights|MO|63043|USA|St Louis|N|Y
+000119220^EHI0NA|Primary|11839 Boward Ct.||Maryland Heights|MO|63043|USA|St Louis|Y|Y
+000120033^EHI0NA|Home|309 State Hwy. 14 W.||Billings|MO|65610|USA|Christian|N|Y
+000120033^EHI0NA|Primary|309 State Hwy. 14 W.||Billings|MO|65610|USA|Christian|Y|Y
+000120058^EHI0NA|Home|3185 Heatherton Dr.||Florissant|MO|63033|USA|St Louis|N|Y
+000120058^EHI0NA|Primary|3185 Heatherton Dr.||Florissant|MO|63033|USA|St Louis|Y|Y
+000120495^EHI0NA|Home|209 E Broadmoor St||Springfield|MO|65807|USA|Greene|N|Y
+000120495^EHI0NA|Primary|209 E Broadmoor St||Springfield|MO|65807|USA|Greene|Y|Y
+000122147^EHI0NA|Home|11066 Perham||Saint Louis|MO|63136|USA|St Louis|N|Y
+000122147^EHI0NA|Primary|11066 Perham||Saint Louis|MO|63136|USA|St Louis|Y|Y
+000124097^BKC0NA|Home|13975 East 35th St|Apt 219|Independence|MO|64055|USA|Jackson|N|Y
+000124097^BKC0NA|Primary|13975 EAST 35TH ST|APT 219|INDEPENDENCE|MO|64055|USA||Y|Y
+000124763^EHI0NA|Home|2 Single Tree Ln.||Glen Carbon|IL|62034|USA|Madison|N|Y
+000124763^EHI0NA|Primary|2 Single Tree Ln.||Glen Carbon|IL|62034|USA|Madison|Y|Y
+000125828^BLA0NA|Home|1101 Aline||New Orleans|LA|70115|USA|Orleans|N|Y
+000125828^BLA0NA|Primary|P. O. Box 2046||Metairie|LA|70004|USA|Jefferson|Y|Y
+000126606^EHI0NA|Home|2305 W. Jonquil Ln.||Ozark|MO|65721|USA|Christian|N|Y
+000126606^EHI0NA|Primary|3404 N Brinnsfield Dr||Ozark|MO|65721|USA|Christian|Y|Y
+000128051^EHI0NA|Home|120 St. Joseph St||Forsyth|MO|65653|USA|Taney|N|Y
+000128051^EHI0NA|Primary|120 St. Joseph St||Forsyth|MO|65653|USA|Taney|Y|Y
+000128450^EHI0NA|Home|312 Locust St.||New Haven|MO|63068|USA|Franklin|N|Y
+000128450^EHI0NA|Primary|312 Locust St.||New Haven|MO|63068|USA|Franklin|Y|Y
+000129666^EHI0NA|Home|9350 Green Park Rd.||Saint Louis|MO|63123|USA|St Louis|N|Y
+000129666^EHI0NA|Primary|9350 Green Park Rd.||Saint Louis|MO|63123|USA|St Louis|Y|Y
+000131459^EHI0NA|Home|14123 Trestle Rd.||Highland|IL|62249|USA|Madison|N|Y
+000131459^EHI0NA|Primary|14123 Trestle Rd.||Highland|IL|62249|USA|Madison|Y|Y
+000131460^EHI0NA|Home|14123 Trestle Rd.||Highland|IL|62249|USA|Madison|N|Y
+000131460^EHI0NA|Primary|14123 Trestle Rd.||Highland|IL|62249|USA|Madison|Y|Y
+000131594^EHI0NA|Home|119 Palm Dr.||Fairview Heights|IL|62208|USA|St Clair|N|Y
+000131594^EHI0NA|Primary|119 Palm Dr.||Fairview Heights|IL|62208|USA|St Clair|Y|Y
+000132462^EHI0NA|Home|2710 China Lake Dr.||Saint Louis|MO|63129|USA|St Louis|N|Y
+000132462^EHI0NA|Primary|2710 China Lake Dr.||Saint Louis|MO|63129|USA|St Louis|Y|Y
+000132869^EHI0NA|Home|1007 Savoy Ln.||Manchester|MO|63011|USA|St Louis|N|Y
+000132869^EHI0NA|Primary|1007 Savoy Ln.||Manchester|MO|63011|USA|St Louis|Y|Y
+000133348^BKC0NA|Home|203 E High Dr.||Liberty|MO|64068|USA|Clay|N|Y
+000133348^BKC0NA|Primary|P.o. Box 773||Liberty|MO|64069|USA||Y|Y
+000133421^EHI0NA|Home|921 Knollwood Village Rd.||Caseyville|IL|62232|USA|St Clair|N|Y
+000133421^EHI0NA|Primary|921 Knollwood Village Rd.||Caseyville|IL|62232|USA|St Clair|Y|Y
+000133473^EHI0NA|Home|3502 Wintergreen Ln.||Saint Louis|MO|63125|USA|St Louis|N|Y
+000133473^EHI0NA|Primary|3502 Wintergreen Ln.||Saint Louis|MO|63125|USA|St Louis|Y|Y
+000133686^EHI0NA|Home|3326 Cordes Dr.||Saint Louis|MO|63125|USA|St Louis|N|Y
+000133686^EHI0NA|Primary|3326 Cordes Dr.||Saint Louis|MO|63125|USA|St Louis|Y|Y
+000134340^EHI0NA|Home|503 Grand Canyon Ct.||Wentzville|MO|63385|USA|St Charles|N|Y
+000134340^EHI0NA|Primary|503 Grand Canyon Ct.||Wentzville|MO|63385|USA|St Charles|Y|Y
+000134502^EHI0NA|Home|5368 E Farm Road 112||Strafford|MO|65757|USA|Greene|N|Y
+000134502^EHI0NA|Primary|5368 E Farm Road 112||Strafford|MO|65757|USA|Greene|Y|Y
+000135774^EHI0NA|Home|7429 Greenport Dr.||Jennings|MO|63136|USA|St Louis|N|Y
+000135774^EHI0NA|Primary|7429 Greenport Dr.||Jennings|MO|63136|USA|St Louis|Y|Y
+000135973^BKC0NA|Home|2237 Van Brunt Blvd||Kansas City|MO|64127|USA|Jackson|N|Y
+000135973^BKC0NA|Primary|2237 Van Brunt Blvd||Kansas City|MO|64127|USA|Jackson|Y|Y
+000136596^EHI0NA|Home|1485 Sandpointe Ct.||Manchester|MO|63021|USA|St Louis|N|Y
+000136596^EHI0NA|Primary|1485 Sandpointe Ct.||Manchester|MO|63021|USA|St Louis|Y|Y
+000136678^EHI0NA|Home|2739 Pomme Meadows Dr.||Arnold|MO|63010|USA|Jefferson|N|Y
+000136678^EHI0NA|Primary|2739 Pomme Meadows Dr.||Arnold|MO|63010|USA|Jefferson|Y|Y
+000138030^BKC0NA|Home|7505 Nw 81st St.||Kansas City|MO|64152|USA|Platte|N|Y
+000138030^BKC0NA|Primary|7505 Nw 81st St.||Kansas City|MO|64152|USA|Platte|Y|Y
+000138316^BKC0NA|Home|1904 North West 82nd Street||Kansas City|MO|64151|USA|Platte|N|Y
+000138316^BKC0NA|Primary|Po Box 12655||Kansas City|MO|64116|USA|Clay|Y|Y
+000139156^EHI0NA|Home|2141 Rosebud Ave.||Saint Louis|MO|63121|USA|St. Louis|N|Y
+000139156^EHI0NA|Primary|2141 Rosebud Ave.||Saint Louis|MO|63121|USA|St. Louis|Y|Y
+000140555^EHI0NA|Home|5628 Bischoff Ave.||Saint Louis|MO|63110|USA|St Louis City|N|Y
+000140555^EHI0NA|Primary|5628 Bischoff Ave.||Saint Louis|MO|63110|USA|St Louis City|Y|Y
+000140565^BKC0NA|Home|7601 Parallel Parkway|Apt 113|Kansas City|KS|66112|USA|Wyandotte|N|Y
+000140565^BKC0NA|Primary|7601 Parallel Parkway|Apt 113|Kansas City|KS|66112|USA|Wyandotte|Y|Y
+000142136^EHI0NA|Home|12889 Tammy Kay Dr.||Saint Louis|MO|63128|USA|St Louis|N|Y
+000142136^EHI0NA|Primary|12889 Tammy Kay Dr.||Saint Louis|MO|63128|USA|St Louis|Y|Y
+000142385^EHI0NA|Home|136 Willi Oaks Dr.||Forsyth|MO|65653|USA|Taney|N|Y
+000142385^EHI0NA|Primary|136 Willi Oaks Dr.||Forsyth|MO|65653|USA|Taney|Y|Y
+000143489^BKC0NA|Home|510 N. Nettleton||Bonner Springs|KS|66012|USA|Wyandotte|N|Y
+000143489^BKC0NA|Primary|Po Box 124||Bonner Springs|KS|66012|USA||Y|Y
+000143490^BKC0NA|Home|510 N. Nettleton||Bonner Springs|KS|66012|USA|Wyandotte|N|Y
+000143490^BKC0NA|Primary|P.o. Box 124||Bonner Springs|KS|66012|USA||Y|Y
+000145480^BKC0NA|Home|16709 Bradley Ave.||Belton|MO|64012|USA|Cass|N|Y
+000145480^BKC0NA|Primary|16709 Bradley Ave.||Belton|MO|64012|USA|Cass|Y|Y
+000145591^EHI0NA|Home|5005 River Aire S.||Godfrey|IL|62035|USA|Madison|N|Y
+000145591^EHI0NA|Primary|5005 River Aire S.||Godfrey|IL|62035|USA|Madison|Y|Y
+000145937^EHI0NA|Home|#2 Edward Dr.||St. Charles|MO|63304|USA|St Charles|N|Y
+000145937^EHI0NA|Primary|#2 Edward Dr.||St. Charles|MO|63304|USA|St Charles|Y|Y
+000146111^EHI0NA|Home|3900 Clark Lane|Lot 24|Columbia|MO|65202|USA|Boone|N|Y
+000146111^EHI0NA|Primary|3900 Clark Lane|Lot 24|Columbia|MO|65202|USA|Boone|Y|Y
+000146666^BKC0NA|Home|1423 S Pleasant St||Independence|MO|64055|USA|Jackson|N|Y
+000146666^BKC0NA|Primary|1423 S Pleasant St||Independence|MO|64055|USA|Jackson|Y|Y
+000147679^EHI0NA|Home|863 Woodridge Dr||Arnold|MO|63010|USA|Jefferson|N|Y
+000147679^EHI0NA|Primary|863 Woodridge Dr||Arnold|MO|63010|USA|Jefferson|Y|Y
+000148198^BKC0NA|Home|6815 Flint St|Apt.322|Shawnee|KS|66203|USA|Johnson|N|Y
+000148198^BKC0NA|Primary|6815 Flint St|Apt.322|Shawnee|KS|66203|USA|Johnson|Y|Y
+000148201^BKC0NA|Home|3414 Hughes Rd.|Apt 314|Leavenworth|KS|66048|USA|Wyandotte|N|Y
+000148201^BKC0NA|Primary|3414 Hughes Rd.|Apt 314|Leavenworth|KS|66048|USA|Wyandotte|Y|Y
+000148257^EHI0NA|Home|1223 Somerset Field Dr.||Chesterfield|MO|63005|USA|St Louis|N|Y
+000148257^EHI0NA|Primary|1223 Somerset Field Dr.||Chesterfield|MO|63005|USA|St Louis|Y|Y
+000149510^BKC0NA|Home|5514 Nw Moonlight Meadow Dr.||Lees Summit|MO|64064|USA|Jackson|N|Y
+000149510^BKC0NA|Primary|5514 Nw Moonlight Meadow Dr.||Lees Summit|MO|64064|USA|Jackson|Y|Y
+000151065^BKC0NA|Home|2401 S Ellison Way||Independence|MO|64055|USA|Jackson|N|Y
+000151065^BKC0NA|Primary|2401 S Ellison Way||Independence|MO|64055|USA|Jackson|Y|Y
+000151871^BKC0NA|Home|16015 Gardner Pl.||Gardner|KS|66030|USA|Johnson|N|Y
+000151871^BKC0NA|Primary|16015 Gardner Pl.||Gardner|KS|66030|USA|Johnson|Y|Y
+000152513^EHI0NA|Home|278 Ashdown Forest Ct.||Weldon Spring|MO|63304|USA|St Charles|N|Y
+000152513^EHI0NA|Primary|278 Ashdown Forest Ct.||Weldon Spring|MO|63304|USA|St Charles|Y|Y
+000152556^BKC0NA|Home|3711 N. Jackson Ave.|Apt. 213|Kansas City|MO|64117|USA|Clay|N|Y
+000152556^BKC0NA|Primary|3711 N. JACKSON AVE.|APT. 213|KANSAS CITY|MO|64117|USA||Y|Y
+000152858^BLA0NA|Home|23013 4th St.||Mandeville|LA|70471|USA|Saint Tammany|N|Y
+000152858^BLA0NA|Primary|23013 4th St.||Mandeville|LA|70471|USA|Saint Tammany|Y|Y
+000153167^EHI0NA|Home|1381 Heydt Ave.||Saint Louis|MO|63135|USA|St Louis|N|Y
+000153167^EHI0NA|Primary|1381 Heydt Ave.||Saint Louis|MO|63135|USA|St Louis|Y|Y
+000153465^BLA0NA|Home|1511 Roosevelt Blvd||Kenner|LA|70062|USA|Jefferson|N|Y
+000153465^BLA0NA|Primary|1511 Roosevelt Ave.||Kenner|LA|70062|USA||Y|Y
+000153735^EHI0NA|Home|8706 Ezra Dr||Saint Louis|MO|63114|USA|St Louis|N|Y
+000153735^EHI0NA|Primary|8706 Ezra||St John|MO|63114|USA||Y|Y
+000153738^EHI0NA|Home|703 MONTAUBAN DR.||SAINT LOUIS|MO|63141|USA|St Louis|N|Y
+000153738^EHI0NA|Primary|703 MONTAUBAN DR.||SAINT LOUIS|MO|63141|USA||Y|Y
+000153802^EHI0NA|Home|1401 Noyack Dr||O Fallon|MO|63366|USA|St Charles|N|Y
+000153802^EHI0NA|Primary|228 Walbash Woods Way||O'fallon|MO|63366|USA||Y|Y
+000153803^EHI0NA|Home|228 Wabash Woods Way||O Fallon|MO|63366|USA|St Charles|N|Y
+000153803^EHI0NA|Primary|228 Wabash Woods Way||O Fallon|MO|63366|USA|St Charles|Y|Y
+000200424^BLA0NA|Home|8615 Hill Dr.||Baton Rouge|LA|70809|USA|Ascension|N|Y
+000200424^BLA0NA|Primary|41316 HWY 933||PRAIRIEVILLE|LA|70769|USA||Y|Y
+000200794^EHI0NA|Home|17 Forest Lane||O Fallon|MO|63366|USA|St Charles|N|Y
+000200794^EHI0NA|Primary|17 Forest Lane||O Fallon|MO|63366|USA|St Charles|Y|Y
+000200923^BLA0NA|Home|141 W 175 St.||Galliano|LA|70354|USA|Lafourche|N|Y
+000200923^BLA0NA|Primary|141 W 175 St.||Galliano|LA|70354|USA|Lafourche|Y|Y
+000201076^BLA0NA|Home|100 Ann St||Covington|LA|70433|USA|St Tammany|N|Y
+000201076^BLA0NA|Primary|100 Ann St||Covington|LA|70433|USA|St Tammany|Y|Y
+000201089^BKC0NA|Home|441 W 104th St #441c||Kansas City|MO|64114|USA|Jackson|N|Y
+000201089^BKC0NA|Primary|441 W 104th St #441c||Kansas City|MO|64114|USA|Jackson|Y|Y
+000201130^EHI0NA|Home|3692 State Hwy 37||Monett|MO|65708|USA|Barry|N|Y
+000201130^EHI0NA|Primary|3692 State Hwy 37||Monett|MO|65708|USA|Barry|Y|Y
+000201221^BKC0NA|Home|1221 Kansas Ave||Kansas City|KS|66105|USA|Wyandotte|N|Y
+000201221^BKC0NA|Primary|1221 Kansas Ave||Kansas City|KS|66105|USA|Wyandotte|Y|Y
+000201353^EHI0NA|Home|3660 S Cox Ave|Apt 2206|Springfield|MO|65807|USA|Greene|N|Y
+000201353^EHI0NA|Primary|3660 S Cox Ave|Apt 2206|Springfield|MO|65807|USA|Greene|Y|Y
+000201430^EHI0NA|Home|11543 Criterion Ave||Saint Louis|MO|63138|USA|St Louis|N|Y
+000201430^EHI0NA|Primary|11543 Criterion Ave||Saint Louis|MO|63138|USA|St Louis|Y|Y
+000201487^BKC0NA|Home|1521 Piccadilly Str||Blue Springs|MO|64014|USA|Jackson|N|Y
+000201487^BKC0NA|Primary| Po Box 1313||Blue Springs|MO|64013|USA||Y|Y
+000201588^EHI0NA|Home|1028 Sunridge Trail S||Pevely|MO|63070|USA|Jefferson|N|Y
+000201588^EHI0NA|Primary|1028 Sunridge Trail S||Pevely|MO|63070|USA|Jefferson|Y|Y
+000201619^BKC0NA|Home|9620 Hurrelbrink Rd||Kansas City|KS|66109|USA|Wyandotte|N|Y
+000201619^BKC0NA|Primary|9620 Hurrelbrink Rd||Kansas City|KS|66109|USA|Wyandotte|Y|Y
+000201918^BKC0NA|Home|10814 N Richmond Avenue||Kansas City|MO|64157|USA|Clay|N|Y
+000201918^BKC0NA|Primary|10814 N Richmond Avenue||Kansas City|MO|64157|USA|Clay|Y|Y
+000202042^BKC0NA|Home|1221 Kansas City||Kansas City|KS|66105|USA|Wyandotte|N|Y
+000202042^BKC0NA|Primary|1221 Kansas City||Kansas City|KS|66105|USA|Wyandotte|Y|Y
+000202189^BLA0NA|Home|1606 12th St||Lafayette|LA|70501|USA|Lafayette|N|Y
+000202189^BLA0NA|Primary|1606 12th St||Lafayette|LA|70501|USA|Lafayette|Y|Y
+000202405^BLA0NA|Home|14610 E Beaver Dr||Pride|LA|70770|USA|East Baton Rouge|N|Y
+000202405^BLA0NA|Primary|14610 E Beaver Dr||Pride|LA|70770|USA|East Baton Rouge|Y|Y
+000202522^BLA0NA|Home|301 E Putnam St||Erath|LA|70533|USA|Vermilion|N|Y
+000202522^BLA0NA|Primary|301 E Putnam St||Erath|LA|70533|USA|Vermilion|Y|Y
+000202777^EHI0NA|Home|4308 Arrow Tree #d||Saint Louis|MO|63128|USA|St Louis|N|Y
+000202777^EHI0NA|Primary|4308 Arrow Tree #d||Saint Louis|MO|63128|USA|St Louis|Y|Y
+000202986^BKC0NA|Home|720 W 44th Street|Apt 2013|Kansas City|MO|64111|USA|Jackson|N|Y
+000202986^BKC0NA|Primary|720 W 44th Street|Apt 2013|Kansas City|MO|64111|USA|Jackson|Y|Y
+000203150^EHI0NA|Home|208 Shadow Glen||Wentzville|MO|63385|USA|St Charles|N|Y
+000203150^EHI0NA|Primary|208 Shadow Glen||Wentzville|MO|63385|USA|St Charles|Y|Y
+000203753^BLA0NA|Home|104 Scepter Circle||Lafayette|LA|70506|USA|Lafayette|N|Y
+000203753^BLA0NA|Primary|104 Scepter Circle||Lafayette|LA|70506|USA|Lafayette|Y|Y
+000203761^BLA0NA|Home|1820 Deanne Highway||Church Point|LA|70525|USA|Acadia|N|Y
+000203761^BLA0NA|Primary|1820 Deanne Highway||Church Point|LA|70525|USA|Acadia|Y|Y
+000203977^BKC0NA|Home|855 N Somerset Terrace|Apt 104|Olathe|KS|66062|USA|Johnson|N|Y
+000203977^BKC0NA|Primary|855 N Somerset Terrace|Apt 104|Olathe|KS|66062|USA|Johnson|Y|Y
+000204348^BKC0NA|Home|1208 S Commercial Ave|Apt C2|Smithville|MO|64089|USA|Clay|N|Y
+000204348^BKC0NA|Primary|1208 S Commercial Ave|Apt C2|Smithville|MO|64089|USA|Clay|Y|Y
+000204568^EHI0NA|Home|12335 West Ben Drive|Apt 356|Saint Louis|MO|63128|USA|St Louis|N|Y
+000204568^EHI0NA|Primary|12335 West Ben Drive|Apt 356|Saint Louis|MO|63128|USA|St Louis|Y|Y
+000204625^BLA0NA|Home|258 James Street||Sunset|LA|70584|USA|St Landry|N|Y
+000204625^BLA0NA|Primary|258 James Street||Sunset|LA|70584|USA|St Landry|Y|Y
+000204764^BKC0NA|Home|4027 Bales Ave||Kansas City|MO|64130|USA|Jackson|N|Y
+000204764^BKC0NA|Primary|4027 Bales Ave||Kansas City|MO|64130|USA|Jackson|Y|Y
+000204835^BLA0NA|Home|8868 Lemon Rd||Slaughter|LA|70777|USA|East Baton Rouge|N|Y
+000204835^BLA0NA|Primary|8868 Lemon Rd||Slaughter|LA|70777|USA|East Baton Rouge|Y|Y
+000205099^BLA0NA|Home|257 West 7th Street||Reserve|LA|70084|USA|St John Baptist|N|Y
+000205099^BLA0NA|Primary|257 West 7th Street||Reserve|LA|70084|USA|St John Baptist|Y|Y
+000205290^EHI0NA|Home|864 Canaan Ave||Saint Louis|MO|63147|USA|St Louis City|N|Y
+000205290^EHI0NA|Primary|864 Canaan Ave||Saint Louis|MO|63147|USA|St Louis City|Y|Y
+000205407^BKC0NA|Home|1244 N 129th Terrace||Kansas City|KS|66109|USA|Wyandotte|N|Y
+000205407^BKC0NA|Primary|Pob 861184||Shawnee|KS|66286|USA||Y|Y
+000205411^BKC0NA|Home|14661 Barkley St|Apt # 30101|Overland Park|KS|66223|USA|Johnson|N|Y
+000205411^BKC0NA|Primary|14661 Barkley St|Apt # 30101|Overland Park|KS|66223|USA|Johnson|Y|Y
+000205430^EHI0NA|Home|1223 Bramblett Crossing||O Fallon|MO|63366|USA|St Charles|N|Y
+000205430^EHI0NA|Primary|1223 Bramblett Crossing||O Fallon|MO|63366|USA|St Charles|Y|Y
+000205460^BLA0NA|Home|1036 Reggie Ln||Basile|LA|70515|USA|Acadia|N|Y
+000205460^BLA0NA|Primary|1036 Reggie Ln||Basile|LA|70515|USA|Acadia|Y|Y
+000205483^BLA0NA|Home|1047 E Darlene Dr||Breaux Bridge|LA|70517|USA|Lafayette|N|Y
+000205483^BLA0NA|Primary|1047 E Darlene Dr||Breaux Bridge|LA|70517|USA|Lafayette|Y|Y
+000205490^EHI0NA|Home|12284 Hyfield Rd||De Soto|MO|63020|USA|Jefferson|N|Y
+000205490^EHI0NA|Primary|12284 Hyfield Rd||De Soto|MO|63020|USA|Jefferson|Y|Y
+000205593^EHI0NA|Home|11133 State Highway 176||Walnut Shade|MO|65771|USA|Taney|N|Y
+000205593^EHI0NA|Primary|11133 State Highway 176||Walnut Shade|MO|65771|USA|Taney|Y|Y
+000205625^EHI0NA|Home|302 Cheyenne Rd||Nixa|MO|65714|USA|Christian|N|Y
+000205625^EHI0NA|Primary|302 Cheyenne Rd||Nixa|MO|65714|USA|Christian|Y|Y
+000205629^EHI0NA|Home|2 Hugs Landing Rd||Crystal City|MO|63019|USA|Jefferson|N|Y
+000205629^EHI0NA|Primary|2 Hugs Landing Rd||Crystal City|MO|63019|USA|Jefferson|Y|Y
+000205642^BLA0NA|Home|298 W Harrison St||Baton Rouge|LA|70802|USA|East Baton Rouge|N|Y
+000205642^BLA0NA|Primary|298 W Harrison St||Baton Rouge|LA|70802|USA|East Baton Rouge|Y|Y
+000205643^EHI0NA|Home|8107 Carol Dr||East Saint Louis|IL|62202|USA|St Clair|N|Y
+000205643^EHI0NA|Primary|8107 Carol Dr||East Saint Louis|IL|62202|USA|St Clair|Y|Y
+000205759^EHI0NA|Home|479 Lake Ranch Rd||Kissee Mills|MO|65680|USA|Taney|N|Y
+000205759^EHI0NA|Primary|479 Lake Ranch Rd||Kissee Mills|MO|65680|USA|Taney|Y|Y
+000205828^BKC0NA|Home|9358 Riggs St||Overland Park|KS|66212|USA|Johnson|N|Y
+000205828^BKC0NA|Primary|9358 Riggs St||Overland Park|KS|66212|USA|Johnson|Y|Y
+000205829^BKC0NA|Home|9358 Riggs St||Overland Park|KS|66212|USA|Johnson|N|Y
+000205829^BKC0NA|Primary|9358 Riggs St||Overland Park|KS|66212|USA|Johnson|Y|Y
+000206260^BKC0NA|Home|5215 Thompson||Kansas City|MO|64124|USA|Jackson|N|Y
+000206260^BKC0NA|Primary|5215 Thompson||Kansas City|MO|64124|USA|Jackson|Y|Y
+000206271^BLA0NA|Home|1113 Avenue Du Chateau||Covington|LA|70433|USA|St Tammany|N|Y
+000206271^BLA0NA|Primary|1113 Avenue Du Chateau||Covington|LA|70433|USA|St Tammany|Y|Y
+000206550^BKC0NA|Home|1621 Texas Prairie Rd||Bates City|MO|64011|USA|Lafayette|N|Y
+000206550^BKC0NA|Primary|1621 Texas Prairie Rd||Bates City|MO|64011|USA|Lafayette|Y|Y
+000206914^BLA0NA|Home|132 Royal Oak Dr||Slidell|LA|70460|USA|St Tammany|N|Y
+000206914^BLA0NA|Primary|132 Royal Oak Dr||Slidell|LA|70460|USA|St Tammany|Y|Y
+000206970^BLA0NA|Home|4709 Osborne Avenue||Baton Rouge|LA|70805|USA|East Baton Rouge|N|Y
+000206970^BLA0NA|Primary|1655 Standard||Baton Rouge|LA|70807|USA||Y|Y
+000207011^BLA0NA|Home|171 Hwy 403||Paincourtville|LA|70391|USA|Assumption|N|Y
+000207011^BLA0NA|Primary|P.o. Box 211||Paincourtville|LA|70391|USA||Y|Y
+000207170^BLA0NA|Home|8752 Patterson Cemetery Lane||Slaughter|LA|70777|USA|East Baton Rouge|N|Y
+000207170^BLA0NA|Primary|8752 Patterson Cemetery Lane||Slaughter|LA|70777|USA|East Baton Rouge|Y|Y
+000207253^BLA0NA|Home|10587 White Oak Dr||Baton Rouge|LA|70815|USA|East Baton Rouge|N|Y
+000207253^BLA0NA|Primary|10587 White Oak Dr||Baton Rouge|LA|70815|USA|East Baton Rouge|Y|Y
+000207264^EHI0NA|Home|763 Gradient Dr||Saint Louis|MO|63125|USA|St Louis|N|Y
+000207264^EHI0NA|Primary|763 Gradient Dr||Saint Louis|MO|63125|USA|St Louis|Y|Y
+000207459^BLA0NA|Home|4476 Bayoutoureau Rd||Saint Landry|LA|71367|USA|Evangeline|N|Y
+000207459^BLA0NA|Primary|4476 Bayoutoureau Rd||Saint Landry|LA|71367|USA|Evangeline|Y|Y
+000207616^EHI0NA|Home|3332 East Portland Unit B||Springfield|MO|65804|USA|Greene|N|Y
+000207616^EHI0NA|Primary|3332 East Portland Unit B||Springfield|MO|65804|USA|Greene|Y|Y
+000207655^BLA0NA|Home|205 Lafayette St||Baton Rouge|LA|70892|USA|East Baton Rouge|N|Y
+000207655^BLA0NA|Primary|P.o. Box 452||Youngsville|LA|70592|USA|Lafayette|Y|Y
+000208071^BKC0NA|Home|14402 Meadow Ct||Leawood|KS|66224|USA|Johnson|N|Y
+000208071^BKC0NA|Primary|14402 Meadow Ct||Leawood|KS|66224|USA|Johnson|Y|Y
+000208158^BLA0NA|Home|22469 Hwy 435||Abita Springs|LA|70420|USA|St Tammany|N|Y
+000208158^BLA0NA|Primary|22469 Hwy 435||Abita Springs|LA|70420|USA|St Tammany|Y|Y
+000208680^EHI0NA|Home|5461 Legend Ct||Saint Charles|MO|63304|USA|St Charles|N|Y
+000208680^EHI0NA|Primary|5461 Legend Ct||Saint Charles|MO|63304|USA|St Charles|Y|Y
+000208723^BLA0NA|Home|14447 Wadesboro Rd||Ponchatoula|LA|70454|USA|Tangipahoa|N|Y
+000208723^BLA0NA|Primary|14447 Wadesboro Rd||Ponchatoula|LA|70454|USA|Tangipahoa|Y|Y
+000209077^EHI0NA|Home|4622 Robbins Grove Dr||Florissant|MO|63034|USA|St Louis|N|Y
+000209077^EHI0NA|Primary|4622 Robbins Grove Dr||Florissant|MO|63034|USA|St Louis|Y|Y
+000209108^BKC0NA|Home|4312 Norton Ave||Kansas City|MO|64130|USA|Jackson|N|Y
+000209108^BKC0NA|Primary|4312 Norton Ave||Kansas City|MO|64130|USA|Jackson|Y|Y
+000209296^EHI0NA|Home|206 Second Street||Defiance|MO|63341|USA|St Charles|N|Y
+000209296^EHI0NA|Primary|206 Second Street||Defiance|MO|63341|USA|St Charles|Y|Y
+000209724^BLA0NA|Home|139 Kings Point Blvd||Slidell|LA|70461|USA|St Tammany|N|Y
+000209724^BLA0NA|Primary|139 Kings Point Blvd||Slidell|LA|70461|USA|St Tammany|Y|Y
+000210017^BKC0NA|Home|14661 Barkley|Apt 30101|Overland Park|KS|66223|USA|Johnson|N|Y
+000210017^BKC0NA|Primary|14661 Barkley|Apt 30101|Overland Park|KS|66223|USA|Johnson|Y|Y
+000210153^BLA0NA|Home|12114 Greenwell Springs Port Hudson||Zachary|LA|70791|USA|East Baton Rouge|N|Y
+000210153^BLA0NA|Primary|12114 Greenwell Springs Port Hudson||Zachary|LA|70791|USA|East Baton Rouge|Y|Y
+000210485^BLA0NA|Home|2033 Dundee Loop N||Abita Springs|LA|70420|USA|St Tammany|N|Y
+000210485^BLA0NA|Primary|2033 Dundee Loop N||Abita Springs|LA|70420|USA|St Tammany|Y|Y
+000210703^BLA0NA|Home|12233 Topaz Lane||Saint Francisville|LA|70775|USA|West Feliciana|N|Y
+000210703^BLA0NA|Primary|12233 Topaz Lane||Saint Francisville|LA|70775|USA|West Feliciana|Y|Y
+000210713^BLA0NA|Home|28301 Frank Ballard Rd||Holden|LA|70744|USA|Livingston|N|Y
+000210713^BLA0NA|Primary|28301 Frank Ballard Rd||Holden|LA|70744|USA|Livingston|Y|Y
+000211237^EHI0NA|Home|196 Holly St.||Ridgedale|MO|65739|USA|Taney|N|Y
+000211237^EHI0NA|Primary|17021 Upriver Dr|Lot 213|Fort Myers|FL|33917|USA||Y|Y
+000211587^BLA0NA|Home|700 Rue Saint Michael||Hammond|LA|70403|USA|Tangipahoa|N|Y
+000211587^BLA0NA|Primary|700 Rue Saint Michael||Hammond|LA|70403|USA|Tangipahoa|Y|Y
+000211703^BLA0NA|Home|315 Hickory St||Amite|LA|70422|USA|Tangipahoa|N|Y
+000211703^BLA0NA|Primary|315 Hickory St||Amite|LA|70422|USA|Tangipahoa|Y|Y
+000211710^BLA0NA|Home|413 Tiger Ave||Covington|LA|70433|USA|St Tammany|N|Y
+000211710^BLA0NA|Primary|413 Tiger Ave||Covington|LA|70433|USA|St Tammany|Y|Y
+000211712^BLA0NA|Home|44153 Nicholas  Circle||Hammond|LA|70403|USA|Livingston|N|Y
+000211712^BLA0NA|Primary|44153 Nicholas Circle||Hammond|LA|70403|USA||Y|Y
+000211927^BLA0NA|Home|700 N General Pershing St||Hammond|LA|70401|USA|Tangipahoa|N|Y
+000211927^BLA0NA|Primary|700 N General Pershing St||Hammond|LA|70401|USA|Tangipahoa|Y|Y
+000212059^BLA0NA|Home|918 Tou Street||New Orleans|LA|70112|USA|Orleans|N|Y
+000212059^BLA0NA|Primary|918 Tou Street||New Orleans|LA|70112|USA|Orleans|Y|Y
+000212095^EHI0NA|Home|24 Shimmering Lake Ct||Saint Charles|MO|63301|USA|St Charles|N|Y
+000212095^EHI0NA|Primary|24 Shimmering Lake Ct||Saint Charles|MO|63301|USA|St Charles|Y|Y
+000212239^BKC0NA|Home|406 Askew Ave||Belton|MO|64012|USA|Cass|N|Y
+000212239^BKC0NA|Primary|406 Askew Ave||Belton|MO|64012|USA|Cass|Y|Y
+000212327^BLA0NA|Home|205 Toreua Rd||Scott|LA|70583|USA|Lafayette|N|Y
+000212327^BLA0NA|Primary|205 Toreua Rd||Scott|LA|70583|USA|Lafayette|Y|Y
+000212445^BLA0NA|Home|5004 Chateau Loire Blvd||Mandeville|LA|70448|USA|St Tammany|N|Y
+000212445^BLA0NA|Primary|5004 Chateau Loire Blvd||Mandeville|LA|70448|USA|St Tammany|Y|Y
+000212556^BKC0NA|Home|660 N Spring St.|Apt. 119|Independence|MO|64050|USA|Jackson|N|Y
+000212556^BKC0NA|Primary|660 N Spring St.|Apt. 119|Independence|MO|64050|USA|Jackson|Y|Y
+000212611^BLA0NA|Home|8144 Main St||Sorrento|LA|70778|USA|Ascension|N|Y
+000212611^BLA0NA|Primary|P.o Box 173||Sorrento|LA|70778|USA||Y|Y
+000212879^EHI0NA|Home|4135 Chasewood Dr||Saint Louis|MO|63128|USA|St Louis|N|Y
+000212879^EHI0NA|Primary|4135 Chasewood Dr||Saint Louis|MO|63128|USA|St Louis|Y|Y
+000212944^EHI0NA|Home|181 Autumn Maple||Rogersville|MO|65742|USA|Greene|N|Y
+000212944^EHI0NA|Primary|181 Autumn Maple||Rogersville|MO|65742|USA|Greene|Y|Y
+000213179^BKC0NA|Home|7719 N Revere Drive||Kansas City|MO|64151|USA|Platte|N|Y
+000213179^BKC0NA|Primary|7719 N Revere Drive||Kansas City|MO|64151|USA|Platte|Y|Y
+000213199^BKC0NA|Home|10001 Hardesty Ave||Kansas City|MO|64137|USA|Jackson|N|Y
+000213199^BKC0NA|Primary|10001 Hardesty Ave||Kansas City|MO|64137|USA|Jackson|Y|Y
+000213251^EHI0NA|Home|3031 Droste Rd||Saint Charles|MO|63301|USA|St Charles|N|Y
+000213251^EHI0NA|Primary|3031 Droste Rd||Saint Charles|MO|63301|USA|St Charles|Y|Y
+000213805^BLA0NA|Home|10143 Old World Dr||Baton Rouge|LA|70817|USA|East Baton Rouge|N|Y
+000213805^BLA0NA|Primary|10143 Old World Dr||Baton Rouge|LA|70817|USA|East Baton Rouge|Y|Y
+000213859^BLA0NA|Home|720 Timberwood Loop||Madisonville|LA|70447|USA|St Tammany|N|Y
+000213859^BLA0NA|Primary|720 Timberwood Loop||Madisonville|LA|70447|USA|St Tammany|Y|Y
+000213926^BLA0NA|Home|20185 Thornwood Dr||Hammond|LA|70403|USA|Tangipahoa|N|Y
+000213926^BLA0NA|Primary|20185 Thornwood Dr||Hammond|LA|70403|USA|Tangipahoa|Y|Y
+000214231^BKC0NA|Home|300 N Chelsea||Kansas City|MO|64123|USA|Jackson|N|Y
+000214231^BKC0NA|Primary|300 N Chelsea||Kansas City|MO|64123|USA|Jackson|Y|Y
+000214475^BKC0NA|Home|109 E 40th Street|#307|Kansas City|MO|64111|USA|Jackson|N|Y
+000214475^BKC0NA|Primary|109 E 40th Street|#307|Kansas City|MO|64111|USA|Jackson|Y|Y
+000214600^BLA0NA|Home|133 Granger St||Loreauville|LA|70552|USA|Iberia|N|Y
+000214600^BLA0NA|Primary|Po Box 42||Loreauville|LA|70552|USA||Y|Y
+000214757^BKC0NA|Home|6140 Raytown Rd|Apt 504|Kansas City|MO|64133|USA|Jackson|N|Y
+000214757^BKC0NA|Primary|6140 Raytown Rd|Apt 504|Kansas City|MO|64133|USA|Jackson|Y|Y
+000214837^BKC0NA|Home|7948 Ne 55th Street||Kansas City|MO|64119|USA|Clay|N|Y
+000214837^BKC0NA|Primary|7948 Ne 55th Street||Kansas City|MO|64119|USA|Clay|Y|Y
+000214958^BLA0NA|Home|204 St. Jude St||New Roads|LA|70760|USA|Pointe Coupee|N|Y
+000214958^BLA0NA|Primary|204 St. Jude St||New Roads|LA|70760|USA|Pointe Coupee|Y|Y
+000214961^BLA0NA|Home|17163 Hwy. 929||Prairieville|LA|70769|USA|Ascension|N|Y
+000214961^BLA0NA|Primary|3556 Cherry Street||Zachary|LA|70791|USA||Y|Y
+000214976^BLA0NA|Home|704 Brentwood Blvd||Lafayette|LA|70503|USA|Lafayette|N|Y
+000214976^BLA0NA|Primary|704 Brentwood Blvd||Lafayette|LA|70503|USA|Lafayette|Y|Y
+000215290^BLA0NA|Home|304 Tennyson Lane||Mandeville|LA|70448|USA|St Tammany|N|Y
+000215290^BLA0NA|Primary|304 Tennyson Lane||Mandeville|LA|70448|USA|St Tammany|Y|Y
+000215314^BKC0NA|Home|7411 Nw Ava||Kansas City|MO|64151|USA|Platte|N|Y
+000215314^BKC0NA|Primary|7411 Nw Ava||Kansas City|MO|64151|USA|Platte|Y|Y
+000215481^EHI0NA|Home|247 Myrtle Street||Niangua|MO|65713|USA|Webster|N|Y
+000215481^EHI0NA|Primary|247 Myrtle Street||Niangua|MO|65713|USA|Webster|Y|Y
+000215492^BLA0NA|Home|3556 Cherry Street||Zachary|LA|70791|USA|East Baton Rouge|N|Y
+000215492^BLA0NA|Primary|3556 Cherry Street||Zachary|LA|70791|USA|East Baton Rouge|Y|Y
+000215505^BLA0NA|Home|124 Briarmeadow Drive||Lafayette|LA|70508|USA|Lafayette|N|Y
+000215505^BLA0NA|Primary|124 Briarmeadow Drive||Lafayette|LA|70508|USA|Lafayette|Y|Y
+000215624^BLA0NA|Home|1309 N Woodlawn Ave||Metairie|LA|70001|USA|Jefferson|N|Y
+000215624^BLA0NA|Primary|1309 N Woodlawn Ave||Metairie|LA|70001|USA|Jefferson|Y|Y
+000215857^BLA0NA|Home|110 11th St||Westwego|LA|70094|USA|Jefferson|N|Y
+000215857^BLA0NA|Primary|110 11th St||Westwego|LA|70094|USA|Jefferson|Y|Y
+000215915^EHI0NA|Home|796 Portland Ave||Collinsville|IL|62234|USA|Madison|N|Y
+000215915^EHI0NA|Primary|796 Portland Ave||Collinsville|IL|62234|USA|Madison|Y|Y
+000216020^BLA0NA|Home|110 11th St||Westwego|LA|70094|USA|Jefferson|N|Y
+000216020^BLA0NA|Primary|110 11th St||Westwego|LA|70094|USA|Jefferson|Y|Y
+000216064^BLA0NA|Home|3500 Delambert||Chalmette|LA|70043|USA|St Bernard|N|Y
+000216064^BLA0NA|Primary|3500 Delambert||Chalmette|LA|70043|USA|St Bernard|Y|Y
+000216168^BLA0NA|Home|3500 Delambert||Chalmette|LA|70043|USA|St Bernard|N|Y
+000216168^BLA0NA|Primary|3500 Delambert||Chalmette|LA|70043|USA|St Bernard|Y|Y
+000216180^EHI0NA|Home|2800 Olive Street|Apt 12n|Saint Louis|MO|63103|USA|St Louis City|N|Y
+000216180^EHI0NA|Primary|2800 Olive Street|Apt 12n|Saint Louis|MO|63103|USA|St Louis City|Y|Y
+000216181^BLA0NA|Home|166 Vautrot Rd||Sunset|LA|70584|USA|St Landry|N|Y
+000216181^BLA0NA|Primary|166 Vautrot Rd||Sunset|LA|70584|USA|St Landry|Y|Y
+000216195^BLA0NA|Home|1612 Minnesota Ave||Kenner|LA|70062|USA|Jefferson|N|Y
+000216195^BLA0NA|Primary|1612 Minnesota Ave||Kenner|LA|70062|USA|Jefferson|Y|Y
+000216208^BLA0NA|Home|8416 Drury St||Metairie|LA|70003|USA|Jefferson|N|Y
+000216208^BLA0NA|Primary|8416 Drury St||Metairie|LA|70003|USA|Jefferson|Y|Y
+000216214^BKC0NA|Home|110 W County Line Rd||Holt|MO|64048|USA|Clay|N|Y
+000216214^BKC0NA|Primary|110 W County Line Rd||Holt|MO|64048|USA|Clay|Y|Y
+000216216^BLA0NA|Home|47021 Highway 22|Lot #4|Saint Amant|LA|70774|USA|Ascension|N|Y
+000216216^BLA0NA|Primary|47021 Highway 22|Lot #4|St. Amant|LA|70774|USA||Y|Y
+000216234^EHI0NA|Home|2670 E Republic Rd||Springfield|MO|65804|USA|Greene|N|Y
+000216234^EHI0NA|Primary|2670 E Republic Rd||Springfield|MO|65804|USA|Greene|Y|Y
+000216246^BLA0NA|Home|228 High St||Abita Springs|LA|70420|USA|St Tammany|N|Y
+000216246^BLA0NA|Primary|228 High St||Abita Springs|LA|70420|USA|St Tammany|Y|Y
+000216261^EHI0NA|Home|4915 Rocky Branch Rd||Bethalto|IL|62010|USA|Madison|N|Y
+000216261^EHI0NA|Primary|4915 Rocky Branch Rd||Bethalto|IL|62010|USA|Madison|Y|Y
+000216270^BKC0NA|Home|2 Circle Drive||Pleasant Hill|MO|64080|USA|Cass|N|Y
+000216270^BKC0NA|Primary|2 Circle Drive||Pleasant Hill|MO|64080|USA|Cass|Y|Y
+000216288^EHI0NA|Home|4407 Oakridge Blvd||Saint Louis|MO|63121|USA|St Louis|N|Y
+000216288^EHI0NA|Primary|4407 Oakridge Blvd||Saint Louis|MO|63121|USA|St Louis|Y|Y
+000216289^BLA0NA|Home|46207 Milton Rd||Hammond|LA|70401|USA|Tangipahoa|N|Y
+000216289^BLA0NA|Primary|46207 Milton Rd||Hammond|LA|70401|USA|Tangipahoa|Y|Y
+000216290^BLA0NA|Home|462207 Milton Rd||Hammond|LA|70401|USA|Tangipahoa|N|Y
+000216290^BLA0NA|Primary|462207 Milton Rd||Hammond|LA|70401|USA|Tangipahoa|Y|Y
+000216292^BLA0NA|Home|911 3rd St||Reddell|LA|70580|USA|Evangeline|N|Y
+000216292^BLA0NA|Primary|911 3rd St||Morgan City|LA|70580|USA||Y|Y
+000216310^BLA0NA|Home|40141 Brown Rd.||Ponchatoula|LA|70454|USA|Tangipahoa|N|Y
+000216310^BLA0NA|Primary|40141 Brown Rd.||Ponchatoula|LA|70454|USA|Tangipahoa|Y|Y
+000216336^BLA0NA|Home|82046 Highway 21||Bush|LA|70431|USA|Saint Tammany|N|Y
+000216336^BLA0NA|Primary|82046 Highway 21||Bush|LA|70431|USA|Saint Tammany|Y|Y
+000216339^BKC0NA|Home|1701 N 27th St||Kansas City|KS|66104|USA|Wyandotte|N|Y
+000216339^BKC0NA|Primary|1701 N 27th St||Kansas City|KS|66104|USA|Wyandotte|Y|Y
+000216341^BKC0NA|Home|5211 NE 63RD ST||Kansas City|MO|64119|USA|Clay|N|Y
+000216341^BKC0NA|Primary|5211 NE 63RD ST||Kansas City|MO|64119|USA|Clay|Y|Y
+000216344^BLA0NA|Home|3104 Tara Dr||Violet|LA|70092|USA|St Bernard|N|Y
+000216344^BLA0NA|Primary|3104 Tara Dr||Violet|LA|70092|USA|St Bernard|Y|Y
+000216351^EHI0NA|Home|9210 Sundown Dr||Country Club Hills|MO|63136|USA|St Louis|N|Y
+000216351^EHI0NA|Primary|9210 Sundown Dr||Country Club Hills|MO|63136|USA|St Louis|Y|Y
+000216356^BKC0NA|Home|5259 W 121st St||Leawood|KS|66209|USA|Johnson|N|Y
+000216356^BKC0NA|Primary|5259 W 121st St||Leawood|KS|66209|USA|Johnson|Y|Y
+000216366^BLA0NA|Home|2223 Robley Dr||Lafayette|LA|70503|USA|Lafayette|N|Y
+000216366^BLA0NA|Primary|2223 Robley Dr||Lafayette|LA|70503|USA|Lafayette|Y|Y
+000216441^EHI0NA|Home|5830 Marine Rd||Alhambra|IL|62001|USA|Madison|N|Y
+000216441^EHI0NA|Primary|5830 Marine Rd||Alhambra|IL|62001|USA|Madison|Y|Y
+000216476^EHI0NA|Home|956 Wolfrum Glen Court||Saint Charles|MO|63304|USA|St Charles|N|Y
+000216476^EHI0NA|Primary|956 Wolfrum Glen Court||Saint Charles|MO|63304|USA|St Charles|Y|Y
+000216538^EHI0NA|Home|3644 Blaine Ave||Saint Louis|MO|63110|USA|St Louis City|N|Y
+000216538^EHI0NA|Primary|3644 Blaine Ave||Saint Louis|MO|63110|USA|St Louis City|Y|Y
+000216539^BKC0NA|Home|510 Ne Golfview Drive||Blue Springs|MO|64014|USA|Jackson|N|Y
+000216539^BKC0NA|Primary|510 Ne Golfview Drive||Blue Springs|MO|64014|USA|Jackson|Y|Y
+000216590^EHI0NA|Home|2113 Jannette Dr||Saint Louis|MO|63136|USA|St Louis|N|Y
+000216590^EHI0NA|Primary|2113 Jannette Dr||Saint Louis|MO|63136|USA|St Louis|Y|Y
+000216826^BLA0NA|Home|1391 Hwy 960||Clinton|LA|70722|USA|East Baton Rouge|N|Y
+000216826^BLA0NA|Primary|1391 Hwy  960||Clinton|LA|70722|USA||Y|Y
+000216866^BLA0NA|Home|1048 Beverly Garden Dr||Metairie|LA|70002|USA|Jefferson|N|Y
+000216866^BLA0NA|Primary|1048 Beverly Garden Dr||Metairie|LA|70002|USA|Jefferson|Y|Y
+000216946^EHI0NA|Home|1355 Fairgrounds Rd|Apt 218|Saint Charles|MO|63301|USA|St Charles|N|Y
+000216946^EHI0NA|Primary|1355 Fairgrounds Rd|Apt 218|Saint Charles|MO|63301|USA|St Charles|Y|Y
+000217003^BLA0NA|Home|928 6th St||New Orleans|LA|70115|USA|Orleans|N|Y
+000217003^BLA0NA|Primary|928 6th St||New Orleans|LA|70115|USA|Orleans|Y|Y
+000217085^BLA0NA|Home|820 N Pearl Dr||Slidell|LA|70461|USA|St Tammany|N|Y
+000217085^BLA0NA|Primary|820 N Pearl Dr||Slidell|LA|70461|USA|St Tammany|Y|Y
+000217144^BLA0NA|Home|134 Lindsey Circle||Carencro|LA|70520|USA|Lafayette|N|Y
+000217144^BLA0NA|Primary|134 Lindsey Circle||Carencro|LA|70520|USA|Lafayette|Y|Y
+000217148^BKC0NA|Home|1200 N 75th Pl|Apt 408|Kansas City|KS|66112|USA|Wyandotte|N|Y
+000217148^BKC0NA|Primary|1200 N 75th Pl|Apt 408|Kansas City|KS|66112|USA|Wyandotte|Y|Y
+000217160^BKC0NA|Home|444 W 12th St|Apt 905|Kansas City|MO|64105|USA|Jackson|N|Y
+000217160^BKC0NA|Primary|444 W 12th St|Apt 905|Kansas City|MO|64105|USA|Jackson|Y|Y
+000217207^EHI0NA|Home|10203 Lackland Rd||Saint Louis|MO|63114|USA|St Louis|N|Y
+000217207^EHI0NA|Primary|10203 Lackland Rd||Saint Louis|MO|63114|USA|St Louis|Y|Y
+000217226^EHI0NA|Home|583 Bluff Parks Drive, Apt.||Florissant|MO|63031|USA|St Louis|N|Y
+000217226^EHI0NA|Primary|583 Bluff Parks Drive, Apt.||Florissant|MO|63031|USA|St Louis|Y|Y
+000217228^EHI0NA|Home|5830 Marine Rd||Alhambra|IL|62001|USA|Madison|N|Y
+000217228^EHI0NA|Primary|5830 Marine Rd||Alhambra|IL|62001|USA|Madison|Y|Y
+000217229^EHI0NA|Home|149 Quail Cove Drive||Kimberling City|MO|65686|USA|Stone|N|Y
+000217229^EHI0NA|Primary|149 Quail Cove Drive||Kimberling City|MO|65686|USA|Stone|Y|Y
+000217233^EHI0NA|Home|5827 Bridleford Ln||Saint Louis|MO|63129|USA|St Louis|N|Y
+000217233^EHI0NA|Primary|5827 Bridleford Ln||Saint Louis|MO|63129|USA|St Louis|Y|Y
+000217237^BKC0NA|Home|4721 N. Cliff Hill Circle||Kansas City|MO|64151|USA|Platte|N|Y
+000217237^BKC0NA|Primary|4721 N. Cliff Hill Circle||Kansas City|MO|64151|USA|Platte|Y|Y
+000217243^EHI0NA|Home|212 N Meadow||Nixa|MO|65714|USA|Christian|N|Y
+000217243^EHI0NA|Primary|212 N Meadow||Nixa|MO|65714|USA|Christian|Y|Y
+000217249^BLA0NA|Home|12377 Oak Brook Dr||Geismar|LA|70734|USA|Ascension|N|Y
+000217249^BLA0NA|Primary|12377 Oak Brook Dr||Geismar|LA|70734|USA|Ascension|Y|Y
+000217250^EHI0NA|Home|174 Woodbury Place Circle||O Fallon|MO|63366|USA|St Charles|N|Y
+000217250^EHI0NA|Primary|174 Woodbury Place Circle||O Fallon|MO|63366|USA|St Charles|Y|Y
+000217254^EHI0NA|Home|1063 Sunny Slopes Dr||Nixa|MO|65714|USA|Christian|N|Y
+000217254^EHI0NA|Primary|1063 Sunny Slopes Dr||Nixa|MO|65714|USA|Christian|Y|Y
+000217255^EHI0NA|Home|1063 Sunny Slopes Dr||Nixa|MO|65714|USA|Christian|N|Y
+000217255^EHI0NA|Primary|1063 Sunny Slopes Dr||Nixa|MO|65714|USA|Christian|Y|Y
+000217257^EHI0NA|Home|1953 Laverne Dr||Arnold|MO|63010|USA|Jefferson|N|Y
+000217257^EHI0NA|Primary|1953 Laverne Dr||Arnold|MO|63010|USA|Jefferson|Y|Y
+000217272^EHI0NA|Home|126 Clearwater Dr.||Fordland|MO|65652|USA|Webster|N|Y
+000217272^EHI0NA|Primary|126 Clearwater Dr.||Fordland|MO|65652|USA|Webster|Y|Y
+000217291^EHI0NA|Home|8342 Delcrest Dr||Saint Louis|MO|63124|USA|St Louis|N|Y
+000217291^EHI0NA|Primary|8342 Delcrest Dr||Saint Louis|MO|63124|USA|St Louis|Y|Y
+000217292^EHI0NA|Home|8342 Delcrest Dr|Apt 230|Saint Louis|MO|63124|USA|St Louis|N|Y
+000217292^EHI0NA|Primary|8342 Delcrest Dr|Apt 230|Saint Louis|MO|63124|USA|St Louis|Y|Y
+000217315^BKC0NA|Home|6003 Ne Bincain Place 1|1B|Kansas City|MO|64118|USA|Clay|N|Y
+000217315^BKC0NA|Primary|6003 Ne Bincain Place 1|1B|Kansas City|MO|64118|USA|Clay|Y|Y
+000217317^BKC0NA|Home|31311 E State Route B||Garden City|MO|64747|USA|Cass|N|Y
+000217317^BKC0NA|Primary|31311 E State Route B||Garden City|MO|64747|USA|Cass|Y|Y
+000217362^EHI0NA|Home|102 Pheasant Run||O Fallon|IL|62269|USA|St Clair|N|Y
+000217362^EHI0NA|Primary|102 Pheasant Run||O Fallon|IL|62269|USA|St Clair|Y|Y
+000217368^EHI0NA|Home|1051 Cottonwood Rd||Rogersville|MO|65742|USA|Webster|N|Y
+000217368^EHI0NA|Primary|1051 Cottonwood Rd||Rogersville|MO|65742|USA|Webster|Y|Y
+000217395^BKC0NA|Home|300 N Chelsea||Kansas City|MO|64123|USA|Jackson|N|Y
+000217395^BKC0NA|Primary|300 N Chelsea||Kansas City|MO|64123|USA|Jackson|Y|Y
+000217396^BKC0NA|Home|7948 Ne 55th Street||Kansas City|MO|64119|USA|Clay|N|Y
+000217396^BKC0NA|Primary|7948 Ne 55th Street||Kansas City|MO|64119|USA|Clay|Y|Y
+000217404^EHI0NA|Home|124 S Elm St||Saint Louis|MO|63119|USA|St Louis|N|Y
+000217404^EHI0NA|Primary|124 S Elm St||Saint Louis|MO|63119|USA|St Louis|Y|Y
+000217406^BKC0NA|Home|7107 E State Rt W||Freeman|MO|64746|USA|Cass|N|Y
+000217406^BKC0NA|Primary|7107 E State Rt W||Freeman|MO|64746|USA|Cass|Y|Y
+000217408^BKC0NA|Home|1315 Hasbrook||Kansas City|KS|66105|USA|Wyandotte|N|Y
+000217408^BKC0NA|Primary|1315 Hasbrook||Kansas City|KS|66105|USA|Wyandotte|Y|Y
+000217424^EHI0NA|Home|204 S Pam Avenue||Saint Charles|MO|63301|USA|St Charles|N|Y
+000217424^EHI0NA|Primary|204 S Pam Avenue||Saint Charles|MO|63301|USA|St Charles|Y|Y
+000217428^EHI0NA|Home|2809 Essex St.||Black Walnut|MO|63301|USA|St Charles|N|Y
+000217428^EHI0NA|Primary|2809 Essex St.||Black Walnut|MO|63301|USA|St Charles|Y|Y
+000217430^BKC0NA|Home|2513 Ne 52nd St||Kansas City|MO|64118|USA|Clay|N|Y
+000217430^BKC0NA|Primary|2513 Ne 52nd St||Kansas City|MO|64118|USA|Clay|Y|Y
+000217431^BKC0NA|Home|1066 Kimball Ave||Kansas City|KS|66104|USA|Wyandotte|N|Y
+000217431^BKC0NA|Primary|1066 Kimball Ave||Kansas City|KS|66104|USA|Wyandotte|Y|Y
+000217456^BLA0NA|Home|1834 Spain St||New Orleans|LA|70117|USA|Orleans|N|Y
+000217456^BLA0NA|Primary|Po Box 771009||New Orleans|LA|70177|USA||Y|Y
+000217457^EHI0NA|Home|9024 Gravois View Ct|Apt A|Saint Louis|MO|63123|USA|St Louis|N|Y
+000217457^EHI0NA|Primary|9024 Gravois View Ct|Apt A|Saint Louis|MO|63123|USA|St Louis|Y|Y
+000217458^EHI0NA|Home|4761 Lazy Acres Rd||Protem|MO|65733|USA|Taney|N|Y
+000217458^EHI0NA|Primary|4761 Lazy Acres Rd||Protem|MO|65733|USA|Taney|Y|Y
+000217459^EHI0NA|Home|1959 Sunnyside Rd||Festus|MO|63028|USA|Jefferson|N|Y
+000217459^EHI0NA|Primary|1959 Sunnyside Rd||Festus|MO|63028|USA|Jefferson|Y|Y
+000217460^EHI0NA|Home|1280 E Sunset St||Springfield|MO|65804|USA|Greene|N|Y
+000217460^EHI0NA|Primary|1280 E Sunset St||Springfield|MO|65804|USA|Greene|Y|Y
+000217462^EHI0NA|Home|5063 Winona Ave||Saint Louis|MO|63109|USA|St Louis City|N|Y
+000217462^EHI0NA|Primary|5063 Winona Ave||Saint Louis|MO|63109|USA|St Louis City|Y|Y
+000217463^BKC0NA|Home|12705 E 59th St||Kansas City|MO|64133|USA|Jackson|N|Y
+000217463^BKC0NA|Primary|12705 E 59th St||Kansas City|MO|64133|USA|Jackson|Y|Y
+000217464^BKC0NA|Home|6223 Wall St||Houston Lake|MO|64151|USA|Platte|N|Y
+000217464^BKC0NA|Primary|6223 Wall St||Houston Lake|MO|64151|USA|Platte|Y|Y
+000217465^BLA0NA|Home|2840 Sprig Drive||Marrero|LA|70072|USA|Jefferson|N|Y
+000217465^BLA0NA|Primary|2840 Sprig Drive||Marrero|LA|70072|USA|Jefferson|Y|Y
+000217466^BKC0NA|Home|10524 W 62nd Street||Shawnee|KS|66203|USA|Johnson|N|Y
+000217466^BKC0NA|Primary|10524 W 62nd Street||Shawnee|KS|66203|USA|Johnson|Y|Y
+000217467^EHI0NA|Home|11185 Schuetz Rd||Saint Louis|MO|63146|USA|St Louis|N|Y
+000217467^EHI0NA|Primary|11185 Schuetz Rd||Saint Louis|MO|63146|USA|St Louis|Y|Y
+000217468^BLA0NA|Home|6109 Hwy 90 East||New Iberia|LA|70560|USA|Iberia|N|Y
+000217468^BLA0NA|Primary|6109 Hwy 90 East||New Iberia|LA|70560|USA|Iberia|Y|Y
+000217471^BLA0NA|Home|303 Shaunell St||Mandeville|LA|70448|USA|St Tammany|N|Y
+000217471^BLA0NA|Primary|303 Shaunell St||Mandeville|LA|70448|USA|St Tammany|Y|Y
+000217472^BKC0NA|Home|2272 Roswell Ave||Kansas City|KS|66104|USA|Wyandotte|N|Y
+000217472^BKC0NA|Primary|2272 Roswell Ave||Kansas City|KS|66104|USA|Wyandotte|Y|Y
+000217474^BKC0NA|Home|12509 Knox St||Overland Park|KS|66213|USA|Johnson|N|Y
+000217474^BKC0NA|Primary|12509 Knox St||Overland Park|KS|66213|USA|Johnson|Y|Y
+000217475^BLA0NA|Home|6613 Asher St||Metairie|LA|70003|USA|Jefferson|N|Y
+000217475^BLA0NA|Primary|6613 Asher St||Metairie|LA|70003|USA|Jefferson|Y|Y
+000217476^BLA0NA|Home|5009 Rutten Rill Road||Jeanerette|LA|70544|USA|Iberia|N|Y
+000217476^BLA0NA|Primary|5009 Rutten Rill Road||Jeanerette|LA|70544|USA|Iberia|Y|Y
+000217477^BKC0NA|Home|1116 Ne Independence Avenue|#313|Lees Summit|MO|64086|USA|Jackson|N|Y
+000217477^BKC0NA|Primary|1116 Ne Independence Avenue|#313|Lees Summit|MO|64086|USA|Jackson|Y|Y
+000217478^EHI0NA|Home|2820 Lawrence 1235||Everton|MO|65646|USA|Lawrence|N|Y
+000217478^EHI0NA|Primary|2820 Lawrence 1235||Everton|MO|65646|USA|Lawrence|Y|Y
+000217479^EHI0NA|Home|1816 Boswell Ave||Branson|MO|65616|USA|Taney|N|Y
+000217479^EHI0NA|Primary|Po Box 1222||Branson|MO|65615|USA||Y|Y
+000217480^BLA0NA|Home|461 Courthouse Ln||Hahnville|LA|70057|USA|St Charles|N|Y
+000217480^BLA0NA|Primary|461 Courthouse Ln||Hahnville|LA|70057|USA|St Charles|Y|Y
+000217481^BKC0NA|Home|6027 Haskell Ave||Kansas City|KS|66104|USA|Wyandotte|N|Y
+000217481^BKC0NA|Primary|6027 Haskell Ave||Kansas City|KS|66104|USA|Wyandotte|Y|Y
+000217482^EHI0NA|Home|6706 Clayschool Rd.||Collinsville|IL|62234|USA|Madison|N|Y
+000217482^EHI0NA|Primary|Po Box 532||Collinsville|IL|62234|USA||Y|Y
+000217483^EHI0NA|Home|1921 E Jacqueline St||Springfield|MO|65804|USA|Greene|N|Y
+000217483^EHI0NA|Primary|1921 E Jacqueline St||Springfield|MO|65804|USA|Greene|Y|Y
+000217484^EHI0NA|Home|2320 Collett Dr||Saint Louis|MO|63136|USA|St Louis|N|Y
+000217484^EHI0NA|Primary|2320 Collett Dr||Saint Louis|MO|63136|USA|St Louis|Y|Y
+000217486^EHI0NA|Home|2221 Oakdale Ave||Saint Louis|MO|63121|USA|St Louis|N|Y
+000217486^EHI0NA|Primary|2221 Oakdale Ave||Saint Louis|MO|63121|USA|St Louis|Y|Y

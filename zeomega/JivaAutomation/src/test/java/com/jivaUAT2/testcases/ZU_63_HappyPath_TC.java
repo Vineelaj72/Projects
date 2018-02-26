@@ -33,15 +33,15 @@ import com.jiva.pages.ProgramsPage;
 import com.jiva.pages.WorklistsPage;
 import com.framework.utils.TestBase;
 
-public class ZU_63_Integration_HappyPath_TC extends TestBase {
-	private static Logger logger = Logger.getLogger(ZU_60_Integration_HappyPath_TC.class);
+public class ZU_63_HappyPath_TC extends TestBase {
+	private static Logger logger = Logger.getLogger(ZU_60_HappyPath_TC.class);
 	private WebDriver driver;
 	private String sTestcaseName = null;
 	
 	private ArrayList<String> MemberDemographicData;
 	int ENROLLMENTID=0,ALTERNATEID=1,LASTNAME=2,FIRSTNAME=3,DOB=4,ACTIVESTATUS=5,GENDER=6;	
 	
-	private int lineNumber=2;
+	private int lineNumber=1;
 	
 	private ArrayList<String> MemberAddressData;	
 	int ADDR_ENROLLMENTID=0,HOME_ADDRESSTYPE=1,HOME_ADDRESS1=2,HOME_CITY=3,HOME_STATE=4,HOME_ZIP=5,HOME_COUNTRY=6;

@@ -33,7 +33,7 @@ public class TestBase implements Setup,JivaRecordsIndexing {
 			}
 			
 		}
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 	}
 

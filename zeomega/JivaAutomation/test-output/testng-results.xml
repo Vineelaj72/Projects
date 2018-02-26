@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
     <line>
       <![CDATA[Username Enteredvjayavarapu]]>
@@ -10,13 +10,19 @@
     <line>
       <![CDATA[Login Button Clicked]]>
     </line>
+    <line>
+      <![CDATA[Expected-000003048^EHI0NA--Actual Result-000003048^EHI0NAMember Coverage ID validated against address file<br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='red'>Expected: 000003048^EHI0NA Actual: EHINot equal </font>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="154782" started-at="2018-02-20T20:30:20Z" finished-at="2018-02-20T20:32:55Z">
+  <suite name="Sanity Suite" duration-ms="36943" started-at="2018-02-26T01:44:52Z" finished-at="2018-02-26T01:45:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="154782" started-at="2018-02-20T20:30:20Z" finished-at="2018-02-20T20:32:55Z">
-      <class name="com.jivaUAT2.testcases.Flow1">
-        <test-method status="PASS" signature="verify_MemberSearch()[pri:0, instance:com.jivaUAT2.testcases.Flow1@1c3a4799]" name="verify_MemberSearch" is-config="true" duration-ms="15694" started-at="2018-02-20T14:30:20Z" description="Read the Member data files and perform Member Search with Member ID" finished-at="2018-02-20T14:30:36Z">
+    <test name="ZU_60_TC01_Line 1" duration-ms="36943" started-at="2018-02-26T01:44:52Z" finished-at="2018-02-26T01:45:29Z">
+      <class name="com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC">
+        <test-method status="PASS" signature="verify_MemberSearch()[pri:0, instance:com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC@25af5db5]" name="verify_MemberSearch" is-config="true" duration-ms="22450" started-at="2018-02-25T19:44:52Z" description="Read the Member data files and perform Member Search with Member ID" finished-at="2018-02-25T19:45:14Z">
           <reporter-output>
             <line>
               <![CDATA[Username Enteredvjayavarapu]]>
@@ -29,15 +35,60 @@
             </line>
           </reporter-output>
         </test-method> <!-- verify_MemberSearch -->
-        <test-method status="PASS" signature="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow()[pri:0, instance:com.jivaUAT2.testcases.Flow1@1c3a4799]" name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow" duration-ms="138348" started-at="2018-02-20T14:30:36Z" description="Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member" finished-at="2018-02-20T14:32:54Z">
+        <test-method status="FAIL" signature="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow()[pri:0, instance:com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC@25af5db5]" name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow" duration-ms="13700" started-at="2018-02-25T19:45:14Z" description="Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member" finished-at="2018-02-25T19:45:28Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Member Coverage ID validated against address file expected [EHI] but found [000003048^EHI0NA]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Member Coverage ID validated against address file expected [EHI] but found [000003048^EHI0NA]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC.customReport(ZU_60_E2EIntegrationFlow_TC.java:116)
+	at com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC.verify_MemberData_fromfile_toScreen_ZU_60Integrationflow(ZU_60_E2EIntegrationFlow_TC.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Expected-000003048^EHI0NA--Actual Result-000003048^EHI0NAMember Coverage ID validated against address file<br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='red'>Expected: 000003048^EHI0NA Actual: EHINot equal </font>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.jivaUAT2.testcases.Flow1@1c3a4799]" name="closeBrowser" is-config="true" duration-ms="721" started-at="2018-02-20T14:32:54Z" description="Close the browser" finished-at="2018-02-20T14:32:55Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC@25af5db5]" name="closeBrowser" is-config="true" duration-ms="782" started-at="2018-02-25T19:45:28Z" description="Close the browser" finished-at="2018-02-25T19:45:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.jivaUAT2.testcases.Flow1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC -->
+    </test> <!-- ZU_60_TC01_Line 1 -->
+  </suite> <!-- Sanity Suite -->
 </testng-results>

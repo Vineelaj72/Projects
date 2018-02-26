@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Sanity Suite]">
+<suite name="Failed suite [Sanity Suite]">
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="Line 2(failed)">
-    <parameter name="linenumber" value="2"/>
+  <test name="ZU_60_TC01_Line 1(failed)">
     <classes>
-      <class name="com.jivaUAT2.testcases.Flow1">
+      <class name="com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC">
         <methods>
+          <include name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow"/>
+          <include name="verify_MemberSearch"/>
           <include name="closeBrowser"/>
-          <include name="verify_MemberActiveStatus"/>
-          <include name="verify_MemberDatafromfile_toScreen_ZU_60flow"/>
         </methods>
-      </class> <!-- com.jivaUAT2.testcases.Flow1 -->
+      </class> <!-- com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC -->
     </classes>
-  </test> <!-- Line 2(failed) -->
+  </test> <!-- ZU_60_TC01_Line 1(failed) -->
 </suite> <!-- Failed suite [Sanity Suite] -->

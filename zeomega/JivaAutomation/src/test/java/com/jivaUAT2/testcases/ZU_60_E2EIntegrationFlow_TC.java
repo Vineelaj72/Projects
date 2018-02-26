@@ -1,5 +1,7 @@
 package com.jivaUAT2.testcases;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -32,8 +34,8 @@ import com.jiva.pages.MemberSearchPage;
 import com.jiva.pages.ProgramsPage;
 import com.jiva.pages.WorklistsPage;
 
-public class Flow1 extends TestBase {
-	private static Logger logger = Logger.getLogger(Flow1.class);
+public class ZU_60_E2EIntegrationFlow_TC extends TestBase {
+	private static Logger logger = Logger.getLogger(ZU_60_E2EIntegrationFlow_TC.class);
 	private WebDriver driver;
 	private String sTestcaseName = null;
 	
@@ -100,6 +102,22 @@ public class Flow1 extends TestBase {
 		
 	}
 		
+	public void customReport(String ExpectedResult, String ActualResult, String message)
+	{
+		System.setProperty("org.uncommons.reportng.escape-output", "false");
+		if(ExpectedResult.equalsIgnoreCase(ActualResult))
+		{
+			Reporter.log("Expected-"+ExpectedResult+"--Actual Result-"+ActualResult +message+"<br>");
+			//assertEquals(ExpectedResult, ActualResult,message);
+		}
+		else
+		{
+		Reporter.log("<font color='red'>"+"Expected: "+ExpectedResult+" Actual: "+ActualResult+"Not equal "+"</font>");
+		Assert.assertEquals(ExpectedResult, ActualResult,message);
+		}
+
+	
+	}
 	
 	@Test(description = "Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member")
 	public void verify_MemberData_fromfile_toScreen_ZU_60Integrationflow() throws InterruptedException {
@@ -122,15 +140,24 @@ public class Flow1 extends TestBase {
 		// ----- Verify the file data with screen data -----
 		String clientname = memberOverviewPage.getClientName();
 		logger.info("Verifying the flow for the Client : "+clientname);
-		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
-		Assert.assertEquals(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against address file");
+	//	Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
+		//Reporter.log("Expected- "+MemberDemographicData.get(ENROLLMENTID)+" , "+"Actual- "+memberOverviewPage.getCoverageId()+ "Member Coverage ID validated against demographic file");
+		
+		//---------------//
+		customReport(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Validation1: Member Coverage ID validated against address file");
+	//	Assert.assertEquals(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against address file");
+		
+		customReport(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getClientName(), "Member Coverage ID validated against address file");
+		
+		
+		
 		Assert.assertEquals(MemberCoverageData.get(CVRG_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Coverage file");
 		
 		Assert.assertEquals(MemberPhoneData.get(PHN_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Member Phone file");
 		Assert.assertEquals(MemberPhoneData.get(PHONENUMBER), memberOverviewPage.getPhoneNumber(), "Member Phone Number validated against Member Phone file");		
 		
 		//MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
-		memberOverviewPage.openMemberInformation();
+		/*memberOverviewPage.openMemberInformation();
 		memberOverviewPage.sleep(5000);			
 		Assert.assertEquals(MemberDemographicData.get(LASTNAME), memberOverviewPage.getMemberLastName(), "Member last name validated");
 		Assert.assertEquals(MemberDemographicData.get(FIRSTNAME), memberOverviewPage.getMemberFirstName(), "Member first name validated");			
@@ -238,7 +265,7 @@ public class Flow1 extends TestBase {
 		ProgramsPage programsPage = new ProgramsPage(driver);		
 		Assert.assertEquals(true, programsPage.verify_ProgramClosed(),"Program is closed successfully");
 		
-		logger.info("Successfully completed validating member files integration flow of ZU-60_Unable to reach member");
+		logger.info("Successfully completed validating member files integration flow of ZU-60_Unable to reach member");*/
 		
 		/*
 		programsPage.clickMemberOverview();

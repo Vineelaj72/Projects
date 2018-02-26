@@ -4,17 +4,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.jiva.OLDTestData.ReadAddressFile;
+import com.jiva.OLDTestData.ReadMemberCoverageFile;
+import com.jiva.OLDTestData.ReadMemberDemographicFile;
+import com.jiva.OLDTestData.ReadPhoneDetails;
 import com.jiva.TestData.AddressFileInput;
 import com.jiva.TestData.CoverageFileInput;
-import com.jiva.TestData.PhoneFileInput;
 import com.jiva.TestData.DemographicFileInput;
+import com.jiva.TestData.PhoneFileInput;
 import com.jiva.pages.AddInteractionsPage;
 import com.jiva.pages.ChangeStatusPage;
 import com.jiva.pages.ConfirmAddepisodePage;
@@ -29,15 +31,15 @@ import com.jiva.pages.ProgramsPage;
 import com.jiva.pages.WorklistsPage;
 import com.framework.utils.TestBase;
 
-public class ZU_60_Integration_HappyPath_TC extends TestBase {
-	private static Logger logger = Logger.getLogger(ZU_60_Integration_HappyPath_TC.class);
+public class ZU_61_HappyPath_TC extends TestBase {
+	private static Logger logger = Logger.getLogger(ZU_60_HappyPath_TC.class);
 	private WebDriver driver;
 	private String sTestcaseName = null;
 	
 	private ArrayList<String> MemberDemographicData;
 	int ENROLLMENTID=0,ALTERNATEID=1,LASTNAME=2,FIRSTNAME=3,DOB=4,ACTIVESTATUS=5,GENDER=6;	
 	
-	private int lineNumber=1;
+	private int lineNumber=2;
 	
 	private ArrayList<String> MemberAddressData;	
 	int ADDR_ENROLLMENTID=0,HOME_ADDRESSTYPE=1,HOME_ADDRESS1=2,HOME_CITY=3,HOME_STATE=4,HOME_ZIP=5,HOME_COUNTRY=6;
@@ -84,7 +86,8 @@ public class ZU_60_Integration_HappyPath_TC extends TestBase {
 		loginPage.enterUsername(USERNAME);
 		loginPage.enterPassword(PASSWORD);
 		loginPage.loginbutton();
-			
+		
+	
 
 		Dashboard dashboard = new Dashboard(driver);
 		Assert.assertEquals(true, dashboard.verifyDashboardDisplayed(), "Logged in Sucessfully");
@@ -107,13 +110,18 @@ public class ZU_60_Integration_HappyPath_TC extends TestBase {
 		
 		ConfirmAddepisodePage confirmAddepisodePage = new ConfirmAddepisodePage(driver);
 		confirmAddepisodePage.clickRedirecttoMCV();
-			
+		
+		/*By deadColor= By.xpath(".//*[@id='angularcontent']//div[contains(@class,'4d4d4d')]");
+		confirmAddepisodePage.getAttribute(deadColor).contains("4d4d4d"))*/		
+		
+		
 		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
 		memberOverviewPage.sleep(3000);
 		memberOverviewPage.expandMemberInfo();	
 		String clientname = memberOverviewPage.getClientName();
 		logger.info("Verifying the flow for the Client : "+clientname);
-		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");		
+		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
+		//Assert.assertEquals(MemberDemographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against demographic file");
 		Assert.assertEquals(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against address file");
 		Assert.assertEquals(MemberPhoneData.get(PHN_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Member Phone file");
 		Assert.assertEquals(MemberPhoneData.get(PHONENUMBER), memberOverviewPage.getPhoneNumber(), "Member Phone Number validated against Member Phone file");
@@ -151,6 +159,7 @@ public class ZU_60_Integration_HappyPath_TC extends TestBase {
 		memberOverviewPage.closeMemberInfo();
 		memberOverviewPage.expandMemberInfo();
 		
+		
 		memberOverviewPage.clickAddEpisode();
 		memberOverviewPage.clickCaseManagement();
 		memberOverviewPage.similarEpisodeAlert();
@@ -163,93 +172,64 @@ public class ZU_60_Integration_HappyPath_TC extends TestBase {
 		logger.info("Verified creation of episode successfully");
 
 		// Worklists page details
+
 		WorklistsPage worklists = new WorklistsPage(driver);				
 		memberOverviewPage.clickCurrentEpisodecogwheel();
-		memberOverviewPage.openEpisode();	
+		memberOverviewPage.openEpisode();				
+		//worklists.assigntoself();  -- assign to self if it is not assigned to you
+
+		// Episode overview Page details
 		
-	
-		// Episode overview Page details		
 		Episodeoverviewpage episodeoverviewpage = new Episodeoverviewpage(driver);
 		Assert.assertEquals(episodeoverviewpage.verifyactivityAdded(), "Verbal consent to be received",
 				"Activity Added to the list");
 		episodeoverviewpage.openActivities();
-		
 
 		// Episode activities Page details
+
 		Episodeactivitiespage episodeactivitiespage = new Episodeactivitiespage(driver);
 		Assert.assertEquals(true,episodeactivitiespage.verify_OpenInteractionRecordVisible(userprofilename),"Open interaction available");
-		
 		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
-		
 
-		// Add 1st interaction details		
+		// Add 1st interaction details
+		
 		AddInteractionsPage addInteractionsPage = new AddInteractionsPage(driver);
-		addInteractionsPage.add1stInteractionforUTC();
+		addInteractionsPage.add1stInteractionforMemberOptsOut();
 		addInteractionsPage.clickSaveInteraction();
+
 		episodeactivitiespage.clickCogwheel();
 		episodeactivitiespage.clickAddInteraction();
-		
 
 		// Add 2nd interaction details
 		episodeactivitiespage.sleep(5000);
-		addInteractionsPage.add2ndInteractionforUTC();
+		addInteractionsPage.add2ndInteractionforMemberOptsOut(userprofilename);
 		addInteractionsPage.clickSaveInteraction();
-		episodeactivitiespage.clickClosedActivities();
-		Assert.assertEquals(true,episodeactivitiespage.verify_ClosedInteractionRecordVisible(userprofilename),"Closed interaction available");
 		
-		
-		// Episode activities page
+		addInteractionsPage.episodeOpenActivitiesAlert();				
+		addInteractionsPage.sleep(5000);
 		episodeactivitiespage.clickCM();
 		episodeactivitiespage.sleep(10000);
 		episodeoverviewpage.openCorrespondence();
-		Assert.assertEquals(true,episodeoverviewpage.verify_UTCletterGenerated(userprofilename),"UTC letter generated");
-		episodeoverviewpage.sleep(5000);
-		
-		episodeoverviewpage.clickWorkflow();
-		episodeoverviewpage.clickActivities();
-		episodeactivitiespage.clickAddActivity();
-		episodeactivitiespage.enterActivityDetails();		
-		Assert.assertEquals(true, episodeactivitiespage.verify_OpenActivityRecordVisible(userprofilename),
-				"Review for Contact Open activity available");
-		
-		episodeactivitiespage.clickCogwheel();
-		episodeactivitiespage.clickModifyActivity();
-		episodeactivitiespage.modifyActivityDetails();
-		episodeactivitiespage.clickClosedActivities();
-		
-		Assert.assertEquals(true, episodeactivitiespage.verify_ClosedActivityRecordVisible(userprofilename),
-				"Review for Contact Closed activity available");
-		
-		episodeoverviewpage.clickWorkflow();
-		episodeoverviewpage.clickChangeStatus();
-		
-		
-		// Change status page details		
-		ChangeStatusPage changeStatusPage = new ChangeStatusPage(driver);
-		changeStatusPage.changeStatusDetails();
-		
-		Assert.assertEquals(true, episodeactivitiespage.verifyEpisodeStatus_Closed(userprofilename),
-				"Closed episode successfully");
-		
-		// Programs page details	
+		//Assert.assertEquals(true,episodeoverviewpage.verify_CM_PCP_Mbr_Opt_OutLetterGenerated(userprofilename),"Member Opts out letter generated to PCP");
+		Assert.assertEquals(true,episodeoverviewpage.verify_CM_Mbr_Opt_OutLetterGenerated(userprofilename),"Member Opts out letter generated to Member");
 		episodeoverviewpage.clickWorkflow();
 		episodeoverviewpage.clickPrograms();
 		
 		ProgramsPage programsPage = new ProgramsPage(driver);		
 		Assert.assertEquals(true, programsPage.verify_ProgramClosed(),"Program is closed successfully");
 		
-		logger.info("Successfully completed validating integration flow of ZU-60_Unable to reach member for the member in line #"+lineNumber+" holding the Member Id: "+MemberDemographicData.get(ALTERNATEID)+" and for the client: "+clientname);
-		
-		//Deactivate the episode
-		/*programsPage.clickMemberOverview();
+		logger.info("Successfully completed validating integration flow of ZU-61_CCM_Member Opts out for the member in line #"+lineNumber+" holding the Member Id: "+MemberDemographicData.get(ALTERNATEID)+" and for the client: "+clientname);
+
+		programsPage.clickMemberOverview();
 		memberOverviewPage.clickCurrentEpisodecogwheel();
 		memberOverviewPage.performDeactivateEpisode();		
-		*/
+		
 		// Closing the browser
-		//closeBrowser(driver);
-
+		closeBrowser(driver);
+		
+		
+		
 	}
+
 }
-			
-	
