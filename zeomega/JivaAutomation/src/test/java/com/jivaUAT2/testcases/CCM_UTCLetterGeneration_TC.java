@@ -113,7 +113,7 @@ public class CCM_UTCLetterGeneration_TC extends TestBase {
 			
 		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
 		memberOverviewPage.sleep(3000);
-		memberOverviewPage.expandMemberInfo();		
+		memberOverviewPage.expandorhideMemberInfo();		
 		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
 		Assert.assertEquals(MemberDemographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against demographic file");
 		Assert.assertEquals(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against address file");
@@ -153,7 +153,7 @@ public class CCM_UTCLetterGeneration_TC extends TestBase {
 		
 		memberOverviewPage.sleep(5000);
 		memberOverviewPage.closeMemberInfo();
-		memberOverviewPage.expandMemberInfo();
+		memberOverviewPage.expandorhideMemberInfo();
 		
 		//memberOverviewPage.performDeactivateEpisodeforClosedEpisodes();
 		

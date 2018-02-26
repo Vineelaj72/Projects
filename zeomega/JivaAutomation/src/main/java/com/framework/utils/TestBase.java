@@ -13,6 +13,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Assert;
+import org.testng.Reporter;
 
 import com.framework.setup.JivaRecordsIndexing;
 import com.framework.setup.Setup;
@@ -80,7 +82,7 @@ public class TestBase implements Setup,JivaRecordsIndexing {
 		DesiredCapabilities caps = DesiredCapabilities.firefox();
 		return caps;
 	}
-		
+	
 	public void openurl(WebDriver driver, String url)
 	{
 		driver.get(url);
@@ -104,6 +106,36 @@ public class TestBase implements Setup,JivaRecordsIndexing {
 	
 	public void closeBrowser(WebDriver driver) {
 		driver.quit();
+	}
+	public void customReport(String ExpectedResult, String ActualResult, String message)
+	{
+		System.setProperty("org.uncommons.reportng.escape-output", "false");
+		if(ExpectedResult.equalsIgnoreCase(ActualResult))
+		{
+			Reporter.log("<font color='blue'>"+"Expected Result: "+"</font>"+ExpectedResult+"<font color='blue'>"+"  Actual Result: "+"</font>"+ActualResult +"<font color='brown'>"+message+"</font>"+"<br>");
+		}
+		else
+		{
+		Reporter.log("<font color='red'>"+"Expected Result: "+ExpectedResult+"  Actual Result: "+ActualResult+" Data Validation failed "+"</font>");
+		Assert.assertEquals(ExpectedResult, ActualResult,message);
+		}
+
+	
+	}
+	public void customReport(boolean ExpectedResult, boolean ActualResult, String message)
+	{
+		System.setProperty("org.uncommons.reportng.escape-output", "false");
+		if(ExpectedResult==ActualResult)
+		{
+			Reporter.log("<font color='blue'>"+"Expected Result: "+"</font>"+ExpectedResult+"<font color='blue'>"+"  Actual Result: "+"</font>"+ActualResult +"<font color='brown'>"+message+"</font>"+"<br>");
+		}
+		else
+		{
+		Reporter.log("<font color='red'>"+"Expected Result: "+ExpectedResult+"  Actual Result: "+ActualResult+" Data Validation failed "+"</font>");
+		Assert.assertEquals(ExpectedResult, ActualResult,message);
+		}
+
+	
 	}
 	
 }

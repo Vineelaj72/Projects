@@ -7,13 +7,13 @@
   </listeners>
   <test name="ZU_60_TC01_Line 1(failed)">
     <classes>
-      <class name="com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC">
+      <class name="com.jivaUAT2.testcases.Flow1">
         <methods>
-          <include name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow"/>
-          <include name="verify_MemberSearch"/>
           <include name="closeBrowser"/>
+          <include name="verify_MemberSearch"/>
+          <include name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow"/>
         </methods>
-      </class> <!-- com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC -->
+      </class> <!-- com.jivaUAT2.testcases.Flow1 -->
     </classes>
   </test> <!-- ZU_60_TC01_Line 1(failed) -->
 </suite> <!-- Failed suite [Sanity Suite] -->

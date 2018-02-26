@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="13.700">
+           time="13.466">
   <properties />
-            <testcase name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow" time="13.700" classname="com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC">
+            <testcase name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow" time="13.466" classname="com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC">
                 <failure type="java.lang.AssertionError"
                   message="Member Coverage ID validated against address file expected [EHI] but found [000003048^EHI0NA]"
               >

@@ -87,7 +87,7 @@ public class E2EintegrationflowforMemberDemographicflowTC_ZU_60 extends TestBase
 		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated");
 		Assert.assertEquals(MemberDemographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated");
 		
-		memberOverviewPage.expandMemberInfo();
+		memberOverviewPage.expandorhideMemberInfo();
 		memberOverviewPage.openMemberInformation();
 		Thread.sleep(5000);
 		
@@ -104,7 +104,7 @@ public class E2EintegrationflowforMemberDemographicflowTC_ZU_60 extends TestBase
 		Assert.assertEquals(true,memberOverviewPage.getGender().contains(MemberDemographicData.get(GENDER)),"Member gender validated");
 		Thread.sleep(5000);
 		memberOverviewPage.closeMemberInfo();
-		memberOverviewPage.expandMemberInfo();
+		memberOverviewPage.expandorhideMemberInfo();
 		
 		memberOverviewPage.clickAddEpisode();
 		memberOverviewPage.clickCaseManagement();

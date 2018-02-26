@@ -32,14 +32,13 @@ import com.jiva.pages.LoginPage;
 import com.jiva.pages.MemberOverviewPage;
 import com.jiva.pages.MemberSearchPage;
 import com.jiva.pages.ProgramsPage;
-import com.jiva.pages.WorklistsPage;
 
 public class ZU_60_E2EIntegrationFlow_TC extends TestBase {
 	private static Logger logger = Logger.getLogger(ZU_60_E2EIntegrationFlow_TC.class);
 	private WebDriver driver;
 	private String sTestcaseName = null;
 	
-	private int lineNumber=1;
+	private int linenumber=1;
 	private ArrayList<String> MemberDemographicData;
 	private ArrayList<String> MemberAddressData;
 	private ArrayList<String> MemberPhoneData;
@@ -56,8 +55,10 @@ public class ZU_60_E2EIntegrationFlow_TC extends TestBase {
 		sTestcaseName = new Object() {}.getClass().getEnclosingMethod().getName();
 		logger.info("Execution started for --- " + sTestcaseName);		
 		
+		
+		
 		// ----- Member Demographic file data -----
-		MemberDemographicData =DemographicFileInput.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME,lineNumber/*Integer.parseInt(linenumber)*/);   
+		MemberDemographicData =DemographicFileInput.mandatoryCheckPoints(MEMBERDEMOGRAPHICFILENAME,linenumber/*Integer.parseInt(linenumber)*/);   
 		logger.info("Member Demographic File Data "+MemberDemographicData);
 		
 		// ----- Member Address file data -----
@@ -102,23 +103,7 @@ public class ZU_60_E2EIntegrationFlow_TC extends TestBase {
 		
 	}
 		
-	public void customReport(String ExpectedResult, String ActualResult, String message)
-	{
-		System.setProperty("org.uncommons.reportng.escape-output", "false");
-		if(ExpectedResult.equalsIgnoreCase(ActualResult))
-		{
-			Reporter.log("Expected-"+ExpectedResult+"--Actual Result-"+ActualResult +message+"<br>");
-			//assertEquals(ExpectedResult, ActualResult,message);
-		}
-		else
-		{
-		Reporter.log("<font color='red'>"+"Expected: "+ExpectedResult+" Actual: "+ActualResult+"Not equal "+"</font>");
-		Assert.assertEquals(ExpectedResult, ActualResult,message);
-		}
-
-	
-	}
-	
+		
 	@Test(description = "Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member")
 	public void verify_MemberData_fromfile_toScreen_ZU_60Integrationflow() throws InterruptedException {
 		
@@ -130,7 +115,7 @@ public class ZU_60_E2EIntegrationFlow_TC extends TestBase {
 		confirmAddepisodePage.clickRedirecttoMCV();			
 		memberOverviewPage = new MemberOverviewPage(driver);	
 		memberOverviewPage.sleep(3000);
-		memberOverviewPage.expandMemberInfo();			
+		memberOverviewPage.expandorhideMemberInfo();			
 		By grayMemberBanner= By.xpath(".//*[@id='angularcontent']//div[contains(@class,'4d4d4d')]");	
 		if(confirmAddepisodePage.isDisplayed(grayMemberBanner))
 			Assert.assertFalse(true, "The person is deceased");
@@ -140,53 +125,46 @@ public class ZU_60_E2EIntegrationFlow_TC extends TestBase {
 		// ----- Verify the file data with screen data -----
 		String clientname = memberOverviewPage.getClientName();
 		logger.info("Verifying the flow for the Client : "+clientname);
-	//	Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
-		//Reporter.log("Expected- "+MemberDemographicData.get(ENROLLMENTID)+" , "+"Actual- "+memberOverviewPage.getCoverageId()+ "Member Coverage ID validated against demographic file");
+		Reporter.log("Started execution for integration flow of #ZU-60_Unable to reach member# for the member in line #"+linenumber+" holding the Member Id: "+MemberDemographicData.get(ALTERNATEID)+" and for the client: "+clientname+"<br>");
+	
+		customReport(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), " Validation 1: Member Coverage ID validated against demographic file");
+		customReport(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), " Validation 2: Member Coverage ID validated against address file");
+		customReport(MemberCoverageData.get(CVRG_ENROLLMENTID), memberOverviewPage.getCoverageId(), " Validation 3: Member Coverage ID validated against Coverage file");
+		customReport(MemberPhoneData.get(PHN_ENROLLMENTID), memberOverviewPage.getCoverageId(), " Validation 4: Member Coverage ID validated against Member Phone file");
+		customReport(MemberPhoneData.get(PHONENUMBER), memberOverviewPage.getPhoneNumber(), " Validation 5: Member Phone Number validated against Member Phone file");		
+				
+		memberOverviewPage.openMemberInformation();
+		memberOverviewPage.sleep(5000);	
 		
-		//---------------//
-		customReport(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Validation1: Member Coverage ID validated against address file");
-	//	Assert.assertEquals(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against address file");
-		
-		customReport(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getClientName(), "Member Coverage ID validated against address file");
-		
-		
-		
-		Assert.assertEquals(MemberCoverageData.get(CVRG_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Coverage file");
-		
-		Assert.assertEquals(MemberPhoneData.get(PHN_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against Member Phone file");
-		Assert.assertEquals(MemberPhoneData.get(PHONENUMBER), memberOverviewPage.getPhoneNumber(), "Member Phone Number validated against Member Phone file");		
-		
-		//MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
-		/*memberOverviewPage.openMemberInformation();
-		memberOverviewPage.sleep(5000);			
-		Assert.assertEquals(MemberDemographicData.get(LASTNAME), memberOverviewPage.getMemberLastName(), "Member last name validated");
-		Assert.assertEquals(MemberDemographicData.get(FIRSTNAME), memberOverviewPage.getMemberFirstName(), "Member first name validated");			
-		Assert.assertEquals(MemberDemographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId(),"Member alternate id validated");
-		Assert.assertEquals(true,memberOverviewPage.getGender().contains(MemberDemographicData.get(GENDER)),"Member gender validated");		
+		customReport(MemberDemographicData.get(LASTNAME), memberOverviewPage.getMemberLastName(), " Validation 6: Member last name validated");
+		customReport(MemberDemographicData.get(FIRSTNAME), memberOverviewPage.getMemberFirstName(), " Validation 7: Member first name validated");			
+		customReport(MemberDemographicData.get(ALTERNATEID),memberOverviewPage.getAlternateId()," Validation 8: Member alternate id validated");
+		customReport(true, memberOverviewPage.getGender().contains(MemberDemographicData.get(GENDER))," Validation 9: Member gender validated");
 		String DOBonscreen[] = memberOverviewPage.getMemberDOB().split("/");
 		String DOBinFileFormat = DOBonscreen[2]+"-"+DOBonscreen[0]+"-"+DOBonscreen[1];	
-		Assert.assertEquals(MemberDemographicData.get(DOB),DOBinFileFormat,"Member DOB validated");  
+		customReport(MemberDemographicData.get(DOB),DOBinFileFormat," Validation 10: Member DOB validated");  
 		
-		Assert.assertEquals(MemberAddressData.get(HOME_ADDRESSTYPE).toUpperCase(),memberOverviewPage.getHomeAddressType(),"Home Address type validated");		
-		Assert.assertEquals(MemberAddressData.get(HOME_ADDRESS1),memberOverviewPage.getHomeAddressline1(),"Home Address line 1 validated");		
-		Assert.assertEquals(MemberAddressData.get(HOME_CITY),memberOverviewPage.getHomeCity(),"Home city validated");
-		Assert.assertEquals(MemberAddressData.get(HOME_STATE),memberOverviewPage.getHomeState(),"Home state validated");
-		Assert.assertEquals(MemberAddressData.get(HOME_ZIP),memberOverviewPage.getHomeZip(),"Home Zip validated");
-		Assert.assertEquals(MemberAddressData.get(HOME_COUNTRY),memberOverviewPage.getHomeCountry(),"Home country validated");
+		customReport(MemberAddressData.get(HOME_ADDRESSTYPE).toUpperCase(),memberOverviewPage.getHomeAddressType()," Validation 11: Home Address type validated");		
+		customReport(MemberAddressData.get(HOME_ADDRESS1),memberOverviewPage.getHomeAddressline1()," Validation 12: Home Address line 1 validated");		
+		customReport(MemberAddressData.get(HOME_CITY),memberOverviewPage.getHomeCity()," Validation 13: Home city validated");
+		customReport(MemberAddressData.get(HOME_STATE),memberOverviewPage.getHomeState()," Validation 14: Home state validated");
+		customReport(MemberAddressData.get(HOME_ZIP),memberOverviewPage.getHomeZip()," Validation 15: Home Zip validated");
+		customReport(MemberAddressData.get(HOME_COUNTRY),memberOverviewPage.getHomeCountry()," Validation 16: Home country validated");
 		
-		Assert.assertEquals(MemberAddressData.get(PRIMARY_ADDRESSTYPE).toUpperCase(),memberOverviewPage.getPrimaryAddressType(),"PRIMARY Address type validated");		
-		Assert.assertEquals(MemberAddressData.get(PRIMARY_ADDRESS1),memberOverviewPage.getPrimaryAddressline1(),"PRIMARY Address line 1 validated");		
-		Assert.assertEquals(MemberAddressData.get(PRIMARY_CITY),memberOverviewPage.getPrimaryCity(),"PRIMARY city validated");
-		Assert.assertEquals(MemberAddressData.get(PRIMARY_STATE),memberOverviewPage.getPrimaryState(),"PRIMARY state validated");
-		Assert.assertEquals(MemberAddressData.get(PRIMARY_ZIP),memberOverviewPage.getPrimaryZip(),"PRIMARY Zip validated");
-		Assert.assertEquals(MemberAddressData.get(PRIMARY_COUNTRY),memberOverviewPage.getPrimaryCountry(),"PRIMARY country validated");		
+		customReport(MemberAddressData.get(PRIMARY_ADDRESSTYPE).toUpperCase(),memberOverviewPage.getPrimaryAddressType()," Validation 17: PRIMARY Address type validated");		
+		customReport(MemberAddressData.get(PRIMARY_ADDRESS1),memberOverviewPage.getPrimaryAddressline1()," Validation 18: PRIMARY Address line 1 validated");		
+		customReport(MemberAddressData.get(PRIMARY_CITY),memberOverviewPage.getPrimaryCity()," Validation 19: PRIMARY city validated");
+		customReport(MemberAddressData.get(PRIMARY_STATE),memberOverviewPage.getPrimaryState()," Validation 20: PRIMARY state validated");
+		customReport(MemberAddressData.get(PRIMARY_ZIP),memberOverviewPage.getPrimaryZip()," Validation 21: PRIMARY Zip validated");
+		customReport(MemberAddressData.get(PRIMARY_COUNTRY),memberOverviewPage.getPrimaryCountry()," Validation 22: PRIMARY country validated");		
 		
 		
-		memberOverviewPage.sleep(5000);
+		//memberOverviewPage.sleep(5000);
 		memberOverviewPage.closeMemberInfo();
-		memberOverviewPage.expandMemberInfo();
+		memberOverviewPage.expandorhideMemberInfo();
 		
-		//memberOverviewPage.deActivate();
+		
+		memberOverviewPage.deActivate();
 		
 		// ----- Create Case Management Episode -----
 		memberOverviewPage.clickAddEpisode();
@@ -265,7 +243,7 @@ public class ZU_60_E2EIntegrationFlow_TC extends TestBase {
 		ProgramsPage programsPage = new ProgramsPage(driver);		
 		Assert.assertEquals(true, programsPage.verify_ProgramClosed(),"Program is closed successfully");
 		
-		logger.info("Successfully completed validating member files integration flow of ZU-60_Unable to reach member");*/
+		Reporter.log("Successfully completed validating integration flow of #ZU-60_Unable to reach member# for the member in line #"+linenumber+" holding the Member Id: "+MemberDemographicData.get(ALTERNATEID)+" and for the client: "+clientname);
 		
 		/*
 		programsPage.clickMemberOverview();

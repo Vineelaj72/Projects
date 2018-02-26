@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>TestNG:  TC_01</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TC_01</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 26 16:39:51 CST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>110 seconds (110199 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.jivaUAT2.testcases.SITFlows_ZU_60_TC.verify_MemberData_fromfile_toScreen_ZU_60Integrationflow()'><b>verify_MemberData_fromfile_toScreen_ZU_60Integrationflow</b><br>Test class: com.jivaUAT2.testcases.SITFlows_ZU_60_TC<br>Test method: Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member<br/>
+<a href="#Output-1581267786" onClick='toggleBox("Output-1581267786", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1581267786" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1581267786">
+Started execution for integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000003433 and for the client: EHI<br><br/>
+<font color='blue'>Expected Result: </font>000003433^EHI0NA<font color='blue'>  Actual Result: </font>000003433^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br><br/>
+<font color='blue'>Expected Result: </font>000003433^EHI0NA<font color='blue'>  Actual Result: </font>000003433^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br><br/>
+<font color='blue'>Expected Result: </font>000003433^EHI0NA<font color='blue'>  Actual Result: </font>000003433^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br><br/>
+<font color='blue'>Expected Result: </font>000003433^EHI0NA<font color='blue'>  Actual Result: </font>000003433^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br><br/>
+<font color='blue'>Expected Result: </font>6182816560<font color='blue'>  Actual Result: </font>6182816560<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br><br/>
+<font color='blue'>Expected Result: </font>Graff<font color='blue'>  Actual Result: </font>Graff<font color='brown'> Validation 6: Member last name validated</font><br><br/>
+<font color='blue'>Expected Result: </font>Dorothy<font color='blue'>  Actual Result: </font>Dorothy<font color='brown'> Validation 7: Member first name validated</font><br><br/>
+<font color='blue'>Expected Result: </font>000003433<font color='blue'>  Actual Result: </font>000003433<font color='brown'> Validation 8: Member alternate id validated</font><br><br/>
+<font color='blue'>Expected Result: </font>true<font color='blue'>  Actual Result: </font>true<font color='brown'> Validation 9: Member gender validated</font><br><br/>
+<font color='blue'>Expected Result: </font>1938-10-21<font color='blue'>  Actual Result: </font>1938-10-21<font color='brown'> Validation 10: Member DOB validated</font><br><br/>
+<font color='blue'>Expected Result: </font>HOME<font color='blue'>  Actual Result: </font>HOME<font color='brown'> Validation 11: Home Address type validated</font><br><br/>
+<font color='blue'>Expected Result: </font>204 E. Jefferson St.<font color='blue'>  Actual Result: </font>204 E. Jefferson St.<font color='brown'> Validation 12: Home Address line 1 validated</font><br><br/>
+<font color='blue'>Expected Result: </font>Columbia<font color='blue'>  Actual Result: </font>Columbia<font color='brown'> Validation 13: Home city validated</font><br><br/>
+<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 14: Home state validated</font><br><br/>
+<font color='blue'>Expected Result: </font>62236<font color='blue'>  Actual Result: </font>62236<font color='brown'> Validation 15: Home Zip validated</font><br><br/>
+<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 16: Home country validated</font><br><br/>
+<font color='blue'>Expected Result: </font>PRIMARY<font color='blue'>  Actual Result: </font>PRIMARY<font color='brown'> Validation 17: PRIMARY Address type validated</font><br><br/>
+<font color='blue'>Expected Result: </font>204 E. Jefferson St.<font color='blue'>  Actual Result: </font>204 E. Jefferson St.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br><br/>
+<font color='blue'>Expected Result: </font>Columbia<font color='blue'>  Actual Result: </font>Columbia<font color='brown'> Validation 19: PRIMARY city validated</font><br><br/>
+<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 20: PRIMARY state validated</font><br><br/>
+<font color='blue'>Expected Result: </font>62236<font color='blue'>  Actual Result: </font>62236<font color='brown'> Validation 21: PRIMARY Zip validated</font><br><br/>
+<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 22: PRIMARY country validated</font><br><br/>
+Successfully completed validating integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000003433 and for the client: EHI<br/>
+</div>
+</td>
+<td></td>
+<td>93</td>
+<td>com.jivaUAT2.testcases.SITFlows_ZU_60_TC@27f723</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TC_04"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="83.695">
+  <properties />
+  
+  
+            <testcase name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow" time="83.695" classname="com.jivaUAT2.testcases.SITFlows_ZU_60_TC" />
+      
+</testsuite>

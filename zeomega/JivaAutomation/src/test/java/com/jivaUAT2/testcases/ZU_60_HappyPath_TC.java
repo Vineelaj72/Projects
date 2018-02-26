@@ -110,7 +110,7 @@ public class ZU_60_HappyPath_TC extends TestBase {
 			
 		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
 		memberOverviewPage.sleep(3000);
-		memberOverviewPage.expandMemberInfo();	
+		memberOverviewPage.expandorhideMemberInfo();	
 		String clientname = memberOverviewPage.getClientName();
 		logger.info("Verifying the flow for the Client : "+clientname);
 		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");		
@@ -149,7 +149,7 @@ public class ZU_60_HappyPath_TC extends TestBase {
 		
 		memberOverviewPage.sleep(5000);
 		memberOverviewPage.closeMemberInfo();
-		memberOverviewPage.expandMemberInfo();
+		memberOverviewPage.expandorhideMemberInfo();
 		
 		memberOverviewPage.clickAddEpisode();
 		memberOverviewPage.clickCaseManagement();

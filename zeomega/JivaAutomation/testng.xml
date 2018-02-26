@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Sanity Suite">
-<!-- <parameter name="linenumber" value="2"></parameter>
- --><listeners>
+<suite name="System Integration Test Suite">
+<listeners>
  <listener class-name="org.uncommons.reportng.HTMLReporter" />
   <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 </listeners>
-  <test name="ZU_60_TC01_Line 1">
-<!-- <parameter name="linenumber" value="1"></parameter>
- -->    <classes>
-      <class name="com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC"/>
-    </classes>
-  </test> <!-- Test -->
- <!--  <test name="Line 2">
+  <test name="TC_01">
 <parameter name="linenumber" value="2"></parameter>
     <classes>
-      <class name="com.jivaUAT2.testcases.Flow1"/>
+      <class name="com.jivaUAT2.testcases.SITFlows_ZU_60_TC"/>       
     </classes>
-  </test> -->
+  </test> <!-- Test -->
+  <test name="TC_02">
+<parameter name="linenumber" value="2"></parameter>
+    <classes>
+      <class name="com.jivaUAT2.testcases.SITFlows_ZU_61_TC"/>  
+    </classes>
+  </test>
+   <test name="TC_03">
+<parameter name="linenumber" value="2"></parameter>
+    <classes>
+      <class name="com.jivaUAT2.testcases.SITFlows_ZU_63_TC"/>
+    </classes>
+  </test>
+    <test name="TC_04">
+<parameter name="linenumber" value="1"></parameter>
+    <classes>
+      <class name="com.jivaUAT2.testcases.SITFlows_ZU_60_TC"/>       
+    </classes>
+  </test> <!-- Test -->
+  <test name="TC_05">
+<parameter name="linenumber" value="1"></parameter>
+    <classes>
+      <class name="com.jivaUAT2.testcases.SITFlows_ZU_61_TC"/>  
+    </classes>
+  </test>
+    <test name="TC_06">
+<parameter name="linenumber" value="1"></parameter>
+    <classes>
+      <class name="com.jivaUAT2.testcases.SITFlows_ZU_63_TC"/>       
+    </classes>
+  </test>   
 </suite> <!-- Suite -->

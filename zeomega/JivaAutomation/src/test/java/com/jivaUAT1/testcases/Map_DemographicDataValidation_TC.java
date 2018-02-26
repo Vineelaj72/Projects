@@ -104,7 +104,7 @@ public class Map_DemographicDataValidation_TC extends TestBase {
 		Thread.sleep(3000);
 		Assert.assertEquals(sFileData.get("EligibilityId3"), memberOverviewPage.getCoverageId(), "Member Coverage ID validated");
 		
-		memberOverviewPage.expandMemberInfo();
+		memberOverviewPage.expandorhideMemberInfo();
 		memberOverviewPage.openMemberInformation();
 		Thread.sleep(5000);
 		
@@ -123,7 +123,7 @@ public class Map_DemographicDataValidation_TC extends TestBase {
 		Assert.assertEquals(true,memberOverviewPage.getGender().contains(sFileData.get("MemberGender3")),"Member gender validated");
 		Thread.sleep(5000);
 		memberOverviewPage.closeMemberInfo();
-		memberOverviewPage.expandMemberInfo();
+		memberOverviewPage.expandorhideMemberInfo();
 		
 		memberOverviewPage.clickAddEpisode();
 		memberOverviewPage.clickCaseManagement();

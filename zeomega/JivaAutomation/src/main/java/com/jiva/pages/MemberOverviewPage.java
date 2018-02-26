@@ -170,7 +170,7 @@ public class MemberOverviewPage extends WebElements {
 	{
 		clickUsingJs(openepisodelinklocator);
 	}
-	public void expandMemberInfo()
+	public void expandorhideMemberInfo()
 	{
 		clickUsingJs(memberinfoexpandlocator);
 	}
