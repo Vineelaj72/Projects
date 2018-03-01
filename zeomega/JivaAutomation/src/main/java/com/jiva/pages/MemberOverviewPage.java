@@ -26,7 +26,8 @@ public class MemberOverviewPage extends WebElements {
 	By namelocator = By.xpath("//a/span[contains(@ng-bind,'memberScope.member_details.mbr_name')]");
 	By memberinfoexpandlocator = By.id("yui-gen506");
 	By viewallmemberinfolocator = By.xpath("//a/span[contains(text(),'View all')]/../j-label[contains(text(),'Member')]/../span[contains(text(),'information')]/..");
-	By currentepisodecogwheellocator = By.xpath(".//*[@id='content-main']/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div/div[1]/a/i");
+	//By currentepisodecogwheellocator = By.xpath(".//*[@id='content-main']/div/div/div/div/div/div/div/div/div[1]/div/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div/div[1]/a/i");
+	By currentepisodecogwheellocator = By.xpath("(//a[contains(@ng-if,'showEditRequest')]/i)[1]");
 	By deactivateepisodelink = By.xpath("//a/span[contains(text(),'Deactivate')]");
 	By deactivatebuttonlocator = By.xpath("//div/button[contains(text(),'Deactivate')]");
 	By CCMstatusclosedlocator = By.xpath("//div[contains(@class,'ng-scope')]//div[contains(@class,'clearfix col-sm-6 padding-left-0px padding-right-0px')]/div/span[contains(text(),'Complex')]/../../../div[contains(@class,'clearfix col-sm-6')]/div[4]/span[contains(text(),'Closed')]");
@@ -75,22 +76,48 @@ public class MemberOverviewPage extends WebElements {
 		By episodeExpandlocator=By.xpath("//button[@ng-click='routeEpisodeGridView()']/i");
 		By closed_CCM_Episodelocator=By.xpath("//*[contains(text(),'Complex Case Management')]/../../..//*[contains(text(),'Closed')]/../../..//a[contains(@class,'dropdown')]");
 		By referral_CCM_Episodelocator=By.xpath("//*[contains(text(),'Complex Case Management')]/../../..//*[contains(text(),'Referral')]/../../..//a[contains(@class,'dropdown')]");
-		By Open_CCM_Episodelocator=By.xpath("//*[contains(text(),'Complex Case Management')]/../../..//*[contains(text(),'Open')]/../../..//a[contains(@class,'dropdown')]");		
+		By open_CCM_Episodelocator=By.xpath("//*[contains(text(),'Complex Case Management')]/../../..//*[contains(text(),'Open')]/../../..//a[contains(@class,'dropdown')]");		
 		By deaactivate_EpisodeLocator=By.xpath("//*[contains(text(),'Deactivate')]");
 
 		if (Integer.parseInt(getText(episodeCountlocator)) != 0) {
 			click(episodeExpandlocator);
 			sleep(5000);
-			List<WebElement> episodeList = listofelements(closed_CCM_Episodelocator);
-			for (int i = 0; i < episodeList.size(); i++) {
-				episodeList.get(i).click();		
+			if(isDisplayed(referral_CCM_Episodelocator))
+			{
+				click(referral_CCM_Episodelocator);
 				sleep(5000);
 				clickUsingJs(deaactivate_EpisodeLocator);
 				sleep(5000);
 				deactivateEpisodeAlert();
-
+			}
+			if(isDisplayed(open_CCM_Episodelocator))
+			{
+				click(open_CCM_Episodelocator);
+				sleep(5000);
+				clickUsingJs(deaactivate_EpisodeLocator);
+				sleep(5000);
+				deactivateEpisodeAlert();
+			}
+			
+			
+			List<WebElement> episodeList = listofelements(closed_CCM_Episodelocator);
+			//for (WebElement webElement : listofelements(closed_CCM_Episodelocator)) {
+			//	int size = e
+			
+			for (int i = 0; i < episodeList.size(); i++) {
+				episodeList.get(i).click();	
+				
+				sleep(5000);
+				clickUsingJs(deaactivate_EpisodeLocator);
+				sleep(5000);
+				deactivateEpisodeAlert();
+				episodeList = listofelements(closed_CCM_Episodelocator);
+				
 			}
 		}
+
+			//}
+		
 		
 	}
 	
@@ -102,6 +129,7 @@ public class MemberOverviewPage extends WebElements {
 	public void clickMemberOverview()
 	{
 		clickUsingJs(memberoverviewlocator);
+		sleep(6000);
 	}
 	
 	public void deactivateEpisodeAlert()

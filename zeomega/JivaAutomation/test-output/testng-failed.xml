@@ -1,99 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [System Integration Test Suite]">
-  <parameter name="linenumber" value="2"/>
-  <listeners>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-  </listeners>
-  <test name="TC_04(failed)">
-    <parameter name="linenumber" value="2"/>
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.jivaUAT2.testcases.SITFlows_ZU_63_TC">
+      <class name="com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC">
         <methods>
-          <include name="verify_MemberSearch"/>
-          <include name="verify_MemberSearch"/>
-          <include name="closeBrowser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_63_TC -->
-      <class name="com.jivaUAT2.testcases.SITFlows_ZU_60_TC">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="verify_MemberSearch"/>
-          <include name="verify_MemberSearch"/>
           <include name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow"/>
-        </methods>
-      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_60_TC -->
-      <class name="com.jivaUAT2.testcases.SITFlows_ZU_61_TC">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="closeBrowser"/>
           <include name="verify_MemberSearch"/>
-          <include name="verify_MemberSearch"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_61_TC -->
+      </class> <!-- com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC -->
     </classes>
-  </test> <!-- TC_04(failed) -->
-  <test name="TC_05(failed)">
-    <parameter name="linenumber" value="2"/>
-    <classes>
-      <class name="com.jivaUAT2.testcases.SITFlows_ZU_63_TC">
-        <methods>
-          <include name="verify_MemberSearch"/>
-          <include name="verify_MemberSearch"/>
-          <include name="closeBrowser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_63_TC -->
-      <class name="com.jivaUAT2.testcases.SITFlows_ZU_60_TC">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="verify_MemberSearch"/>
-          <include name="verify_MemberSearch"/>
-        </methods>
-      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_60_TC -->
-      <class name="com.jivaUAT2.testcases.SITFlows_ZU_61_TC">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="verify_MemberData_fromfile_toScreen_ZU_61Integrationflow"/>
-          <include name="verify_MemberSearch"/>
-          <include name="verify_MemberSearch"/>
-        </methods>
-      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_61_TC -->
-    </classes>
-  </test> <!-- TC_05(failed) -->
-  <test name="TC_06(failed)">
-    <parameter name="linenumber" value="2"/>
-    <classes>
-      <class name="com.jivaUAT2.testcases.SITFlows_ZU_63_TC">
-        <methods>
-          <include name="verify_MemberSearch"/>
-          <include name="verify_MemberSearch"/>
-          <include name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow"/>
-          <include name="closeBrowser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_63_TC -->
-      <class name="com.jivaUAT2.testcases.SITFlows_ZU_60_TC">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="verify_MemberSearch"/>
-          <include name="verify_MemberSearch"/>
-        </methods>
-      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_60_TC -->
-      <class name="com.jivaUAT2.testcases.SITFlows_ZU_61_TC">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="verify_MemberSearch"/>
-          <include name="verify_MemberSearch"/>
-        </methods>
-      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_61_TC -->
-    </classes>
-  </test> <!-- TC_06(failed) -->
-</suite> <!-- Failed suite [System Integration Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

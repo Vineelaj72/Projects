@@ -112,3 +112,149 @@
 2018-02-26 16:51:40,520 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
 2018-02-26 16:51:40,551 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Successfully completed validating integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000003048 and for the client: EHI
 2018-02-26 16:51:40,552 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- closeBrowser
+2018-02-28 20:20:33,961 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
+2018-02-28 20:20:33,969 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
+2018-02-28 20:20:34,005 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
+2018-02-28 20:20:34,014 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
+2018-02-28 20:20:34,088 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
+2018-02-28 20:21:45,454 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
+2018-02-28 20:21:45,459 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
+2018-02-28 20:21:45,494 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
+2018-02-28 20:21:45,498 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
+2018-02-28 20:21:45,545 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
+2018-02-28 20:22:00,011 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
+2018-02-28 20:22:00,011 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
+2018-02-28 20:22:00,011 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
+2018-02-28 20:22:00,012 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Carr
+2018-02-28 20:22:00,012 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Thomas
+2018-02-28 20:22:04,523 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-02-28 20:22:18,122 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
+2018-02-28 20:22:49,875 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- closeBrowser
+2018-02-28 20:29:06,881 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
+2018-02-28 20:29:06,889 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
+2018-02-28 20:29:06,924 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
+2018-02-28 20:29:06,931 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
+2018-02-28 20:29:06,984 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
+2018-02-28 20:29:21,268 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
+2018-02-28 20:29:21,268 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
+2018-02-28 20:29:21,268 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
+2018-02-28 20:29:21,269 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Carr
+2018-02-28 20:29:21,269 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Thomas
+2018-02-28 20:29:25,686 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-02-28 20:29:39,258 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
+2018-02-28 20:34:49,751 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
+2018-02-28 20:34:49,756 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
+2018-02-28 20:34:49,784 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
+2018-02-28 20:34:49,791 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
+2018-02-28 20:34:49,847 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
+2018-02-28 20:35:04,324 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
+2018-02-28 20:35:04,324 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
+2018-02-28 20:35:04,324 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
+2018-02-28 20:35:04,325 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Carr
+2018-02-28 20:35:04,325 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Thomas
+2018-02-28 20:35:08,856 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-02-28 20:35:22,459 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
+2018-02-28 20:38:45,470 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
+2018-02-28 20:38:45,475 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
+2018-02-28 20:38:45,507 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
+2018-02-28 20:38:45,514 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
+2018-02-28 20:38:45,565 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
+2018-02-28 20:38:59,894 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
+2018-02-28 20:38:59,894 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
+2018-02-28 20:38:59,894 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
+2018-02-28 20:38:59,895 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Carr
+2018-02-28 20:38:59,895 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Thomas
+2018-02-28 20:39:04,329 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-02-28 20:39:17,960 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
+2018-02-28 21:10:52,170 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
+2018-02-28 21:10:52,175 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
+2018-02-28 21:10:52,199 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
+2018-02-28 21:10:52,203 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
+2018-02-28 21:10:52,267 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
+2018-02-28 21:11:07,154 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
+2018-02-28 21:11:07,154 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
+2018-02-28 21:11:07,155 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
+2018-02-28 21:11:07,155 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Carr
+2018-02-28 21:11:07,156 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Thomas
+2018-02-28 21:11:11,658 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-02-28 21:11:25,154 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
+2018-02-28 21:16:42,858 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
+2018-02-28 21:16:42,863 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
+2018-02-28 21:16:42,889 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
+2018-02-28 21:16:42,894 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
+2018-02-28 21:16:42,951 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
+2018-02-28 21:16:56,870 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
+2018-02-28 21:16:56,871 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
+2018-02-28 21:16:56,871 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
+2018-02-28 21:16:56,871 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Graff
+2018-02-28 21:16:56,871 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Dorothy
+2018-02-28 21:17:01,310 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-02-28 21:17:14,842 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
+2018-02-28 21:18:20,656 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
+2018-02-28 21:18:20,662 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003502^EHI0NA, 000003502, Hollinshed, Alene, 1917-08-20, Y, F]
+2018-02-28 21:18:20,700 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003502^EHI0NA, Home, 6926 Julian Ave., Saint Louis, MO, 63130, USA, 000003502^EHI0NA, Primary, 6926 Julian Ave., Saint Louis, MO, 63130, USA]
+2018-02-28 21:18:20,705 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003502^EHI0NA, 3148637540]
+2018-02-28 21:18:20,753 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA]
+2018-02-28 21:18:35,611 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
+2018-02-28 21:18:35,612 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
+2018-02-28 21:18:35,612 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
+2018-02-28 21:18:35,612 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Hollinshed
+2018-02-28 21:18:35,612 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Alene
+2018-02-28 21:18:40,194 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-02-28 21:18:53,749 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
+2018-02-28 21:24:35,016 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
+2018-02-28 21:24:35,022 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003502^EHI0NA, 000003502, Hollinshed, Alene, 1917-08-20, Y, F]
+2018-02-28 21:24:35,051 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003502^EHI0NA, Home, 6926 Julian Ave., Saint Louis, MO, 63130, USA, 000003502^EHI0NA, Primary, 6926 Julian Ave., Saint Louis, MO, 63130, USA]
+2018-02-28 21:24:35,056 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003502^EHI0NA, 3148637540]
+2018-02-28 21:24:35,107 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA]
+2018-02-28 21:24:49,897 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
+2018-02-28 21:24:49,897 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
+2018-02-28 21:24:49,898 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
+2018-02-28 21:24:49,898 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Hollinshed
+2018-02-28 21:24:49,898 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Alene
+2018-02-28 21:24:54,345 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-02-28 21:25:07,938 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
+2018-02-28 21:26:50,982 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verified creation of episode successfully
+2018-02-28 21:27:01,226 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- closeBrowser
+2018-02-28 21:48:57,049 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
+2018-02-28 21:48:57,055 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
+2018-02-28 21:48:57,080 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
+2018-02-28 21:48:57,087 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
+2018-02-28 21:48:57,140 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
+2018-02-28 21:49:11,147 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
+2018-02-28 21:49:11,148 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
+2018-02-28 21:49:11,148 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
+2018-02-28 21:49:11,148 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Graff
+2018-02-28 21:49:11,148 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Dorothy
+2018-02-28 21:49:15,571 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-02-28 21:49:29,085 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
+2018-02-28 21:53:13,293 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verified creation of episode successfully
+2018-02-28 21:53:23,539 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- closeBrowser
+2018-02-28 22:00:26,129 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
+2018-02-28 22:00:26,134 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
+2018-02-28 22:00:26,168 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
+2018-02-28 22:00:26,174 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
+2018-02-28 22:00:26,221 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
+2018-02-28 22:00:40,508 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
+2018-02-28 22:00:40,508 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
+2018-02-28 22:00:40,509 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
+2018-02-28 22:00:40,509 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Graff
+2018-02-28 22:00:40,510 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Dorothy
+2018-02-28 22:00:45,080 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-02-28 22:00:58,592 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
+2018-02-28 22:03:31,598 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verified creation of episode successfully
+2018-02-28 22:03:47,716 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- closeBrowser
+2018-02-28 22:06:59,213 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
+2018-02-28 22:06:59,218 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
+2018-02-28 22:06:59,253 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
+2018-02-28 22:06:59,259 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
+2018-02-28 22:06:59,309 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
+2018-02-28 22:07:13,425 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
+2018-02-28 22:07:13,426 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
+2018-02-28 22:07:13,427 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
+2018-02-28 22:07:13,427 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Graff
+2018-02-28 22:07:13,428 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Dorothy
+2018-02-28 22:07:17,908 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-02-28 22:07:31,425 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
+2018-02-28 22:09:14,184 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verified creation of episode successfully
+2018-02-28 22:09:29,046 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- closeBrowser

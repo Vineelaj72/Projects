@@ -10,7 +10,7 @@ public interface Setup {
 	String CHROMEPATH = "../JivaAutomation/drivers/chromedriver.exe";
 	String FFPATH = "../JivaAutomation/drivers/geckodriver.exe";
 	
-	String USERNAME="vjayavarapu",PASSWORD="Password2!";
+	String USERNAME="vjayavarapu",PASSWORD="Password3!";
 	String BROWSER="CHROME";
 	String JIVAID = "610570";
 	

@@ -38,7 +38,7 @@ public class ZU_60_E2EIntegrationFlow_TC extends TestBase {
 	private WebDriver driver;
 	private String sTestcaseName = null;
 	
-	private int linenumber=1;
+	private int linenumber=2;
 	private ArrayList<String> MemberDemographicData;
 	private ArrayList<String> MemberAddressData;
 	private ArrayList<String> MemberPhoneData;
@@ -178,7 +178,11 @@ public class ZU_60_E2EIntegrationFlow_TC extends TestBase {
 		createCMepisodePage.invalidEpisodeCoverageAlert();
 		logger.info("Verified creation of episode successfully");
 		
-		//memberOverviewPage.clickMemberOverview();
+		memberOverviewPage.clickMemberOverview();
+		
+		
+		
+	
 		
 
 		// ----- Verify Activity added -----		
