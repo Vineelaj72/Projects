@@ -29,7 +29,7 @@ public class DateUtils {
 		Date date = new Date();
 		long t = date.getTime();
 		c.add(Calendar.DATE, 2);
-		System.out.println(dateFormat.format(c.getTime()));
+		//System.out.println(dateFormat.format(c.getTime()));
 		return dateFormat.format(c.getTime());
 
 	}

@@ -1,260 +1,219 @@
-2018-02-26 16:39:51,271 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberSearch
-2018-02-26 16:39:51,277 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
-2018-02-26 16:39:51,303 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
-2018-02-26 16:39:51,308 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
-2018-02-26 16:39:51,361 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
-2018-02-26 16:40:02,709 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-26 16:40:02,709 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Last name Jayavarapu
-2018-02-26 16:40:02,709 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User First name  Vineela
-2018-02-26 16:40:02,709 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Last name Graff
-2018-02-26 16:40:02,710 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member First name Dorothy
-2018-02-26 16:40:06,811 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-26 16:40:20,238 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Verifying the flow for the Client : EHI
-2018-02-26 16:40:57,815 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Verified creation of episode successfully
-2018-02-26 16:41:01,789 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
-2018-02-26 16:41:13,674 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
-2018-02-26 16:41:24,726 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
-2018-02-26 16:41:34,765 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
-2018-02-26 16:41:36,699 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
-2018-02-26 16:41:39,302 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
-2018-02-26 16:41:40,709 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
-2018-02-26 16:41:40,729 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Successfully completed validating integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000003433 and for the client: EHI
-2018-02-26 16:41:40,731 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- closeBrowser
-2018-02-26 16:41:41,495 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- verify_MemberSearch
-2018-02-26 16:41:41,497 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
-2018-02-26 16:41:41,523 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
-2018-02-26 16:41:41,526 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
-2018-02-26 16:41:41,579 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
-2018-02-26 16:41:51,929 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-26 16:41:51,930 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User Last name Jayavarapu
-2018-02-26 16:41:51,930 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User First name  Vineela
-2018-02-26 16:41:51,930 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Last name Graff
-2018-02-26 16:41:51,930 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member First name Dorothy
-2018-02-26 16:41:55,978 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_61Integrationflow
-2018-02-26 16:42:09,382 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Verifying the flow for the Client : EHI
-2018-02-26 16:42:47,074 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Verified creation of episode successfully
-2018-02-26 16:42:51,627 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
-2018-02-26 16:43:26,644 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_CM_Mbr_Opt_OutLetterGenerated in Letters screen true
-2018-02-26 16:43:27,251 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
-2018-02-26 16:43:27,267 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Successfully completed validating integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000003433 and for the client: EHI
-2018-02-26 16:43:27,269 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- closeBrowser
-2018-02-26 16:43:28,009 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- verify_MemberSearch
-2018-02-26 16:43:28,011 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
-2018-02-26 16:43:28,037 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
-2018-02-26 16:43:28,039 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
-2018-02-26 16:43:28,075 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
-2018-02-26 16:43:38,886 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-26 16:43:38,886 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User Last name Jayavarapu
-2018-02-26 16:43:38,887 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User First name  Vineela
-2018-02-26 16:43:38,887 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Last name Graff
-2018-02-26 16:43:38,887 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member First name Dorothy
-2018-02-26 16:43:43,020 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-26 16:43:56,489 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Verifying the flow for the Client : EHI
-2018-02-26 16:44:35,740 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
-2018-02-26 16:45:52,598 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_CM_PostEnrollmentLetterGenerated in Letters screen true
-2018-02-26 16:45:52,979 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
-2018-02-26 16:45:52,996 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Successfully completed validating integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000003433 and for the client: EHI
-2018-02-26 16:45:52,998 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- closeBrowser
-2018-02-26 16:45:53,752 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberSearch
-2018-02-26 16:45:53,758 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
-2018-02-26 16:45:53,760 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
-2018-02-26 16:45:53,760 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
-2018-02-26 16:45:53,807 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
-2018-02-26 16:46:04,260 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-26 16:46:04,260 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Last name Jayavarapu
-2018-02-26 16:46:04,260 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User First name  Vineela
-2018-02-26 16:46:04,260 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Last name Carr
-2018-02-26 16:46:04,261 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member First name Thomas
-2018-02-26 16:46:08,345 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-26 16:46:21,793 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Verifying the flow for the Client : EHI
-2018-02-26 16:46:59,455 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Verified creation of episode successfully
-2018-02-26 16:47:00,815 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
-2018-02-26 16:47:12,344 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
-2018-02-26 16:47:22,768 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
-2018-02-26 16:47:29,456 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
-2018-02-26 16:47:30,314 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
-2018-02-26 16:47:31,635 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
-2018-02-26 16:47:32,023 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
-2018-02-26 16:47:32,039 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Successfully completed validating integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000003048 and for the client: EHI
-2018-02-26 16:47:32,040 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- closeBrowser
-2018-02-26 16:47:32,799 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- verify_MemberSearch
-2018-02-26 16:47:32,805 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
-2018-02-26 16:47:32,822 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
-2018-02-26 16:47:32,822 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
-2018-02-26 16:47:32,853 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
-2018-02-26 16:47:43,488 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-26 16:47:43,489 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User Last name Jayavarapu
-2018-02-26 16:47:43,489 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User First name  Vineela
-2018-02-26 16:47:43,489 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Last name Carr
-2018-02-26 16:47:43,489 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member First name Thomas
-2018-02-26 16:47:47,619 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_61Integrationflow
-2018-02-26 16:48:00,989 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Verifying the flow for the Client : EHI
-2018-02-26 16:48:38,637 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Verified creation of episode successfully
-2018-02-26 16:48:40,303 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
-2018-02-26 16:49:15,387 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_CM_Mbr_Opt_OutLetterGenerated in Letters screen true
-2018-02-26 16:49:15,880 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
-2018-02-26 16:49:15,895 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Successfully completed validating integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000003048 and for the client: EHI
-2018-02-26 16:49:15,897 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- closeBrowser
-2018-02-26 16:49:16,656 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- verify_MemberSearch
-2018-02-26 16:49:16,661 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
-2018-02-26 16:49:16,662 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
-2018-02-26 16:49:16,678 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
-2018-02-26 16:49:16,709 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
-2018-02-26 16:49:27,606 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-26 16:49:27,606 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User Last name Jayavarapu
-2018-02-26 16:49:27,606 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User First name  Vineela
-2018-02-26 16:49:27,606 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Last name Carr
-2018-02-26 16:49:27,607 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member First name Thomas
-2018-02-26 16:49:31,725 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-26 16:49:45,165 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Verifying the flow for the Client : EHI
-2018-02-26 16:50:23,193 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
-2018-02-26 16:51:40,115 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_CM_PostEnrollmentLetterGenerated in Letters screen true
-2018-02-26 16:51:40,520 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
-2018-02-26 16:51:40,551 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Successfully completed validating integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000003048 and for the client: EHI
-2018-02-26 16:51:40,552 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- closeBrowser
-2018-02-28 20:20:33,961 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
-2018-02-28 20:20:33,969 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
-2018-02-28 20:20:34,005 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
-2018-02-28 20:20:34,014 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
-2018-02-28 20:20:34,088 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
-2018-02-28 20:21:45,454 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
-2018-02-28 20:21:45,459 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
-2018-02-28 20:21:45,494 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
-2018-02-28 20:21:45,498 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
-2018-02-28 20:21:45,545 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
-2018-02-28 20:22:00,011 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-28 20:22:00,011 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
-2018-02-28 20:22:00,011 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
-2018-02-28 20:22:00,012 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Carr
-2018-02-28 20:22:00,012 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Thomas
-2018-02-28 20:22:04,523 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-28 20:22:18,122 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
-2018-02-28 20:22:49,875 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- closeBrowser
-2018-02-28 20:29:06,881 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
-2018-02-28 20:29:06,889 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
-2018-02-28 20:29:06,924 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
-2018-02-28 20:29:06,931 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
-2018-02-28 20:29:06,984 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
-2018-02-28 20:29:21,268 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-28 20:29:21,268 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
-2018-02-28 20:29:21,268 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
-2018-02-28 20:29:21,269 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Carr
-2018-02-28 20:29:21,269 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Thomas
-2018-02-28 20:29:25,686 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-28 20:29:39,258 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
-2018-02-28 20:34:49,751 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
-2018-02-28 20:34:49,756 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
-2018-02-28 20:34:49,784 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
-2018-02-28 20:34:49,791 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
-2018-02-28 20:34:49,847 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
-2018-02-28 20:35:04,324 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-28 20:35:04,324 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
-2018-02-28 20:35:04,324 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
-2018-02-28 20:35:04,325 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Carr
-2018-02-28 20:35:04,325 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Thomas
-2018-02-28 20:35:08,856 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-28 20:35:22,459 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
-2018-02-28 20:38:45,470 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
-2018-02-28 20:38:45,475 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
-2018-02-28 20:38:45,507 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
-2018-02-28 20:38:45,514 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
-2018-02-28 20:38:45,565 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
-2018-02-28 20:38:59,894 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-28 20:38:59,894 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
-2018-02-28 20:38:59,894 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
-2018-02-28 20:38:59,895 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Carr
-2018-02-28 20:38:59,895 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Thomas
-2018-02-28 20:39:04,329 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-28 20:39:17,960 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
-2018-02-28 21:10:52,170 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
-2018-02-28 21:10:52,175 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003048^EHI0NA, 000003048, Carr, Thomas, 1931-05-01, Y, M]
-2018-02-28 21:10:52,199 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003048^EHI0NA, Home, 4105 State Rte. 156, Waterloo, IL, 62298, USA, 000003048^EHI0NA, Primary, 4512 Fountain Brook Dr., Waterloo, IL, 62298, USA]
-2018-02-28 21:10:52,203 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003048^EHI0NA, 6189396858]
-2018-02-28 21:10:52,267 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA, 000003048^EHI0NA]
-2018-02-28 21:11:07,154 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-28 21:11:07,154 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
-2018-02-28 21:11:07,155 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
-2018-02-28 21:11:07,155 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Carr
-2018-02-28 21:11:07,156 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Thomas
-2018-02-28 21:11:11,658 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-28 21:11:25,154 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
-2018-02-28 21:16:42,858 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
-2018-02-28 21:16:42,863 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
-2018-02-28 21:16:42,889 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
-2018-02-28 21:16:42,894 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
-2018-02-28 21:16:42,951 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
-2018-02-28 21:16:56,870 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-28 21:16:56,871 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
-2018-02-28 21:16:56,871 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
-2018-02-28 21:16:56,871 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Graff
-2018-02-28 21:16:56,871 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Dorothy
-2018-02-28 21:17:01,310 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-28 21:17:14,842 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
-2018-02-28 21:18:20,656 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
-2018-02-28 21:18:20,662 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003502^EHI0NA, 000003502, Hollinshed, Alene, 1917-08-20, Y, F]
-2018-02-28 21:18:20,700 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003502^EHI0NA, Home, 6926 Julian Ave., Saint Louis, MO, 63130, USA, 000003502^EHI0NA, Primary, 6926 Julian Ave., Saint Louis, MO, 63130, USA]
-2018-02-28 21:18:20,705 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003502^EHI0NA, 3148637540]
-2018-02-28 21:18:20,753 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA]
-2018-02-28 21:18:35,611 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-28 21:18:35,612 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
-2018-02-28 21:18:35,612 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
-2018-02-28 21:18:35,612 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Hollinshed
-2018-02-28 21:18:35,612 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Alene
-2018-02-28 21:18:40,194 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-28 21:18:53,749 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
-2018-02-28 21:24:35,016 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
-2018-02-28 21:24:35,022 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003502^EHI0NA, 000003502, Hollinshed, Alene, 1917-08-20, Y, F]
-2018-02-28 21:24:35,051 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003502^EHI0NA, Home, 6926 Julian Ave., Saint Louis, MO, 63130, USA, 000003502^EHI0NA, Primary, 6926 Julian Ave., Saint Louis, MO, 63130, USA]
-2018-02-28 21:24:35,056 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003502^EHI0NA, 3148637540]
-2018-02-28 21:24:35,107 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA, 000003502^EHI0NA]
-2018-02-28 21:24:49,897 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-28 21:24:49,897 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
-2018-02-28 21:24:49,898 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
-2018-02-28 21:24:49,898 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Hollinshed
-2018-02-28 21:24:49,898 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Alene
-2018-02-28 21:24:54,345 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-28 21:25:07,938 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
-2018-02-28 21:26:50,982 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verified creation of episode successfully
-2018-02-28 21:27:01,226 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- closeBrowser
-2018-02-28 21:48:57,049 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
-2018-02-28 21:48:57,055 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
-2018-02-28 21:48:57,080 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
-2018-02-28 21:48:57,087 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
-2018-02-28 21:48:57,140 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
-2018-02-28 21:49:11,147 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-28 21:49:11,148 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
-2018-02-28 21:49:11,148 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
-2018-02-28 21:49:11,148 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Graff
-2018-02-28 21:49:11,148 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Dorothy
-2018-02-28 21:49:15,571 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-28 21:49:29,085 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
-2018-02-28 21:53:13,293 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verified creation of episode successfully
-2018-02-28 21:53:23,539 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- closeBrowser
-2018-02-28 22:00:26,129 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
-2018-02-28 22:00:26,134 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
-2018-02-28 22:00:26,168 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
-2018-02-28 22:00:26,174 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
-2018-02-28 22:00:26,221 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
-2018-02-28 22:00:40,508 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-28 22:00:40,508 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
-2018-02-28 22:00:40,509 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
-2018-02-28 22:00:40,509 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Graff
-2018-02-28 22:00:40,510 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Dorothy
-2018-02-28 22:00:45,080 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-28 22:00:58,592 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
-2018-02-28 22:03:31,598 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verified creation of episode successfully
-2018-02-28 22:03:47,716 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- closeBrowser
-2018-02-28 22:06:59,213 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberSearch
-2018-02-28 22:06:59,218 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Demographic File Data [000003433^EHI0NA, 000003433, Graff, Dorothy, 1938-10-21, Y, F]
-2018-02-28 22:06:59,253 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Address File Data [000003433^EHI0NA, Home, 204 E. Jefferson St., Columbia, IL, 62236, USA, 000003433^EHI0NA, Primary, 204 E. Jefferson St., Columbia, IL, 62236, USA]
-2018-02-28 22:06:59,259 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Phone File Data [000003433^EHI0NA, 6182816560]
-2018-02-28 22:06:59,309 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Coverage File Data [000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA, 000003433^EHI0NA]
-2018-02-28 22:07:13,425 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Profile Name is Jayavarapu, Vineela
-2018-02-28 22:07:13,426 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User Last name Jayavarapu
-2018-02-28 22:07:13,427 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - User First name  Vineela
-2018-02-28 22:07:13,427 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member Last name Graff
-2018-02-28 22:07:13,428 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Member First name Dorothy
-2018-02-28 22:07:17,908 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
-2018-02-28 22:07:31,425 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verifying the flow for the Client : EHI
-2018-02-28 22:09:14,184 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Verified creation of episode successfully
-2018-02-28 22:09:29,046 [main] INFO  com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC - Execution started for --- closeBrowser
+2018-03-01 17:19:24,259 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberSearch
+2018-03-01 17:19:24,264 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Demographic File Data [000014846^EHI0NA, 000014846, Hall, Arlene, 1931-05-24, Y, F]
+2018-03-01 17:19:24,301 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Address File Data [000014846^EHI0NA, Home, 618 Wintergreen Dr., O Fallon, IL, 62269, USA, 000014846^EHI0NA, Primary, 618 Wintergreen Dr., O Fallon, IL, 62269, USA]
+2018-03-01 17:19:24,305 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Phone File Data [000014846^EHI0NA, 6186281652]
+2018-03-01 17:19:24,355 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Coverage File Data [000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA]
+2018-03-01 17:19:42,544 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Profile Name is Jayavarapu, Vineela
+2018-03-01 17:19:42,544 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Last name Jayavarapu
+2018-03-01 17:19:42,545 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User First name  Vineela
+2018-03-01 17:19:42,545 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Last name Hall
+2018-03-01 17:19:42,545 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member First name Arlene
+2018-03-01 17:19:46,846 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-03-01 17:20:00,340 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Verifying the flow for the Client : EHI
+2018-03-01 17:20:46,913 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- closeBrowser
+2018-03-01 17:20:47,714 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- verify_MemberSearch
+2018-03-01 17:20:47,716 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Demographic File Data [000014846^EHI0NA, 000014846, Hall, Arlene, 1931-05-24, Y, F]
+2018-03-01 17:20:47,762 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Address File Data [000014846^EHI0NA, Home, 618 Wintergreen Dr., O Fallon, IL, 62269, USA, 000014846^EHI0NA, Primary, 618 Wintergreen Dr., O Fallon, IL, 62269, USA]
+2018-03-01 17:20:47,768 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Phone File Data [000014846^EHI0NA, 6186281652]
+2018-03-01 17:20:47,830 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Coverage File Data [000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA]
+2018-03-01 17:21:05,521 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User Profile Name is Jayavarapu, Vineela
+2018-03-01 17:21:05,522 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User Last name Jayavarapu
+2018-03-01 17:21:05,522 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User First name  Vineela
+2018-03-01 17:21:05,522 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Last name Hall
+2018-03-01 17:21:05,522 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member First name Arlene
+2018-03-01 17:21:19,489 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_61Integrationflow
+2018-03-01 17:21:33,285 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Verifying the flow for the Client : EHI
+2018-03-01 17:22:32,340 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Verified creation of episode successfully
+2018-03-01 17:22:37,655 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-03-01 17:23:13,518 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_CM_Mbr_Opt_OutLetterGenerated in Letters screen true
+2018-03-01 17:23:14,536 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-03-01 17:23:14,570 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Successfully completed validating integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000014846 and for the client: EHI
+2018-03-01 17:23:14,573 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- closeBrowser
+2018-03-01 17:23:15,368 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- verify_MemberSearch
+2018-03-01 17:23:15,370 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Demographic File Data [000014846^EHI0NA, 000014846, Hall, Arlene, 1931-05-24, Y, F]
+2018-03-01 17:23:15,386 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Address File Data [000014846^EHI0NA, Home, 618 Wintergreen Dr., O Fallon, IL, 62269, USA, 000014846^EHI0NA, Primary, 618 Wintergreen Dr., O Fallon, IL, 62269, USA]
+2018-03-01 17:23:15,388 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Phone File Data [000014846^EHI0NA, 6186281652]
+2018-03-01 17:23:15,445 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Coverage File Data [000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA]
+2018-03-01 17:23:32,322 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User Profile Name is Jayavarapu, Vineela
+2018-03-01 17:23:32,322 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User Last name Jayavarapu
+2018-03-01 17:23:32,322 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User First name  Vineela
+2018-03-01 17:23:32,322 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Last name Hall
+2018-03-01 17:23:32,323 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member First name Arlene
+2018-03-01 17:23:36,603 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-03-01 17:23:50,104 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Verifying the flow for the Client : EHI
+2018-03-01 17:24:51,778 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-03-01 17:26:12,472 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_CM_PostEnrollmentLetterGenerated in Letters screen true
+2018-03-01 17:26:14,665 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-03-01 17:26:14,696 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Successfully completed validating integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000014846 and for the client: EHI
+2018-03-01 17:26:14,699 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- closeBrowser
+2018-03-01 17:26:15,453 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberSearch
+2018-03-01 17:26:15,454 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Demographic File Data [000015060^EHI0NA, 000015060, Rice Jr, James, 1942-08-03, Y, M]
+2018-03-01 17:26:15,472 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Address File Data [000015060^EHI0NA, Home, 6631 Barken Ave., Saint Louis, MO, 63121, USA, 000015060^EHI0NA, Primary, 6631 Barken Ave., Saint Louis, MO, 63121, USA]
+2018-03-01 17:26:15,475 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Phone File Data [000015060^EHI0NA, 3143814474]
+2018-03-01 17:26:15,531 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Coverage File Data [000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA]
+2018-03-01 17:26:33,237 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Profile Name is Jayavarapu, Vineela
+2018-03-01 17:26:33,238 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Last name Jayavarapu
+2018-03-01 17:26:33,238 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User First name  Vineela
+2018-03-01 17:26:33,239 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Last name Rice Jr
+2018-03-01 17:26:33,239 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member First name James
+2018-03-01 17:26:37,817 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-03-01 17:26:51,614 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Verifying the flow for the Client : EHI
+2018-03-01 17:27:50,457 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Verified creation of episode successfully
+2018-03-01 17:27:55,391 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-03-01 17:28:07,565 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-03-01 17:28:18,176 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-03-01 17:28:25,618 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
+2018-03-01 17:28:27,256 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
+2018-03-01 17:28:28,857 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
+2018-03-01 17:28:29,394 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-03-01 17:28:29,427 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Successfully completed validating integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000015060 and for the client: EHI
+2018-03-01 17:28:29,429 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- closeBrowser
+2018-03-01 17:28:30,208 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- verify_MemberSearch
+2018-03-01 17:28:30,210 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Demographic File Data [000015060^EHI0NA, 000015060, Rice Jr, James, 1942-08-03, Y, M]
+2018-03-01 17:28:30,226 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Address File Data [000015060^EHI0NA, Home, 6631 Barken Ave., Saint Louis, MO, 63121, USA, 000015060^EHI0NA, Primary, 6631 Barken Ave., Saint Louis, MO, 63121, USA]
+2018-03-01 17:28:30,229 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Phone File Data [000015060^EHI0NA, 3143814474]
+2018-03-01 17:28:30,267 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Coverage File Data [000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA]
+2018-03-01 17:28:46,611 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User Profile Name is Jayavarapu, Vineela
+2018-03-01 17:28:46,611 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User Last name Jayavarapu
+2018-03-01 17:28:46,612 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User First name  Vineela
+2018-03-01 17:28:46,612 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Last name Rice Jr
+2018-03-01 17:28:46,613 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member First name James
+2018-03-01 17:28:51,416 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_61Integrationflow
+2018-03-01 17:29:05,174 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Verifying the flow for the Client : EHI
+2018-03-01 17:30:04,139 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Verified creation of episode successfully
+2018-03-01 17:30:09,600 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-03-01 17:30:45,459 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_CM_Mbr_Opt_OutLetterGenerated in Letters screen true
+2018-03-01 17:30:46,401 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-03-01 17:30:46,433 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Successfully completed validating integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000015060 and for the client: EHI
+2018-03-01 17:30:46,434 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- closeBrowser
+2018-03-01 17:30:47,184 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- verify_MemberSearch
+2018-03-01 17:30:47,185 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Demographic File Data [000015060^EHI0NA, 000015060, Rice Jr, James, 1942-08-03, Y, M]
+2018-03-01 17:30:47,205 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Address File Data [000015060^EHI0NA, Home, 6631 Barken Ave., Saint Louis, MO, 63121, USA, 000015060^EHI0NA, Primary, 6631 Barken Ave., Saint Louis, MO, 63121, USA]
+2018-03-01 17:30:47,207 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Phone File Data [000015060^EHI0NA, 3143814474]
+2018-03-01 17:30:47,264 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Coverage File Data [000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA]
+2018-03-01 17:31:07,121 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User Profile Name is Jayavarapu, Vineela
+2018-03-01 17:31:07,122 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User Last name Jayavarapu
+2018-03-01 17:31:07,122 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User First name  Vineela
+2018-03-01 17:31:07,122 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Last name Rice Jr
+2018-03-01 17:31:07,122 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member First name James
+2018-03-01 17:31:11,886 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-03-01 17:31:25,346 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Verifying the flow for the Client : EHI
+2018-03-01 17:32:26,266 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-03-01 17:33:46,259 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_CM_PostEnrollmentLetterGenerated in Letters screen true
+2018-03-01 17:33:47,097 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-03-01 17:33:47,130 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Successfully completed validating integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000015060 and for the client: EHI
+2018-03-01 17:33:47,133 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- closeBrowser
+2018-03-01 17:50:11,302 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberSearch
+2018-03-01 17:50:11,307 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Demographic File Data [000014846^EHI0NA, 000014846, Hall, Arlene, 1931-05-24, Y, F]
+2018-03-01 17:50:11,333 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Address File Data [000014846^EHI0NA, Home, 618 Wintergreen Dr., O Fallon, IL, 62269, USA, 000014846^EHI0NA, Primary, 618 Wintergreen Dr., O Fallon, IL, 62269, USA]
+2018-03-01 17:50:11,338 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Phone File Data [000014846^EHI0NA, 6186281652]
+2018-03-01 17:50:11,388 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Coverage File Data [000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA]
+2018-03-01 17:50:35,266 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Profile Name is Jayavarapu, Vineela
+2018-03-01 17:50:35,266 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Last name Jayavarapu
+2018-03-01 17:50:35,266 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User First name  Vineela
+2018-03-01 17:50:35,267 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Last name Hall
+2018-03-01 17:50:35,267 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member First name Arlene
+2018-03-01 17:50:39,855 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-03-01 17:50:53,382 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Verifying the flow for the Client : EHI
+2018-03-01 17:51:52,387 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Verified creation of episode successfully
+2018-03-01 17:51:57,435 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-03-01 17:52:09,718 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-03-01 17:52:20,552 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-03-01 17:52:27,480 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
+2018-03-01 17:52:28,820 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
+2018-03-01 17:52:30,600 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
+2018-03-01 17:52:31,324 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-03-01 17:52:31,362 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Successfully completed validating integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000014846 and for the client: EHI
+2018-03-01 17:52:31,366 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- closeBrowser
+2018-03-01 17:52:32,177 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- verify_MemberSearch
+2018-03-01 17:52:32,179 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Demographic File Data [000014846^EHI0NA, 000014846, Hall, Arlene, 1931-05-24, Y, F]
+2018-03-01 17:52:32,211 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Address File Data [000014846^EHI0NA, Home, 618 Wintergreen Dr., O Fallon, IL, 62269, USA, 000014846^EHI0NA, Primary, 618 Wintergreen Dr., O Fallon, IL, 62269, USA]
+2018-03-01 17:52:32,213 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Phone File Data [000014846^EHI0NA, 6186281652]
+2018-03-01 17:52:32,261 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Coverage File Data [000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA]
+2018-03-01 17:52:53,814 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User Profile Name is Jayavarapu, Vineela
+2018-03-01 17:52:53,815 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User Last name Jayavarapu
+2018-03-01 17:52:53,815 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User First name  Vineela
+2018-03-01 17:52:53,816 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Last name Hall
+2018-03-01 17:52:53,816 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member First name Arlene
+2018-03-01 17:52:58,584 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_61Integrationflow
+2018-03-01 17:53:12,093 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Verifying the flow for the Client : EHI
+2018-03-01 17:54:10,699 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Verified creation of episode successfully
+2018-03-01 17:54:15,198 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-03-01 17:54:51,164 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_CM_Mbr_Opt_OutLetterGenerated in Letters screen true
+2018-03-01 17:54:52,141 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-03-01 17:54:52,179 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Successfully completed validating integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000014846 and for the client: EHI
+2018-03-01 17:54:52,183 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- closeBrowser
+2018-03-01 17:54:52,928 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- verify_MemberSearch
+2018-03-01 17:54:52,931 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Demographic File Data [000014846^EHI0NA, 000014846, Hall, Arlene, 1931-05-24, Y, F]
+2018-03-01 17:54:52,965 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Address File Data [000014846^EHI0NA, Home, 618 Wintergreen Dr., O Fallon, IL, 62269, USA, 000014846^EHI0NA, Primary, 618 Wintergreen Dr., O Fallon, IL, 62269, USA]
+2018-03-01 17:54:52,967 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Phone File Data [000014846^EHI0NA, 6186281652]
+2018-03-01 17:54:53,006 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Coverage File Data [000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA]
+2018-03-01 17:55:10,083 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User Profile Name is Jayavarapu, Vineela
+2018-03-01 17:55:10,083 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User Last name Jayavarapu
+2018-03-01 17:55:10,083 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User First name  Vineela
+2018-03-01 17:55:10,084 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Last name Hall
+2018-03-01 17:55:10,084 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member First name Arlene
+2018-03-01 17:55:18,607 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-03-01 17:55:32,062 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Verifying the flow for the Client : EHI
+2018-03-01 17:56:32,953 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-03-01 17:57:54,001 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_CM_PostEnrollmentLetterGenerated in Letters screen true
+2018-03-01 17:57:54,891 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-03-01 17:57:54,929 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Successfully completed validating integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000014846 and for the client: EHI
+2018-03-01 17:57:54,933 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- closeBrowser
+2018-03-01 17:57:55,718 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberSearch
+2018-03-01 17:57:55,720 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Demographic File Data [000015060^EHI0NA, 000015060, Rice Jr, James, 1942-08-03, Y, M]
+2018-03-01 17:57:55,741 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Address File Data [000015060^EHI0NA, Home, 6631 Barken Ave., Saint Louis, MO, 63121, USA, 000015060^EHI0NA, Primary, 6631 Barken Ave., Saint Louis, MO, 63121, USA]
+2018-03-01 17:57:55,744 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Phone File Data [000015060^EHI0NA, 3143814474]
+2018-03-01 17:57:55,798 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Coverage File Data [000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA]
+2018-03-01 17:58:13,187 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Profile Name is Jayavarapu, Vineela
+2018-03-01 17:58:13,187 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Last name Jayavarapu
+2018-03-01 17:58:13,187 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User First name  Vineela
+2018-03-01 17:58:13,188 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Last name Rice Jr
+2018-03-01 17:58:13,188 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member First name James
+2018-03-01 17:58:17,886 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-03-01 17:58:31,417 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Verifying the flow for the Client : EHI
+2018-03-01 17:59:30,311 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Verified creation of episode successfully
+2018-03-01 17:59:34,703 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-03-01 17:59:47,020 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedInteractionRecordVisible true
+2018-03-01 17:59:57,918 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_UTCletterGenerated in Letters screen true
+2018-03-01 18:00:06,385 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenActivityRecordVisible in Open Activities tab true
+2018-03-01 18:00:11,030 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_ClosedActivityRecordVisible in Closed Activities tab true
+2018-03-01 18:00:14,788 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify the status of Episode as Closed true
+2018-03-01 18:00:15,387 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-03-01 18:00:15,429 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Successfully completed validating integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000015060 and for the client: EHI
+2018-03-01 18:00:15,431 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- closeBrowser
+2018-03-01 18:00:16,220 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- verify_MemberSearch
+2018-03-01 18:00:16,222 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Demographic File Data [000015060^EHI0NA, 000015060, Rice Jr, James, 1942-08-03, Y, M]
+2018-03-01 18:00:16,239 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Address File Data [000015060^EHI0NA, Home, 6631 Barken Ave., Saint Louis, MO, 63121, USA, 000015060^EHI0NA, Primary, 6631 Barken Ave., Saint Louis, MO, 63121, USA]
+2018-03-01 18:00:16,242 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Phone File Data [000015060^EHI0NA, 3143814474]
+2018-03-01 18:00:16,285 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Coverage File Data [000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA]
+2018-03-01 18:00:33,702 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User Profile Name is Jayavarapu, Vineela
+2018-03-01 18:00:33,703 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User Last name Jayavarapu
+2018-03-01 18:00:33,703 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - User First name  Vineela
+2018-03-01 18:00:33,703 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member Last name Rice Jr
+2018-03-01 18:00:33,703 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Member First name James
+2018-03-01 18:00:38,430 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_61Integrationflow
+2018-03-01 18:00:51,942 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Verifying the flow for the Client : EHI
+2018-03-01 18:01:50,968 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Verified creation of episode successfully
+2018-03-01 18:01:55,902 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-03-01 18:02:31,606 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_CM_Mbr_Opt_OutLetterGenerated in Letters screen true
+2018-03-01 18:02:32,547 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-03-01 18:02:32,580 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Successfully completed validating integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000015060 and for the client: EHI
+2018-03-01 18:02:32,583 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_61_TC - Execution started for --- closeBrowser
+2018-03-01 18:02:33,330 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- verify_MemberSearch
+2018-03-01 18:02:33,332 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Demographic File Data [000015060^EHI0NA, 000015060, Rice Jr, James, 1942-08-03, Y, M]
+2018-03-01 18:02:33,345 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Address File Data [000015060^EHI0NA, Home, 6631 Barken Ave., Saint Louis, MO, 63121, USA, 000015060^EHI0NA, Primary, 6631 Barken Ave., Saint Louis, MO, 63121, USA]
+2018-03-01 18:02:33,347 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Phone File Data [000015060^EHI0NA, 3143814474]
+2018-03-01 18:02:33,398 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Coverage File Data [000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA, 000015060^EHI0NA]
+2018-03-01 18:02:50,856 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User Profile Name is Jayavarapu, Vineela
+2018-03-01 18:02:50,857 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User Last name Jayavarapu
+2018-03-01 18:02:50,857 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - User First name  Vineela
+2018-03-01 18:02:50,857 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member Last name Rice Jr
+2018-03-01 18:02:50,857 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Member First name James
+2018-03-01 18:02:55,554 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow
+2018-03-01 18:03:09,070 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Verifying the flow for the Client : EHI
+2018-03-01 18:04:11,197 [main] INFO  com.jiva.pages.Episodeactivitiespage - verify_OpenInteractionRecordVisible true
+2018-03-01 18:05:31,332 [main] INFO  com.jiva.pages.Episodeoverviewpage - verify_CM_PostEnrollmentLetterGenerated in Letters screen true
+2018-03-01 18:05:32,092 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
+2018-03-01 18:05:32,127 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Successfully completed validating integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000015060 and for the client: EHI
+2018-03-01 18:05:32,129 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- closeBrowser

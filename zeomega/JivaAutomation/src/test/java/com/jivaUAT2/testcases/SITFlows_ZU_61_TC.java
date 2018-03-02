@@ -167,6 +167,7 @@ public class SITFlows_ZU_61_TC extends TestBase {
 		
 		
 		//memberOverviewPage.deActivate();
+		memberOverviewPage.deActivateEpisodesfromDashboard();
 		
 		// ----- Create Case Management Episode -----
 		memberOverviewPage.clickAddEpisode();

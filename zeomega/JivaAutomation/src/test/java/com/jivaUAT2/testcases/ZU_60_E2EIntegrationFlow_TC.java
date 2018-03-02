@@ -38,7 +38,7 @@ public class ZU_60_E2EIntegrationFlow_TC extends TestBase {
 	private WebDriver driver;
 	private String sTestcaseName = null;
 	
-	private int linenumber=2;
+	private int linenumber=1;
 	private ArrayList<String> MemberDemographicData;
 	private ArrayList<String> MemberAddressData;
 	private ArrayList<String> MemberPhoneData;
@@ -164,7 +164,9 @@ public class ZU_60_E2EIntegrationFlow_TC extends TestBase {
 		memberOverviewPage.expandorhideMemberInfo();
 		
 		
-		memberOverviewPage.deActivate();
+		//memberOverviewPage.deActivate();
+		
+		memberOverviewPage.deActivateEpisodesfromDashboard();
 		
 		// ----- Create Case Management Episode -----
 		memberOverviewPage.clickAddEpisode();
@@ -178,13 +180,8 @@ public class ZU_60_E2EIntegrationFlow_TC extends TestBase {
 		createCMepisodePage.invalidEpisodeCoverageAlert();
 		logger.info("Verified creation of episode successfully");
 		
-		memberOverviewPage.clickMemberOverview();
+		//memberOverviewPage.clickMemberOverview();		
 		
-		
-		
-	
-		
-
 		// ----- Verify Activity added -----		
 		memberOverviewPage.clickCurrentEpisodecogwheel();
 		memberOverviewPage.openEpisode();			
@@ -264,7 +261,7 @@ public class ZU_60_E2EIntegrationFlow_TC extends TestBase {
 		logger.info("Execution started for --- " + sTestcaseName);
 		
 		// ----- Close the browser -----
-		closeBrowser(driver);
+		//closeBrowser(driver);
 	}
 	
 }

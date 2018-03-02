@@ -49,7 +49,7 @@ public class MemberOverviewPage extends WebElements {
 	By homephonelocator = By.xpath("//td/div/div/label[contains(text(),'Home')]/../div/span");
 	By clientnamelocator = By.xpath("//label/j-label[contains(text(),'Client')]/../../div/span");
 	
-	By HOMEaddresstypelocator = By.xpath(".//*[@id='cms-body']/div[5]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[1]/div[4]/div[3]/span");
+	By HOMEaddresstypelocator = By.xpath("//div/span[contains(text(),'HOME')]/../../../div/div[contains(text(),'Address Type')]/../div/span[contains(@ng-bind,'record.member_addr_type_desc')]");
 	By HOMEziplocator = By.xpath("//div/span[contains(text(),'HOME')]/../../../div/div[contains(text(),'Zip')]/../div/span[contains(@ng-bind,'record.member_zipcode')]");
 	By HOMEcitylocator = By.xpath("//div/span[contains(text(),'HOME')]/../../../div/div[contains(text(),'City')]/../div/span[contains(@ng-bind,'record.member_city')]");
 	By HOMEaddressline1locator = By.xpath("//div/span[contains(text(),'HOME')]/../../../div/div[contains(text(),'Address Line 1')]/../div/span[contains(@ng-bind,'record.member_addr_1')]");
@@ -57,7 +57,7 @@ public class MemberOverviewPage extends WebElements {
 	By HOMEstatelocator = By.xpath("//div/span[contains(text(),'HOME')]/../../../../div/div/div[contains(text(),'State')]/../div/span[contains(@ng-bind,'record.member_state')]");
 	By HOMEcountrylocator = By.xpath("//div/span[contains(text(),'HOME')]/../../../../div/div/div[contains(text(),'Country')]/../div/span[contains(@ng-bind,'record.member_country')]");
 	
-	By PRIMARYaddresstypelocator = By.xpath(".//*[@id='cms-body']/div[5]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/div[1]/div[1]/div[4]/div[3]/span");
+	By PRIMARYaddresstypelocator = By.xpath("//div/span[contains(text(),'PRIMARY')]/../../../div/div[contains(text(),'Address Type')]/../div/span[contains(@ng-bind,'record.member_addr_type_desc')]");
 	By PRIMARYziplocator = By.xpath("//div/span[contains(text(),'PRIMARY')]/../../../div/div[contains(text(),'Zip')]/../div/span[contains(@ng-bind,'record.member_zipcode')]");
 	By PRIMARYcitylocator = By.xpath("//div/span[contains(text(),'PRIMARY')]/../../../div/div[contains(text(),'City')]/../div/span[contains(@ng-bind,'record.member_city')]");
 	By PRIMARYaddressline1locator = By.xpath("//div/span[contains(text(),'PRIMARY')]/../../../div/div[contains(text(),'Address Line 1')]/../div/span[contains(@ng-bind,'record.member_addr_1')]");
@@ -67,10 +67,10 @@ public class MemberOverviewPage extends WebElements {
 	
 	By closememberinfolocator = By.xpath(".//*[@id='cms-body']/div[5]/div/div/div/div[1]/button");
 	By addepisodelocator = By.xpath(".//*[@id='angularcontent']/workflow-banner/div/div/div[3]/div[6]/button");
-	By casemanagementlocator = By.xpath("(//a/span[contains(text(),'Case Management')])[2]");
+	By casemanagementlocator = By.xpath("//a/span[text()='Case Management']");
 	
 	
-	public void deActivate()
+	public void deActivateEpisodesfromList()
 	{
 		By episodeCountlocator=By.xpath("//span[@ng-bind='episodeList.episode_count']"); 
 		By episodeExpandlocator=By.xpath("//button[@ng-click='routeEpisodeGridView()']/i");
@@ -98,11 +98,10 @@ public class MemberOverviewPage extends WebElements {
 				sleep(5000);
 				deactivateEpisodeAlert();
 			}
-			
-			
-			List<WebElement> episodeList = listofelements(closed_CCM_Episodelocator);
+		}
+			/*List<WebElement> episodeList = listofelements(closed_CCM_Episodelocator);
 			//for (WebElement webElement : listofelements(closed_CCM_Episodelocator)) {
-			//	int size = e
+		
 			
 			for (int i = 0; i < episodeList.size(); i++) {
 				episodeList.get(i).click();	
@@ -114,14 +113,43 @@ public class MemberOverviewPage extends WebElements {
 				episodeList = listofelements(closed_CCM_Episodelocator);
 				
 			}
-		}
+		}*/
 
-			//}
-		
-		
 	}
 	
-	
+	public void deActivateEpisodesfromDashboard()
+	{
+		By closed_CCM_Episodelocator=By.xpath("//div[contains(@ng-if,'record.program')]/span[contains(text(),'Complex')]/../../../div/div/span[contains(text(),'Status')]/../span[contains(text(),'Closed')]");
+		By referral_CCM_Episodelocator=By.xpath("//div[contains(@ng-if,'record.program')]/span[contains(text(),'Complex')]/../../../div/div/span[contains(text(),'Status')]/../span[contains(text(),'Referral')]");
+		By open_CCM_Episodelocator=By.xpath("//div[contains(@ng-if,'record.program')]/span[contains(text(),'Complex')]/../../../div/div/span[contains(text(),'Status')]/../span[contains(text(),'Open')]");		
+		
+		
+			if(isDisplayed(referral_CCM_Episodelocator))
+			{
+				click(referral_CCM_Episodelocator);
+				sleep(5000);
+				clickUsingJs(deactivateepisodelink);
+				clickUsingJs(deactivatebuttonlocator);			
+			}
+			if(isDisplayed(open_CCM_Episodelocator))
+			{
+				click(open_CCM_Episodelocator);
+				sleep(5000);
+				clickUsingJs(deactivateepisodelink);
+				clickUsingJs(deactivatebuttonlocator);
+			}
+							
+			/*List<WebElement> episodeList = listofelements(closed_CCM_Episodelocator);	
+			
+			for (int i = 0; i < episodeList.size(); i++) {
+				episodeList.get(i).click();				
+				sleep(5000);
+				clickUsingJs(deactivateepisodelink);
+				clickUsingJs(deactivatebuttonlocator);
+								
+			}*/
+		
+	}		
 	public void closeMemberInfo()
 	{
 		clickUsingJs(closememberinfolocator);
@@ -129,7 +157,7 @@ public class MemberOverviewPage extends WebElements {
 	public void clickMemberOverview()
 	{
 		clickUsingJs(memberoverviewlocator);
-		sleep(6000);
+		sleep(10000);
 	}
 	
 	public void deactivateEpisodeAlert()
@@ -169,8 +197,8 @@ public class MemberOverviewPage extends WebElements {
 	}
 	public void performDeactivateEpisode()
 	{
-		click(deactivateepisodelink);
-		click(deactivatebuttonlocator);
+		clickUsingJs(deactivateepisodelink);
+		clickUsingJs(deactivatebuttonlocator);
 	}
 	public void performDeactivateEpisodeforClosedEpisodes()
 	{
@@ -178,8 +206,8 @@ public class MemberOverviewPage extends WebElements {
 		{
 			if(isDisplayed(CCMstatusclosedlocator))
 			{
-				click(deactivateepisodelink);
-				click(deactivatebuttonlocator);
+				clickUsingJs(deactivateepisodelink);
+				clickUsingJs(deactivatebuttonlocator);
 			}
 		}
 		catch (NoSuchElementException e)

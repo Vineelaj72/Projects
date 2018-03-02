@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
     <line>
       <![CDATA[Username Enteredvjayavarapu]]>
@@ -11,52 +11,52 @@
       <![CDATA[Login Button Clicked]]>
     </line>
     <line>
-      <![CDATA[Started execution for integration flow of #ZU-60_Unable to reach member# for the member in line #2 holding the Member Id: 000003433 and for the client: EHI<br>]]>
+      <![CDATA[Started execution for integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000014846 and for the client: EHI<br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>000003433^EHI0NA<font color='blue'>  Actual Result: </font>000003433^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>000003433^EHI0NA<font color='blue'>  Actual Result: </font>000003433^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>000003433^EHI0NA<font color='blue'>  Actual Result: </font>000003433^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>000003433^EHI0NA<font color='blue'>  Actual Result: </font>000003433^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>6182816560<font color='blue'>  Actual Result: </font>6182816560<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>6186281652<font color='blue'>  Actual Result: </font>6186281652<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>Graff<font color='blue'>  Actual Result: </font>Graff<font color='brown'> Validation 6: Member last name validated</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>Hall<font color='blue'>  Actual Result: </font>Hall<font color='brown'> Validation 6: Member last name validated</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>Dorothy<font color='blue'>  Actual Result: </font>Dorothy<font color='brown'> Validation 7: Member first name validated</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>Arlene<font color='blue'>  Actual Result: </font>Arlene<font color='brown'> Validation 7: Member first name validated</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>000003433<font color='blue'>  Actual Result: </font>000003433<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846<font color='blue'>  Actual Result: </font>000014846<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
     </line>
     <line>
       <![CDATA[<font color='blue'>Expected Result: </font>true<font color='blue'>  Actual Result: </font>true<font color='brown'> Validation 9: Member gender validated</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>1938-10-21<font color='blue'>  Actual Result: </font>1938-10-21<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>1931-05-24<font color='blue'>  Actual Result: </font>1931-05-24<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
     </line>
     <line>
       <![CDATA[<font color='blue'>Expected Result: </font>HOME<font color='blue'>  Actual Result: </font>HOME<font color='brown'> Validation 11: Home Address type validated</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>204 E. Jefferson St.<font color='blue'>  Actual Result: </font>204 E. Jefferson St.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>618 Wintergreen Dr.<font color='blue'>  Actual Result: </font>618 Wintergreen Dr.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>Columbia<font color='blue'>  Actual Result: </font>Columbia<font color='brown'> Validation 13: Home city validated</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>O Fallon<font color='blue'>  Actual Result: </font>O Fallon<font color='brown'> Validation 13: Home city validated</font><br>]]>
     </line>
     <line>
       <![CDATA[<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 14: Home state validated</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>62236<font color='blue'>  Actual Result: </font>62236<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>62269<font color='blue'>  Actual Result: </font>62269<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
     </line>
     <line>
       <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 16: Home country validated</font><br>]]>
@@ -65,27 +65,442 @@
       <![CDATA[<font color='blue'>Expected Result: </font>PRIMARY<font color='blue'>  Actual Result: </font>PRIMARY<font color='brown'> Validation 17: PRIMARY Address type validated</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>204 E. Jefferson St.<font color='blue'>  Actual Result: </font>204 E. Jefferson St.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>618 Wintergreen Dr.<font color='blue'>  Actual Result: </font>618 Wintergreen Dr.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>Columbia<font color='blue'>  Actual Result: </font>Columbia<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>O Fallon<font color='blue'>  Actual Result: </font>O Fallon<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
     </line>
     <line>
       <![CDATA[<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 20: PRIMARY state validated</font><br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Expected Result: </font>62236<font color='blue'>  Actual Result: </font>62236<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
+      <![CDATA[<font color='blue'>Expected Result: </font>62269<font color='blue'>  Actual Result: </font>62269<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
     </line>
     <line>
       <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 22: PRIMARY country validated</font><br>]]>
     </line>
+    <line>
+      <![CDATA[Successfully completed validating integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000014846 and for the client: EHI]]>
+    </line>
+    <line>
+      <![CDATA[Username Enteredvjayavarapu]]>
+    </line>
+    <line>
+      <![CDATA[Password EnteredPassword3!]]>
+    </line>
+    <line>
+      <![CDATA[Login Button Clicked]]>
+    </line>
+    <line>
+      <![CDATA[Started execution for integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000014846 and for the client: EHI<br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>6186281652<font color='blue'>  Actual Result: </font>6186281652<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>Hall<font color='blue'>  Actual Result: </font>Hall<font color='brown'> Validation 6: Member last name validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>Arlene<font color='blue'>  Actual Result: </font>Arlene<font color='brown'> Validation 7: Member first name validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846<font color='blue'>  Actual Result: </font>000014846<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>true<font color='blue'>  Actual Result: </font>true<font color='brown'> Validation 9: Member gender validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>1931-05-24<font color='blue'>  Actual Result: </font>1931-05-24<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>HOME<font color='blue'>  Actual Result: </font>HOME<font color='brown'> Validation 11: Home Address type validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>618 Wintergreen Dr.<font color='blue'>  Actual Result: </font>618 Wintergreen Dr.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>O Fallon<font color='blue'>  Actual Result: </font>O Fallon<font color='brown'> Validation 13: Home city validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 14: Home state validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>62269<font color='blue'>  Actual Result: </font>62269<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 16: Home country validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>PRIMARY<font color='blue'>  Actual Result: </font>PRIMARY<font color='brown'> Validation 17: PRIMARY Address type validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>618 Wintergreen Dr.<font color='blue'>  Actual Result: </font>618 Wintergreen Dr.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>O Fallon<font color='blue'>  Actual Result: </font>O Fallon<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 20: PRIMARY state validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>62269<font color='blue'>  Actual Result: </font>62269<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 22: PRIMARY country validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[Successfully completed validating integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000014846 and for the client: EHI]]>
+    </line>
+    <line>
+      <![CDATA[Username Enteredvjayavarapu]]>
+    </line>
+    <line>
+      <![CDATA[Password EnteredPassword3!]]>
+    </line>
+    <line>
+      <![CDATA[Login Button Clicked]]>
+    </line>
+    <line>
+      <![CDATA[Started execution for integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000014846 and for the client: EHI<br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>6186281652<font color='blue'>  Actual Result: </font>6186281652<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>Hall<font color='blue'>  Actual Result: </font>Hall<font color='brown'> Validation 6: Member last name validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>Arlene<font color='blue'>  Actual Result: </font>Arlene<font color='brown'> Validation 7: Member first name validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000014846<font color='blue'>  Actual Result: </font>000014846<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>true<font color='blue'>  Actual Result: </font>true<font color='brown'> Validation 9: Member gender validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>1931-05-24<font color='blue'>  Actual Result: </font>1931-05-24<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>HOME<font color='blue'>  Actual Result: </font>HOME<font color='brown'> Validation 11: Home Address type validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>618 Wintergreen Dr.<font color='blue'>  Actual Result: </font>618 Wintergreen Dr.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>O Fallon<font color='blue'>  Actual Result: </font>O Fallon<font color='brown'> Validation 13: Home city validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 14: Home state validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>62269<font color='blue'>  Actual Result: </font>62269<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 16: Home country validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>PRIMARY<font color='blue'>  Actual Result: </font>PRIMARY<font color='brown'> Validation 17: PRIMARY Address type validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>618 Wintergreen Dr.<font color='blue'>  Actual Result: </font>618 Wintergreen Dr.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>O Fallon<font color='blue'>  Actual Result: </font>O Fallon<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 20: PRIMARY state validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>62269<font color='blue'>  Actual Result: </font>62269<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 22: PRIMARY country validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[Successfully completed validating integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000014846 and for the client: EHI]]>
+    </line>
+    <line>
+      <![CDATA[Username Enteredvjayavarapu]]>
+    </line>
+    <line>
+      <![CDATA[Password EnteredPassword3!]]>
+    </line>
+    <line>
+      <![CDATA[Login Button Clicked]]>
+    </line>
+    <line>
+      <![CDATA[Started execution for integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000015060 and for the client: EHI<br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>3143814474<font color='blue'>  Actual Result: </font>3143814474<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>Rice Jr<font color='blue'>  Actual Result: </font>Rice Jr<font color='brown'> Validation 6: Member last name validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>James<font color='blue'>  Actual Result: </font>James<font color='brown'> Validation 7: Member first name validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060<font color='blue'>  Actual Result: </font>000015060<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>true<font color='blue'>  Actual Result: </font>true<font color='brown'> Validation 9: Member gender validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>1942-08-03<font color='blue'>  Actual Result: </font>1942-08-03<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>HOME<font color='blue'>  Actual Result: </font>HOME<font color='brown'> Validation 11: Home Address type validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>6631 Barken Ave.<font color='blue'>  Actual Result: </font>6631 Barken Ave.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>Saint Louis<font color='blue'>  Actual Result: </font>Saint Louis<font color='brown'> Validation 13: Home city validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>MO<font color='blue'>  Actual Result: </font>MO<font color='brown'> Validation 14: Home state validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>63121<font color='blue'>  Actual Result: </font>63121<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 16: Home country validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>PRIMARY<font color='blue'>  Actual Result: </font>PRIMARY<font color='brown'> Validation 17: PRIMARY Address type validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>6631 Barken Ave.<font color='blue'>  Actual Result: </font>6631 Barken Ave.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>Saint Louis<font color='blue'>  Actual Result: </font>Saint Louis<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>MO<font color='blue'>  Actual Result: </font>MO<font color='brown'> Validation 20: PRIMARY state validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>63121<font color='blue'>  Actual Result: </font>63121<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 22: PRIMARY country validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[Successfully completed validating integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000015060 and for the client: EHI]]>
+    </line>
+    <line>
+      <![CDATA[Username Enteredvjayavarapu]]>
+    </line>
+    <line>
+      <![CDATA[Password EnteredPassword3!]]>
+    </line>
+    <line>
+      <![CDATA[Login Button Clicked]]>
+    </line>
+    <line>
+      <![CDATA[Started execution for integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000015060 and for the client: EHI<br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>3143814474<font color='blue'>  Actual Result: </font>3143814474<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>Rice Jr<font color='blue'>  Actual Result: </font>Rice Jr<font color='brown'> Validation 6: Member last name validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>James<font color='blue'>  Actual Result: </font>James<font color='brown'> Validation 7: Member first name validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060<font color='blue'>  Actual Result: </font>000015060<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>true<font color='blue'>  Actual Result: </font>true<font color='brown'> Validation 9: Member gender validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>1942-08-03<font color='blue'>  Actual Result: </font>1942-08-03<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>HOME<font color='blue'>  Actual Result: </font>HOME<font color='brown'> Validation 11: Home Address type validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>6631 Barken Ave.<font color='blue'>  Actual Result: </font>6631 Barken Ave.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>Saint Louis<font color='blue'>  Actual Result: </font>Saint Louis<font color='brown'> Validation 13: Home city validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>MO<font color='blue'>  Actual Result: </font>MO<font color='brown'> Validation 14: Home state validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>63121<font color='blue'>  Actual Result: </font>63121<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 16: Home country validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>PRIMARY<font color='blue'>  Actual Result: </font>PRIMARY<font color='brown'> Validation 17: PRIMARY Address type validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>6631 Barken Ave.<font color='blue'>  Actual Result: </font>6631 Barken Ave.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>Saint Louis<font color='blue'>  Actual Result: </font>Saint Louis<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>MO<font color='blue'>  Actual Result: </font>MO<font color='brown'> Validation 20: PRIMARY state validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>63121<font color='blue'>  Actual Result: </font>63121<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 22: PRIMARY country validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[Successfully completed validating integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000015060 and for the client: EHI]]>
+    </line>
+    <line>
+      <![CDATA[Username Enteredvjayavarapu]]>
+    </line>
+    <line>
+      <![CDATA[Password EnteredPassword3!]]>
+    </line>
+    <line>
+      <![CDATA[Login Button Clicked]]>
+    </line>
+    <line>
+      <![CDATA[Started execution for integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000015060 and for the client: EHI<br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>3143814474<font color='blue'>  Actual Result: </font>3143814474<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>Rice Jr<font color='blue'>  Actual Result: </font>Rice Jr<font color='brown'> Validation 6: Member last name validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>James<font color='blue'>  Actual Result: </font>James<font color='brown'> Validation 7: Member first name validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>000015060<font color='blue'>  Actual Result: </font>000015060<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>true<font color='blue'>  Actual Result: </font>true<font color='brown'> Validation 9: Member gender validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>1942-08-03<font color='blue'>  Actual Result: </font>1942-08-03<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>HOME<font color='blue'>  Actual Result: </font>HOME<font color='brown'> Validation 11: Home Address type validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>6631 Barken Ave.<font color='blue'>  Actual Result: </font>6631 Barken Ave.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>Saint Louis<font color='blue'>  Actual Result: </font>Saint Louis<font color='brown'> Validation 13: Home city validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>MO<font color='blue'>  Actual Result: </font>MO<font color='brown'> Validation 14: Home state validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>63121<font color='blue'>  Actual Result: </font>63121<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 16: Home country validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>PRIMARY<font color='blue'>  Actual Result: </font>PRIMARY<font color='brown'> Validation 17: PRIMARY Address type validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>6631 Barken Ave.<font color='blue'>  Actual Result: </font>6631 Barken Ave.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>Saint Louis<font color='blue'>  Actual Result: </font>Saint Louis<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>MO<font color='blue'>  Actual Result: </font>MO<font color='brown'> Validation 20: PRIMARY state validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>63121<font color='blue'>  Actual Result: </font>63121<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 22: PRIMARY country validated</font><br>]]>
+    </line>
+    <line>
+      <![CDATA[Successfully completed validating integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000015060 and for the client: EHI]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="150571" started-at="2018-03-01T04:06:59Z" finished-at="2018-03-01T04:09:29Z">
+  <suite name="System Integration Test Suite" duration-ms="921605" started-at="2018-03-01T23:50:11Z" finished-at="2018-03-02T00:05:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="150571" started-at="2018-03-01T04:06:59Z" finished-at="2018-03-01T04:09:29Z">
-      <class name="com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC">
-        <test-method status="PASS" signature="verify_MemberSearch()[pri:0, instance:com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC@2b9627bc]" name="verify_MemberSearch" is-config="true" duration-ms="18689" started-at="2018-02-28T22:06:59Z" description="Read the Member data files and perform Member Search with Member ID" finished-at="2018-02-28T22:07:17Z">
+    <test name="TC_01" duration-ms="140856" started-at="2018-03-01T23:50:11Z" finished-at="2018-03-01T23:52:32Z">
+      <class name="com.jivaUAT2.testcases.SITFlows_ZU_60_TC">
+        <test-method status="PASS" signature="verify_MemberSearch(java.lang.String)[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_60_TC@27f723]" name="verify_MemberSearch" is-config="true" duration-ms="28548" started-at="2018-03-01T17:50:11Z" description="Read the Member data files and perform Member Search with Member ID" finished-at="2018-03-01T17:50:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[Username Enteredvjayavarapu]]>
@@ -98,120 +513,55 @@
             </line>
           </reporter-output>
         </test-method> <!-- verify_MemberSearch -->
-        <test-method status="FAIL" signature="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow()[pri:0, instance:com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC@2b9627bc]" name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow" duration-ms="131145" started-at="2018-02-28T22:07:17Z" description="Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member" finished-at="2018-02-28T22:09:29Z">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : }
-  (Session info: chrome=64.0.3282.186)
-  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds: null
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'WKS22218', ip: '172.20.245.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\VJAYAV~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
-Session ID: b403ffb975d0e9d18cf01b42ff0134ba]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
-  (Session info: chrome=64.0.3282.186)
-  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds: null
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
-System info: host: 'WKS22218', ip: '172.20.245.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\VJAYAV~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
-Session ID: b403ffb975d0e9d18cf01b42ff0134ba
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:172)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:537)
-	at com.framework.utils.WebElements.clickUsingJs(WebElements.java:71)
-	at com.jiva.pages.MemberOverviewPage.clickCurrentEpisodecogwheel(MemberOverviewPage.java:168)
-	at com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC.verify_MemberData_fromfile_toScreen_ZU_60Integrationflow(ZU_60_E2EIntegrationFlow_TC.java:187)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+        <test-method status="PASS" signature="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow()[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_60_TC@27f723]" name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow" duration-ms="111518" started-at="2018-03-01T17:50:39Z" description="Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member" finished-at="2018-03-01T17:52:31Z">
           <reporter-output>
             <line>
-              <![CDATA[Started execution for integration flow of #ZU-60_Unable to reach member# for the member in line #2 holding the Member Id: 000003433 and for the client: EHI<br>]]>
+              <![CDATA[Started execution for integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000014846 and for the client: EHI<br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>000003433^EHI0NA<font color='blue'>  Actual Result: </font>000003433^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>000003433^EHI0NA<font color='blue'>  Actual Result: </font>000003433^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>000003433^EHI0NA<font color='blue'>  Actual Result: </font>000003433^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>000003433^EHI0NA<font color='blue'>  Actual Result: </font>000003433^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>6182816560<font color='blue'>  Actual Result: </font>6182816560<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>6186281652<font color='blue'>  Actual Result: </font>6186281652<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>Graff<font color='blue'>  Actual Result: </font>Graff<font color='brown'> Validation 6: Member last name validated</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>Hall<font color='blue'>  Actual Result: </font>Hall<font color='brown'> Validation 6: Member last name validated</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>Dorothy<font color='blue'>  Actual Result: </font>Dorothy<font color='brown'> Validation 7: Member first name validated</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>Arlene<font color='blue'>  Actual Result: </font>Arlene<font color='brown'> Validation 7: Member first name validated</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>000003433<font color='blue'>  Actual Result: </font>000003433<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846<font color='blue'>  Actual Result: </font>000014846<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
             </line>
             <line>
               <![CDATA[<font color='blue'>Expected Result: </font>true<font color='blue'>  Actual Result: </font>true<font color='brown'> Validation 9: Member gender validated</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>1938-10-21<font color='blue'>  Actual Result: </font>1938-10-21<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>1931-05-24<font color='blue'>  Actual Result: </font>1931-05-24<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
             </line>
             <line>
               <![CDATA[<font color='blue'>Expected Result: </font>HOME<font color='blue'>  Actual Result: </font>HOME<font color='brown'> Validation 11: Home Address type validated</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>204 E. Jefferson St.<font color='blue'>  Actual Result: </font>204 E. Jefferson St.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>618 Wintergreen Dr.<font color='blue'>  Actual Result: </font>618 Wintergreen Dr.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>Columbia<font color='blue'>  Actual Result: </font>Columbia<font color='brown'> Validation 13: Home city validated</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>O Fallon<font color='blue'>  Actual Result: </font>O Fallon<font color='brown'> Validation 13: Home city validated</font><br>]]>
             </line>
             <line>
               <![CDATA[<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 14: Home state validated</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>62236<font color='blue'>  Actual Result: </font>62236<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>62269<font color='blue'>  Actual Result: </font>62269<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
             </line>
             <line>
               <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 16: Home country validated</font><br>]]>
@@ -220,27 +570,550 @@ Session ID: b403ffb975d0e9d18cf01b42ff0134ba
               <![CDATA[<font color='blue'>Expected Result: </font>PRIMARY<font color='blue'>  Actual Result: </font>PRIMARY<font color='brown'> Validation 17: PRIMARY Address type validated</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>204 E. Jefferson St.<font color='blue'>  Actual Result: </font>204 E. Jefferson St.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>618 Wintergreen Dr.<font color='blue'>  Actual Result: </font>618 Wintergreen Dr.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>Columbia<font color='blue'>  Actual Result: </font>Columbia<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>O Fallon<font color='blue'>  Actual Result: </font>O Fallon<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
             </line>
             <line>
               <![CDATA[<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 20: PRIMARY state validated</font><br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Expected Result: </font>62236<font color='blue'>  Actual Result: </font>62236<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
+              <![CDATA[<font color='blue'>Expected Result: </font>62269<font color='blue'>  Actual Result: </font>62269<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
             </line>
             <line>
               <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 22: PRIMARY country validated</font><br>]]>
             </line>
+            <line>
+              <![CDATA[Successfully completed validating integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000014846 and for the client: EHI]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC@2b9627bc]" name="closeBrowser" is-config="true" duration-ms="725" started-at="2018-02-28T22:09:29Z" description="Close the browser" finished-at="2018-02-28T22:09:29Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_60_TC@27f723]" name="closeBrowser" is-config="true" duration-ms="777" started-at="2018-03-01T17:52:31Z" description="Close the browser" finished-at="2018-03-01T17:52:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.jivaUAT2.testcases.ZU_60_E2EIntegrationFlow_TC -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_60_TC -->
+    </test> <!-- TC_01 -->
+    <test name="TC_02" duration-ms="140735" started-at="2018-03-01T23:52:32Z" finished-at="2018-03-01T23:54:52Z">
+      <class name="com.jivaUAT2.testcases.SITFlows_ZU_61_TC">
+        <test-method status="PASS" signature="verify_MemberSearch(java.lang.String)[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_61_TC@2db7a79b]" name="verify_MemberSearch" is-config="true" duration-ms="26406" started-at="2018-03-01T17:52:32Z" description="Read the Member data files and perform Member Search with Member ID" finished-at="2018-03-01T17:52:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Username Enteredvjayavarapu]]>
+            </line>
+            <line>
+              <![CDATA[Password EnteredPassword3!]]>
+            </line>
+            <line>
+              <![CDATA[Login Button Clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_MemberSearch -->
+        <test-method status="PASS" signature="verify_MemberData_fromfile_toScreen_ZU_61Integrationflow()[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_61_TC@2db7a79b]" name="verify_MemberData_fromfile_toScreen_ZU_61Integrationflow" duration-ms="113597" started-at="2018-03-01T17:52:58Z" description="Verify Member data from the files with screendata and execute ZU-61 flow for CCM-Member Opts out" finished-at="2018-03-01T17:54:52Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution for integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000014846 and for the client: EHI<br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>6186281652<font color='blue'>  Actual Result: </font>6186281652<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>Hall<font color='blue'>  Actual Result: </font>Hall<font color='brown'> Validation 6: Member last name validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>Arlene<font color='blue'>  Actual Result: </font>Arlene<font color='brown'> Validation 7: Member first name validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846<font color='blue'>  Actual Result: </font>000014846<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>true<font color='blue'>  Actual Result: </font>true<font color='brown'> Validation 9: Member gender validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>1931-05-24<font color='blue'>  Actual Result: </font>1931-05-24<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>HOME<font color='blue'>  Actual Result: </font>HOME<font color='brown'> Validation 11: Home Address type validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>618 Wintergreen Dr.<font color='blue'>  Actual Result: </font>618 Wintergreen Dr.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>O Fallon<font color='blue'>  Actual Result: </font>O Fallon<font color='brown'> Validation 13: Home city validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 14: Home state validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>62269<font color='blue'>  Actual Result: </font>62269<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 16: Home country validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>PRIMARY<font color='blue'>  Actual Result: </font>PRIMARY<font color='brown'> Validation 17: PRIMARY Address type validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>618 Wintergreen Dr.<font color='blue'>  Actual Result: </font>618 Wintergreen Dr.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>O Fallon<font color='blue'>  Actual Result: </font>O Fallon<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 20: PRIMARY state validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>62269<font color='blue'>  Actual Result: </font>62269<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 22: PRIMARY country validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[Successfully completed validating integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000014846 and for the client: EHI]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_MemberData_fromfile_toScreen_ZU_61Integrationflow -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_61_TC@2db7a79b]" name="closeBrowser" is-config="true" duration-ms="729" started-at="2018-03-01T17:54:52Z" description="Close the browser" finished-at="2018-03-01T17:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_61_TC -->
+    </test> <!-- TC_02 -->
+    <test name="TC_03" duration-ms="182773" started-at="2018-03-01T23:54:52Z" finished-at="2018-03-01T23:57:55Z">
+      <class name="com.jivaUAT2.testcases.SITFlows_ZU_63_TC">
+        <test-method status="PASS" signature="verify_MemberSearch(java.lang.String)[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_63_TC@569cfc36]" name="verify_MemberSearch" is-config="true" duration-ms="25678" started-at="2018-03-01T17:54:52Z" description="Read the Member data files and perform Member Search with Member ID" finished-at="2018-03-01T17:55:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Username Enteredvjayavarapu]]>
+            </line>
+            <line>
+              <![CDATA[Password EnteredPassword3!]]>
+            </line>
+            <line>
+              <![CDATA[Login Button Clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_MemberSearch -->
+        <test-method status="PASS" signature="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow()[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_63_TC@569cfc36]" name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow" duration-ms="156325" started-at="2018-03-01T17:55:18Z" description="Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member" finished-at="2018-03-01T17:57:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution for integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000014846 and for the client: EHI<br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846^EHI0NA<font color='blue'>  Actual Result: </font>000014846^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>6186281652<font color='blue'>  Actual Result: </font>6186281652<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>Hall<font color='blue'>  Actual Result: </font>Hall<font color='brown'> Validation 6: Member last name validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>Arlene<font color='blue'>  Actual Result: </font>Arlene<font color='brown'> Validation 7: Member first name validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000014846<font color='blue'>  Actual Result: </font>000014846<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>true<font color='blue'>  Actual Result: </font>true<font color='brown'> Validation 9: Member gender validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>1931-05-24<font color='blue'>  Actual Result: </font>1931-05-24<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>HOME<font color='blue'>  Actual Result: </font>HOME<font color='brown'> Validation 11: Home Address type validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>618 Wintergreen Dr.<font color='blue'>  Actual Result: </font>618 Wintergreen Dr.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>O Fallon<font color='blue'>  Actual Result: </font>O Fallon<font color='brown'> Validation 13: Home city validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 14: Home state validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>62269<font color='blue'>  Actual Result: </font>62269<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 16: Home country validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>PRIMARY<font color='blue'>  Actual Result: </font>PRIMARY<font color='brown'> Validation 17: PRIMARY Address type validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>618 Wintergreen Dr.<font color='blue'>  Actual Result: </font>618 Wintergreen Dr.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>O Fallon<font color='blue'>  Actual Result: </font>O Fallon<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>IL<font color='blue'>  Actual Result: </font>IL<font color='brown'> Validation 20: PRIMARY state validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>62269<font color='blue'>  Actual Result: </font>62269<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 22: PRIMARY country validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[Successfully completed validating integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000014846 and for the client: EHI]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_63_TC@569cfc36]" name="closeBrowser" is-config="true" duration-ms="768" started-at="2018-03-01T17:57:54Z" description="Close the browser" finished-at="2018-03-01T17:57:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_63_TC -->
+    </test> <!-- TC_03 -->
+    <test name="TC_04" duration-ms="140483" started-at="2018-03-01T23:57:55Z" finished-at="2018-03-02T00:00:16Z">
+      <class name="com.jivaUAT2.testcases.SITFlows_ZU_60_TC">
+        <test-method status="PASS" signature="verify_MemberSearch(java.lang.String)[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_60_TC@cb0ed20]" name="verify_MemberSearch" is-config="true" duration-ms="22167" started-at="2018-03-01T17:57:55Z" description="Read the Member data files and perform Member Search with Member ID" finished-at="2018-03-01T17:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Username Enteredvjayavarapu]]>
+            </line>
+            <line>
+              <![CDATA[Password EnteredPassword3!]]>
+            </line>
+            <line>
+              <![CDATA[Login Button Clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_MemberSearch -->
+        <test-method status="PASS" signature="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow()[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_60_TC@cb0ed20]" name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow" duration-ms="117544" started-at="2018-03-01T17:58:17Z" description="Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member" finished-at="2018-03-01T18:00:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution for integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000015060 and for the client: EHI<br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>3143814474<font color='blue'>  Actual Result: </font>3143814474<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>Rice Jr<font color='blue'>  Actual Result: </font>Rice Jr<font color='brown'> Validation 6: Member last name validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>James<font color='blue'>  Actual Result: </font>James<font color='brown'> Validation 7: Member first name validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060<font color='blue'>  Actual Result: </font>000015060<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>true<font color='blue'>  Actual Result: </font>true<font color='brown'> Validation 9: Member gender validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>1942-08-03<font color='blue'>  Actual Result: </font>1942-08-03<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>HOME<font color='blue'>  Actual Result: </font>HOME<font color='brown'> Validation 11: Home Address type validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>6631 Barken Ave.<font color='blue'>  Actual Result: </font>6631 Barken Ave.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>Saint Louis<font color='blue'>  Actual Result: </font>Saint Louis<font color='brown'> Validation 13: Home city validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>MO<font color='blue'>  Actual Result: </font>MO<font color='brown'> Validation 14: Home state validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>63121<font color='blue'>  Actual Result: </font>63121<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 16: Home country validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>PRIMARY<font color='blue'>  Actual Result: </font>PRIMARY<font color='brown'> Validation 17: PRIMARY Address type validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>6631 Barken Ave.<font color='blue'>  Actual Result: </font>6631 Barken Ave.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>Saint Louis<font color='blue'>  Actual Result: </font>Saint Louis<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>MO<font color='blue'>  Actual Result: </font>MO<font color='brown'> Validation 20: PRIMARY state validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>63121<font color='blue'>  Actual Result: </font>63121<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 22: PRIMARY country validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[Successfully completed validating integration flow of #ZU-60_CCM_Unable to reach member# for the member holding the Member Id: 000015060 and for the client: EHI]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_60_TC@cb0ed20]" name="closeBrowser" is-config="true" duration-ms="768" started-at="2018-03-01T18:00:15Z" description="Close the browser" finished-at="2018-03-01T18:00:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_60_TC -->
+    </test> <!-- TC_04 -->
+    <test name="TC_05" duration-ms="137097" started-at="2018-03-02T00:00:16Z" finished-at="2018-03-02T00:02:33Z">
+      <class name="com.jivaUAT2.testcases.SITFlows_ZU_61_TC">
+        <test-method status="PASS" signature="verify_MemberSearch(java.lang.String)[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_61_TC@1d371b2d]" name="verify_MemberSearch" is-config="true" duration-ms="22210" started-at="2018-03-01T18:00:16Z" description="Read the Member data files and perform Member Search with Member ID" finished-at="2018-03-01T18:00:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Username Enteredvjayavarapu]]>
+            </line>
+            <line>
+              <![CDATA[Password EnteredPassword3!]]>
+            </line>
+            <line>
+              <![CDATA[Login Button Clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_MemberSearch -->
+        <test-method status="PASS" signature="verify_MemberData_fromfile_toScreen_ZU_61Integrationflow()[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_61_TC@1d371b2d]" name="verify_MemberData_fromfile_toScreen_ZU_61Integrationflow" duration-ms="114152" started-at="2018-03-01T18:00:38Z" description="Verify Member data from the files with screendata and execute ZU-61 flow for CCM-Member Opts out" finished-at="2018-03-01T18:02:32Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution for integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000015060 and for the client: EHI<br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>3143814474<font color='blue'>  Actual Result: </font>3143814474<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>Rice Jr<font color='blue'>  Actual Result: </font>Rice Jr<font color='brown'> Validation 6: Member last name validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>James<font color='blue'>  Actual Result: </font>James<font color='brown'> Validation 7: Member first name validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060<font color='blue'>  Actual Result: </font>000015060<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>true<font color='blue'>  Actual Result: </font>true<font color='brown'> Validation 9: Member gender validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>1942-08-03<font color='blue'>  Actual Result: </font>1942-08-03<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>HOME<font color='blue'>  Actual Result: </font>HOME<font color='brown'> Validation 11: Home Address type validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>6631 Barken Ave.<font color='blue'>  Actual Result: </font>6631 Barken Ave.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>Saint Louis<font color='blue'>  Actual Result: </font>Saint Louis<font color='brown'> Validation 13: Home city validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>MO<font color='blue'>  Actual Result: </font>MO<font color='brown'> Validation 14: Home state validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>63121<font color='blue'>  Actual Result: </font>63121<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 16: Home country validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>PRIMARY<font color='blue'>  Actual Result: </font>PRIMARY<font color='brown'> Validation 17: PRIMARY Address type validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>6631 Barken Ave.<font color='blue'>  Actual Result: </font>6631 Barken Ave.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>Saint Louis<font color='blue'>  Actual Result: </font>Saint Louis<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>MO<font color='blue'>  Actual Result: </font>MO<font color='brown'> Validation 20: PRIMARY state validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>63121<font color='blue'>  Actual Result: </font>63121<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 22: PRIMARY country validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[Successfully completed validating integration flow of #ZU-61_CCM_Member Opts out# for the member holding the Member Id: 000015060 and for the client: EHI]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_MemberData_fromfile_toScreen_ZU_61Integrationflow -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_61_TC@1d371b2d]" name="closeBrowser" is-config="true" duration-ms="732" started-at="2018-03-01T18:02:32Z" description="Close the browser" finished-at="2018-03-01T18:02:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_61_TC -->
+    </test> <!-- TC_05 -->
+    <test name="TC_06" duration-ms="179564" started-at="2018-03-02T00:02:33Z" finished-at="2018-03-02T00:05:32Z">
+      <class name="com.jivaUAT2.testcases.SITFlows_ZU_63_TC">
+        <test-method status="PASS" signature="verify_MemberSearch(java.lang.String)[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_63_TC@1fc2b765]" name="verify_MemberSearch" is-config="true" duration-ms="22223" started-at="2018-03-01T18:02:33Z" description="Read the Member data files and perform Member Search with Member ID" finished-at="2018-03-01T18:02:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Username Enteredvjayavarapu]]>
+            </line>
+            <line>
+              <![CDATA[Password EnteredPassword3!]]>
+            </line>
+            <line>
+              <![CDATA[Login Button Clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_MemberSearch -->
+        <test-method status="PASS" signature="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow()[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_63_TC@1fc2b765]" name="verify_MemberData_fromfile_toScreen_ZU_60Integrationflow" duration-ms="156575" started-at="2018-03-01T18:02:55Z" description="Verify Member data from the files with screendata and execute ZU-60 flow for CCM-Unable to reach member" finished-at="2018-03-01T18:05:32Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution for integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000015060 and for the client: EHI<br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 1: Member Coverage ID validated against demographic file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 2: Member Coverage ID validated against address file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 3: Member Coverage ID validated against Coverage file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060^EHI0NA<font color='blue'>  Actual Result: </font>000015060^EHI0NA<font color='brown'> Validation 4: Member Coverage ID validated against Member Phone file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>3143814474<font color='blue'>  Actual Result: </font>3143814474<font color='brown'> Validation 5: Member Phone Number validated against Member Phone file</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>Rice Jr<font color='blue'>  Actual Result: </font>Rice Jr<font color='brown'> Validation 6: Member last name validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>James<font color='blue'>  Actual Result: </font>James<font color='brown'> Validation 7: Member first name validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>000015060<font color='blue'>  Actual Result: </font>000015060<font color='brown'> Validation 8: Member alternate id validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>true<font color='blue'>  Actual Result: </font>true<font color='brown'> Validation 9: Member gender validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>1942-08-03<font color='blue'>  Actual Result: </font>1942-08-03<font color='brown'> Validation 10: Member DOB validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>HOME<font color='blue'>  Actual Result: </font>HOME<font color='brown'> Validation 11: Home Address type validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>6631 Barken Ave.<font color='blue'>  Actual Result: </font>6631 Barken Ave.<font color='brown'> Validation 12: Home Address line 1 validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>Saint Louis<font color='blue'>  Actual Result: </font>Saint Louis<font color='brown'> Validation 13: Home city validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>MO<font color='blue'>  Actual Result: </font>MO<font color='brown'> Validation 14: Home state validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>63121<font color='blue'>  Actual Result: </font>63121<font color='brown'> Validation 15: Home Zip validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 16: Home country validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>PRIMARY<font color='blue'>  Actual Result: </font>PRIMARY<font color='brown'> Validation 17: PRIMARY Address type validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>6631 Barken Ave.<font color='blue'>  Actual Result: </font>6631 Barken Ave.<font color='brown'> Validation 18: PRIMARY Address line 1 validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>Saint Louis<font color='blue'>  Actual Result: </font>Saint Louis<font color='brown'> Validation 19: PRIMARY city validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>MO<font color='blue'>  Actual Result: </font>MO<font color='brown'> Validation 20: PRIMARY state validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>63121<font color='blue'>  Actual Result: </font>63121<font color='brown'> Validation 21: PRIMARY Zip validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='blue'>Expected Result: </font>USA<font color='blue'>  Actual Result: </font>USA<font color='brown'> Validation 22: PRIMARY country validated</font><br>]]>
+            </line>
+            <line>
+              <![CDATA[Successfully completed validating integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000015060 and for the client: EHI]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.jivaUAT2.testcases.SITFlows_ZU_63_TC@1fc2b765]" name="closeBrowser" is-config="true" duration-ms="764" started-at="2018-03-01T18:05:32Z" description="Close the browser" finished-at="2018-03-01T18:05:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.jivaUAT2.testcases.SITFlows_ZU_63_TC -->
+    </test> <!-- TC_06 -->
+  </suite> <!-- System Integration Test Suite -->
 </testng-results>

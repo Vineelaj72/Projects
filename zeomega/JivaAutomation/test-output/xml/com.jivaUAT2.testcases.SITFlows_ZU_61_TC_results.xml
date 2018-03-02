@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="91.290">
+           time="113.597">
   <properties />
   
   
-            <testcase name="verify_MemberData_fromfile_toScreen_ZU_61Integrationflow" time="91.290" classname="com.jivaUAT2.testcases.SITFlows_ZU_61_TC" />
+            <testcase name="verify_MemberData_fromfile_toScreen_ZU_61Integrationflow" time="113.597" classname="com.jivaUAT2.testcases.SITFlows_ZU_61_TC" />
       
 </testsuite>

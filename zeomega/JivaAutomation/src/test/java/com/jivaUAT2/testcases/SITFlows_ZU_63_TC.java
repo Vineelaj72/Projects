@@ -129,7 +129,7 @@ public class SITFlows_ZU_63_TC extends TestBase {
 		// ----- Verify the file data with screen data -----
 		String clientname = memberOverviewPage.getClientName();
 		logger.info("Verifying the flow for the Client : "+clientname);
-		Reporter.log("Started execution for integration flow of #ZU-60_Unable to reach member# for the member holding the Member Id: "+MemberDemographicData.get(ALTERNATEID)+" and for the client: "+clientname+"<br>");
+		Reporter.log("Started execution for integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: "+MemberDemographicData.get(ALTERNATEID)+" and for the client: "+clientname+"<br>");
 	
 		customReport(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), " Validation 1: Member Coverage ID validated against demographic file");
 		customReport(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), " Validation 2: Member Coverage ID validated against address file");
@@ -169,6 +169,7 @@ public class SITFlows_ZU_63_TC extends TestBase {
 		
 		
 		//memberOverviewPage.deActivate();
+		memberOverviewPage.deActivateEpisodesfromDashboard();
 		
 		// ----- Create Case Management Episode -----
 		memberOverviewPage.clickAddEpisode();

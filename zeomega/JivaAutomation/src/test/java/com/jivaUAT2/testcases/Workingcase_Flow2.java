@@ -165,6 +165,7 @@ public class Workingcase_Flow2 extends TestBase {
 		
 		
 		//memberOverviewPage.deActivate();  //@@@@@@@@@@ Here it has to deactivate all the episodes with status = Closed  @@@@@@@//
+		memberOverviewPage.deActivateEpisodesfromDashboard();
 		
 		// ----- Create Case Management Episode -----
 		memberOverviewPage.clickAddEpisode();
