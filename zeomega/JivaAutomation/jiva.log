@@ -217,3 +217,14 @@
 2018-03-01 18:05:32,092 [main] INFO  com.jiva.pages.ProgramsPage - Closed program record available true
 2018-03-01 18:05:32,127 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Successfully completed validating integration flow of #ZU-63_CCM_Member_Identified Needs/Goals Have Been Met# for the member holding the Member Id: 000015060 and for the client: EHI
 2018-03-01 18:05:32,129 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_63_TC - Execution started for --- closeBrowser
+2018-03-04 22:37:42,531 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberSearch
+2018-03-04 22:37:42,541 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Demographic File Data [000014846^EHI0NA, 000014846, Hall, Arlene, 1931-05-24, Y, F]
+2018-03-04 22:37:42,564 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Address File Data [000014846^EHI0NA, Home, 618 Wintergreen Dr., O Fallon, IL, 62269, USA, 000014846^EHI0NA, Primary, 618 Wintergreen Dr., O Fallon, IL, 62269, USA]
+2018-03-04 22:37:42,570 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Phone File Data [000014846^EHI0NA, 6186281652]
+2018-03-04 22:37:42,626 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Coverage File Data [000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA, 000014846^EHI0NA]
+2018-03-04 22:37:57,361 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Profile Name is Jayavarapu, Vineela
+2018-03-04 22:37:57,361 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User Last name Jayavarapu
+2018-03-04 22:37:57,362 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - User First name  Vineela
+2018-03-04 22:37:57,362 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member Last name Hall
+2018-03-04 22:37:57,362 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Member First name Arlene
+2018-03-04 22:38:01,626 [main] INFO  com.jivaUAT2.testcases.SITFlows_ZU_60_TC - Execution started for --- verify_MemberData_fromfile_toScreen_ZU_60Integrationflow

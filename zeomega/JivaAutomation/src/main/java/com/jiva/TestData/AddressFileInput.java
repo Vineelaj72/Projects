@@ -24,7 +24,7 @@ public class AddressFileInput {
 		   String sCurrentLine;
 		   while ((sCurrentLine = br.readLine()) != null) {
 		    for (int j = 0; j < sCurrentLine.split("\\|", -1).length; j++) {
-		     addressvalue.add(sCurrentLine.split("\\|", -1)[j]);
+		     addressvalue.add(sCurrentLine.split("\\|", -1)[j]);  //contains whole file data separated by | symbol
 		    }
 		   }
 		     for (int k = 0; k < addressvalue.size(); k++) {		   
