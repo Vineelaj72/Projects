@@ -1,4 +1,4 @@
-package com.jivaUAT1.testcases;
+/*package com.jivaUAT1.testcases;
 
 import java.util.ArrayList;
 
@@ -8,10 +8,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.jiva.OLDTestData.ReadAddressFile;
-import com.jiva.OLDTestData.ReadMemberCoverageFile;
-import com.jiva.OLDTestData.ReadMemberDemographicFile;
-import com.jiva.OLDTestData.ReadPhoneDetails;
 import com.jiva.pages.AcceptPOCPage;
 import com.jiva.pages.AddInteractionsPage;
 import com.jiva.pages.AssessmentsPage;
@@ -110,7 +106,7 @@ public class E2EintegrationflowTC_ZU_63 extends TestBase {
 			
 		MemberOverviewPage memberOverviewPage = new MemberOverviewPage(driver);	
 		memberOverviewPage.sleep(3000);
-		memberOverviewPage.expandorhideMemberInfo();		
+		memberOverviewPage.expandMemberInfo();		
 		Assert.assertEquals(MemberDemographicData.get(ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against demographic file");
 		Assert.assertEquals(MemberDemographicData.get(ACTIVESTATUS), memberOverviewPage.getActiveStatus(), "Member Active Status validated against demographic file");
 		Assert.assertEquals(MemberAddressData.get(ADDR_ENROLLMENTID), memberOverviewPage.getCoverageId(), "Member Coverage ID validated against address file");
@@ -150,7 +146,7 @@ public class E2EintegrationflowTC_ZU_63 extends TestBase {
 
 		memberOverviewPage.sleep(5000);
 		memberOverviewPage.closeMemberInfo();
-		memberOverviewPage.expandorhideMemberInfo();
+		memberOverviewPage.expandMemberInfo();
 
 		memberOverviewPage.clickAddEpisode();
 		memberOverviewPage.clickCaseManagement();
@@ -222,3 +218,4 @@ public class E2EintegrationflowTC_ZU_63 extends TestBase {
 	}
 
 }
+*/

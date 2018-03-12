@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.framework.utils.WebElements;
-import com.jivaUAT1.testcases.E2EintegrationflowTC_ZU_60;
 
 public class ProgramsPage extends WebElements{
 
@@ -25,6 +24,7 @@ public class ProgramsPage extends WebElements{
 	
 	public void clickMemberOverview()
 	{
-		click(memberoverviewlinklocator);
+		clickUsingJs(memberoverviewlinklocator);
 	}
 }
+

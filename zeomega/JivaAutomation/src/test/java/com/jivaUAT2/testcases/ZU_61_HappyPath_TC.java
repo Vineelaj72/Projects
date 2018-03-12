@@ -9,10 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.jiva.OLDTestData.ReadAddressFile;
-import com.jiva.OLDTestData.ReadMemberCoverageFile;
-import com.jiva.OLDTestData.ReadMemberDemographicFile;
-import com.jiva.OLDTestData.ReadPhoneDetails;
+
 import com.jiva.TestData.AddressFileInput;
 import com.jiva.TestData.CoverageFileInput;
 import com.jiva.TestData.DemographicFileInput;
